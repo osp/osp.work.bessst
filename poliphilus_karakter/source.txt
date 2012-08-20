@@ -1,0 +1,4 @@
+Characters from LOOM by Lucasarts
+
+Should be removed from the repo after we draw
+our own character
