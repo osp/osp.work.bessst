@@ -1,4 +1,19 @@
+@import "mixins";
+
 div.container {
+    .clearfix();
     margin: 50px auto;
     width: 900px;
+}
+
+div#text {
+    .box-sizing(border-box);
+    width: 600px;
+    padding: 20px;
+    float: left;
+}
+
+div#newsletter {
+    width: 300px;
+    float: left;
 }
