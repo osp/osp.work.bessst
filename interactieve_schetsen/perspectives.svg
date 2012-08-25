@@ -11,7 +11,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="1200"
-   height="800"
+   height="3000"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
@@ -24,12 +24,12 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.6975"
-     inkscape:cx="802.51258"
-     inkscape:cy="167.48752"
+     inkscape:zoom="0.44403703"
+     inkscape:cx="795.36788"
+     inkscape:cy="2374.3434"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="true"
+     showgrid="false"
      inkscape:showpageshadow="false"
      borderlayer="true"
      inkscape:window-width="1280"
@@ -45,7 +45,8 @@
      fit-margin-bottom="0"
      inkscape:object-nodes="false"
      showborder="true"
-     inkscape:snap-nodes="false">
+     inkscape:snap-nodes="false"
+     inkscape:snap-global="true">
     <sodipodi:guide
        orientation="1,0"
        position="-611.85355,2211.8617"
@@ -57,8 +58,16 @@
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true"
-       spacingx="100px"
-       spacingy="100px" />
+       spacingx="50px"
+       spacingy="50px" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="379.79798,1.010101"
+       id="guide5050" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="1594.2044,2202.7448"
+       id="guide5054" />
   </sodipodi:namedview>
   <defs
      id="defs4">
@@ -429,10 +438,54 @@
        y1="-4378.4111"
        x2="-2043.4371"
        y2="-4722.8882" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4875-4"
+       id="linearGradient3488-1"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.25135372,0,0,-0.25135372,212.42011,778.09451)"
+       x1="-3178.2664"
+       y1="2747.4319"
+       x2="-2938.2678"
+       y2="2797.8896" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4875-4">
+      <stop
+         style="stop-color:#ff8080;stop-opacity:1;"
+         offset="0"
+         id="stop4877-5" />
+      <stop
+         style="stop-color:#ff8080;stop-opacity:0;"
+         offset="1"
+         id="stop4880-8" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5196-5-0"
+       id="linearGradient3494-7"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.20126478,0,0,0.16304033,1339.3585,1041.5463)"
+       x1="-2233.0259"
+       y1="-4378.4111"
+       x2="-2043.4371"
+       y2="-4722.8882" />
+    <linearGradient
+       id="linearGradient5196-5-0"
+       inkscape:collect="always">
+      <stop
+         id="stop5198-2-8"
+         offset="0"
+         style="stop-color:#0000aa;stop-opacity:1;" />
+      <stop
+         id="stop5200-5-8"
+         offset="1"
+         style="stop-color:#0000aa;stop-opacity:0;" />
+    </linearGradient>
     <radialGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient4092"
-       id="radialGradient3486"
+       xlink:href="#linearGradient4092-7"
+       id="radialGradient3486-2"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(0,-2.5036951e-4)"
        cx="8505.5156"
@@ -441,41 +494,68 @@
        fy="1733.3148"
        r="211.27292" />
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4875"
-       id="linearGradient3488"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-0.25135372,0,0,-0.25135372,117.4494,-2403.6937)"
-       x1="-3178.2664"
-       y1="2747.4319"
-       x2="-2938.2678"
-       y2="2797.8896" />
+       id="linearGradient4092-7"
+       inkscape:collect="always">
+      <stop
+         id="stop4094-4"
+         offset="0"
+         style="stop-color:#545454;stop-opacity:1;" />
+      <stop
+         id="stop4096-2"
+         offset="1"
+         style="stop-color:#545454;stop-opacity:0;" />
+    </linearGradient>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient4127"
-       id="linearGradient3492"
+       xlink:href="#linearGradient4127-1"
+       id="linearGradient3492-2"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.65336437,0,0,0.65336437,63.898851,-1132.2461)"
+       gradientTransform="matrix(0.65336437,0,0,0.65336437,24.996411,2051.5697)"
        x1="263.65509"
        y1="-2507.5212"
        x2="511.53339"
        y2="-2507.5212" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient5196-5"
-       id="linearGradient3494"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.20126478,0,0,0.16304033,1132.9278,-2407.9587)"
-       x1="-2233.0259"
-       y1="-4378.4111"
-       x2="-2043.4371"
-       y2="-4722.8882" />
+       id="linearGradient4127-1">
+      <stop
+         style="stop-color:#ffff55;stop-opacity:1;"
+         offset="0"
+         id="stop4129-7" />
+      <stop
+         style="stop-color:#ffff55;stop-opacity:0;"
+         offset="1"
+         id="stop4131-8" />
+    </linearGradient>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient4884"
-       id="linearGradient4504"
+       id="linearGradient4884-2">
+      <stop
+         style="stop-color:#aaffaa;stop-opacity:1;"
+         offset="0"
+         id="stop4886-2" />
+      <stop
+         style="stop-color:#aaffaa;stop-opacity:0;"
+         offset="1"
+         id="stop4888-3" />
+    </linearGradient>
+    <radialGradient
+       r="211.27292"
+       fy="1733.3148"
+       fx="8505.5156"
+       cy="1733.3148"
+       cx="8505.5156"
+       gradientTransform="translate(0,-2.5036951e-4)"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.38470681,0,0,0.38470681,-94.88002,-407.51386)"
+       id="radialGradient5121"
+       xlink:href="#linearGradient4092-7"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4884-2"
+       id="linearGradient5207"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.25135372,0,0,0.25135372,373.61315,1142.6146)"
        x1="879.71893"
        y1="-3880.8228"
        x2="1530.5687"
@@ -494,7 +574,7 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(13.84305,3490.0082)"
+     transform="translate(13.84305,5690.0082)"
      style="display:none"
      inkscape:label="d"
      id="layer2"
@@ -564,7 +644,7 @@
   </g>
   <g
      style="display:inline"
-     transform="translate(13.84305,3181.7405)"
+     transform="translate(13.84305,5381.7405)"
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
@@ -576,7 +656,7 @@
        sodipodi:nodetypes="csc" />
     <path
        transform="matrix(0.38470681,0,0,0.38470681,-2955.3576,-7543.971)"
-       d="m 8716.7885,1733.3148 a 211.27292,211.27292 0 1 1 -422.5458,0 211.27292,211.27292 0 1 1 422.5458,0 z"
+       d="m 8716.7885,1733.3148 c 0,116.6828 -94.5901,211.2729 -211.2729,211.2729 -116.6828,0 -211.2729,-94.5901 -211.2729,-211.2729 0,-116.6828 94.5901,-211.2729 211.2729,-211.2729 116.6828,0 211.2729,94.5901 211.2729,211.2729 z"
        sodipodi:ry="211.27292"
        sodipodi:rx="211.27292"
        sodipodi:cy="1733.3148"
@@ -726,7 +806,7 @@
        style="fill:none;stroke:#000000;stroke-width:6.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <path
        transform="matrix(-0.38470681,0,0,0.38470681,328.27969,-6507.3665)"
-       d="m -209.14986,-108.88409 a 206.62996,89.455658 0 1 1 -413.25991,0 206.62996,89.455658 0 1 1 413.25991,0 z"
+       d="m -209.14986,-108.88409 c 0,49.404999 -92.51138,89.455661 -206.62996,89.455661 -114.11857,0 -206.62995,-40.050662 -206.62995,-89.455661 0,-49.40499 92.51138,-89.45565 206.62995,-89.45565 114.11858,0 206.62996,40.05066 206.62996,89.45565 z"
        sodipodi:ry="89.455658"
        sodipodi:rx="206.62996"
        sodipodi:cy="-108.88409"
@@ -1421,7 +1501,7 @@
        sodipodi:nodetypes="csc" />
     <path
        transform="matrix(0.23209089,0,0,0.23209089,2837.6759,-6710.2627)"
-       d="m -7739.0414,-760.71906 a 484.83356,155.51265 0 1 1 -969.6672,0 484.83356,155.51265 0 1 1 969.6672,0 z"
+       d="m -7739.0414,-760.71906 c 0,85.88727 -217.0674,155.51265 -484.8336,155.51265 -267.7662,0 -484.8336,-69.62538 -484.8336,-155.51265 0,-85.88726 217.0674,-155.51264 484.8336,-155.51264 267.7662,0 484.8336,69.62538 484.8336,155.51264 z"
        sodipodi:ry="155.51265"
        sodipodi:rx="484.83356"
        sodipodi:cy="-760.71906"
@@ -1437,7 +1517,7 @@
        sodipodi:cy="-760.71906"
        sodipodi:rx="484.83356"
        sodipodi:ry="155.51265"
-       d="m -7739.0414,-760.71906 a 484.83356,155.51265 0 1 1 -969.6672,0 484.83356,155.51265 0 1 1 969.6672,0 z"
+       d="m -7739.0414,-760.71906 c 0,85.88727 -217.0674,155.51265 -484.8336,155.51265 -267.7662,0 -484.8336,-69.62538 -484.8336,-155.51265 0,-85.88726 217.0674,-155.51264 484.8336,-155.51264 267.7662,0 484.8336,69.62538 484.8336,155.51264 z"
        transform="matrix(0.21562392,0,0,0.1966993,2702.2535,-6737.5782)" />
     <path
        sodipodi:nodetypes="csc"
@@ -1453,11 +1533,11 @@
        sodipodi:cy="-760.71906"
        sodipodi:rx="484.83356"
        sodipodi:ry="155.51265"
-       d="m -7739.0414,-760.71906 a 484.83356,155.51265 0 1 1 -969.6672,0 484.83356,155.51265 0 1 1 969.6672,0 z"
+       d="m -7739.0414,-760.71906 c 0,85.88727 -217.0674,155.51265 -484.8336,155.51265 -267.7662,0 -484.8336,-69.62538 -484.8336,-155.51265 0,-85.88726 217.0674,-155.51264 484.8336,-155.51264 267.7662,0 484.8336,69.62538 484.8336,155.51264 z"
        transform="matrix(0.18292054,0,0,0.18292054,2433.305,-6788.3788)" />
     <path
        transform="matrix(0.16789512,0,0,0.1531595,2309.7378,-6811.3279)"
-       d="m -7739.0414,-760.71906 a 484.83356,155.51265 0 1 1 -969.6672,0 484.83356,155.51265 0 1 1 969.6672,0 z"
+       d="m -7739.0414,-760.71906 c 0,85.88727 -217.0674,155.51265 -484.8336,155.51265 -267.7662,0 -484.8336,-69.62538 -484.8336,-155.51265 0,-85.88726 217.0674,-155.51264 484.8336,-155.51264 267.7662,0 484.8336,69.62538 484.8336,155.51264 z"
        sodipodi:ry="155.51265"
        sodipodi:rx="484.83356"
        sodipodi:cy="-760.71906"
@@ -1497,7 +1577,7 @@
        style="fill:none;stroke:#000000;stroke-width:2.30824065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.875;stroke-opacity:1;stroke-dasharray:none" />
     <path
        transform="matrix(0.38470681,0,0,0.38470681,2107.2192,-6939.0012)"
-       d="m -4005.0981,-70.02449 a 24.79084,27.54538 0 1 1 -49.5817,0 24.79084,27.54538 0 1 1 49.5817,0 z"
+       d="m -4005.0981,-70.02449 c 0,15.212893 -11.0992,27.545379 -24.7908,27.545379 -13.6916,0 -24.7909,-12.332486 -24.7909,-27.545379 0,-15.212893 11.0993,-27.54538 24.7909,-27.54538 13.6916,0 24.7908,12.332487 24.7908,27.54538 z"
        sodipodi:ry="27.54538"
        sodipodi:rx="24.79084"
        sodipodi:cy="-70.02449"
@@ -1513,7 +1593,7 @@
        sodipodi:cy="-70.02449"
        sodipodi:rx="24.79084"
        sodipodi:ry="27.54538"
-       d="m -4005.0981,-70.02449 a 24.79084,27.54538 0 1 1 -49.5817,0 24.79084,27.54538 0 1 1 49.5817,0 z"
+       d="m -4005.0981,-70.02449 c 0,15.212893 -11.0992,27.545379 -24.7908,27.545379 -13.6916,0 -24.7909,-12.332486 -24.7909,-27.545379 0,-15.212893 11.0993,-27.54538 24.7909,-27.54538 13.6916,0 24.7908,12.332487 24.7908,27.54538 z"
        transform="matrix(0.21475349,0,0,0.21475349,1422.3261,-6950.902)" />
     <text
        xml:space="preserve"
@@ -1712,7 +1792,7 @@
        sodipodi:cy="-3284.6333"
        sodipodi:rx="62.241581"
        sodipodi:ry="39.608276"
-       d="m -294.23291,-3284.6333 a 62.241581,39.608276 0 1 1 -124.48316,0 62.241581,39.608276 0 1 1 124.48316,0 z"
+       d="m -294.23291,-3284.6333 c 0,21.875 -27.8665,39.6083 -62.24158,39.6083 -34.37507,0 -62.24158,-17.7333 -62.24158,-39.6083 0,-21.875 27.86651,-39.6083 62.24158,-39.6083 34.37508,0 62.24158,17.7333 62.24158,39.6083 z"
        transform="matrix(0.11424837,0,0,0.11424837,370.08918,-6496.6874)" />
     <path
        sodipodi:nodetypes="ccsccccscc"
@@ -1728,7 +1808,7 @@
        style="fill:none;stroke:#000000;stroke-width:1.92353415;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <path
        transform="matrix(0.08332057,0,0,0.08332057,-347.23679,-6982.7451)"
-       d="m 8085.7472,3829.6289 a 164.09143,164.09143 0 1 1 -328.1829,0 164.09143,164.09143 0 1 1 328.1829,0 z"
+       d="m 8085.7472,3829.6289 c 0,90.6252 -73.4662,164.0914 -164.0914,164.0914 -90.6252,0 -164.0915,-73.4662 -164.0915,-164.0914 0,-90.6252 73.4663,-164.0914 164.0915,-164.0914 90.6252,0 164.0914,73.4662 164.0914,164.0914 z"
        sodipodi:ry="164.09143"
        sodipodi:rx="164.09143"
        sodipodi:cy="3829.6289"
@@ -1830,7 +1910,7 @@
        id="path5604" />
     <path
        transform="matrix(0.15248958,0,0,0.23119889,-1030.78,-7185.0749)"
-       d="m 12238.532,3136.0066 a 70.060333,31.740307 0 1 1 -140.121,0 70.060333,31.740307 0 1 1 140.121,0 z"
+       d="m 12238.532,3136.0066 c 0,17.5297 -31.367,31.7403 -70.06,31.7403 -38.694,0 -70.061,-14.2106 -70.061,-31.7403 0,-17.5297 31.367,-31.7403 70.061,-31.7403 38.693,0 70.06,14.2106 70.06,31.7403 z"
        sodipodi:ry="31.740307"
        sodipodi:rx="70.060333"
        sodipodi:cy="3136.0066"
@@ -1855,7 +1935,7 @@
          style="font-size:30px;letter-spacing:3.42000008px">bessst</textPath></text>
     <path
        transform="matrix(0.38470681,0,0,0.38470681,-2999.0305,-7374.628)"
-       d="m 7093.0728,638.96857 a 175.66512,175.66512 0 1 1 -351.3302,0 175.66512,175.66512 0 1 1 351.3302,0 z"
+       d="m 7093.0728,638.96857 c 0,97.01716 -78.6479,175.66511 -175.6651,175.66511 -97.0171,0 -175.6651,-78.64795 -175.6651,-175.66511 0,-97.01717 78.648,-175.66512 175.6651,-175.66512 97.0172,0 175.6651,78.64795 175.6651,175.66512 z"
        sodipodi:ry="175.66512"
        sodipodi:rx="175.66512"
        sodipodi:cy="638.96857"
@@ -2004,11 +2084,11 @@
        sodipodi:cy="-760.71906"
        sodipodi:rx="484.83356"
        sodipodi:ry="155.51265"
-       d="m -7739.0414,-760.71906 a 484.83356,155.51265 0 1 1 -969.6672,0 484.83356,155.51265 0 1 1 969.6672,0 z"
+       d="m -7739.0414,-760.71906 c 0,85.88727 -217.0674,155.51265 -484.8336,155.51265 -267.7662,0 -484.8336,-69.62538 -484.8336,-155.51265 0,-85.88726 217.0674,-155.51264 484.8336,-155.51264 267.7662,0 484.8336,69.62538 484.8336,155.51264 z"
        transform="matrix(0.23209089,0,0,0.23209089,2433.9774,-7463.4529)" />
     <path
        transform="matrix(0.21562392,0,0,0.1966993,2298.555,-7490.7684)"
-       d="m -7739.0414,-760.71906 a 484.83356,155.51265 0 1 1 -969.6672,0 484.83356,155.51265 0 1 1 969.6672,0 z"
+       d="m -7739.0414,-760.71906 c 0,85.88727 -217.0674,155.51265 -484.8336,155.51265 -267.7662,0 -484.8336,-69.62538 -484.8336,-155.51265 0,-85.88726 217.0674,-155.51264 484.8336,-155.51264 267.7662,0 484.8336,69.62538 484.8336,155.51264 z"
        sodipodi:ry="155.51265"
        sodipodi:rx="484.83356"
        sodipodi:cy="-760.71906"
@@ -2024,7 +2104,7 @@
        sodipodi:nodetypes="csc" />
     <path
        transform="matrix(0.18292054,0,0,0.18292054,2029.6065,-7541.569)"
-       d="m -7739.0414,-760.71906 a 484.83356,155.51265 0 1 1 -969.6672,0 484.83356,155.51265 0 1 1 969.6672,0 z"
+       d="m -7739.0414,-760.71906 c 0,85.88727 -217.0674,155.51265 -484.8336,155.51265 -267.7662,0 -484.8336,-69.62538 -484.8336,-155.51265 0,-85.88726 217.0674,-155.51264 484.8336,-155.51264 267.7662,0 484.8336,69.62538 484.8336,155.51264 z"
        sodipodi:ry="155.51265"
        sodipodi:rx="484.83356"
        sodipodi:cy="-760.71906"
@@ -2040,79 +2120,57 @@
        sodipodi:cy="-760.71906"
        sodipodi:rx="484.83356"
        sodipodi:ry="155.51265"
-       d="m -7739.0414,-760.71906 a 484.83356,155.51265 0 1 1 -969.6672,0 484.83356,155.51265 0 1 1 969.6672,0 z"
+       d="m -7739.0414,-760.71906 c 0,85.88727 -217.0674,155.51265 -484.8336,155.51265 -267.7662,0 -484.8336,-69.62538 -484.8336,-155.51265 0,-85.88726 217.0674,-155.51264 484.8336,-155.51264 267.7662,0 484.8336,69.62538 484.8336,155.51264 z"
        transform="matrix(0.16789512,0,0,0.1531595,1906.0393,-7564.5181)" />
     <path
        sodipodi:type="arc"
-       style="fill:url(#radialGradient3486);fill-opacity:1;stroke:none"
-       id="path3324"
-       sodipodi:cx="8505.5156"
-       sodipodi:cy="1733.3148"
-       sodipodi:rx="211.27292"
-       sodipodi:ry="211.27292"
-       d="m 8716.7885,1733.3148 a 211.27292,211.27292 0 1 1 -422.5458,0 211.27292,211.27292 0 1 1 422.5458,0 z"
-       transform="matrix(0.25135372,0,0,0.25135372,-1851.5688,-3518.7502)" />
-    <path
-       style="fill:url(#linearGradient3488);fill-opacity:1;stroke:none"
-       d="m 905.93293,-3073.7352 -47.4605,18.0736 0.029,-45.8487 43.5731,-28.9384 14.244,25.8521 -10e-5,22.5031 z"
-       id="path3326"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccc" />
-    <path
-       style="fill:url(#linearGradient3492);fill-opacity:1;stroke:none"
-       d="m 305.60277,-2806.69 -28.83176,-12.2958 -40.60932,0.3292 11.0165,0.7706 1.83489,7.7075 13.12217,-0.069 1.22183,9.8521 14.60338,1.1229 1.26328,77.1164 118.89279,-44.9586 z"
-       id="path3330"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccccccc" />
-    <path
-       sodipodi:type="arc"
-       style="fill:none;stroke:#000000;stroke-width:6.25;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:7.95691426;stroke-miterlimit:3.94499993;stroke-dasharray:none"
        id="path3332"
        sodipodi:cx="-415.77982"
        sodipodi:cy="-108.88409"
        sodipodi:rx="206.62996"
        sodipodi:ry="89.455658"
-       d="m -209.14986,-108.88409 a 206.62996,89.455658 0 1 1 -413.25991,0 206.62996,89.455658 0 1 1 413.25991,0 z"
-       transform="matrix(-0.25135372,0,0,0.25135372,151.84959,-2780.6209)" />
+       d="m -209.14986,-108.88409 c 0,49.404999 -92.51138,89.455661 -206.62996,89.455661 -114.11857,0 -206.62995,-40.050662 -206.62995,-89.455661 0,-49.40499 92.51138,-89.45565 206.62995,-89.45565 114.11858,0 206.62996,40.05066 206.62996,89.45565 z"
+       transform="matrix(-0.25135372,0,0,0.25135372,111.96049,-5009.9726)" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.57096076;stroke-miterlimit:4"
-       d="m 306.87426,-2802.4664 c -2.26432,-4.1029 -7.12637,-7.7692 -13.79174,-10.6548 -9.39877,-4.069 -22.38306,-6.5858 -36.72516,-6.5858 -24.36736,0 -44.81534,7.2649 -50.41803,17.0646"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:3.94499993;stroke-dasharray:none"
+       d="m 266.98517,-5031.8181 c -2.26432,-4.1029 -7.12637,-7.7692 -13.79174,-10.6548 -9.39877,-4.069 -22.38306,-6.5858 -36.72516,-6.5858 -24.36736,0 -44.81534,7.2649 -50.41803,17.0646"
        id="path3334"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cssc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.57096076;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 247.9651,-2818.5985 0,8.5745 15.09425,0 0,10.1736 16.09974,0 0,12.3906"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none"
+       d="m 208.07601,-5047.9502 0,8.5745 15.09425,0 0,10.1736 16.09974,0 0,12.3906"
        id="path3336"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccc" />
     <path
-       style="fill:#ccffaa;stroke:#000000;stroke-width:1.57096076;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 278.93514,-2799.101 -30.80661,13.5329"
+       style="fill:#ccffaa;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none"
+       d="m 239.04605,-5028.4527 -30.80661,13.5329"
        id="path3338"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        inkscape:connector-curvature="0"
        id="path3340"
-       d="m 247.9651,-2810.2044 -37.19295,12.6287"
-       style="fill:none;stroke:#000000;stroke-width:1.57096076;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 208.07601,-5039.5561 -37.19295,12.6287"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.57096076;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 263.23179,-2809.7294 -44.14089,17.016"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none"
+       d="m 223.3427,-5039.0811 -44.14089,17.016"
        id="path3342"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        inkscape:connector-curvature="0"
        id="path3344"
-       d="m 263.19338,-2799.8656 -29.69305,11.9031"
-       style="fill:none;stroke:#000000;stroke-width:1.57096076;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 223.30429,-5029.2173 -29.69305,11.9031"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.57096076;stroke-miterlimit:4"
-       d="m 204.42016,-2807.9894 c 0,12.4181 23.2531,22.485 51.9372,22.485 28.68415,0 51.93725,-10.0669 51.93725,-22.485"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:3.94499993;stroke-dasharray:none"
+       d="m 164.53107,-5037.3411 c 0,12.4181 23.2531,22.485 51.9372,22.485 28.68415,0 51.93725,-10.0669 51.93725,-22.485"
        id="path3346"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="csc" />
@@ -2120,54 +2178,54 @@
        sodipodi:nodetypes="csc"
        inkscape:connector-curvature="0"
        id="path3348"
-       d="m 610.00064,-2802.8779 0,21.5012 c 0,13.0239 32.91608,23.5819 73.52012,23.5819 40.60401,0 73.52014,-10.558 73.52014,-23.5819 l 0,-20.114"
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.33233178;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:3.79999995;stroke-opacity:1;stroke-dasharray:none" />
+       d="m 802.58817,-5043.3811 0,21.5012 c 0,13.0239 32.91608,23.5819 73.52012,23.5819 40.60401,0 73.52014,-10.558 73.52014,-23.5819 l 0,-20.114"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none" />
     <path
        sodipodi:type="arc"
-       style="fill:#ffffff;stroke:#000000;stroke-width:8.78615379;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:3.79999995;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#ffffff;stroke:#000000;stroke-width:13.18913911;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none"
        id="path3350"
        sodipodi:cx="-8223.875"
        sodipodi:cy="-760.71906"
        sodipodi:rx="484.83356"
        sodipodi:ry="155.51265"
-       d="m -7739.0414,-760.71906 a 484.83356,155.51265 0 1 1 -969.6672,0 484.83356,155.51265 0 1 1 969.6672,0 z"
-       transform="matrix(0.15163992,0,0,0.15163992,1930.5886,-2686.829)" />
+       d="m -7739.0414,-760.71906 c 0,85.88727 -217.0674,155.51265 -484.8336,155.51265 -267.7662,0 -484.8336,-69.62538 -484.8336,-155.51265 0,-85.88726 217.0674,-155.51264 484.8336,-155.51264 267.7662,0 484.8336,69.62538 484.8336,155.51264 z"
+       transform="matrix(0.15163992,0,0,0.15163992,2123.1761,-4927.3322)" />
     <path
-       transform="matrix(0.14088099,0,0,0.12851631,1842.1084,-2704.6759)"
-       d="m -7739.0414,-760.71906 a 484.83356,155.51265 0 1 1 -969.6672,0 484.83356,155.51265 0 1 1 969.6672,0 z"
+       transform="matrix(0.14088099,0,0,0.12851631,2034.6959,-4945.1791)"
+       d="m -7739.0414,-760.71906 c 0,85.88727 -217.0674,155.51265 -484.8336,155.51265 -267.7662,0 -484.8336,-69.62538 -484.8336,-155.51265 0,-85.88726 217.0674,-155.51264 484.8336,-155.51264 267.7662,0 484.8336,69.62538 484.8336,155.51264 z"
        sodipodi:ry="155.51265"
        sodipodi:rx="484.83356"
        sodipodi:cy="-760.71906"
        sodipodi:cx="-8223.875"
        id="path3352"
-       style="fill:#ffffff;stroke:#000000;stroke-width:9.61326218;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:3.79999995;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#ffffff;stroke:#000000;stroke-width:14.86362277;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none"
        sodipodi:type="arc" />
     <path
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.33233178;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:3.79999995;stroke-opacity:1;stroke-dasharray:none"
-       d="m 625.57646,-2829.3302 0,16.946 c 0,10.2647 25.94254,18.5858 57.9443,18.5858 32.00176,0 57.94432,-8.3211 57.94432,-18.5858 l 0,-15.8527"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none"
+       d="m 818.16399,-5069.8334 0,16.946 c 0,10.2647 25.94254,18.5858 57.9443,18.5858 32.00176,0 57.94432,-8.3211 57.94432,-18.5858 l 0,-15.8527"
        id="path3354"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="csc" />
     <path
-       transform="matrix(0.11951376,0,0,0.11951376,1666.3871,-2737.8672)"
-       d="m -7739.0414,-760.71906 a 484.83356,155.51265 0 1 1 -969.6672,0 484.83356,155.51265 0 1 1 969.6672,0 z"
+       transform="matrix(0.11951376,0,0,0.11951376,1858.9746,-4978.3704)"
+       d="m -7739.0414,-760.71906 c 0,85.88727 -217.0674,155.51265 -484.8336,155.51265 -267.7662,0 -484.8336,-69.62538 -484.8336,-155.51265 0,-85.88726 217.0674,-155.51264 484.8336,-155.51264 267.7662,0 484.8336,69.62538 484.8336,155.51264 z"
        sodipodi:ry="155.51265"
        sodipodi:rx="484.83356"
        sodipodi:cy="-760.71906"
        sodipodi:cx="-8223.875"
        id="path3356"
-       style="fill:none;stroke:#000000;stroke-width:11.14793587;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:3.79999995;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:16.73447476;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none"
        sodipodi:type="arc" />
     <path
        sodipodi:type="arc"
-       style="fill:none;stroke:#000000;stroke-width:12.19737625;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:3.79999995;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:19.08901595;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none"
        id="path3358"
        sodipodi:cx="-8223.875"
        sodipodi:cy="-760.71906"
        sodipodi:rx="484.83356"
        sodipodi:ry="155.51265"
-       d="m -7739.0414,-760.71906 a 484.83356,155.51265 0 1 1 -969.6672,0 484.83356,155.51265 0 1 1 969.6672,0 z"
-       transform="matrix(0.10969669,0,0,0.10006896,1585.6527,-2752.8614)" />
+       d="m -7739.0414,-760.71906 c 0,85.88727 -217.0674,155.51265 -484.8336,155.51265 -267.7662,0 -484.8336,-69.62538 -484.8336,-155.51265 0,-85.88726 217.0674,-155.51264 484.8336,-155.51264 267.7662,0 484.8336,69.62538 484.8336,155.51264 z"
+       transform="matrix(0.10969669,0,0,0.10006896,1778.2402,-4993.3646)" />
     <text
        sodipodi:linespacing="125%"
        id="text3374"
@@ -2233,51 +2291,51 @@
          x="1393.2068"
          y="-5572.0898">voor stilte en rust</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.25676882;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 277.54993,-3085.0617 c 0,1.6328 -2.08008,2.9565 -4.64603,2.9565 -2.56595,0 -4.64609,-1.3237 -4.64609,-2.9565 0,-1.6329 2.08014,-2.9566 4.64609,-2.9566 2.56595,0 4.64603,1.3237 4.64603,2.9566 z"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:3.94499993;stroke-dasharray:none"
+       d="m 227.66135,-5324.4129 c 0,1.6328 -2.08008,2.9565 -4.64603,2.9565 -2.56595,0 -4.64609,-1.3237 -4.64609,-2.9565 0,-1.6329 2.08014,-2.9566 4.64609,-2.9566 2.56595,0 4.64603,1.3237 4.64603,2.9566 z"
        id="path3400"
        inkscape:connector-curvature="0" />
     <path
-       transform="matrix(0.07464581,0,0,0.07464581,321.15968,-2834.4924)"
-       d="m -294.23291,-3284.6333 a 62.241581,39.608276 0 1 1 -124.48316,0 62.241581,39.608276 0 1 1 124.48316,0 z"
+       transform="matrix(0.07464581,0,0,0.07464581,271.2711,-5073.8436)"
+       d="m -294.23291,-3284.6333 c 0,21.875 -27.8665,39.6083 -62.24158,39.6083 -34.37507,0 -62.24158,-17.7333 -62.24158,-39.6083 0,-21.875 27.86651,-39.6083 62.24158,-39.6083 34.37508,0 62.24158,17.7333 62.24158,39.6083 z"
        sodipodi:ry="39.608276"
        sodipodi:rx="62.241581"
        sodipodi:cy="-3284.6333"
        sodipodi:cx="-356.47449"
        id="path3402"
-       style="fill:none;stroke:#000000;stroke-width:16.83642578;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:26.79319844;stroke-miterlimit:3.94499993;stroke-dasharray:none"
        sodipodi:type="arc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.2567687;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 268.37391,-3084.6243 0,61.081 c 0,0 0,12.5248 0,19.4345 0,12.0762 10.27735,18.2996 10.27735,18.2996 l 0,36.3124 10.00596,0 0,-36.0137 c 0,0 10.13772,-5.7256 10.60213,-17.8002 0.448,-11.6478 -0.15891,-31.0486 -0.15891,-31.0486 0,0 -0.01,-44.5781 -0.01,-45.3172"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none"
+       d="m 218.48533,-5323.9755 0,61.081 c 0,0 0,12.5248 0,19.4345 0,12.0762 10.27735,18.2996 10.27735,18.2996 l 0,36.3124 10.00596,0 0,-36.0137 c 0,0 10.13772,-5.7256 10.60213,-17.8002 0.448,-11.6478 -0.15891,-31.0486 -0.15891,-31.0486 0,0 -0.01,-44.5781 -0.01,-45.3172"
        id="path3404"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccsccccscc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.2567687;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 290.02721,-3079.571 c 0.3225,22.662 0.005,50.5723 0,71.442 0,11.2247 -6.44756,12.2451 -6.44756,12.2451 0,0 -5.62143,-1.238 -5.94865,-13.3451 0.0538,-25.3444 0,-50.6964 0,-76.0439"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none"
+       d="m 240.13863,-5318.9222 c 0.3225,22.662 0.005,50.5723 0,71.442 0,11.2247 -6.44756,12.2451 -6.44756,12.2451 0,0 -5.62143,-1.238 -5.94865,-13.3451 0.0538,-25.3444 0,-50.6964 0,-76.0439"
        id="path3406"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <path
        sodipodi:type="arc"
-       style="fill:#ffffff;stroke:#000000;stroke-width:23.08594513;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#ffffff;stroke:#000000;stroke-width:36.73857692;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none"
        id="path3408"
        sodipodi:cx="7921.6558"
        sodipodi:cy="3829.6289"
        sodipodi:rx="164.09143"
        sodipodi:ry="164.09143"
-       d="m 8085.7472,3829.6289 a 164.09143,164.09143 0 1 1 -328.1829,0 164.09143,164.09143 0 1 1 328.1829,0 z"
-       transform="matrix(0.05443869,0,0,0.05443869,-147.51554,-3152.0651)" />
+       d="m 8085.7472,3829.6289 c 0,90.6252 -73.4662,164.0914 -164.0914,164.0914 -90.6252,0 -164.0915,-73.4662 -164.0915,-164.0914 0,-90.6252 73.4663,-164.0914 164.0915,-164.0914 90.6252,0 164.0914,73.4662 164.0914,164.0914 z"
+       transform="matrix(0.05443869,0,0,0.05443869,-197.40412,-5391.4163)" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.06846488;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 916.31843,-3104.5966 14.6479,0 c 0,0 5.7015,7.7486 9.9103,9.6072 3.9499,1.7444 12.9291,0.8006 12.9291,0.8006 l 3.0162,12.0953 -40.5035,0 z"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:3.94499993;stroke-dasharray:none"
+       d="m 933.16357,-5328.8334 14.6479,0 c 0,0 5.7015,7.7486 9.9103,9.6072 3.9499,1.7444 12.9291,0.8006 12.9291,0.8006 l 3.0162,12.0953 -40.5035,0 z"
        id="path3410"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccacccc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.06846488;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 905.93293,-3097.5242 10.3855,-7.0724 0,22.5031 -10.3855,8.3583 z"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none"
+       d="m 922.77807,-5321.761 10.3855,-7.0724 0,22.5031 -10.3855,8.3583 z"
        id="path3412"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
@@ -2285,98 +2343,30 @@
        sodipodi:nodetypes="ccccc"
        inkscape:connector-curvature="0"
        id="path3414"
-       d="m 905.93293,-3073.7352 10.3855,-8.3583 40.5035,0 -6.9236,8.3583 z"
-       style="fill:none;stroke:#000000;stroke-width:1.06846488;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       d="m 922.77807,-5297.972 10.3855,-8.3583 40.5035,0 -6.9236,8.3583 z"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none" />
     <path
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.2567687;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 927.12783,-3079.8351 9.4457,0 0,113.1899"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none"
+       d="m 943.97297,-5304.0719 9.4457,0 0,113.1899"
        id="path3416"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc" />
     <path
        id="path3418"
-       d="m 922.82123,-2965.2607 0,-109.5898 4.1382,-4.9846 0,109.8669"
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.2567687;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 939.66637,-5189.4975 0,-109.5898 4.1382,-4.9846 0,109.8669"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc" />
     <path
        sodipodi:type="arc"
-       style="fill:none;stroke:#000000;stroke-width:10.24440861;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:16.30277685;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none"
        id="path3420"
        sodipodi:cx="12168.472"
        sodipodi:cy="3136.0066"
        sodipodi:rx="70.060333"
        sodipodi:ry="31.740307"
-       d="m 12238.532,3136.0066 a 70.060333,31.740307 0 1 1 -140.121,0 70.060333,31.740307 0 1 1 140.121,0 z"
-       transform="matrix(0.09963126,0,0,0.15105712,-282.56916,-3439.2047)" />
-    <g
-       id="g4461"
-       transform="matrix(0.65336437,0,0,0.65336437,389.34986,-1776.9737)">
-      <path
-         sodipodi:nodetypes="cccccccccc"
-         inkscape:connector-curvature="0"
-         id="path3328"
-         d="m 326.69604,-2046.3765 76.39825,-0.045 0,0 -59.35037,13.08 0,168.4585 152.20168,53.3744 -64.18527,56.9441 -195.0252,-18.6145 90.73033,-71.0874 z"
-         inkscape:transform-center-y="134.44001"
-         inkscape:transform-center-x="-6.2477618"
-         style="fill:url(#linearGradient4504);fill-opacity:1;stroke:none" />
-      <path
-         sodipodi:nodetypes="ccccc"
-         inkscape:connector-curvature="0"
-         id="path3360"
-         d="m 298.14219,-2070.1204 122.13669,0 0,248.4286 -122.13669,0 z"
-         style="fill:none;stroke:#000000;stroke-width:2.30824065;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3.875;stroke-opacity:1;stroke-dasharray:none" />
-      <path
-         sodipodi:nodetypes="ccccc"
-         inkscape:connector-curvature="0"
-         id="path3362"
-         d="m 314.14664,-2056.2191 90.69198,0 0,221.8571 -90.69198,0 z"
-         style="fill:none;stroke:#000000;stroke-width:2.30824065;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3.875;stroke-opacity:1;stroke-dasharray:none" />
-      <path
-         sodipodi:nodetypes="cccc"
-         inkscape:connector-curvature="0"
-         id="path3364"
-         d="m 403.86372,-1844.1086 -77.04686,0 0,-202.3127 76.27743,0"
-         style="fill:none;stroke:#000000;stroke-width:2.30824065;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3.875;stroke-opacity:1;stroke-dasharray:none" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path3366"
-         d="m 314.0427,-2056.0315 12.65334,9.655"
-         style="fill:none;stroke:#000000;stroke-width:2.30824065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.875;stroke-opacity:1;stroke-dasharray:none" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path3368"
-         d="m 314.51369,-1834.4386 12.95177,-9.8276"
-         style="fill:none;stroke:#000000;stroke-width:2.30824065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.875;stroke-opacity:1;stroke-dasharray:none" />
-      <path
-         transform="matrix(0.38470681,0,0,0.38470681,1908.9023,-1915.1661)"
-         d="m -4005.0981,-70.02449 c 0,15.212893 -11.0992,27.545379 -24.7908,27.545379 -13.6916,0 -24.7909,-12.332486 -24.7909,-27.545379 0,-15.212893 11.0993,-27.54538 24.7909,-27.54538 13.6916,0 24.7908,12.332487 24.7908,27.54538 z"
-         sodipodi:ry="27.54538"
-         sodipodi:rx="24.79084"
-         sodipodi:cy="-70.02449"
-         sodipodi:cx="-4029.8889"
-         id="path3370"
-         style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3.875;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="arc" />
-      <path
-         sodipodi:type="arc"
-         style="fill:none;stroke:#000000;stroke-width:10.74832726;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3.875;stroke-opacity:1;stroke-dasharray:none"
-         id="path3372"
-         sodipodi:cx="-4029.8889"
-         sodipodi:cy="-70.02449"
-         sodipodi:rx="24.79084"
-         sodipodi:ry="27.54538"
-         d="m -4005.0981,-70.02449 c 0,15.212893 -11.0992,27.545379 -24.7908,27.545379 -13.6916,0 -24.7909,-12.332486 -24.7909,-27.545379 0,-15.212893 11.0993,-27.54538 24.7909,-27.54538 13.6916,0 24.7908,12.332487 24.7908,27.54538 z"
-         transform="matrix(0.21475349,0,0,0.21475349,1224.0092,-1927.0669)" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:2.30824065;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3.875;stroke-opacity:1;stroke-dasharray:none"
-         d="m 403.86372,-1844.1086 -60.1198,-20.7742 0,-168.4585 59.35037,-13.08"
-         id="path3422"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cccc" />
-    </g>
+       d="m 12238.532,3136.0066 c 0,17.5297 -31.367,31.7403 -70.06,31.7403 -38.694,0 -70.061,-14.2106 -70.061,-31.7403 0,-17.5297 31.367,-31.7403 70.061,-31.7403 38.693,0 70.06,14.2106 70.06,31.7403 z"
+       transform="matrix(0.09963126,0,0,0.15105712,-265.72402,-5663.4415)" />
     <image
        y="-7102.624"
        x="4331.833"
@@ -2471,130 +2461,693 @@
        sodipodi:nodetypes="csscc"
        inkscape:connector-curvature="0"
        id="path4447"
-       d="m 421.03289,-2928.0149 c 0,0 1.13026,24.8656 -5.65127,35.6031 -6.78153,10.7374 -12.43281,21.4748 -4.52101,31.6471 7.91177,10.1723 21.4749,7.9118 21.4749,7.9118 l 0,0"
-       style="fill:none;stroke:#000000;stroke-width:1.79283881;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       d="m 483.07408,-5096.0793 c 0,0 1.13026,24.8656 -5.65127,35.6031 -6.78153,10.7374 -12.43281,21.4748 -4.52101,31.6471 7.91177,10.1723 21.4749,7.9118 21.4749,7.9118 l 0,0"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none" />
     <path
        sodipodi:nodetypes="csssacc"
        inkscape:connector-curvature="0"
        id="path4449"
-       d="m 425.2714,-2856.8087 c 0,0 9.32455,4.2384 12.15022,8.1943 2.82567,3.9559 9.04204,12.7154 20.06208,17.5189 11.01997,4.8036 16.10615,7.0642 18.08408,7.0642 1.97793,0 5.88714,3.1324 7.34669,1.1302 1.48875,-2.0423 -1.13026,-6.2164 -3.39077,-6.7815 -2.28586,-0.2676 -2.65925,-1.1632 -3.95592,-3.1082"
-       style="fill:none;stroke:#000000;stroke-width:1.79283881;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       d="m 487.31259,-5024.8731 c 0,0 9.32455,4.2384 12.15022,8.1943 2.82567,3.9559 9.04204,12.7154 20.06208,17.5189 11.01997,4.8036 16.10615,7.0642 18.08408,7.0642 1.97793,0 5.88714,3.1324 7.34669,1.1302 1.48875,-2.0423 -1.13026,-6.2164 -3.39077,-6.7815 -2.28586,-0.2676 -2.65925,-1.1632 -3.95592,-3.1082"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none" />
     <path
        sodipodi:nodetypes="csacsc"
        inkscape:connector-curvature="0"
        id="path4451"
-       d="m 482.91447,-2822.9011 c 0,0 6.59525,2.0848 8.47688,1.4128 1.97799,-0.7064 3.12288,-0.6971 3.39076,-1.9779 0.62109,-2.9692 -4.23354,-7.069 -5.36379,-7.3515 -1.13026,-0.2826 -4.80844,-1.4177 -6.50385,-2.8305 -1.69542,-1.4128 -1.97793,-2.5334 -1.97793,-2.5334"
-       style="fill:none;stroke:#000000;stroke-width:1.79283881;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       d="m 544.95566,-4990.9655 c 0,0 6.59525,2.0848 8.47688,1.4128 1.97799,-0.7064 3.12288,-0.6971 3.39076,-1.9779 0.62109,-2.9692 -4.23354,-7.069 -5.36379,-7.3515 -1.13026,-0.2826 -4.80844,-1.4177 -6.50385,-2.8305 -1.69542,-1.4128 -1.97793,-2.5334 -1.97793,-2.5334"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none" />
     <path
        sodipodi:nodetypes="ccssc"
        inkscape:connector-curvature="0"
        id="path4453"
-       d="m 494.78211,-2823.4662 c 0,0 5.51002,0.2826 5.65134,-2.8257 -0.84774,-2.2605 -1.97799,-6.2163 -3.95592,-6.4989 -1.97793,-0.2826 -5.65128,-0.8477 -6.78153,-2.2605 -1.13026,-1.4128 -5.93379,-3.1082 -5.93379,-3.1082"
-       style="fill:none;stroke:#000000;stroke-width:1.79283881;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       d="m 556.8233,-4991.5306 c 0,0 5.51002,0.2826 5.65134,-2.8257 -0.84774,-2.2605 -1.97799,-6.2163 -3.95592,-6.4989 -1.97793,-0.2826 -5.65128,-0.8477 -6.78153,-2.2605 -1.13026,-1.4128 -5.93379,-3.1082 -5.93379,-3.1082"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none" />
     <path
        sodipodi:nodetypes="cscsc"
        inkscape:connector-curvature="0"
        id="path4455"
-       d="m 500.71597,-2825.7267 c 0,0 4.30031,1.6306 5.65127,-1.4079 0.74523,-1.6761 -2.8256,-5.9388 -3.95586,-6.7865 -1.13025,-0.8476 -7.62927,-2.8256 -10.73745,-4.2384 -3.10819,-1.4128 -3.95586,-3.3908 -3.95586,-3.3908"
-       style="fill:none;stroke:#000000;stroke-width:1.79283881;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       d="m 562.75716,-4993.7911 c 0,0 4.30031,1.6306 5.65127,-1.4079 0.74523,-1.6761 -2.8256,-5.9388 -3.95586,-6.7865 -1.13025,-0.8476 -7.62927,-2.8256 -10.73745,-4.2384 -3.10819,-1.4128 -3.95586,-3.3908 -3.95586,-3.3908"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none" />
     <path
        sodipodi:nodetypes="csssssc"
        inkscape:connector-curvature="0"
        id="path4457"
-       d="m 506.64982,-2827.1395 c 0,0 6.7816,0 8.19437,-1.4129 1.41283,-1.4127 1.97799,-5.9338 -0.84768,-6.4989 -2.82567,-0.5651 -15.25847,-4.2385 -17.8015,-6.499 -2.54309,-2.2605 -7.33212,-15.2828 -16.93925,-23.1946 -9.6072,-7.9118 -22.90232,-17.7772 -22.05464,-28.7972 0.84767,-11.02 -0.28258,-37.8636 -0.28258,-37.8636"
-       style="fill:none;stroke:#000000;stroke-width:1.79283881;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       d="m 568.69101,-4995.2039 c 0,0 6.7816,0 8.19437,-1.4129 1.41283,-1.4127 1.97799,-5.9338 -0.84768,-6.4989 -2.82567,-0.5651 -15.25847,-4.2385 -17.8015,-6.499 -2.54309,-2.2605 -7.33212,-15.2828 -16.93925,-23.1946 -9.6072,-7.9118 -22.90232,-17.7772 -22.05464,-28.7972 0.84767,-11.02 -0.28258,-37.8636 -0.28258,-37.8636"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none" />
     <path
        sodipodi:nodetypes="ccc"
        inkscape:connector-curvature="0"
        id="path4459"
-       d="m 424.98882,-2897.7806 c 0,0 -5.36876,6.2165 -5.93386,10.7375 -0.56509,4.2384 3.67335,6.2164 3.67335,6.2164"
-       style="fill:none;stroke:#000000;stroke-width:1.79283881;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       d="m 487.03001,-5065.845 c 0,0 -5.36876,6.2165 -5.93386,10.7375 -0.56509,4.2384 3.67335,6.2164 3.67335,6.2164"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot4508"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="translate(-156.78055,-3345.5545)"><flowRegion
+       style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:LeBe;-inkscape-font-specification:LeBe"
+       transform="translate(-152.69974,-5547.5343)"><flowRegion
          id="flowRegion4510"><rect
            id="rect4512"
-           width="597.14178"
-           height="225.9455"
+           width="562.73322"
+           height="244.58348"
            x="342.95303"
-           y="638.61035" /></flowRegion><flowPara
+           y="638.61035"
+           style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:LeBe;-inkscape-font-specification:LeBe" /></flowRegion><flowPara
          id="flowPara4514"
-         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">bessst is een portaalsite in opbouw</flowPara><flowPara
-         id="flowPara4518"
-         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">Alle initiatieven en activiteiten die </flowPara><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:EB Garamond;-inkscape-font-specification:EB Garamond">Bessst is een portaalsite in opbouw.</flowPara><flowPara
          id="flowPara4522"
-         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">in het kader van besssteen meerjarenproject rond leefkwaliteit en stilte in het Brussels Hoofdstedelijk Gewestworden opgezet, kunt u hier  in de nabije toekomstraadplegen.</flowPara><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:EB Garamond;-inkscape-font-specification:EB Garamond">Alle initiatieven en activiteiten die in het kader van besssteen meerjarenproject rond leefkwaliteit en stilte in het Brussels Hoofdstedelijk Gewestworden opgezet, kunt u hier  in de nabije toekomstraadplegen.</flowPara><flowPara
          id="flowPara4524"
-         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:LeBe;-inkscape-font-specification:LeBe" /><flowPara
          id="flowPara4526"
-         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:LeBe;-inkscape-font-specification:LeBe" /><flowPara
          id="flowPara4528"
-         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:LeBe;-inkscape-font-specification:LeBe" /><flowPara
          id="flowPara4530"
-         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:LeBe;-inkscape-font-specification:LeBe" /><flowPara
          id="flowPara4532"
-         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:LeBe;-inkscape-font-specification:LeBe" /><flowPara
          id="flowPara4534"
-         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /></flowRoot>    <rect
-       style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:6.40000009999999975;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:LeBe;-inkscape-font-specification:LeBe" /></flowRoot>    <rect
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none"
        id="rect4538"
        width="610.54053"
-       height="1181.1392"
-       x="-610.54053"
-       y="-181.42964"
-       transform="translate(-13.84305,-3181.7405)" />
-    <rect
-       y="-3363.1702"
-       x="1184.4141"
-       height="1181.1392"
-       width="610.54053"
-       id="rect4540"
-       style="fill:#b3b3b3;fill-opacity:1;stroke:none" />
+       height="2218.229"
+       x="-624.3028"
+       y="-5565.1499" />
     <rect
        style="fill:#b3b3b3;fill-opacity:1;stroke:none"
        id="rect4542"
        width="2385.1023"
        height="1181.1392"
-       x="-620.97162"
-       y="-4362.0117" />
+       x="-606.80817"
+       y="-6561.9644" />
     <rect
-       y="-2383.1523"
-       x="-552.49976"
-       height="1181.1392"
+       y="3219.4878"
+       x="-544.41895"
+       height="184.50545"
        width="2385.1023"
        id="rect4544"
-       style="fill:#b3b3b3;fill-opacity:1;stroke:none" />
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none"
+       transform="scale(1,-1)" />
     <rect
-       style="fill:none;fill-opacity:1;stroke:#000000"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect4548"
-       width="183.51254"
+       width="199.64551"
        height="37.275986"
-       x="841.57709"
-       y="448.74551"
-       transform="translate(-13.84305,-3181.7405)" />
+       x="795.30914"
+       y="-4897.6987" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot4550"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="translate(-22.8743,-3226.9173)"><flowRegion
+       transform="translate(-14.793492,-5496.8971)"><flowRegion
          id="flowRegion4552"><rect
            id="rect4554"
-           width="627.95697"
-           height="358.42294"
+           width="582.07874"
+           height="318.71994"
            x="205.01791"
            y="768.4588" /></flowRegion><flowPara
          id="flowPara4556"
-         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">Bessst is een project in wording.</flowPara><flowPara
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">Bessst is een project in wording.</flowPara><flowPara
          id="flowPara4558"
-         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">De belangstelling voor stilte en rust als hefboom tot leefkwaliteit is de jongste jaren sterk toegenomen. Deze portaalsite rond stiltebeleving en -beheer in het Brus­sels Hoofdstedelijk Gewest zal voortaan groeien met inbreng vanuit vele plekken, discipli­nes en leefsferen. De webstek wil op een informerende, dialogerende en inspirerende wijze bijdragen tot de werkzaamheid van stilte en rust in de stad, zowel in de persoonlijke als in de publieke leefsfeer. De webstek brengt informatie over activiteiten, projecten en initiatiefnemers en over relevante maatschappelijke ontwikkelingen.Dit ‘digitaal stiltegebied’ verbindt over grenzen en verschillen heen een dynami­sche erfgoed­gemeenschap rond stilte en rust in Brussel.</flowPara><flowPara
-         id="flowPara4560"
-         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
-         id="flowPara4562"
-         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /></flowRoot>  </g>
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">De belangstelling voor stilte en rust als hefboom tot leefkwaliteit is de jongste jaren sterk toegenomen. Deze portaalsite rond stiltebeleving en -beheer in het Brus­sels Hoofdstedelijk Gewest zal voortaan groeien met inbreng vanuit vele plekken, discipli­nes en leefsferen. De webstek wil op een informerende, dialogerende en inspirerende wijze bijdragen tot de werkzaamheid van stilte en rust in de stad, zowel in de persoonlijke als in de publieke leefsfeer. De webstek brengt informatie over activiteiten, projecten en initiatiefnemers en over relevante maatschappelijke ontwikkelingen.Dit ‘digitaal stiltegebied’ verbindt over grenzen en verschillen heen een dynami­sche erfgoed­gemeenschap rond stilte en rust in Brussel.</flowPara><flowPara
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5056" /><flowPara
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5074" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4564"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(-3.734696,-5387.9682)"><flowRegion
+         id="flowRegion4566"><rect
+           id="rect4568"
+           width="162.19348"
+           height="60.982849"
+           x="801.43372"
+           y="551.97131" /></flowRegion><flowPara
+         id="flowPara4570"
+         style="font-size:21px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">aanmelden </flowPara><flowPara
+         style="font-size:21px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5048">nieuwsbrief</flowPara></flowRoot>    <rect
+       y="-5490.8682"
+       x="1187.0333"
+       height="2186.8022"
+       width="610.54053"
+       id="rect5052"
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none;display:inline;enable-background:new"
+       d="m 589.41533,-5328.2708 79.79977,0 0,162.3144 -79.79977,0 z"
+       id="path3360"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none;display:inline;enable-background:new"
+       d="m 599.87207,-5319.1882 59.25491,0 0,144.9535 -59.25491,0 z"
+       id="path3362"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none;display:inline;enable-background:new"
+       d="m 658.49001,-5180.6028 -50.33967,0 0,-132.1839 49.83696,0"
+       id="path3364"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none;display:inline;enable-background:new"
+       d="m 599.80416,-5319.0657 8.26724,6.3083"
+       id="path3366"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none;display:inline;enable-background:new"
+       d="m 600.11189,-5174.2847 8.46222,-6.421"
+       id="path3368"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:7.95691426;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none;display:inline;enable-background:new"
+       id="path3370"
+       sodipodi:cx="-4029.8889"
+       sodipodi:cy="-70.02449"
+       sodipodi:rx="24.79084"
+       sodipodi:ry="27.54538"
+       d="m -4005.0981,-70.02449 c 0,15.212893 -11.0992,27.545379 -24.7908,27.545379 -13.6916,0 -24.7909,-12.332486 -24.7909,-27.545379 0,-15.212893 11.0993,-27.54538 24.7909,-27.54538 13.6916,0 24.7908,12.332487 24.7908,27.54538 z"
+       transform="matrix(0.25135372,0,0,0.25135372,1641.8286,-5227.0292)" />
+    <path
+       transform="matrix(0.14031228,0,0,0.14031228,1194.3439,-5234.8048)"
+       d="m -4005.0981,-70.02449 c 0,15.212893 -11.0992,27.545379 -24.7908,27.545379 -13.6916,0 -24.7909,-12.332486 -24.7909,-27.545379 0,-15.212893 11.0993,-27.54538 24.7909,-27.54538 13.6916,0 24.7908,12.332487 24.7908,27.54538 z"
+       sodipodi:ry="27.54538"
+       sodipodi:rx="24.79084"
+       sodipodi:cy="-70.02449"
+       sodipodi:cx="-4029.8889"
+       id="path3372"
+       style="fill:none;stroke:#000000;stroke-width:14.2539199;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none;display:inline;enable-background:new"
+       sodipodi:type="arc" />
+    <path
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="path3422"
+       d="m 658.49001,-5180.6028 -39.28013,-13.5731 0,-110.0648 38.77742,-8.546"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3.94499993;stroke-opacity:1;stroke-dasharray:none;display:inline;enable-background:new" />
+    <flowRoot
+       transform="translate(-1825.757,-5873.232)"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot5267"
+       xml:space="preserve"><flowRegion
+         id="flowRegion5269"><rect
+           y="638.61035"
+           x="342.95303"
+           height="244.58348"
+           width="562.73322"
+           id="rect5271" /></flowRegion><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5273">bessst is een portaalsite in opbouw</flowPara><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5275">Alle initiatieven en activiteiten die </flowPara><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5277">in het kader van besssteen meerjarenproject rond leefkwaliteit en stilte in het Brussels Hoofdstedelijk Gewestworden opgezet, kunt u hier  in de nabije toekomstraadplegen.</flowPara><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5279" /><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5281" /><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5283" /><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5285" /><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5287" /><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5289" /></flowRoot>    <flowRoot
+       transform="translate(-1691.8508,-5754.5948)"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot5291"
+       xml:space="preserve"><flowRegion
+         id="flowRegion5293"><rect
+           y="768.4588"
+           x="205.01791"
+           height="569.82507"
+           width="582.07874"
+           id="rect5295" /></flowRegion><flowPara
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5297">Bessst is een project in wording.</flowPara><flowPara
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5299">De belangstelling voor stilte en rust als hefboom tot leefkwaliteit is de jongste jaren sterk toegenomen. Deze portaalsite rond stiltebeleving en -beheer in het Brus­sels Hoofdstedelijk Gewest zal voortaan groeien met inbreng vanuit vele plekken, discipli­nes en leefsferen. De webstek wil op een informerende, dialogerende en inspirerende wijze bijdragen tot de werkzaamheid van stilte en rust in de stad, zowel in de persoonlijke als in de publieke leefsfeer. De webstek brengt informatie over activiteiten, projecten en initiatiefnemers en over relevante maatschappelijke ontwikkelingen.Dit ‘digitaal stiltegebied’ verbindt over grenzen en verschillen heen een dynami­sche erfgoed­gemeenschap rond stilte en rust in Brussel.</flowPara><flowPara
+         id="flowPara5301"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         id="flowPara5303"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">Meer informatie over bessst vind je:</flowPara><flowPara
+         id="flowPara5305"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">- Heb je drie minuten? </flowPara><flowPara
+         id="flowPara5307"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">Luister dan naar het interview op FM-Brussel: www.fmbrussel.be/artikel/_zwijgen_is_goud.aspx.  </flowPara><flowPara
+         id="flowPara5309"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">Dit naar aanleiding van de aftrap van bessst, een meerjarenproject rond leefkwaliteit en stilte in het Brussels Hoofdstedelijk Gewest, op 27 september 2011. </flowPara><flowPara
+         id="flowPara5311"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">- Heb je meer tijd? </flowPara><flowPara
+         id="flowPara5313"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">Zie ook: www.brusselnieuws.be/artikel/brussel-krijgt-met-‘bessst’-een-stilteproject. - Heb je tien minuten?Luister dan naar het interview met Thomas Dieltjens op FM-Brussel:www.fmbrussel.be/player/ondemand/?http://www.fmbrussel.be/fmbrussel/kingkong2011/04/111025stilte.mp3.   </flowPara><flowPara
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5315" /><flowPara
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5317" /><flowPara
+         id="flowPara5319"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         id="flowPara5321"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         id="flowPara5323"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5325"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(-2602.8602,-5873.232)"><flowRegion
+         id="flowRegion5327"><rect
+           id="rect5329"
+           width="562.73322"
+           height="244.58348"
+           x="342.95303"
+           y="638.61035" /></flowRegion><flowPara
+         id="flowPara5331"
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi">bessst is een portaalsite in opbouw</flowPara><flowPara
+         id="flowPara5333"
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi">Alle initiatieven en activiteiten die </flowPara><flowPara
+         id="flowPara5335"
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi">in het kader van besssteen meerjarenproject rond leefkwaliteit en stilte-- in het Brussels Hoofdstedelijk Gewestworden opgezet, kunt u hier  in de nabije toekomstraadplegen.</flowPara><flowPara
+         id="flowPara5337"
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi" /><flowPara
+         id="flowPara5339"
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi" /><flowPara
+         id="flowPara5341"
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi" /><flowPara
+         id="flowPara5343"
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi" /><flowPara
+         id="flowPara5345"
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi" /><flowPara
+         id="flowPara5347"
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5349"
+       style="font-size:15px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Trocchi;-inkscape-font-specification:Trocchi;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"
+       transform="translate(-2468.954,-5754.5948)"><flowRegion
+         id="flowRegion5351"><rect
+           id="rect5353"
+           width="582.07874"
+           height="569.82507"
+           x="205.01791"
+           y="768.4588"
+           style="-inkscape-font-specification:Trocchi;font-family:Trocchi;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:15px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%" /></flowRegion><flowPara
+         id="flowPara5355"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi">Bessst is een project in wording.</flowPara><flowPara
+         id="flowPara5357"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi">De belangstelling voor stilte en rust als hefboom tot leefkwaliteit is de jongste jaren sterk toegenomen. Deze portaalsite rond stiltebeleving en -beheer in het Brus­sels Hoofdstedelijk Gewest zal voortaan groeien met inbreng vanuit vele plekken, discipli­nes en leefsferen. De webstek wil op een informerende, dialogerende en inspirerende wijze bijdragen tot de werkzaamheid van stilte en rust in de stad, zowel in de persoonlijke als in de publieke leefsfeer. De webstek brengt informatie over activiteiten, projecten en initiatiefnemers en over relevante maatschappelijke ontwikkelingen.Dit ‘digitaal stiltegebied’ verbindt over grenzen en verschillen heen een dynami­sche erfgoed­gemeenschap rond stilte en rust in Brussel.</flowPara><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi"
+         id="flowPara5359" /><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi"
+         id="flowPara5361">Meer informatie over bessst vind je:</flowPara><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi"
+         id="flowPara5363">- Heb je drie minuten? </flowPara><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi"
+         id="flowPara5365">Luister dan naar het interview op FM-Brussel: www.fmbrussel.be/artikel/_zwijgen_is_goud.aspx.  </flowPara><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi"
+         id="flowPara5367">Dit naar aanleiding van de aftrap van bessst, een meerjarenproject rond leefkwaliteit en stilte in het Brussels Hoofdstedelijk Gewest, op 27 september 2011. </flowPara><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi"
+         id="flowPara5369">- Heb je meer tijd? </flowPara><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi"
+         id="flowPara5371">Zie ook: www.brusselnieuws.be/artikel/brussel-krijgt-met-‘bessst’-een-stilteproject. - Heb je tien minuten?Luister dan naar het interview met Thomas Dieltjens op FM-Brussel:www.fmbrussel.be/player/ondemand/?http://www.fmbrussel.be/fmbrussel/kingkong2011/04/111025stilte.mp3.   </flowPara><flowPara
+         id="flowPara5373"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi" /><flowPara
+         id="flowPara5375"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi" /><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi"
+         id="flowPara5377" /><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi"
+         id="flowPara5379" /><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Trocchi;-inkscape-font-specification:Trocchi"
+         id="flowPara5381" /></flowRoot>    <flowRoot
+       transform="translate(-3305.8905,-5873.232)"
+       style="font-size:40px;font-style:normal;font-weight:500;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans Guilt DB;-inkscape-font-specification:Sans Guilt DB Medium;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"
+       id="flowRoot5383"
+       xml:space="preserve"><flowRegion
+         id="flowRegion5385"><rect
+           y="638.61035"
+           x="342.95303"
+           height="244.58348"
+           width="562.73322"
+           id="rect5387"
+           style="-inkscape-font-specification:Sans Guilt DB Medium;font-family:Sans Guilt DB;font-weight:500;font-style:normal;font-stretch:normal;font-variant:normal;font-size:40px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%" /></flowRegion><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Sans Guilt DB;-inkscape-font-specification:Sans Guilt DB Medium"
+         id="flowPara5389">bessst is een portaalsite in opbouw</flowPara><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Sans Guilt DB;-inkscape-font-specification:Sans Guilt DB Medium"
+         id="flowPara5391">Alle initiatieven en activiteiten die </flowPara><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Sans Guilt DB;-inkscape-font-specification:Sans Guilt DB Medium"
+         id="flowPara5393">in het kader van besssteen meerjarenproject rond leefkwaliteit en stilte in het Brussels Hoofdstedelijk Gewestworden opgezet, kunt u hier  in de nabije toekomstraadplegen.</flowPara><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Sans Guilt DB;-inkscape-font-specification:Sans Guilt DB Medium"
+         id="flowPara5395" /><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Sans Guilt DB;-inkscape-font-specification:Sans Guilt DB Medium"
+         id="flowPara5397" /><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Sans Guilt DB;-inkscape-font-specification:Sans Guilt DB Medium"
+         id="flowPara5399" /><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Sans Guilt DB;-inkscape-font-specification:Sans Guilt DB Medium"
+         id="flowPara5401" /><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Sans Guilt DB;-inkscape-font-specification:Sans Guilt DB Medium"
+         id="flowPara5403" /><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:Sans Guilt DB;-inkscape-font-specification:Sans Guilt DB Medium"
+         id="flowPara5405" /></flowRoot>    <flowRoot
+       transform="translate(-3171.9843,-5754.5948)"
+       style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes"
+       id="flowRoot5407"
+       xml:space="preserve"><flowRegion
+         id="flowRegion5409"><rect
+           style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes"
+           y="768.4588"
+           x="205.01791"
+           height="569.82507"
+           width="582.07874"
+           id="rect5411" /></flowRegion><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes"
+         id="flowPara5413">Bessst is een project in wording.</flowPara><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes"
+         id="flowPara5415">De belangstelling voor stilte en rust als hefboom tot leefkwaliteit is de jongste jaren sterk toegenomen. Deze portaalsite rond stiltebeleving en -beheer in het Brus­sels Hoofdstedelijk Gewest zal voortaan groeien met inbreng vanuit vele plekken, discipli­nes en leefsferen. De webstek wil op een informerende, dialogerende en inspirerende wijze bijdragen tot de werkzaamheid van stilte en rust in de stad, zowel in de persoonlijke als in de publieke leefsfeer. De webstek brengt informatie over activiteiten, projecten en initiatiefnemers en over relevante maatschappelijke ontwikkelingen.Dit ‘digitaal stiltegebied’ verbindt over grenzen en verschillen heen een dynami­sche erfgoed­gemeenschap rond stilte en rust in Brussel.</flowPara><flowPara
+         id="flowPara5417"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes" /><flowPara
+         id="flowPara5419"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes">Meer informatie over bessst vind je:</flowPara><flowPara
+         id="flowPara5421"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes">- Heb je drie minuten? </flowPara><flowPara
+         id="flowPara5423"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes">Luister dan naar het interview op FM-Brussel: www.fmbrussel.be/artikel/_zwijgen_is_goud.aspx.  </flowPara><flowPara
+         id="flowPara5425"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes">Dit naar aanleiding van de aftrap van bessst, een meerjarenproject rond leefkwaliteit en stilte in het Brussels Hoofdstedelijk Gewest, op 27 september 2011. </flowPara><flowPara
+         id="flowPara5427"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes">- Heb je meer tijd? </flowPara><flowPara
+         id="flowPara5429"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes">Zie ook: www.brusselnieuws.be/artikel/brussel-krijgt-met-‘bessst’-een-stilteproject. - Heb je tien minuten?Luister dan naar het interview met Thomas Dieltjens op FM-Brussel:www.fmbrussel.be/player/ondemand/?http://www.fmbrussel.be/fmbrussel/kingkong2011/04/111025stilte.mp3.   </flowPara><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes"
+         id="flowPara5431" /><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes"
+         id="flowPara5433" /><flowPara
+         id="flowPara5435"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes" /><flowPara
+         id="flowPara5437"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes" /><flowPara
+         id="flowPara5439"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5441"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes"
+       transform="translate(-4025.8538,-5873.232)"><flowRegion
+         id="flowRegion5443"><rect
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes"
+           id="rect5445"
+           width="562.73322"
+           height="244.58348"
+           x="342.95303"
+           y="638.61035" /></flowRegion><flowPara
+         id="flowPara5447"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes">bessst is een portaalsite in opbouw</flowPara><flowPara
+         id="flowPara5449"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes">Alle initiatieven en activiteiten die </flowPara><flowPara
+         id="flowPara5451"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes">in het kader van besssteen meerjarenproject rond leefkwaliteit en stilte in het Brussels Hoofdstedelijk Gewestworden opgezet, kunt u hier  in de nabije toekomstraadplegen.</flowPara><flowPara
+         id="flowPara5453"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes" /><flowPara
+         id="flowPara5455"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes" /><flowPara
+         id="flowPara5457"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes" /><flowPara
+         id="flowPara5459"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes" /><flowPara
+         id="flowPara5461"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes" /><flowPara
+         id="flowPara5463"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5465"
+       style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes"
+       transform="translate(-3891.9476,-5754.5948)"><flowRegion
+         id="flowRegion5467"><rect
+           id="rect5469"
+           width="582.07874"
+           height="569.82507"
+           x="205.01791"
+           y="768.4588"
+           style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes" /></flowRegion><flowPara
+         id="flowPara5471"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes">Bessst is een project in wording.</flowPara><flowPara
+         id="flowPara5473"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes">De belangstelling voor stilte en rust als hefboom tot leefkwaliteit is de jongste jaren sterk toegenomen. Deze portaalsite rond stiltebeleving en -beheer in het Brus­sels Hoofdstedelijk Gewest zal voortaan groeien met inbreng vanuit vele plekken, discipli­nes en leefsferen. De webstek wil op een informerende, dialogerende en inspirerende wijze bijdragen tot de werkzaamheid van stilte en rust in de stad, zowel in de persoonlijke als in de publieke leefsfeer. De webstek brengt informatie over activiteiten, projecten en initiatiefnemers en over relevante maatschappelijke ontwikkelingen.Dit ‘digitaal stiltegebied’ verbindt over grenzen en verschillen heen een dynami­sche erfgoed­gemeenschap rond stilte en rust in Brussel.</flowPara><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes"
+         id="flowPara5475" /><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes"
+         id="flowPara5477">Meer informatie over bessst vind je:</flowPara><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes"
+         id="flowPara5479">- Heb je drie minuten? </flowPara><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes"
+         id="flowPara5481">Luister dan naar het interview op FM-Brussel: www.fmbrussel.be/artikel/_zwijgen_is_goud.aspx.  </flowPara><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes"
+         id="flowPara5483">Dit naar aanleiding van de aftrap van bessst, een meerjarenproject rond leefkwaliteit en stilte in het Brussels Hoofdstedelijk Gewest, op 27 september 2011. </flowPara><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes"
+         id="flowPara5485">- Heb je meer tijd? </flowPara><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes"
+         id="flowPara5487">Zie ook: www.brusselnieuws.be/artikel/brussel-krijgt-met-‘bessst’-een-stilteproject. - Heb je tien minuten?Luister dan naar het interview met Thomas Dieltjens op FM-Brussel:www.fmbrussel.be/player/ondemand/?http://www.fmbrussel.be/fmbrussel/kingkong2011/04/111025stilte.mp3.   </flowPara><flowPara
+         id="flowPara5489"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes" /><flowPara
+         id="flowPara5491"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes" /><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes"
+         id="flowPara5493" /><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes"
+         id="flowPara5495" /><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:TeXGyreTermes;-inkscape-font-specification:TeXGyreTermes"
+         id="flowPara5497" /></flowRoot>    <flowRoot
+       transform="translate(-4738.9851,-5883.333)"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Puritan;-inkscape-font-specification:Puritan"
+       id="flowRoot5499"
+       xml:space="preserve"><flowRegion
+         id="flowRegion5501"><rect
+           y="638.61035"
+           x="342.95303"
+           height="254.68451"
+           width="619.29889"
+           id="rect5503"
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Puritan;-inkscape-font-specification:Puritan" /></flowRegion><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Puritan;-inkscape-font-specification:Puritan"
+         id="flowPara5505">bessst is een portaalsite in opbouw</flowPara><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Puritan;-inkscape-font-specification:Puritan"
+         id="flowPara5507">Alle initiatieven en activiteiten die </flowPara><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Puritan;-inkscape-font-specification:Puritan"
+         id="flowPara5509">in het kader van besssteen meerjarenproject rond leefkwaliteit en stilte in het Brussels Hoofdstedelijk Gewestworden opgezet, kunt u hier  in de nabije toekomstraadplegen.-</flowPara><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Puritan;-inkscape-font-specification:Puritan"
+         id="flowPara5511" /><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Puritan;-inkscape-font-specification:Puritan"
+         id="flowPara5513" /><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Puritan;-inkscape-font-specification:Puritan"
+         id="flowPara5515" /><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Puritan;-inkscape-font-specification:Puritan"
+         id="flowPara5517" /><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Puritan;-inkscape-font-specification:Puritan"
+         id="flowPara5519" /><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Puritan;-inkscape-font-specification:Puritan"
+         id="flowPara5521" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5523"
+       style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:IM FELL French Canon;-inkscape-font-specification:IM FELL French Canon"
+       transform="translate(-5516.2993,-5904.4987)"><flowRegion
+         id="flowRegion5525"><rect
+           style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:IM FELL French Canon;-inkscape-font-specification:IM FELL French Canon"
+           id="rect5527"
+           width="619.29889"
+           height="254.68451"
+           x="342.95303"
+           y="638.61035" /></flowRegion><flowPara
+         id="flowPara5529"
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:IM FELL French Canon;-inkscape-font-specification:IM FELL French Canon">bessst is een portaalsite in opbouw</flowPara><flowPara
+         id="flowPara5531"
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:IM FELL French Canon;-inkscape-font-specification:IM FELL French Canon">Alle initiatieven en activiteiten die </flowPara><flowPara
+         id="flowPara5533"
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:IM FELL French Canon;-inkscape-font-specification:IM FELL French Canon"><flowSpan
+   style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:IM FELL French Canon;-inkscape-font-specification:IM FELL French Canon"
+   id="flowSpan5547">in het kader van besssteen meerjarenproject rond leefkwaliteit en Qstilte in het Brussels</flowSpan> Hoofdstedelijk Gewestworden opgezet, kunt u hier  in de nabije toekomstraadplegen.-</flowPara><flowPara
+         id="flowPara5535"
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:IM FELL French Canon;-inkscape-font-specification:IM FELL French Canon" /><flowPara
+         id="flowPara5537"
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:IM FELL French Canon;-inkscape-font-specification:IM FELL French Canon" /><flowPara
+         id="flowPara5539"
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:IM FELL French Canon;-inkscape-font-specification:IM FELL French Canon" /><flowPara
+         id="flowPara5541"
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:IM FELL French Canon;-inkscape-font-specification:IM FELL French Canon" /><flowPara
+         id="flowPara5543"
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:IM FELL French Canon;-inkscape-font-specification:IM FELL French Canon" /><flowPara
+         id="flowPara5545"
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:IM FELL French Canon;-inkscape-font-specification:IM FELL French Canon" /></flowRoot>    <flowRoot
+       transform="translate(-5527.4465,-5515.9409)"
+       style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:LeBe;-inkscape-font-specification:LeBe"
+       id="flowRoot3599"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3601"><rect
+           y="638.61035"
+           x="342.95303"
+           height="254.68451"
+           width="619.29889"
+           id="rect3603"
+           style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:LeBe;-inkscape-font-specification:LeBe" /></flowRegion><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:LeBe;-inkscape-font-specification:LeBe"
+         id="flowPara3605">bessst is een portaalsite in opbouw</flowPara><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:LeBe;-inkscape-font-specification:LeBe"
+         id="flowPara3607">Alle initiatieven en activiteiten die </flowPara><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:LeBe;-inkscape-font-specification:LeBe"
+         id="flowPara3609"><flowSpan
+   id="flowSpan3611"
+   style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:LeBe;-inkscape-font-specification:LeBe">in het kader van besssteen meerjarenproject rond leefkwaliteit en Qstilte in het Brussels</flowSpan> Hoofdstedelijk Gewestworden opgezet, kunt u hier  in de nabije toekomstraadplegen.-</flowPara><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:LeBe;-inkscape-font-specification:LeBe"
+         id="flowPara3613" /><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:LeBe;-inkscape-font-specification:LeBe"
+         id="flowPara3615" /><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:LeBe;-inkscape-font-specification:LeBe"
+         id="flowPara3617" /><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:LeBe;-inkscape-font-specification:LeBe"
+         id="flowPara3619" /><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:LeBe;-inkscape-font-specification:LeBe"
+         id="flowPara3621" /><flowPara
+         style="font-size:27px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;font-family:LeBe;-inkscape-font-specification:LeBe"
+         id="flowPara3623" /></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 821.10234,489.5025 0,23.88675"
+       id="path3625"
+       inkscape:connector-curvature="0"
+       transform="translate(-13.84305,-5381.7405)"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3627"
+       width="50.162178"
+       height="50.162178"
+       x="1014.4532"
+       y="-4909.7739" />
+    <flowRoot
+       transform="translate(224.35546,-5451.3719)"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot3629"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3631"><rect
+           y="551.97131"
+           x="801.43372"
+           height="31.522524"
+           width="45.148403"
+           id="rect3633" /></flowRegion><flowPara
+         id="flowPara3637"
+         style="font-size:21px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">OK</flowPara></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 808.96462,521.3515 22.2943,16.72073 189.50158,0 -12.7396,-18.31318"
+       id="path3642"
+       inkscape:connector-curvature="0"
+       transform="translate(-13.84305,-5381.7405)"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 1014.8797,-4910.1719 16.3321,-13.4698 25.4792,0 7.9679,13.2182"
+       id="path3644"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3711"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(32.34445,-5458.859)"><flowRegion
+         id="flowRegion3713"><rect
+           id="rect3715"
+           width="499.95828"
+           height="372.71677"
+           x="203.81183"
+           y="1047.4601" /></flowRegion><flowPara
+         id="flowPara3717"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">Meer informatie over bessst vind je:</flowPara><flowPara
+         id="flowPara3719"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara3735">     Heb je drie minuten? </flowPara><flowPara
+         id="flowPara3721"
+         style="font-size:21px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:150%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla Bold">Luister dan naar het interview op FM-Brussel</flowPara><flowPara
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara3729"><flowSpan
+   style="line-height:200%"
+   id="flowSpan3767">Dit naar aanleiding van de aftrap van bessst, een</flowSpan> meerjarenproject rond leefkwaliteit en stilte in het Brussels Hoofdstedelijk Gewest, op 27 september 2011. - Heb je meer tijd? Zie ook: www.brusselnieuws.be/artikel/brussel-krijgt-met-‘bessst’-een-stilteproject. </flowPara><flowPara
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara3731" /><flowPara
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara3733">     Heb je tien minuten?</flowPara><flowPara
+         style="font-size:21px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla Bold"
+         id="flowPara3741">Luister dan naar het interview met Thomas <flowSpan
+   style="line-height:150%"
+   id="flowSpan3775">Dieltjens op FM-Brussel</flowSpan></flowPara><flowPara
+         style="font-size:21px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla Bold"
+         id="flowPara3737" /><flowPara
+         id="flowPara3723"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         id="flowPara3725"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         id="flowPara3727"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 240.94896,-4310.7561 445.08978,0"
+       id="path3771"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3773"
+       d="m 237.78293,-4111.3112 445.08978,0"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 237.78293,-4081.3112 243.64485,0"
+       id="path3777"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+  </g>
   <g
-     transform="translate(13.84305,3490.0082)"
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="colors"
+     style="display:none">
+    <path
+       sodipodi:type="arc"
+       style="fill:url(#radialGradient5121);fill-opacity:1;stroke:none;display:inline;enable-background:new"
+       id="path3324"
+       sodipodi:cx="8505.5156"
+       sodipodi:cy="1733.3148"
+       sodipodi:rx="211.27292"
+       sodipodi:ry="211.27292"
+       d="m 8716.7885,1733.3148 a 211.27292,211.27292 0 1 1 -422.5458,0 211.27292,211.27292 0 1 1 422.5458,0 z"
+       transform="matrix(0.25135372,0,0,0.25135372,-1890.4713,-334.93439)" />
+    <path
+       style="fill:url(#linearGradient3488-1);fill-opacity:1;stroke:none;display:inline;enable-background:new"
+       d="m 1000.9036,108.053 -47.46046,18.0736 0.029,-45.848698 43.5731,-28.938399 14.24396,25.852099 -1e-4,22.5031 z"
+       id="path3326"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:url(#linearGradient3492-2);fill-opacity:1;stroke:none;display:inline;enable-background:new"
+       d="m 266.70033,377.12581 -28.83176,-12.2958 -40.60932,0.3292 11.0165,0.7706 1.83489,7.7075 13.12217,-0.069 1.22183,9.8521 14.60338,1.1229 1.26328,77.1164 118.89279,-44.9586 z"
+       id="path3330"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccc" />
+    <path
+       style="fill:url(#linearGradient5207);fill-opacity:1;stroke:none"
+       inkscape:transform-center-x="-6.2477618"
+       inkscape:transform-center-y="134.44001"
+       d="m 649.05592,71.840107 49.9159,-0.0294 0,0 -38.77742,8.546006 0,110.064777 99.44315,34.87293 -41.93636,37.20525 -127.42252,-12.16205 59.27996,-46.44597 z"
+       id="path3328"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccc" />
+    <path
+       style="fill:url(#linearGradient3494-7);fill-opacity:1;stroke:none;display:inline;enable-background:new"
+       d="m 967.49832,247.69421 -25.2888,66.7615 c -2.45482,6.4806 -26.07268,13.2514 -51.88565,13.0967 -30.88359,-0.1853 -56.26989,-7.9856 -52.85243,-17.0921 l 23.55489,-62.7661"
+       id="path3470"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csssc" />
+  </g>
+  <g
+     transform="translate(13.84305,5690.0082)"
      inkscape:label="u"
      id="layer4"
      inkscape:groupmode="layer">
@@ -2700,7 +3253,7 @@
     </g>
   </g>
   <g
-     transform="translate(13.84305,3490.0082)"
+     transform="translate(13.84305,5690.0082)"
      inkscape:label="t"
      id="layer5"
      inkscape:groupmode="layer">
@@ -2750,12 +3303,6 @@
        style="fill:url(#linearGradient3341);fill-opacity:1;stroke:none;display:inline"
        d="m 643.97939,-8088.1048 -38.70549,102.1811 c -3.75722,9.9189 -39.90526,20.2819 -79.41303,20.045 -47.26856,-0.2836 -86.1233,-12.2222 -80.89273,-26.16 l 36.05169,-96.0661"
        id="path3325"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="csssc" />
-    <path
-       style="fill:url(#linearGradient3494);fill-opacity:1;stroke:none;display:inline"
-       d="m 761.06765,-3201.8108 -25.2888,66.7615 c -2.45482,6.4806 -26.07268,13.2514 -51.88565,13.0967 -30.88359,-0.1853 -56.26989,-7.9856 -52.85243,-17.0921 l 23.55489,-62.7661"
-       id="path3470"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="csssc" />
   </g>
