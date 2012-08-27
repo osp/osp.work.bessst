@@ -1,12 +1,12 @@
 /* CSS declarations go here */
 
 @color-link: #ff8080ff;
-@font-size-small :12px;
-@font-size-mid :18px;
-@font-size-big :27px;
-@font-family-intro :EB;
-@font-family-project :Karla;
-@font-family-bold :KBold;
+@font-size-small:15px;
+@font-size-mid:18px;
+@font-size-big:27px;
+@font-family-intro:'EB';
+@font-family-project:'K';
+@font-family-bold:'KBold';
 
 
 @font-face {
@@ -50,11 +50,17 @@ p.project  {
 .meer  {
 	font-size: @font-size-small;
 	font-family: @font-family-project, Sans;
-	line-height: 15px;
+	line-height: 18px;
 	margin-left : 30px;
 }
 
 .meer a:link { 
-	text-decoration: underline;
+	font-family: @font-family-bold;
+	color:black;
+	text-decoration:underline;
+} 
+
+.meer a:visited { 
+	color:black;
 } 
 
