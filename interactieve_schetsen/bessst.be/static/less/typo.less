@@ -1,7 +1,8 @@
 /* CSS declarations go here */
 
 @color-link: #ff8080ff;
-@font-size-small:18px;
+@font-size-small:15px;
+@font-size-smallplus:18px;
 @font-size-mid:21px;
 @font-size-big:25px;
 @font-family-intro:'EB';
@@ -10,60 +11,66 @@
 
 
 @font-face {
-	font-family: EB;
-	src: url("../type/EBGaramond-Regular.ttf");
+    font-family: EB;
+    src: url("/static/type/EBGaramond-Regular.ttf");
 }
 
 @font-face {
-	font-family: K;
-	src: url("../type/Karla-Regular.ttf");
+    font-family: K;
+    src: url("/static/type/Karla-Regular.ttf");
 }
 
 @font-face {
-	font-family: KBold;
-	src: url("../type/Karla-Bold.ttf");
+    font-family: KBold;
+    src: url("/static/type/Karla-Bold.ttf");
 }
 
 
 body {
     line-height: 21px;
-    font-family: @font-family-intro,'Bitstream Charter';
+    font-family: @font-family-project, Sans;
 }
 
+
+a, a.visited, a:hover{ 
+    color:black;
+    text-decoration:underline;
+} 
+
 p {
-	font-size: 18px;
-	margin-bottom: 18px;
+    font-size: 18px;
+    text-indent: 1em;
 }
 
 
 /* Toegang*/
 p.intro {
-	font-size: 27px;
-	line-height: 31px;
-	font-family: @font-family-intro,'Bitstream Charter';
+    font-size: 27px;
+    line-height: 31px;
+    font-family: @font-family-intro,'Bitstream Charter';
 }
 
 p.project  {
-	font-size: 18px;
-	font-family: @font-family-project, Sans;
-	line-height: 21px;
+    font-size: 18px;
+    font-family: @font-family-project, Sans;
+    line-height: 21px;
 }
 
 .meer  {
-	font-size: @font-size-small;
-    font-family: @font-family-intro, Sans;
-	line-height: 20px;
-	margin-left : 30px;
+    font-size: @font-size-small;
+    font-family: @font-family-project, Sans;
+    line-height: 20px;
+    margin-left : 30px;
 }
 
 .meer a:link { 
-	font-family: @font-family-bold;
-	color:black;
-	text-decoration:underline;
+    font-family: @font-family-bold;
+    color:black;
+    text-decoration:underline;
 } 
 
 .meer a:visited { 
-	color:black;
+    color:black;
 } 
 
 /* Conceptnota*/
@@ -77,13 +84,17 @@ h1, h2, h3, h4, h5, h6 {
         line-height: 55px;
         font-family: @font-family-project,'Bitstream Charter';
     }
-
+    
     h2 {
         font-size: @font-size-mid;
-        line-height: 21px;
-        font-family: @font-family-bold;
+        text-align: center;
+        text-transform : uppercase;
+        line-height: 25px;
+        font-family: @font-family-intro;
+        margin-top: 15px;
+        margin-bottom: 5px;
     }
-
+    
     h3 {
         font-size: @font-size-mid;
         line-height: 21px;
@@ -95,14 +106,23 @@ h1, h2, h3, h4, h5, h6 {
 .gebieden {
     font-size: @font-size-small;
     font-family: @font-family-project, Sans;
-    line-height: 17px;
+    line-height: 20px;
     margin-left : 18px;
 }
 
 #sommaire { 
-    list-style: none;
+    position : fixed;
+    margin-left : 620px;
+    margin-top : 25px;
     text-decoration: none;
-    font-size: @font-size-small;
+    font-size: @font-size-smallplus;
     line-height: 21px;
-    font-family: @font-family-bold;
+    font-family: @font-family-intro;
+    
+    li {
+        list-style: none;
+    }
 }
+
+
+
