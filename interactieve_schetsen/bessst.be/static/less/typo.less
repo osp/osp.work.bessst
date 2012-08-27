@@ -1,0 +1,108 @@
+/* CSS declarations go here */
+
+@color-link: #ff8080ff;
+@font-size-small:18px;
+@font-size-mid:21px;
+@font-size-big:25px;
+@font-family-intro:'EB';
+@font-family-project:'K';
+@font-family-bold:'KBold';
+
+
+@font-face {
+	font-family: EB;
+	src: url("../type/EBGaramond-Regular.ttf");
+}
+
+@font-face {
+	font-family: K;
+	src: url("../type/Karla-Regular.ttf");
+}
+
+@font-face {
+	font-family: KBold;
+	src: url("../type/Karla-Bold.ttf");
+}
+
+
+body {
+    line-height: 21px;
+    font-family: @font-family-intro,'Bitstream Charter';
+}
+
+p {
+	font-size: 18px;
+	margin-bottom: 18px;
+}
+
+
+/* Toegang*/
+p.intro {
+	font-size: 27px;
+	line-height: 31px;
+	font-family: @font-family-intro,'Bitstream Charter';
+}
+
+p.project  {
+	font-size: 18px;
+	font-family: @font-family-project, Sans;
+	line-height: 21px;
+}
+
+.meer  {
+	font-size: @font-size-small;
+    font-family: @font-family-intro, Sans;
+	line-height: 20px;
+	margin-left : 30px;
+}
+
+.meer a:link { 
+	font-family: @font-family-bold;
+	color:black;
+	text-decoration:underline;
+} 
+
+.meer a:visited { 
+	color:black;
+} 
+
+/* Conceptnota*/
+h1, h2, h3, h4, h5, h6 {
+    font-weight:normal;
+}
+
+#conceptnota {    
+    h1 {
+        font-size: 50px;
+        line-height: 55px;
+        font-family: @font-family-project,'Bitstream Charter';
+    }
+
+    h2 {
+        font-size: @font-size-mid;
+        line-height: 21px;
+        font-family: @font-family-bold;
+    }
+
+    h3 {
+        font-size: @font-size-mid;
+        line-height: 21px;
+        font-family: @font-family-bold;
+        margin-left : 18px;
+    }
+}
+
+.gebieden {
+    font-size: @font-size-small;
+    font-family: @font-family-project, Sans;
+    line-height: 17px;
+    margin-left : 18px;
+}
+
+#sommaire { 
+    list-style: none;
+    text-decoration: none;
+    font-size: @font-size-small;
+    line-height: 21px;
+    font-family: @font-family-bold;
+}
