@@ -6,6 +6,7 @@
 @font-size-big :27px;
 @font-family-intro :EB;
 @font-family-project :Karla;
+@font-family-bold :KBold;
 
 
 @font-face {
@@ -14,9 +15,15 @@
 }
 
 @font-face {
-	font-family: Karla;
+	font-family: K;
 	src: url("./Karla-Regular.ttf");
 }
+
+@font-face {
+	font-family: KBold;
+	src: url("./Karla-Bold.ttf");
+}
+
 
 body {
     line-height: 18px;
@@ -31,10 +38,23 @@ p {
 p.intro {
 	font-size: 27px;
 	line-height: 31px;
+	font-family: @font-family-intro,'Bitstream Charter';
 }
 
 p.project  {
-	line-height: 18px;
+	font-size: 18px;
 	font-family: @font-family-project, Sans;
+	line-height: 21px;
 }
+
+.meer  {
+	font-size: @font-size-small;
+	font-family: @font-family-project, Sans;
+	line-height: 15px;
+	margin-left : 30px;
+}
+
+.meer a:link { 
+	text-decoration: underline;
+} 
 
