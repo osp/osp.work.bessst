@@ -1,7 +1,8 @@
 /* CSS declarations go here */
 
 @color-link: #ff8080ff;
-@font-size-small:18px;
+@font-size-small:15px;
+@font-size-smallplus:18px;
 @font-size-mid:21px;
 @font-size-big:25px;
 @font-family-intro:'EB';
@@ -27,7 +28,7 @@
 
 body {
     line-height: 21px;
-    font-family: @font-family-intro,'Bitstream Charter';
+    font-family: @font-family-project, Sans;
 }
 
 p {
@@ -80,8 +81,12 @@ h1, h2, h3, h4, h5, h6 {
 
     h2 {
         font-size: @font-size-mid;
-        line-height: 21px;
-        font-family: @font-family-bold;
+        text-align: center;
+        text-transform : uppercase;
+        line-height: 25px;
+        font-family: @font-family-intro;
+        margin-top: 15px;
+        margin-bottom: 5px;
     }
 
     h3 {
@@ -95,14 +100,20 @@ h1, h2, h3, h4, h5, h6 {
 .gebieden {
     font-size: @font-size-small;
     font-family: @font-family-project, Sans;
-    line-height: 17px;
+    line-height: 20px;
     margin-left : 18px;
 }
 
 #sommaire { 
-    list-style: none;
+    position : fixed;
+    margin-left : 620px;
+    margin-top : 25px;
     text-decoration: none;
-    font-size: @font-size-small;
+    font-size: @font-size-smallplus;
     line-height: 21px;
-    font-family: @font-family-bold;
+    font-family: @font-family-intro;
+
+    li {
+        list-style: none;
+    }
 }
