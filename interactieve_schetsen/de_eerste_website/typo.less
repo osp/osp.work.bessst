@@ -4,24 +4,37 @@
 @font-size-small :12px;
 @font-size-mid :18px;
 @font-size-big :27px;
+@font-family-intro :EB;
+@font-family-project :Karla;
+
 
 @font-face {
 	font-family: EB;
 	src: url("./EBGaramond-Regular.ttf");
 }
 
+@font-face {
+	font-family: Karla;
+	src: url("./Karla-Regular.ttf");
+}
+
 body {
     line-height: 18px;
-    font-family: EB,'Bitstream Charter';
+    font-family: @font-family-intro,'Bitstream Charter';
 }
 
 p {
-    font-size: 18px;
-    margin-bottom: 18px;
+	font-size: 18px;
+	margin-bottom: 18px;
 }
 
 p.intro {
-    font-size: 27px;
-    line-height: 31px;
+	font-size: 27px;
+	line-height: 31px;
+}
+
+p.project  {
+	line-height: 18px;
+	font-family: @font-family-project, Sans;
 }
 
