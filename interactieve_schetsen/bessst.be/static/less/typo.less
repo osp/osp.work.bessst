@@ -40,12 +40,13 @@ a, a.visited, a:hover{
 p {
     font-size: 18px;
     text-indent: 1em;
+    line-height: 22px;
 }
 
 
 /* Toegang*/
 p.intro {
-    font-size: 27px;
+    font-size: @font-size-big;
     line-height: 31px;
     font-family: @font-family-intro,'Bitstream Charter';
 }
@@ -80,9 +81,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #conceptnota {    
     h1 {
-        font-size: 50px;
-        line-height: 55px;
-        font-family: @font-family-project,'Bitstream Charter';
+        text-transform : uppercase;
+        text-align: center;
+        font-size: @font-size-mid;
+        line-height: @font-size-big;
+        font-family: @font-family-intro,'Bitstream Charter';
+        margin-bottom: 78px;
+        span {
+            border-bottom: 4px double black;
+        }
     }
     
     h2 {
@@ -91,36 +98,67 @@ h1, h2, h3, h4, h5, h6 {
         text-transform : uppercase;
         line-height: 25px;
         font-family: @font-family-intro;
-        margin-top: 15px;
-        margin-bottom: 5px;
+        margin-top: 36px;
+        margin-right: 36px;
+        margin-bottom: 6px;
     }
     
     h3 {
-        font-size: @font-size-mid;
+        font-size: @font-size-small;
         line-height: 21px;
-        font-family: @font-family-bold;
-        margin-left : 18px;
+        font-family: @font-family-intro;
+        text-transform: uppercase;
+        margin-right: 72px;
+        margin-top: 18px;
+        text-align: center;
+        margin-bottom: 8px;
+        span {
+            display: block;
+            font-family: @font-family-intro;
+            font-size: 40px;
+            margin-bottom: 8px;
+        }
     }
+
+    p {
+        margin-right: 36px;
+    }
+
+    p.intro {
+        margin: 0px;
+    }
+    
+    .gebieden {
+        font-size: @font-size-small;
+        font-family: @font-family-project, Sans;
+        line-height: 20px;
+        margin-right: 72px;
+    }    
 }
 
-.gebieden {
-    font-size: @font-size-small;
-    font-family: @font-family-project, Sans;
-    line-height: 20px;
-    margin-left : 18px;
-}
+
+
 
 #sommaire { 
     position : fixed;
-    margin-left : 620px;
+    margin-left : 700px;
+    width: 250px;
     margin-top : 25px;
     text-decoration: none;
     font-size: @font-size-smallplus;
     line-height: 21px;
     font-family: @font-family-intro;
-    
+
     li {
-        list-style: none;
+        list-style-type: lower-roman;
+        margin-bottom: 3px;
+        a {
+            text-decoration: none;
+        }
+        li {
+            margin-left: @font-size-mid;
+            list-style-type: decimal;
+        }
     }
 }
 
