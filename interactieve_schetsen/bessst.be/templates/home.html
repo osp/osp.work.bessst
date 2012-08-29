@@ -46,11 +46,6 @@ var positions = [{"top":700,"left":750},{"top":390,"left":480},{"top":180,"left"
             raadplegen.
         </p>
     </div>
-
-    <div class="video" style="margin-top: 128px;">
-    <iframe width="560" height="315" src="http://www.youtube.com/embed/9F1_4FHscyQ" frameborder="0" allowfullscreen></iframe>
-    </div>
-
     
     </div>
     
@@ -76,13 +71,21 @@ var positions = [{"top":700,"left":750},{"top":390,"left":480},{"top":180,"left"
             <div contenteditable="true">
             <object type="image/svg+xml" data="/assets/svg/0.svg"></object>
             </div>
-            <h1><a href=/conceptnota/ > → Read de volledige conceptnota.</a></h1>
+            <h1><a href="/conceptnota/"> → Lees de volledige conceptnota.</a></h1>
         </div>
+
+    <div class="video" style="margin-top: 128px;">
+    <iframe width="560" height="315" src="http://www.youtube.com/embed/9F1_4FHscyQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+
     </div>
       
     
     
 <div class="minor" id="newsletter">
+
+    <p>Nieuwsbrief</p>
+    
       <form action="/newsletter/signup/" enctype="multipart/form-data" method="post" id="signform">
   	{% csrf_token %}
     <p>
