@@ -1,6 +1,7 @@
 /* CSS declarations go here */
 
 @color-link: #ff8080ff;
+@color-bessst: #474747;
 @font-size-small:15px;
 @font-size-smallplus:18px;
 @font-size-mid:21px;
@@ -47,8 +48,9 @@ p {
 .bessst{
     font-size: 35px;
     line-height: 35px;
-    font-family: @font-family-project, Sans;
+    font-family: @font-family-bold, Sans;
     text-align:center;
+    color: @color-bessst;
 }
 
 /* Toegang*/
@@ -114,63 +116,67 @@ h1, h2, h3, h4, h5, h6 {
     font-weight:normal;
 }
 
-// #conceptnota {    
-    h1 {
-        text-transform : uppercase;
-        text-align: center;
-        font-size: @font-size-mid;
-        line-height: @font-size-big;
-        font-family: @font-family-intro,'Bitstream Charter';
-        margin-bottom: 78px;
-        span {
-            border-bottom: 4px double black;
-        }
+h1 {
+    text-transform : uppercase;
+    text-align: center;
+    font-size: @font-size-mid;
+    line-height: @font-size-big;
+    font-family: @font-family-intro,'Bitstream Charter';
+    margin-bottom: 78px;
+    span {
+        border-bottom: 4px double black;
     }
-    
-    h2 {
-        font-size: @font-size-mid;
-        text-align: center;
-        text-transform : uppercase;
-        line-height: 25px;
-        font-family: @font-family-intro;
-        margin-top: 36px;
-        margin-right: 36px;
-        margin-bottom: 6px;
-    }
-    
-    h3 {
-        font-size: @font-size-small;
-        line-height: 21px;
-        font-family: @font-family-intro;
-        text-transform: uppercase;
-        margin-right: 72px;
-        margin-top: 18px;
-        text-align: center;
-        margin-bottom: 8px;
-        span {
-            display: block;
-            font-family: @font-family-intro;
-            font-size: 40px;
-            margin-bottom: 8px;
-        }
-//     }
-
-    p {
-        margin-right: 36px;
-    }
-
-    p.intro {
-        margin: 0px;
-    }
-    
-    .gebieden {
-        font-size: @font-size-small;
-        font-family: @font-family-project, Sans;
-        line-height: 22px;
-        margin-right: 72px;
-    }    
 }
 
+h2 {
+    font-size: @font-size-mid;
+    text-align: center;
+    text-transform : uppercase;
+    line-height: 25px;
+    font-family: @font-family-intro;
+    margin-top: 36px;
+    margin-right: 36px;
+    margin-bottom: 6px;
+}
+
+h3 {
+    font-size: @font-size-small;
+    line-height: 21px;
+    font-family: @font-family-intro;
+    text-transform: uppercase;
+    margin-right: 72px;
+    margin-top: 18px;
+    text-align: center;
+    margin-bottom: 8px;
+    span {
+        display: block;
+        font-family: @font-family-intro;
+        font-size: 40px;
+        margin-bottom: 8px;
+    }
+ }
+
+p {
+    margin-right: 36px;
+}
+
+p.intro {
+    margin: 0px;
+}
+
+.gebieden {
+    font-size: @font-size-small;
+    font-family: @font-family-project, Sans;
+    line-height: 22px;
+    margin-right: 72px;
+}
+
+
+em {
+    font-family: @font-family-bold;
+    color: @color-bessst;
+    text-transform: lowercase;
+}
 
 #sommaire { 
     position : fixed;
@@ -194,6 +200,4 @@ h1, h2, h3, h4, h5, h6 {
         }
     }
 }
-
-
 
