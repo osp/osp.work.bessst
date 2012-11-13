@@ -4,6 +4,12 @@
 *.swp
 .project
 
+#temporary site
+upload.py
+index.html
+conceptnota.html
+nieuws.php
+
 
 # the temporary python files #
 ##############################
