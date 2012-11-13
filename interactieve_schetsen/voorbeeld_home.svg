@@ -24,11 +24,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.13013221"
-     inkscape:cx="422.12824"
-     inkscape:cy="-2754.0499"
+     inkscape:zoom="0.52052884"
+     inkscape:cx="3622.6093"
+     inkscape:cy="-1902.0838"
      inkscape:document-units="px"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer4"
      showgrid="false"
      inkscape:showpageshadow="false"
      borderlayer="true"
@@ -40,10 +40,11 @@
      showguides="true"
      inkscape:guide-bbox="true"
      units="px"
-     inkscape:object-nodes="true">
+     inkscape:object-nodes="true"
+     inkscape:snap-nodes="true">
     <inkscape:grid
-       spacingy="50px"
-       spacingx="50px"
+       spacingy="20px"
+       spacingx="20px"
        snapvisiblegridlinesonly="true"
        enabled="true"
        visible="true"
@@ -609,6 +610,15 @@
        y1="2148.7688"
        x2="4797.5146"
        y2="2269.7676" />
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask4664">
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         d="m 3195.7284,2850.2941 263.5372,0 0,152.1452 -263.5372,0 z"
+         id="path4674"
+         inkscape:connector-curvature="0" />
+    </mask>
   </defs>
   <metadata
      id="metadata7">
@@ -627,13 +637,6 @@
      id="layer5"
      inkscape:label="elements communs sceno"
      style="opacity:1">
-    <image
-       y="35.85746"
-       x="-2378.9004"
-       id="image3804"
-       xlink:href="file:///home/ludi/wrk/osp.work.bessst/interactieve_schetsen/px-gradiebt1.jpg"
-       height="550"
-       width="1198.4357" />
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="M 41.165621,579.97331 1074.6756,527.9813 l 167.2149,0"
@@ -671,12 +674,6 @@
        d="m 18.728494,2012.8635 1367.277006,62.5147 21.6447,553.2449 -1367.277053,-62.5147 c 0,0 -24.846525,-315.0486 -21.644653,-553.2449 z"
        style="fill:#decd87;fill-opacity:0.47945204000000002;stroke:none;display:inline;enable-background:new" />
     <path
-       sodipodi:nodetypes="ccc"
-       inkscape:connector-curvature="0"
-       id="path3476"
-       d="m -2379.4495,579.97331 1033.5099,-51.99201 167.2149,0 -0.1422,131.68967 -1200.1106,0 z"
-       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-    <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path3480"
@@ -699,6 +696,19 @@
        id="path4746"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc" />
+    <image
+       y="35.973312"
+       x="-2379.4495"
+       id="image3848"
+       xlink:href="file:///home/ludi/wrk/osp.work.bessst/interactieve_schetsen/px-gradient1.jpg"
+       height="550"
+       width="1203.8694" />
+    <path
+       sodipodi:nodetypes="ccc"
+       inkscape:connector-curvature="0"
+       id="path3476"
+       d="m -2379.4495,579.97331 1033.5099,-51.99201 167.2149,0 -0.1422,131.68967 -1200.1106,0 z"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   </g>
   <g
      transform="translate(0,-44.094498)"
@@ -2920,12 +2930,66 @@
          style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;enable-background:new"
          id="path4880" />
     </g>
+    <g
+       id="g3951"
+       transform="translate(4071.6161,2280.9173)"
+       style="stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;display:inline;enable-background:new"
+         d="m 953.12277,637.48383 9.58397,-5.76019 c 0,0 9.58634,1.12126 14.18773,0.0291 2.71311,-0.64384 7.46568,-3.77395 7.46568,-3.77395 l 8.03837,5.94123 -26.50091,15.92761 z"
+         id="path3953"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccacccc" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;enable-background:new"
+         d="m 953.12277,646.91025 0,-9.42642 12.77484,12.36373 0,9.55264 z"
+         id="path3955"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path3957"
+         d="m 965.89761,659.4002 0,-9.55264 26.50091,-15.92761 0,8.19135 z"
+         style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;enable-background:new" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;enable-background:new"
+         d="m 976.71372,647.07476 6.18019,-3.71442 58.89169,47.26932 -5.0195,5.98283"
+         id="path3959"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccc" />
+      <path
+         id="path3961"
+         d="m 1033.635,700.19701 -56.92128,-48.23359 0,-4.88866 59.95028,43.71884"
+         style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;enable-background:new"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc" />
+      <path
+         sodipodi:type="arc"
+         style="fill:#ffffff;stroke:#000000;stroke-width:18.59041595;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;enable-background:new"
+         id="path3963"
+         sodipodi:cx="12168.472"
+         sodipodi:cy="3136.0066"
+         sodipodi:rx="70.060333"
+         sodipodi:ry="31.740307"
+         d="m 12238.532,3136.0066 c 0,17.5297 -31.367,31.7403 -70.06,31.7403 -38.694,0 -70.061,-14.2106 -70.061,-31.7403 0,-17.5297 31.367,-31.7403 70.061,-31.7403 38.693,0 70.06,14.2106 70.06,31.7403 z"
+         transform="matrix(0.04990255,-0.07171788,0.10873593,0.07566035,89.71388,1330.9546)" />
+    </g>
+    <image
+       style="display:inline;enable-background:new"
+       y="2236.7124"
+       x="2951.7317"
+       id="image5884"
+       xlink:href="file:///home/ludi/wrk/osp.work.bessst/platform/Screenshot%20from%202012-11-13%2012:47:55.png"
+       height="770.56018"
+       width="1333.8192" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="g"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <path
        inkscape:connector-curvature="0"
        style="fill:#e6e6e6;fill-opacity:1;stroke:none;display:inline;enable-background:new"
@@ -2938,7 +3002,7 @@
        inkscape:connector-curvature="0" />
     <path
        id="path4743"
-       d="m -378.87744,1364.7272 0,1448.4063 2161.37514,0 0,-1448.4063 -2161.37514,0 z m 427.531251,346.2187 1280.375089,0 0,700.6563 -1280.375089,0 0,-700.6563 z"
+       d="m -360.15371,1294.3874 0,1448.4063 2161.37511,0 0,-1448.4063 -2161.37511,0 z m 427.531251,346.2187 1280.375059,0 0,700.6563 -1280.375059,0 0,-700.6563 z"
        style="fill:#e6e6e6;fill-opacity:1;stroke:none;display:inline;enable-background:new"
        inkscape:connector-curvature="0" />
     <path
@@ -2951,12 +3015,23 @@
        style="fill:#e6e6e6;fill-opacity:1;stroke:none;display:inline;enable-background:new"
        d="m -2861.9808,1372.1694 0,1448.4063 2161.37516,0 0,-1448.4063 -2161.37516,0 z m 427.5312,346.2187 1280.3751,0 0,700.6563 -1280.3751,0 0,-700.6563 z"
        id="path4882" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#e6e6e6;fill-opacity:1;stroke:none;display:inline;enable-background:new"
+       d="m 2574,1854 0,1448.4063 2161.3751,0 0,-1448.4063 L 2574,1854 z m 427.5313,346.2187 1280.375,0 0,700.6563 -1280.375,0 0,-700.6563 z"
+       id="path3983" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="cadres"
      transform="translate(0,2.0617676e-6)">
+    <path
+       sodipodi:nodetypes="cccccc"
+       inkscape:connector-curvature="0"
+       id="path5732"
+       d="m 3474.6617,2430.1928 -0.6792,208.7833 -23.5881,24.0005 -260,-198.6892 35.0638,-34.4136 z"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none" />
     <path
        sodipodi:nodetypes="ccccccc"
        inkscape:connector-curvature="0"
@@ -3035,6 +3110,35 @@
        id="path4888"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 3190.3944,2464.2874 260,0 0,198.6892 -260,0 z"
+       id="path3987"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 3450.3944,2464.2874 24.2673,-34.0946"
+       id="path5734"
+       inkscape:connector-curvature="0"
+       transform="translate(0,-2.0617676e-6)" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 3834.6617,2812.0793 -0.6792,-208.7833 -23.5881,-24.0005 -260,198.6892 35.0638,34.4136 z"
+       id="path5736"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path5738"
+       d="m 3550.3944,2777.9847 260,0 0,-198.6892 -260,0 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5740"
+       d="m 3810.3944,2777.9847 24.2673,34.0946"
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   </g>
   <g
      style="display:inline"
@@ -3401,8 +3505,8 @@
            y="692.0401" /></flowRegion><flowPara
          id="flowPara4847"
          style="font-size:21px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:EB Garamond;-inkscape-font-specification:EB Garamond">→  LEES DE VOLLEDIGE CONCEPTNOTA.</flowPara></flowRoot>    <rect
-       y="2063.3081"
-       x="48.653812"
+       y="1992.9683"
+       x="67.377541"
        height="52.666515"
        width="177.44652"
        id="rect4849"
@@ -3410,13 +3514,13 @@
     <text
        sodipodi:linespacing="125%"
        id="text4851"
-       y="2102.4407"
-       x="72.330299"
+       y="2032.1008"
+       x="91.054031"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
-         y="2102.4407"
-         x="72.330299"
+         y="2032.1008"
+         x="91.054031"
          id="tspan4853"
          sodipodi:role="line">bessst</tspan></text>
     <rect
@@ -3696,5 +3800,346 @@
        height="621.27155"
        x="-2378.9775"
        y="2104.4033" />
+    <flowRoot
+       transform="translate(4097.5844,2370.6417)"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:Sans"
+       id="flowRoot4069"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4071"><rect
+           y="252.91792"
+           x="774.76538"
+           height="53.066132"
+           width="122.05214"
+           id="rect4073" /></flowRegion><flowPara
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4075">Nieuwsbrief</flowPara><flowPara
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4077">Email </flowPara></flowRoot>    <path
+       style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:2;stroke-miterlimit:4;display:inline;enable-background:new"
+       d="m 4872.3031,2677.7137 200.9128,0 0,23.5742 -200.9128,0 z"
+       id="path4079"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect4089"
+       width="177.44652"
+       height="52.666515"
+       x="3001.531"
+       y="2552.5808" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:Sans"
+       x="3025.2075"
+       y="2591.7134"
+       id="text4091"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4093"
+         x="3025.2075"
+         y="2591.7134"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">bessst</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4095"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(1503.5056,539.78454)"><flowRegion
+         id="flowRegion4097"><rect
+           id="rect4099"
+           width="159.33862"
+           height="24.678955"
+           x="3320.6614"
+           y="2275.321" /></flowRegion><flowPara
+         id="flowPara4101"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">Traag, langzaam verkeer        </flowPara><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4121" /><flowPara
+         id="flowPara4103"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         id="flowPara4105"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         id="flowPara4107"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         id="flowPara4109"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         id="flowPara4111"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /></flowRoot>    <flowRoot
+       transform="translate(1503.5056,559.78454)"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot4123"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4125"><rect
+           y="2275.321"
+           x="3320.6614"
+           height="51.757927"
+           width="139.99487"
+           id="rect4127" /></flowRegion><flowPara
+         id="flowPara4131"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">Groen en open ruimte voor iedereen        </flowPara><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4141" /><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4143" /><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4145" /><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4147" /><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4149" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4151"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(-65.130741,515.00439)"><flowRegion
+         id="flowRegion4153"><rect
+           id="rect4155"
+           width="179.99487"
+           height="51.757927"
+           x="3320.6614"
+           y="2275.321" /></flowRegion><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4161">Betekenisvol erfgoed vandaag        </flowPara><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4167" /><flowPara
+         id="flowPara4169"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         id="flowPara4171"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         id="flowPara4173"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         id="flowPara4175"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         id="flowPara4177"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /></flowRoot>    <flowRoot
+       transform="translate(1503.5056,621.78454)"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot4179"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4181"><rect
+           y="2275.321"
+           x="3320.6614"
+           height="31.757925"
+           width="139.99487"
+           id="rect4183" /></flowRegion><flowPara
+         id="flowPara4191"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">Klanken van de stad               </flowPara><flowPara
+         id="flowPara4195"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4197" /><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4199" /><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4201" /><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4203" /><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4205" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4247"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(1503.5056,643.59002)"><flowRegion
+         id="flowRegion4249"><rect
+           id="rect4251"
+           width="179.99487"
+           height="31.757925"
+           x="3320.6614"
+           y="2275.321" /></flowRegion><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4261">Ademen, spelen, ontdekken…                </flowPara><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4263" /><flowPara
+         id="flowPara4265"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         id="flowPara4267"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         id="flowPara4269"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         id="flowPara4271"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         id="flowPara4273"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /></flowRoot>    <flowRoot
+       transform="translate(332.00284,859.11344)"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot4275"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4277"><rect
+           y="2275.321"
+           x="3320.6614"
+           height="51.757927"
+           width="119.99487"
+           id="rect4279" /></flowRegion><flowPara
+         id="flowPara4291"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">Werkplaatsen voor stilte en rust        </flowPara><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4293" /><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4295" /><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4297" /><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4299" /><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara4301" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4339"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="matrix(0.9969572,0,0,1,-833.58816,388.20875)"><flowRegion
+         id="flowRegion4341"><rect
+           id="rect4343"
+           width="226.25992"
+           height="177.63316"
+           x="4050.8657"
+           y="2455.1035" /></flowRegion><flowPara
+         id="flowPara4347"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:EB Garamond;-inkscape-font-specification:EB Garamond">Brukselbinnenstebuiten biedt gegidste stadstoers in Brussel aan. De ingediende voorstellen zijn stadsverkenningen te voet, op de fiets, met de bus of met openbaar vervoer. In het kadervan het Bessst-project ontwikkelt Brukselbinnenstebuiten vier nieuwe toers en past tweebestaande aan.</flowPara><flowPara
+         id="flowPara4349"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:EB Garamond;-inkscape-font-specification:EB Garamond" /><flowPara
+         id="flowPara4351"
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:EB Garamond;-inkscape-font-specification:EB Garamond" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4551"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Karla;-inkscape-font-specification:Karla"
+       transform="translate(906.96875,440.88107)"><flowRegion
+         id="flowRegion4553"><rect
+           id="rect4555"
+           width="19.98584"
+           height="28.818747"
+           x="2293.0454"
+           y="2142.6624"
+           style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /></flowRegion><flowPara
+         id="flowPara4557">nl</flowPara></flowRoot>    <flowRoot
+       transform="translate(926.96875,440.88107)"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Karla;-inkscape-font-specification:Karla"
+       id="flowRoot4559"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4561"><rect
+           style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+           y="2142.6624"
+           x="2293.0454"
+           height="0"
+           width="0"
+           id="rect4563" /></flowRegion><flowPara
+         id="flowPara4565">fr---</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4567"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Karla;-inkscape-font-specification:Karla"
+       transform="translate(946.96875,440.88107)"><flowRegion
+         id="flowRegion4569"><rect
+           id="rect4571"
+           width="20.03977"
+           height="29.56077"
+           x="2293.0454"
+           y="2142.6624"
+           style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /></flowRegion><flowPara
+         id="flowPara4573">fr</flowPara></flowRoot>    <flowRoot
+       transform="translate(926.96875,440.88107)"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Karla;-inkscape-font-specification:Karla"
+       id="flowRoot4575"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4577"><rect
+           style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+           y="2142.6624"
+           x="2293.0454"
+           height="0"
+           width="0"
+           id="rect4579" /></flowRegion><flowPara
+         id="flowPara4581">fr-</flowPara></flowRoot>    <flowRoot
+       transform="translate(926.96875,440.88107)"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Karla;-inkscape-font-specification:Karla"
+       id="flowRoot4583"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4585"><rect
+           style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+           y="2142.6624"
+           x="2293.0454"
+           height="28.818747"
+           width="19.98584"
+           id="rect4587" /></flowRegion><flowPara
+         id="flowPara4589">en</flowPara></flowRoot>    <image
+       y="2872.3621"
+       x="3200"
+       id="image4653"
+       xlink:href="file:///home/ludi/wrk/osp.work.bessst/platform/Screenshot%20from%202012-11-13%2012:13:26.png"
+       height="112"
+       width="459"
+       mask="url(#mask4664)"
+       transform="translate(-109.8984,-981.98135)" />
+    <flowRoot
+       transform="translate(1503.5056,601.78454)"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot5446"
+       xml:space="preserve"><flowRegion
+         id="flowRegion5448"><rect
+           y="2275.321"
+           x="3320.6614"
+           height="51.757927"
+           width="179.99487"
+           id="rect5450" /></flowRegion><flowPara
+         id="flowPara5452"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla">Betekenisvol erfgoed vandaag        </flowPara><flowPara
+         id="flowPara5454"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla" /><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5456" /><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5458" /><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5460" /><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5462" /><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Karla;-inkscape-font-specification:Karla"
+         id="flowPara5464" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5466"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(-247.25,336.93908)"><flowRegion
+         id="flowRegion5468"><rect
+           id="rect5470"
+           width="170.48421"
+           height="196.29454"
+           x="3567.2612"
+           y="2244.5454" /></flowRegion><flowPara
+         id="flowPara5474"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:EB Garamond;-inkscape-font-specification:EB Garamond">1. Traag, langzaam verkeer       </flowPara><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:EB Garamond;-inkscape-font-specification:EB Garamond"
+         id="flowPara5492">2. Groen en open ruimte voor iedereen        </flowPara><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:EB Garamond;-inkscape-font-specification:EB Garamond"
+         id="flowPara5490">3. Betekenisvol erfgoed vandaag        4. Klanken van de stad        </flowPara><flowPara
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:EB Garamond;-inkscape-font-specification:EB Garamond"
+         id="flowPara5494">5. Ademen, spelen, ontdekken…        6. Werkplaatsen voor stilte en rust</flowPara><flowPara
+         id="flowPara5476"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:EB Garamond;-inkscape-font-specification:EB Garamond" /><flowPara
+         id="flowPara5478"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:EB Garamond;-inkscape-font-specification:EB Garamond" /><flowPara
+         id="flowPara5480"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:EB Garamond;-inkscape-font-specification:EB Garamond" /><flowPara
+         id="flowPara5482"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:EB Garamond;-inkscape-font-specification:EB Garamond" /><flowPara
+         id="flowPara5484"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:EB Garamond;-inkscape-font-specification:EB Garamond" /><flowPara
+         id="flowPara5486"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:EB Garamond;-inkscape-font-specification:EB Garamond" /><flowPara
+         id="flowPara5488"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:EB Garamond;-inkscape-font-specification:EB Garamond" /></flowRoot>    <flowRoot
+       transform="matrix(0.98524695,0,0,1,-420.71781,486.94909)"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot5498"
+       xml:space="preserve"><flowRegion
+         id="flowRegion5500"><rect
+           y="2455.1035"
+           x="4050.8657"
+           height="206.16028"
+           width="230.33508"
+           id="rect5502" /></flowRegion><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:EB Garamond;-inkscape-font-specification:EB Garamond"
+         id="flowPara5508">CLIP: City Life Imagine &amp; PEACE</flowPara><flowPara
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:EB Garamond;-inkscape-font-specification:EB Garamond"
+         id="flowPara5515">Vormingplus Citizenne vzw lanceerde vorig jaar het CLIP-label. CLIP staat voor City Life Imagine &amp; Play, een remedie tegen drukte en chaos in Brussel. Opzet van het project was om van Brussel een speeltuin te maken voor volwassenen via installaties, interventies, workshops en cursussen, dit van september tot december 2012.</flowPara></flowRoot>    <image
+       y="1967.5287"
+       x="3542.0884"
+       id="image5595"
+       xlink:href="file:///home/ludi/wrk/osp.work.bessst/platform/86_445_clip_postkaarten_7bis.jpg"
+       height="138.81805"
+       width="234.44827" />
   </g>
 </svg>
