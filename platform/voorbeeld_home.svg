@@ -792,7 +792,7 @@
        y="36.131023"
        x="-2398.2085"
        id="image3848"
-       xlink:href="file:///home/ludi/wrk/osp.work.bessst/interactieve_schetsen/px-gradient1.jpg"
+       xlink:href="../interactieve_schetsen/px-gradient1.jpg"
        height="550"
        width="1203.8694" />
     <path
@@ -1185,21 +1185,21 @@
        y="3776.9165"
        x="2839.2898"
        id="image7223"
-       xlink:href="file:///home/ludi/wrk/osp.work.bessst/platform/2012-11-13_12:47:55-b.png"
+       xlink:href="2012-11-13_12:47:55-b.png"
        height="758.38855"
        width="1312.7505" />
     <image
        y="4025.4785"
        x="5344.604"
        id="image5836"
-       xlink:href="file:///home/ludi/wrk/osp.work.bessst/platform/Screenshot%20from%202012-11-13%2016:56:55.png"
+       xlink:href="16:56:55.png"
        height="960.30841"
        width="1303.0139" />
     <image
        y="135.77107"
        x="5219.8813"
        id="image4661"
-       xlink:href="file:///home/ludi/wrk/osp.work.bessst/interactieve_schetsen/px-gradient2.jpg"
+       xlink:href="../interactieve_schetsen/px-gradient2.jpg"
        height="193"
        width="260" />
     <path
@@ -5116,7 +5116,7 @@
     <image
        width="1289.4227"
        height="731.53394"
-       xlink:href="file:///home/ludi/wrk/osp.work.bessst/platform/Screenshot%20from%202012-11-13%2012:47:55.png"
+       xlink:href="12:47:55.png"
        id="image4337"
        x="4859.4302"
        y="4260.9902"
@@ -5754,7 +5754,7 @@
        y="2315.1606"
        x="3739.2183"
        id="image6443"
-       xlink:href="file:///home/ludi/wrk/osp.work.bessst/platform/Screenshot%20from%202012-11-13%2012:46:33.png"
+       xlink:href="12:46:33.png"
        height="143.39018"
        width="248.96596" />
     <path
@@ -5811,7 +5811,7 @@
        y="2728.5562"
        x="3120.8752"
        id="image6526"
-       xlink:href="file:///home/ludi/wrk/osp.work.bessst/platform/Screenshot%20from%202012-11-13%2016:56:55.png"
+       xlink:href="16:56:55.png"
        height="189.85968"
        width="257.61493" />
     <path
@@ -5825,7 +5825,7 @@
        y="2351.2053"
        x="3121.825"
        id="image5884"
-       xlink:href="file:///home/ludi/wrk/osp.work.bessst/platform/Screenshot%20from%202012-11-13%2012:47:55.png"
+       xlink:href="12:47:55.png"
        height="130.31212"
        width="225.5668" />
     <path
@@ -6868,7 +6868,7 @@
        y="2872.3621"
        x="3200"
        id="image4653"
-       xlink:href="file:///home/ludi/wrk/osp.work.bessst/platform/Screenshot%20from%202012-11-13%2012:13:26.png"
+       xlink:href="12:13:26.png"
        height="112"
        width="459"
        mask="url(#mask4664)"
@@ -6937,7 +6937,7 @@
        y="1967.5287"
        x="3542.0884"
        id="image5595"
-       xlink:href="file:///home/ludi/wrk/osp.work.bessst/platform/86_445_clip_postkaarten_7bis.jpg"
+       xlink:href="86_445_clip_postkaarten_7bis.jpg"
        height="138.81805"
        width="234.44827" />
     <flowRoot
