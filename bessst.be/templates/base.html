@@ -15,15 +15,35 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
+{% block nav %}
+<nav>
+    <ul id="logo">
+        <li><a href="">Bessst</a></li>
+    </ul>
+    <ul id="lan">
+        <li><a href="">nl</a></li>
+        <li><a href="">en</a></li>
+        <li><a href="">fr</a></li>
+    </ul>
+    <ul id="navi">
+        <li><a href="">Over</a></li>
+        <li><a href="">Projecten</a></li>
+        <li><a href="">Archieven</a></li>
+        <li><a href="">Bronnen</a></li>
+        <li><a href="">Agenda</a></li>
+    </ul>
+    <ul id="meta">
+        <li><a href="">Nieuwsbrief</a></li>
+        <li><a href="">Deelnemen</a></li>
+    </ul>
+</nav>
+
+{% endblock %}
+
 {%  block content %}
 {%  endblock %}
+
 {% block footer %}
-<div class="container">
-    <div id="footer">
-    <img src="/assets/Erfgoedcel_Brussel_logo.jpg" width="20%">
-    <img src="/assets/vgc_logo_kl.jpg" width="20%">
-    </div>
- </div>
 {% endblock %}
 </body>
 </html>

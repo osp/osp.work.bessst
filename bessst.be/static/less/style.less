@@ -1,5 +1,248 @@
 @import "mixins";
 @import "reset";
-@import "layout";
-@import "typo";
+
+
+@color-link: #ff8080ff;
+@color-bessst: #474747;
+@font-size-small:15px;
+@font-size-smallplus:18px;
+@font-size-mid:21px;
+@font-size-big:25px;
+@font-family-intro:'EB';
+@font-family-project:'K';
+@font-family-bold:'KBold';
+
+/* Typefaces */
+
+@font-face {
+    font-family: EB;
+    src: url("../type/EBGaramond-Regular.ttf");
+}
+
+@font-face {
+    font-family: K;
+    src: url("../type/Karla-Regular.ttf");
+}
+
+@font-face {
+    font-family: KBold;
+    src: url("../type/Karla-Bold.ttf");
+}
+
+/* Typography */
+
+body {
+    line-height: 21px;
+    font-family: @font-family-project, Sans;
+}
+
+a, a.visited, a:hover{ 
+    color:black;
+    text-decoration:underline;
+} 
+
+p {
+    font-size: 18px;
+    text-indent: 1em;
+    line-height: 22px;
+    margin-right: 36px;
+}
+
+p.intro {
+    font-size: @font-size-big;
+    line-height: 31px;
+    font-family: @font-family-intro,'Bitstream Charter';
+    margin: 0px;
+}
+
+p.project  {
+    font-size: 18px;
+    font-family: @font-family-project, Sans;
+    line-height: 21px;
+}
+
+/* Forms */
+
+input[type="submit"]{
+    border: 2px solid black;
+    margin-top: 6px;
+    background: white;
+    font-family: @font-family-project
+}
+
+/* Headers */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight:normal;
+}
+
+h1 {
+    text-transform : uppercase;
+    text-align: center;
+    font-size: @font-size-mid;
+    line-height: @font-size-big;
+    font-family: @font-family-intro,'Bitstream Charter';
+    margin-bottom: 78px;
+    span {
+        border-bottom: 4px double black;
+    }
+}
+
+h2 {
+    font-size: @font-size-mid;
+    text-align: center;
+    text-transform : uppercase;
+    line-height: 25px;
+    font-family: @font-family-intro;
+    margin-top: 36px;
+    margin-right: 36px;
+    margin-bottom: 6px;
+}
+
+h3 {
+    font-size: @font-size-small;
+    line-height: 21px;
+    font-family: @font-family-intro;
+    text-transform: uppercase;
+    margin-right: 72px;
+    margin-top: 18px;
+    text-align: center;
+    margin-bottom: 8px;
+    span {
+        display: block;
+        font-family: @font-family-intro;
+        font-size: 40px;
+        margin-bottom: 8px;
+    }
+ }
+
+em {
+    font-family: @font-family-bold;
+    color: @color-bessst;
+    text-transform: lowercase;
+}
+
+
+/* Table of contents */
+
+#sommaire { 
+    position : fixed;
+    margin-left : 700px;
+    width: 250px;
+    margin-top : 25px;
+    text-decoration: none;
+    font-size: @font-size-smallplus;
+    line-height: 21px;
+    font-family: @font-family-intro;
+
+    li {
+        list-style-type: lower-roman;
+        margin-bottom: 3px;
+        a {
+            text-decoration: none;
+        }
+        li {
+            margin-left: @font-size-mid;
+            list-style-type: decimal;
+        }
+    }
+}
+
+/* General layout */
+
+div.container {
+    .clearfix();
+    margin: 50px auto;
+    width: 900px;
+}
+
+div.major {
+    width: 600px;
+    float: left;
+}
+
+div.minor {
+    width: 250px;
+    float: left;
+    margin-left: 20px;
+}
+div#header{
+    margin-bottom: 200px;
+    }
+
+div#text {
+    .box-sizing(border-box);
+    width: 600px;
+    float: left;
+    margin-bottom:15px;
+}
+
+div#newsletter {
+    width: 250px;
+    float: left;
+}
+
+#meer {
+    margin-top:9px;
+}
+
+#project{
+    width: 600px;
+}
+
+// Positioning boxes
+
+.logo {
+   width: 300px;
+    position: absolute;
+    z-index: -100;
+}
+
+.logo object {
+   margin: 0px auto;
+}
+
+.logo .drag {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+// Nav
+
+nav {
+    ul {
+        float: left;
+        li {
+            float: left;
+            list-style: none;
+            text-transform: lowercase;
+            a {
+                text-decoration: none;
+            }
+            line-height: @font-size-big;
+        }
+    }
+    ul#logo {
+        font-size: @font-size-big;
+        margin-right: 2 * @font-size-big;
+    }
+    ul#lan {
+        li {
+            margin-right: @font-size-small;
+        }
+    }
+    ul#navi {
+        li {
+            margin-right: @font-size-big;
+        }
+    }
+    ul#meta {
+        float: right;
+        li {
+            margin-right: @font-size-big;
+        }
+    }
+}
+
 
