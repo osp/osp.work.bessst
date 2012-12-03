@@ -1,5 +1,3 @@
-@import "mixins";
-
 div.container {
     .clearfix();
     margin: 50px auto;
@@ -39,3 +37,22 @@ div#newsletter {
 #project{
     width: 600px;
 }
+
+.logo {
+    .box-sizing(border-box);
+    .border-radius(6px);
+   width: 300px;
+    position: absolute;
+    z-index: -100;
+}
+
+.logo object {
+   margin: 0px auto;
+}
+
+.logo .drag {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
