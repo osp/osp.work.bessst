@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-12-03 18:23+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: axis/models.py:5
+msgid "name"
+msgstr ""
+
+#: axis/models.py:6 events/models.py:14 projects/models.py:14
+msgid "Description"
+msgstr ""
+
+#: events/models.py:7 projects/models.py:7 resources/models.py:5
+msgid "Title"
+msgstr ""
+
+#: events/models.py:8 people/models.py:8 projects/models.py:8
+msgid "Slug"
+msgstr ""
+
+#: events/models.py:8 people/models.py:8 projects/models.py:8
+msgid "Unique identifier. Allows a constant targeting of this event."
+msgstr ""
+
+#: events/models.py:9
+msgid "Related project"
+msgstr ""
+
+#: events/models.py:11
+msgid "Start date"
+msgstr ""
+
+#: events/models.py:12
+msgid "End date"
+msgstr ""
+
+#: events/models.py:13 projects/models.py:13 resources/models.py:6
+msgid "Summary"
+msgstr ""
+
+#: people/models.py:5
+msgid "Name"
+msgstr ""
+
+#: people/models.py:6
+msgid "Prefix"
+msgstr ""
+
+#: people/models.py:7
+msgid "First Name"
+msgstr ""
+
+#: people/models.py:10
+msgid "City"
+msgstr ""
+
+#: people/models.py:11 resources/models.py:7
+msgid "Link URL"
+msgstr ""
+
+#: people/models.py:12
+msgid "Short biography"
+msgstr ""
+
+#: projects/models.py:9
+msgid "Authors"
+msgstr ""
+
+#: projects/models.py:10
+msgid "Producers"
+msgstr ""
+
+#: projects/models.py:11
+msgid "Location"
+msgstr ""
+
+#: projects/models.py:12
+msgid "Axis"
+msgstr ""
