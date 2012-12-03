@@ -6,3 +6,6 @@ class Axis(models.Model):
     description = models.TextField(verbose_name=_("Description"))
     #pictogram = ImageField(upload_to="")
     #color = 
+    
+    def __unicode__(self):
+        return self.name

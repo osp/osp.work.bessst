@@ -12,3 +12,6 @@ class Project(models.Model):
     axis = models.ForeignKey(Axis, verbose_name=_("Axis"))
     summary = models.TextField(_("Summary"))
     description = models.TextField(_("Description"))
+
+    def __unicode__(self):
+        return self.title

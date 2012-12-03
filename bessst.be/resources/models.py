@@ -7,3 +7,6 @@ class Resource(models.Model):
     link = models.URLField(_("Link URL"))
     #preview = models.ImageField(upload_to="")
 
+    def __unicode__(self):
+        return self.title
+

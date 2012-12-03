@@ -12,3 +12,6 @@ class Event(models.Model):
     end_date = models.DateField(_("End date"))
     summary = models.TextField(_("Summary"))
     description = models.TextField(_("Description"))
+
+    def __unicode__(self):
+        return self.title

@@ -10,3 +10,6 @@ class People(models.Model):
     city = models.CharField(max_length=80, verbose_name=_("City"))
     link = models.URLField(_("Link URL"))
     biography = models.TextField(_("Short biography"))
+
+    def __unicode__(self):
+        return self.name
