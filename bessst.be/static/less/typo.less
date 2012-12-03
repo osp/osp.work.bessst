@@ -1,0 +1,203 @@
+/* CSS declarations go here */
+
+@color-link: #ff8080ff;
+@color-bessst: #474747;
+@font-size-small:15px;
+@font-size-smallplus:18px;
+@font-size-mid:21px;
+@font-size-big:25px;
+@font-family-intro:'EB';
+@font-family-project:'K';
+@font-family-bold:'KBold';
+
+
+@font-face {
+    font-family: EB;
+    src: url("../type/EBGaramond-Regular.ttf");
+}
+
+@font-face {
+    font-family: K;
+    src: url("../type/Karla-Regular.ttf");
+}
+
+@font-face {
+    font-family: KBold;
+    src: url("../type/Karla-Bold.ttf");
+}
+
+
+body {
+    line-height: 21px;
+    font-family: @font-family-project, Sans;
+}
+
+
+a, a.visited, a:hover{ 
+    color:black;
+    text-decoration:underline;
+} 
+
+p {
+    font-size: 18px;
+    text-indent: 1em;
+    line-height: 22px;
+}
+
+
+.bessst{
+    font-size: 35px;
+    line-height: 35px;
+    font-family: @font-family-bold, Sans;
+    text-align:center;
+    color: @color-bessst;
+}
+
+/* Toegang*/
+p.intro {
+    font-size: @font-size-big;
+    line-height: 31px;
+    font-family: @font-family-intro,'Bitstream Charter';
+}
+
+p.project  {
+    font-size: 18px;
+    font-family: @font-family-project, Sans;
+    line-height: 21px;
+}
+
+.meer  {
+    font-size: @font-size-smallplus;
+    font-family: @font-family-project, Sans;
+    line-height: 22px;
+}
+
+.meer a:link { 
+    font-family: @font-family-bold;
+    color:black;
+    text-decoration:underline;
+} 
+
+.meer a:visited { 
+    color:black;
+} 
+
+
+.naar-concept  {
+    font-size: @font-size-small;
+    font-family: @font-family-intro, Sans;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.naar-concept a:link { 
+    color:black;
+    text-decoration:underline;
+} 
+
+.meer a:visited { 
+    color:black;
+} 
+
+.email {
+    border: 2px solid black;
+    font-family: @font-family-project
+}
+
+input[type="submit"]{
+    border: 2px solid black;
+    margin-top: 6px;
+    background: white;
+    font-family: @font-family-project
+}
+
+/* Conceptnota*/
+h1, h2, h3, h4, h5, h6 {
+    font-weight:normal;
+}
+
+h1 {
+    text-transform : uppercase;
+    text-align: center;
+    font-size: @font-size-mid;
+    line-height: @font-size-big;
+    font-family: @font-family-intro,'Bitstream Charter';
+    margin-bottom: 78px;
+    span {
+        border-bottom: 4px double black;
+    }
+}
+
+h2 {
+    font-size: @font-size-mid;
+    text-align: center;
+    text-transform : uppercase;
+    line-height: 25px;
+    font-family: @font-family-intro;
+    margin-top: 36px;
+    margin-right: 36px;
+    margin-bottom: 6px;
+}
+
+h3 {
+    font-size: @font-size-small;
+    line-height: 21px;
+    font-family: @font-family-intro;
+    text-transform: uppercase;
+    margin-right: 72px;
+    margin-top: 18px;
+    text-align: center;
+    margin-bottom: 8px;
+    span {
+        display: block;
+        font-family: @font-family-intro;
+        font-size: 40px;
+        margin-bottom: 8px;
+    }
+ }
+
+p {
+    margin-right: 36px;
+}
+
+p.intro {
+    margin: 0px;
+}
+
+.gebieden {
+    font-size: @font-size-small;
+    font-family: @font-family-project, Sans;
+    line-height: 22px;
+    margin-right: 72px;
+}
+
+
+em {
+    font-family: @font-family-bold;
+    color: @color-bessst;
+    text-transform: lowercase;
+}
+
+#sommaire { 
+    position : fixed;
+    margin-left : 700px;
+    width: 250px;
+    margin-top : 25px;
+    text-decoration: none;
+    font-size: @font-size-smallplus;
+    line-height: 21px;
+    font-family: @font-family-intro;
+
+    li {
+        list-style-type: lower-roman;
+        margin-bottom: 3px;
+        a {
+            text-decoration: none;
+        }
+        li {
+            margin-left: @font-size-mid;
+            list-style-type: decimal;
+        }
+    }
+}
+
