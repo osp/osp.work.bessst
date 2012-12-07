@@ -149,6 +149,15 @@ em {
 }
 
 /* General layout */
+section {
+    clear: both;
+}
+div.more {
+    display: none;
+}
+div.summary:hover div.more {
+    display: block;
+}
 
 div.container {
     .clearfix();
@@ -227,20 +236,15 @@ nav {
         font-size: @font-size-big;
         margin-right: 2 * @font-size-big;
     }
-    ul#lan {
-        li {
-            margin-right: @font-size-small;
-        }
-    }
     ul#navi {
         li {
             margin-right: @font-size-big;
         }
     }
-    ul#meta {
+    ul#lan {
         float: right;
         li {
-            margin-right: @font-size-big;
+            margin-right: @font-size-small;
         }
     }
 }

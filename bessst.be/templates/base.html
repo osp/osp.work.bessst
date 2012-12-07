@@ -8,7 +8,7 @@
     <script src="{{ STATIC_URL }}js/jquery-ui-1.8.23.custom.min.js"></script>
     <script>
     {% block positions %}
-    var positions = []
+        var positions = [{"top":790,"left":750},{"top":390,"left":-172},{"top":180,"left":850},{"top":150,"left":970},{"top":30,"left":150},{"top":100,"left":500},{"top":706,"left":226.5},{"top":50,"left":226.5},{"top":225,"left":165.5},{"top":91,"left":365.5},{"top":101,"left":61.5},{"top":113,"left":317.5},{"top":91,"left":297.5},{"top":706,"left":226.5},{"top":806,"left":596.5},{"top":533,"left":369.5},{"top":450,"left":109.5},{"top":76,"left":715.5},{"top":21,"left":285.5},{"top":51,"left":26.5}]
     {% endblock %}
     </script>
     <script src="{{ STATIC_URL }}js/draggable.js"></script>
@@ -18,30 +18,123 @@
 {% block nav %}
 <nav>
     <ul id="logo">
-        <li><a href="">Bessst</a></li>
-    </ul>
-    <ul id="lan">
-        <li><a href="">nl</a></li>
-        <li><a href="">en</a></li>
-        <li><a href="">fr</a></li>
+        <li><a href="#">Bessst</a></li>
     </ul>
     <ul id="navi">
-        <li><a href="">Over</a></li>
-        <li><a href="">Projecten</a></li>
-        <li><a href="">Archieven</a></li>
-        <li><a href="">Bronnen</a></li>
-        <li><a href="">Agenda</a></li>
+        <li><a href="/over.html">Over</a></li>
+        <li><a href="#">Projecten</a></li>
+        <li><a href="#">Gemeenschap</a></li>
+        <li><a href="#">Bronnen</a></li>
+        <li><a href="#">Agenda</a></li>
     </ul>
-    <ul id="meta">
-        <li><a href="">Nieuwsbrief</a></li>
-        <li><a href="">Deelnemen</a></li>
+    <ul id="lan">
+        <li><a href="#">nl</a></li>
+        <li><a href="#">en</a></li>
+        <li><a href="#">fr</a></li>
     </ul>
 </nav>
 
 {% endblock %}
 
+<section id="main">
 {%  block content %}
 {%  endblock %}
+</section>
+
+<figure>
+    <img id="orig" src="{{ STATIC_URL }}images/Koningsplein-spiegelraam.jpg" width="2272" height="1704" style="display: none;"/>
+    <canvas id="threshold" width="1000" height="800"></canvas>
+    <button onclick="threshold()">Threshold the image</button>
+</figure>
+<script>
+      //var canvas = document.getElementById('background');
+      //var context = canvas.getContext('2d');
+      //var imageObj = new Image();
+
+      //imageObj.onload = function() {
+      //  context.drawImage(imageObj, 0, 0);
+      //};
+      //imageObj.src = '{{ STATIC_URL }}images/Koningsplein-spiegelraam.jpg';
+
+Filters = {};
+Filters.getPixels = function(img) {
+  var c = this.getCanvas(img.width, img.height);
+  var ctx = c.getContext('2d');
+  ctx.drawImage(img, 0, 0);
+  return ctx.getImageData(0,0,c.width,c.height);
+};
+
+Filters.getCanvas = function(w,h) {
+  var c = document.createElement('canvas');
+  c.width = w;
+  c.height = h;
+  return c;
+};
+
+Filters.filterImage = function(filter, image, var_args) {
+  var args = [this.getPixels(image)];
+  for (var i=2; i<arguments.length; i++) {
+    args.push(arguments[i]);
+  }
+  return filter.apply(null, args);
+};
+
+    Filters.threshold = function(pixels, threshold) {
+      var d = pixels.data;
+      for (var i=0; i<d.length; i+=4) {
+        var r = d[i];
+        var g = d[i+1];
+        var b = d[i+2];
+        var v = (0.2126*r + 0.7152*g + 0.0722*b >= threshold) ? 255 : 0;
+        d[i] = d[i+1] = d[i+2] = v
+      }
+      return pixels;
+    };
+
+
+</script>
+<script>
+
+    var img = document.getElementById('orig');
+    img.addEventListener('load', function() {
+
+      var canvases = document.getElementsByTagName('canvas');
+      for (var i=0; i<canvases.length; i++) {
+        var c = canvases[i];
+        c.parentNode.insertBefore(img.cloneNode(true), c);
+        c.style.display = 'none';
+      }
+
+      function runFilter(id, filter, arg1, arg2, arg3) {
+        var c = document.getElementById(id);
+        var s = c.previousSibling.style;
+        var b = c.parentNode.getElementsByTagName('button')[0];
+        if (b.originalText == null) {
+          b.originalText = b.textContent;
+        }
+        if (s.display == 'none') {
+          s.display = 'inline';
+          c.style.display = 'none';
+          b.textContent = b.originalText;
+        } else {
+          var idata = Filters.filterImage(filter, img, arg1, arg2, arg3);
+          c.width = idata.width;
+          c.height = idata.height;
+          var ctx = c.getContext('2d');
+          ctx.putImageData(idata, 0, 0);
+          s.display = 'none';
+          c.style.display = 'inline';
+          b.textContent = 'Restore original image';
+        }
+      }
+ threshold = function() {
+        runFilter('threshold', Filters.threshold, 128);
+      }
+
+    }, false);
+
+
+</script>
 
 {% block footer %}
 {% endblock %}
