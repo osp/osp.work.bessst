@@ -44,7 +44,7 @@
 <figure>
     <img id="orig" src="{{ STATIC_URL }}images/Koningsplein-spiegelraam.jpg" width="2272" height="1704" style="display: none;"/>
     <canvas id="threshold" width="1000" height="800"></canvas>
-    <button onclick="threshold()">Threshold the image</button>
+    <button onclick="bla(128)">Toggle Threshold</button>
 </figure>
 <script>
       //var canvas = document.getElementById('background');
@@ -56,83 +56,60 @@
       //};
       //imageObj.src = '{{ STATIC_URL }}images/Koningsplein-spiegelraam.jpg';
 
-Filters = {};
-Filters.getPixels = function(img) {
-  var c = this.getCanvas(img.width, img.height);
-  var ctx = c.getContext('2d');
-  ctx.drawImage(img, 0, 0);
-  return ctx.getImageData(0,0,c.width,c.height);
-};
+    Filters = {};
+    Filters.getPixels = function(img) {
+        var c = this.getCanvas(img.width, img.height);
+        var ctx = c.getContext('2d');
+        ctx.drawImage(img, 0, 0);
+        return ctx.getImageData(0,0,c.width,c.height);
+    };
 
-Filters.getCanvas = function(w,h) {
-  var c = document.createElement('canvas');
-  c.width = w;
-  c.height = h;
-  return c;
-};
+    Filters.getCanvas = function(w,h) {
+        var c = document.createElement('canvas');
+        c.width = w;
+        c.height = h;
+        return c;
+    };
 
-Filters.filterImage = function(filter, image, var_args) {
-  var args = [this.getPixels(image)];
-  for (var i=2; i<arguments.length; i++) {
-    args.push(arguments[i]);
-  }
-  return filter.apply(null, args);
-};
+    Filters.filterImage = function(filter, image, var_args) {
+        var args = [this.getPixels(image)];
+        for (var i=2; i<arguments.length; i++) {
+            args.push(arguments[i]);
+        }
+        return filter.apply(null, args);
+    };
 
     Filters.threshold = function(pixels, threshold) {
       var d = pixels.data;
-      for (var i=0; i<d.length; i+=4) {
+      //for (var i=0; i<d.length; i+=4) {
+for (var j=100; j>1; j-=1) {
+      for (var i=0; i<j*d.length/100; i+=j) {
         var r = d[i];
         var g = d[i+1];
         var b = d[i+2];
-        var v = (0.2126*r + 0.7152*g + 0.0722*b >= threshold) ? 255 : 0;
+        //var v = (0.2126*r + 0.7152*g + 0.0722*b >= threshold) ? 255 : 0;
+        var v = (0.5126*r + 0.7152*g + 0.0722*b >= threshold) ? 255 : 0;
         d[i] = d[i+1] = d[i+2] = v
       }
+}
       return pixels;
     };
 
-
-</script>
-<script>
-
     var img = document.getElementById('orig');
     img.addEventListener('load', function() {
-
-      var canvases = document.getElementsByTagName('canvas');
-      for (var i=0; i<canvases.length; i++) {
-        var c = canvases[i];
-        c.parentNode.insertBefore(img.cloneNode(true), c);
-        c.style.display = 'none';
-      }
-
-      function runFilter(id, filter, arg1, arg2, arg3) {
-        var c = document.getElementById(id);
-        var s = c.previousSibling.style;
-        var b = c.parentNode.getElementsByTagName('button')[0];
-        if (b.originalText == null) {
-          b.originalText = b.textContent;
+        function runFilter(id, filter, arg1, arg2, arg3) {
+            var c = document.getElementById(id);
+            var idata = Filters.filterImage(filter, img, arg1, arg2, arg3);
+            c.width = idata.width;
+            c.height = idata.height;
+            var ctx = c.getContext('2d');
+            ctx.putImageData(idata, 0, 0);
         }
-        if (s.display == 'none') {
-          s.display = 'inline';
-          c.style.display = 'none';
-          b.textContent = b.originalText;
-        } else {
-          var idata = Filters.filterImage(filter, img, arg1, arg2, arg3);
-          c.width = idata.width;
-          c.height = idata.height;
-          var ctx = c.getContext('2d');
-          ctx.putImageData(idata, 0, 0);
-          s.display = 'none';
-          c.style.display = 'inline';
-          b.textContent = 'Restore original image';
-        }
-      }
- threshold = function() {
-        runFilter('threshold', Filters.threshold, 128);
-      }
-
+        threshold = function(seuil) {
+            runFilter('threshold', Filters.threshold, seuil);
+          }
+        threshold(128);
     }, false);
-
 
 </script>
 
