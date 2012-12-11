@@ -6,6 +6,9 @@
     <script src="{{ STATIC_URL }}less-1.3.0.min.js"></script>
     <script src="{{ STATIC_URL }}jquery.min.js"></script>
     <script src="{{ STATIC_URL }}js/jquery-ui-1.8.23.custom.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="http://www.csstextwrap.com/j/shapewrapper.js">
+        
+    </script>
     <script>
     {% block positions %}
         var positions = [{"top":790,"left":750},{"top":390,"left":-172},{"top":180,"left":850},{"top":150,"left":970},{"top":30,"left":150},{"top":100,"left":500},{"top":706,"left":226.5},{"top":50,"left":226.5},{"top":225,"left":165.5},{"top":91,"left":365.5},{"top":101,"left":61.5},{"top":113,"left":317.5},{"top":91,"left":297.5},{"top":706,"left":226.5},{"top":806,"left":596.5},{"top":533,"left":369.5},{"top":450,"left":109.5},{"top":76,"left":715.5},{"top":21,"left":285.5},{"top":51,"left":26.5}]
@@ -21,10 +24,10 @@
         <li><a href="#">Bessst</a></li>
     </ul>
     <ul id="navi">
-        <li><a href="/over.html">Over</a></li>
-        <li><a href="#">Projecten</a></li>
+        <li><a href="/over/">Over</a></li>
+        <li><a href="/projects/">Projecten</a></li>
         <li><a href="#">Inspiratie</a></li>
-        <li><a href="#">Community</a></li>
+        <li><a href="/community/">Community</a></li>
         <li><a href="#">Agenda</a></li>
     </ul>
     <ul id="lan">
@@ -36,10 +39,18 @@
 
 {% endblock %}
 
-<section id="main">
-{%  block content %}
-{%  endblock %}
-</section>
+
+<div id="container">
+    <header>
+        {%  block header %}
+        {%  endblock %}
+    </header>
+
+    {%  block content %}
+        <section id="main">
+        </section>
+    {%  endblock %}
+</div>
 
 <figure>
     <img id="orig" src="{{ STATIC_URL }}images/Koningsplein-spiegelraam-1000.jpg" style="display: none; width: 100%;"/>

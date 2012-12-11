@@ -15,3 +15,7 @@ class Project(models.Model):
 
     def __unicode__(self):
         return self.title
+
+    @models.permalink
+    def get_absolute_url(self):
+        return ('project-detail', (), {'slug': str(self.slug)})

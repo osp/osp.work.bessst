@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load markup %}
+
+{% block title %}Projecten{% endblock %}
+
+{% block header %}
+    <h1>{{ object.title }}</h1>
+{% endblock header%}
+
+{% block content %}
+<section id="main" class="big box">
+    <script type="text/javascript">shapeWrapper("15","7.5,6,5|22.5,17,15|37.5,29,24|52.5,40,34|67.5,51,44|82.5,63,53|97.5,74,63|112.5,86,73|127.5,97,83|142.5,109,92|157.5,120,102|172.5,131,112|187.5,143,121|202.5,154,131|217.5,166,141|232.5,177,151|247.5,189,160|262.5,200,170|277.5,0,180|292.5,0,0|307.5,0,0|322.5,0,0|");</script>
+<!--<div style="float:left;clear:left;height:15px;width:7px"></div><div style="float:right;clear:right;height:15px;width:6px"></div><div style="float:left;clear:left;height:15px;width:20px"></div><div style="float:right;clear:right;height:15px;width:19px"></div><div style="float:left;clear:left;height:15px;width:33px"></div><div style="float:right;clear:right;height:15px;width:32px"></div><div style="float:left;clear:left;height:15px;width:47px"></div><div style="float:right;clear:right;height:15px;width:45px"></div><div style="float:left;clear:left;height:15px;width:60px"></div><div style="float:right;clear:right;height:15px;width:58px"></div><div style="float:left;clear:left;height:15px;width:73px"></div><div style="float:right;clear:right;height:15px;width:71px"></div><div style="float:left;clear:left;height:15px;width:86px"></div><div style="float:right;clear:right;height:15px;width:84px"></div><div style="float:left;clear:left;height:15px;width:100px"></div><div style="float:right;clear:right;height:15px;width:97px"></div><div style="float:left;clear:left;height:15px;width:113px"></div><div style="float:right;clear:right;height:15px;width:110px"></div><div style="float:left;clear:left;height:15px;width:126px"></div><div style="float:right;clear:right;height:15px;width:123px"></div><div style="float:left;clear:left;height:15px;width:140px"></div><div style="float:right;clear:right;height:15px;width:136px"></div><div style="float:left;clear:left;height:15px;width:153px"></div><div style="float:right;clear:right;height:15px;width:149px"></div><div style="float:left;clear:left;height:15px;width:166px"></div><div style="float:right;clear:right;height:15px;width:162px"></div><div style="float:left;clear:left;height:15px;width:180px"></div><div style="float:right;clear:right;height:15px;width:175px"></div><div style="float:left;clear:left;height:15px;width:193px"></div><div style="float:right;clear:right;height:15px;width:188px"></div><div style="float:left;clear:left;height:15px;width:206px"></div><div style="float:right;clear:right;height:15px;width:201px"></div><div style="float:left;clear:left;height:15px;width:219px"></div><div style="float:right;clear:right;height:15px;width:214px"></div><div style="float:left;clear:left;height:15px;width:233px"></div><div style="float:right;clear:right;height:15px;width:227px"></div><div style="float:left;clear:left;height:15px;width:246px"></div><div style="float:right;clear:right;height:15px;width:240px"></div><div style="float:left;clear:left;height:15px;width:259px"></div><div style="float:right;clear:right;height:15px;width:253px"></div><div style="float:left;clear:left;height:15px;width:0px"></div><div style="float:right;clear:right;height:15px;width:0px"></div><div style="float:left;clear:left;height:15px;width:0px"></div><div style="float:right;clear:right;height:15px;width:0px"></div>-->
+    <div>{{ object.summary|markdown }}</div>
+<div class="columns">
+    {{ object.description|markdown }}
+</div>
+
+<div class="columns">
+</div>
+</section>
+<section id="right">
+    <dl id="metadata" class="box">
+        <dt>Authors</dt>
+        <dd>
+            <ul>{% for p in object.authors.all %}<li>{{ p }}</li>{% endfor %}</ul>
+        </dd>
+        <dt>Producers</dt>
+        <dd>
+            <ul>{% for p in object.producers.all %}<li>{{ p }}</li>{% endfor %}</ul>
+        </dd>
+        <dt>Location</dt>
+        <dd>{{ object.location }}</dd>
+        <dt>Axis</dt> 
+        <dd>{{ object.axis }}</dd>
+    </dl>
+</section>
+{% endblock %}

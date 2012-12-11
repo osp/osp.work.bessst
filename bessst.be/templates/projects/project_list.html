@@ -2,10 +2,19 @@
 
 {% block title %}Projecten{% endblock %}
 
+{% block header %}
+    <h1>Traag, langzaam verkeer</h1>
+{% endblock header%}
+
 {% block content %}
-    <ul>
-    {% for project in object_list %}
-        <li><a href="{{ project.get_absolute_url }}">{{ project }}</a></li>
-    {% endfor %} 
-    </ul>
+
+    <section id="main">
+        <ul id="project-list">
+        {% for project in object_list %}
+            <li class="box"><a href="{{ project.get_absolute_url }}">{{ project }}</a></li>
+        {% endfor %} 
+        </ul>
+    </section>
+
+    {% include "pictos.html" %}
 {% endblock %}
