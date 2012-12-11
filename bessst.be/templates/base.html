@@ -23,8 +23,8 @@
     <ul id="navi">
         <li><a href="/over.html">Over</a></li>
         <li><a href="#">Projecten</a></li>
-        <li><a href="#">Gemeenschap</a></li>
-        <li><a href="#">Bronnen</a></li>
+        <li><a href="#">Inspiratie</a></li>
+        <li><a href="#">Community</a></li>
         <li><a href="#">Agenda</a></li>
     </ul>
     <ul id="lan">
@@ -42,19 +42,10 @@
 </section>
 
 <figure>
-    <img id="orig" src="{{ STATIC_URL }}images/Koningsplein-spiegelraam.jpg" width="2272" height="1704" style="display: none;"/>
-    <canvas id="threshold" width="1000" height="800"></canvas>
-    <button onclick="bla(128)">Toggle Threshold</button>
+    <img id="orig" src="{{ STATIC_URL }}images/Koningsplein-spiegelraam-1000.jpg" style="display: none; width: 100%;"/>
+    <canvas id="background" width="1000" height="800"></canvas>
 </figure>
 <script>
-      //var canvas = document.getElementById('background');
-      //var context = canvas.getContext('2d');
-      //var imageObj = new Image();
-
-      //imageObj.onload = function() {
-      //  context.drawImage(imageObj, 0, 0);
-      //};
-      //imageObj.src = '{{ STATIC_URL }}images/Koningsplein-spiegelraam.jpg';
 
     Filters = {};
     Filters.getPixels = function(img) {
@@ -80,18 +71,17 @@
     };
 
     Filters.threshold = function(pixels, threshold) {
-      var d = pixels.data;
-      //for (var i=0; i<d.length; i+=4) {
-for (var j=100; j>1; j-=1) {
-      for (var i=0; i<j*d.length/100; i+=j) {
-        var r = d[i];
-        var g = d[i+1];
-        var b = d[i+2];
-        //var v = (0.2126*r + 0.7152*g + 0.0722*b >= threshold) ? 255 : 0;
-        var v = (0.5126*r + 0.7152*g + 0.0722*b >= threshold) ? 255 : 0;
-        d[i] = d[i+1] = d[i+2] = v
-      }
-}
+        var d = pixels.data;
+        for (var j=9; j>1; j-=1) {
+              for (var i=0; i<j*d.length/10; i+=j) {
+                var r = d[i];
+                var g = d[i+1];
+                var b = d[i+2];
+                //var v = (0.2126*r + 0.7152*g + 0.0722*b >= threshold) ? 255 : 0;
+                var v = (0.5126*r + 0.7152*g + 0.0722*b >= threshold) ? 255 : 0;
+                d[i] = d[i+1] = d[i+2] = v
+              }
+        }
       return pixels;
     };
 
@@ -106,7 +96,7 @@ for (var j=100; j>1; j-=1) {
             ctx.putImageData(idata, 0, 0);
         }
         threshold = function(seuil) {
-            runFilter('threshold', Filters.threshold, seuil);
+            runFilter('background', Filters.threshold, seuil);
           }
         threshold(128);
     }, false);

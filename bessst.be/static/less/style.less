@@ -149,6 +149,12 @@ em {
 }
 
 /* General layout */
+canvas#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+}
 section {
     clear: both;
 }
@@ -204,7 +210,7 @@ div#newsletter {
 .logo {
    width: 300px;
     position: absolute;
-    z-index: -100;
+    z-index: 1000;
 }
 
 .logo object {
