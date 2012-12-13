@@ -177,13 +177,14 @@ canvas#background {
     z-index: -1000;
 }
 header {
-    clear: both;
-    background-color: white;
-    border: 7px double yellow;
-    margin: 0 @gutter;
-
     h1 {
-        margin: @gutter/2 0;
+        clear: both;
+        background-color: white;
+        border: 7px double yellow;
+        margin: 0 @gutter;
+        
+        padding: @gutter/2 0;
+        visibility: hidden;
     }
 }
 ul li {
