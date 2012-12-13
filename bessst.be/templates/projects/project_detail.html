@@ -17,20 +17,22 @@
 
 </section>
 <section id="right">
-    <dl id="metadata" class="box">
-        <dt>Authors</dt>
-        <dd>
-            <ul>{% for p in object.authors.all %}<li>{{ p }}</li>{% endfor %}</ul>
-        </dd>
-        <dt>Producers</dt>
-        <dd>
-            <ul>{% for p in object.producers.all %}<li>{{ p }}</li>{% endfor %}</ul>
-        </dd>
-        <dt>Location</dt>
-        <dd>{{ object.location }}</dd>
-        <dt>Axis</dt> 
-        <dd>{{ object.axis }}</dd>
-    </dl>
+        <dl id="metadata" class="box">
+            <dt>Authors</dt>
+            <dd>
+                <ul>{% for p in object.authors.all %}<li>{{ p }}</li>{% endfor %}</ul>
+            </dd>
+            <dt>Producers</dt>
+            <dd>
+                <ul>{% for p in object.producers.all %}<li>{{ p }}</li>{% endfor %}</ul>
+            </dd>
+            <dt>Location</dt>
+            <dd>{{ object.location }}</dd>
+            <dt style="display: none">{{ object.axis }}</dt>
+            <dd>
+                <object class="metadata-axis" type="image/svg+xml" data="{{ STATIC_URL }}axis/{{ object.axis.pictogram }}.svg"></object> 
+            </dd>
+        </dl>
 </section>
 
 <script>
