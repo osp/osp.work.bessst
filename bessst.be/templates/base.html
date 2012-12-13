@@ -45,7 +45,9 @@
 </div>
 
 <figure>
-    <img id="orig" src="{{ STATIC_URL }}images/Koningsplein-spiegelraam-1000.jpg" style="display: none; width: 100%;"/>
+    {% block background %}
+        <img id="orig" src="{{ STATIC_URL }}images/Koningsplein-spiegelraam-1000.jpg" style="display: none; width: 100%;"/>
+    {% endblock %}
     <canvas id="background" width="1000" height="800"></canvas>
 </figure>
 <script>
