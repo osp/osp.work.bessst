@@ -6,7 +6,6 @@
     <script src="{{ STATIC_URL }}less-1.3.0.min.js"></script>
     <script src="{{ STATIC_URL }}jquery.min.js"></script>
     <script src="{{ STATIC_URL }}js/jquery-ui-1.8.23.custom.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="http://www.csstextwrap.com/j/shapewrapper.js">
         
     </script>
     <script>
@@ -15,13 +14,14 @@
     {% endblock %}
     </script>
     <script src="{{ STATIC_URL }}js/draggable.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery.tailing.js"></script>
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
 {% block nav %}
 <nav>
     <ul id="logo">
-        <li><a href="#">Bessst</a></li>
+        <li><a href="/">Bessst</a></li>
     </ul>
     <ul id="navi">
         <li><a href="/over/">Over</a></li>
