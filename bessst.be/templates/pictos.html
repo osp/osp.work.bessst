@@ -1,18 +1,5 @@
+{% for axis in axis_list %}
   <div class="logo">
-      <object type="image/svg+xml" data="/assets/svg/1.svg"></object>
+      <object id="{{ axis.name|slugify }}" type="image/svg+xml" data="{{ STATIC_URL }}axis/{{ axis.pictogram }}.svg" title="{{ axis.name }}"></object>
   </div>
-  <div class="logo">
-      <object type="image/svg+xml" data="/assets/svg/2.svg"></object>
-  </div>
-    <div class="logo">
-      <object type="image/svg+xml" data="/assets/svg/3.svg"></object> 
-   </div>
-  <div class="logo">
-      <object type="image/svg+xml" data="/assets/svg/4.svg"></object> 
-  </div>
-    <div class="logo">
-      <object type="image/svg+xml" data="/assets/svg/5.svg"></object> 
-   </div>
-  <div class="logo">
-      <object type="image/svg+xml" data="/assets/svg/6.svg"></object> 
-  </div>
+{% endfor %}

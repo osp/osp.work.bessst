@@ -11,18 +11,20 @@
     <section id="main">
         <ul id="project-list">
         {% for project in object_list %}
-            <li class="box"><a href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name }}">{{ project }}</a></li>
+            <li class="box {{ project.axis.name|slugify }}"><a href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name }}">{{ project }}</a></li>
         {% endfor %} 
         </ul>
     </section>
 
     {% include "pictos.html" %}
     <script>
-        $("#project-list .box").draggable();
-        $("#project-list .box").hover(function(){
-            $("#info-zone").text($(this).children("a").attr('data-axis')).css('visibility','visible')
+        $("div.logo").hover(function(){
+            $("#info-zone").text($(this).children("object").attr('title')).css('visibility','visible')
         }, function(){
             $("#info-zone").html("&nbsp;").css('visibility','hidden')
         });
+        $("div.logo").click(function(){
+            $('.' + $(this).children("object").attr('id')).toggleClass('visible')
+        })
     </script>
 {% endblock %}
