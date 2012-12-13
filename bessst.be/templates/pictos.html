@@ -1,5 +1,7 @@
+<ul>
 {% for axis in axis_list %}
-  <div class="logo">
+  <li class="logo">
       <object id="{{ axis.name|slugify }}" type="image/svg+xml" data="{{ STATIC_URL }}axis/{{ axis.pictogram }}.svg" title="{{ axis.name }}"></object>
-  </div>
+  </li>
 {% endfor %}
+</ul>
