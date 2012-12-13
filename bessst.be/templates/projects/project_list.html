@@ -42,7 +42,7 @@
         
         /* Show/hide projects on axis-image click */
         $("li.logo").click(function(){
-            $('.' + $(this).children("object").attr('id')).toggleClass('visible')
+            $('.' + $(this).children("object").attr('id')).toggle('slow')
         })
     </script>
 {% endblock %}
