@@ -2,6 +2,7 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from axis.models import Axis
 from people.models import People
+from media_app.models import Image
 
 class Project(models.Model):
     title = models.CharField(max_length=255, verbose_name=_("Title"))
