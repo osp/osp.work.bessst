@@ -50,5 +50,6 @@
 
 
 {% block background %}
-<img id="orig" src="{{ object.image_set.all.0.image.url }}" style="display: none; width: 100%;"/>
+<div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/{{ object.axis.pictogram }}-gradient.png');"></div> 
+<img class="background-image" src="{{ object.image_set.all.0.image.url }}" style="width: 100%;"/>
 {% endblock %}
