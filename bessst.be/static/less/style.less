@@ -73,6 +73,9 @@ a, a.visited, a:hover{
     color:black;
     text-decoration:underline;
 } 
+a:hover{ 
+    text-decoration: none;
+}
 
 p {
     font-family: @font-family;
@@ -392,8 +395,10 @@ nav {
     }
     ul#lan {
         float: right;
+        margin-right: @gutter*2;
+
         li {
-            margin-right: @font-size;
+            margin-left: @gutter/2;
         }
     }
 }
