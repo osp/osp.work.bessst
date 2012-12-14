@@ -1,7 +1,10 @@
-<ul>
+<ul id="project-list"> 
 {% for axis in axis_list %}
   <li class="logo">
       <object id="{{ axis.name|slugify }}" type="image/svg+xml" data="{{ STATIC_URL }}axis/{{ axis.pictogram }}.svg" title="{{ axis.name }}"></object>
   </li>
+  {% for project in axis.project_set.all %}
+        <li class="box {{ project.axis.name|slugify }}"><a href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name }}">{{ project }}</a></li>
+  {% endfor %}
 {% endfor %}
 </ul>

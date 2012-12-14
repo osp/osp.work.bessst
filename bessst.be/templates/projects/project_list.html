@@ -9,12 +9,7 @@
 {% block content %}
 
     <section id="main">
-        <ul id="project-list">
-        {% for project in object_list %}
-            <li class="box {{ project.axis.name|slugify }}"><a href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name }}">{{ project }}</a></li>
-        {% endfor %} 
-        </ul>
-    {% include "pictos.html" %}
+        {% include "pictos.html" %}
     </section>
 
 
