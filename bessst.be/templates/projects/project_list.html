@@ -9,7 +9,16 @@
 {% block content %}
 
     <section id="main">
-        {% include "pictos.html" %}
+        <ul id="project-list"> 
+        {% for axis in axis_list %}
+          <li class="logo">
+              <object id="{{ axis.name|slugify }}" class="{{ axis.pictogram }}" type="image/svg+xml" data="{{ STATIC_URL }}axis/{{ axis.pictogram }}.svg" title="{{ axis.name }}"></object>
+          </li>
+          {% for project in axis.project_set.all %}
+                <li class="box {{ project.axis.name|slugify }}"><a href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name }}">{{ project }}</a></li>
+          {% endfor %}
+        {% endfor %}
+        </ul>
     </section>
 
 
@@ -30,9 +39,15 @@
         
         /* Show axis names on axis-image rollover */
         $("li.logo").hover(function(){
-            $("#info-zone").text($(this).children("object").attr('title')).css('visibility','visible')
+            picto = $(this).children("object");
+            $("#info-zone").text(picto.attr('title')).css('visibility','visible').addClass(picto.attr('class'));
+            filename = picto.attr("data").slice(0, -4);
+            picto.attr("data", filename + "_c.svg");
+            $("#background-gradient").css("background-image", "url({{ STATIC_URL }}axis/" + picto.attr('class') + "-gradient.png)");
         }, function(){
-            $("#info-zone").html("&nbsp;").css('visibility','hidden')
+            $("#info-zone").html("&nbsp;").css('visibility','hidden').removeClass();
+            picto.attr("data", filename + ".svg");
+            $("#background-gradient").css("background-image", "url({{ STATIC_URL }}axis/all-gradient.png)");
         });
         
         /* Show/hide projects on axis-image click */
