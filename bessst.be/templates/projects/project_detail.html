@@ -4,7 +4,7 @@
 {% block title %}Projecten{% endblock %}
 
 {% block header %}
-    <h1>{{ object.title }}</h1>
+<h1 class="{{ object.axis.pictogram }}">{{ object.title }}</h1>
 {% endblock header%}
 
 {% block content %}
@@ -50,6 +50,6 @@
 
 
 {% block background %}
-<div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/{{ object.axis.pictogram }}-gradient.png');"></div> 
-<img class="background-image" src="{{ object.image_set.all.0.image.url }}" style="width: 100%;"/>
+    <div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/{{ object.axis.pictogram }}-gradient.png');"></div> 
+    <img class="background-image" src="{{ object.image_set.all.0.image.url }}" style="width: 100%;"/>
 {% endblock %}
