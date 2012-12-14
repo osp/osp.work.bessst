@@ -1,9 +1,14 @@
 from django.contrib import admin
 from django.utils.translation import ugettext_lazy as _
-from .models import People
+from .models import Individual, Organization, People
 
-class PeopleAdmin(admin.ModelAdmin):
+class IndividualAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('firstname', 'prefix', 'name')}
 
-admin.site.register(People, PeopleAdmin)
+class OrganizationAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug': ('prefix', 'name')}
+
+admin.site.register(People)
+admin.site.register(Individual, IndividualAdmin)
+admin.site.register(Organization, OrganizationAdmin)
 
