@@ -12,10 +12,10 @@
         <ul id="project-list"> 
         {% for axis in axis_list %}
           <li class="logo">
-              <object id="{{ axis.name|slugify }}" class="{{ axis.pictogram }}" type="image/svg+xml" data="{{ STATIC_URL }}axis/{{ axis.pictogram }}.svg" title="{{ axis.name }}"></object>
+              <img id="{{ axis.name|slugify }}" src="{{ STATIC_URL }}axis/{{ axis.pictogram }}.png" title="{{ axis.name }}"/>
           </li>
           {% for project in axis.project_set.all %}
-                <li class="box {{ project.axis.name|slugify }}"><a href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name }}">{{ project }}</a></li>
+                <li class="box {{ project.axis.name|slugify }}" data-sizex="{{ project.size_x }}"><a href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name }}">{{ project }}</a></li>
           {% endfor %}
         {% endfor %}
         </ul>
@@ -23,36 +23,30 @@
 
 
     <script>
-        /* Working around a pesky bug in jQuery; embedded svg objects do not receive click events 
-         * Therefere we add a span to the containing element.
-         * The CSS is as such: 
-            .logo .drag {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-            }
-         * So the span covers all the element and receives the click event
-         */
-        $(".logo").each(function() {
-            $(this).prepend('<span class="drag">&nbsp;</span>')
-        })
-        
+
+        $(window).load(function() {
+            $('#project-list').masonry({
+              itemSelector: 'li',
+              columnWidth: 30
+            });
+        });
+
         /* Show axis names on axis-image rollover */
         $("li.logo").hover(function(){
-            picto = $(this).children("object");
-            $("#info-zone").text(picto.attr('title')).addClass(picto.attr('class'));
-            filename = picto.attr("data").slice(0, -4);
-            picto.attr("data", filename + "_c.svg");
+            picto = $(this).children("img");
+            $("#info-zone").text(picto.attr('title')).css('visibility','visible').addClass(picto.attr('class'));
+            filename = picto.attr("src").slice(0, -4);
+            picto.attr("src", filename + "_c.png");
             $("#background-gradient").css("background-image", "url({{ STATIC_URL }}axis/" + picto.attr('class') + "-gradient.png)");
         }, function(){
-            $("#info-zone").html("&nbsp;").removeClass();
-            picto.attr("data", filename + ".svg");
+            $("#info-zone").html("&nbsp;").css('visibility','hidden').removeClass();
+            picto.attr("src", filename + ".png");
             $("#background-gradient").css("background-image", "url({{ STATIC_URL }}axis/all-gradient.png)");
         });
         
         /* Show/hide projects on axis-image click */
-        //$("li.logo").click(function(){
-        //    $('.' + $(this).children("object").attr('id')).toggle('slow')
-        //})
+        $("li.logo").click(function(){
+            $('.' + $(this).children("img").attr('id')).toggle('slow')
+        })
     </script>
 {% endblock %}
