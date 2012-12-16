@@ -1,6 +1,10 @@
 from django.contrib import admin
 from django.utils.translation import ugettext_lazy as _
 from .models import Axis
+from media_app.admin import ImageInline
 
-admin.site.register(Axis)
+class AxisAdmin(admin.ModelAdmin):
+    inlines = (ImageInline,)
+
+admin.site.register(Axis, AxisAdmin)
 
