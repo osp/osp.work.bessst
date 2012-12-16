@@ -12,7 +12,7 @@
         <ul id="project-list"> 
         {% for axis in axis_list %}
           <li class="logo">
-              <img id="{{ axis.name|slugify }}" src="{{ STATIC_URL }}axis/{{ axis.pictogram }}.png" title="{{ axis.name }}"/>
+          <img id="{{ axis.name|slugify }}" src="{{ STATIC_URL }}axis/{{ axis.pictogram }}.png" title="{{ axis.name }}" data-photo="{{ axis.image_set.all.0.image.url }}" data-photo-caption="{{ axis.image_set.all.0 }}"/>
           </li>
           {% for project in axis.project_set.all %}
                 <li class="box {{ project.axis.name|slugify }}" data-sizex="{{ project.size_x }}"><a href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name }}">{{ project }}</a></li>
@@ -20,10 +20,21 @@
         {% endfor %}
         </ul>
     </section>
+{% endblock content %}
+
+
+{% block footer %}
+    <footer>
+        <div id="caption-list">
+                <div class="caption {% if forloop.first %}visible{% endif %}">
+                </div>
+        </div>
+    </footer>
+
+
 
 
     <script>
-
         var masonic = function() {
             $('#project-list').masonry({
               itemSelector: 'li:visible',
@@ -40,6 +51,8 @@
             filename = picto.attr("src").slice(0, -4);
             picto.attr("src", filename + "_c.png");
             $("#background-gradient").css("background-image", "url(" + filename + "-gradient.png)");
+            $(".background-image").attr("src", picto.attr("data-photo"));
+            $("footer .caption").text(picto.attr("data-photo-caption")).show();
         }, function(){
             $("#info-zone").html("&nbsp;").css('visibility','hidden').removeClass();
             picto.attr("src", filename + ".png");

@@ -34,7 +34,9 @@
             </dd>
         </dl>
 </section>
+{% endblock %}
 
+{% block footer %}
 <footer>
     <div class="prev">
         <a href="#" style="text-decoration: none;"><img src="{{ STATIC_URL }}axis/arrow-left.png"/></a>
@@ -59,9 +61,11 @@
         // Toggle boxes when hovering caption box
         $("footer div#caption-list").hover(function(){
                 $("section").css("visibility", "hidden");
+                $("header").hide();
                 $("#background-gradient").hide();
             }, function(){
                 $("section").css("visibility", "visible");
+                $("header").show();
                 $("#background-gradient").show();
         });
         // Navigate through images
