@@ -1,6 +1,6 @@
 @import "mixins";
 @import "reset";
-
+@import "grid";
 
 @color-link: #ff8080;
 @color-bessst: #474747;
@@ -22,6 +22,10 @@
 @font-family:'EB';
 @font-family-sans:'Source';
 @gutter: 30px;
+
+/* Grid */
+
+.grid(@gutter, @gutter, 12);
 
 /* Typefaces */
 
@@ -257,7 +261,6 @@ section#right {
 .box {
     background-color: white;
     padding: @gutter;
-    margin: @gutter;
     border: 2px solid black;
     float: left;
 }
@@ -286,8 +289,7 @@ ul#project-list .box {
 }
 
 ul#project-list li {
-    display: inline;   
-    margin: 0 @gutter*2;
+    display: inline;
 }
 
 object.metadata-axis {

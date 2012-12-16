@@ -15,7 +15,7 @@
               <object id="{{ axis.name|slugify }}" class="{{ axis.pictogram }}" type="image/svg+xml" data="{{ STATIC_URL }}axis/{{ axis.pictogram }}.svg" title="{{ axis.name }}"></object>
           </li>
           {% for project in axis.project_set.all %}
-                <li class="box {{ project.axis.name|slugify }}"><a href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name }}">{{ project }}</a></li>
+                <li class="box {{ project.axis.name|slugify }}" data-sizex="{{ project.size_x }}"><a href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name }}">{{ project }}</a></li>
           {% endfor %}
         {% endfor %}
         </ul>
@@ -35,6 +35,7 @@
          */
         $(".logo").each(function() {
             $(this).prepend('<span class="drag">&nbsp;</span>')
+            //$(this).prepend('<span class="drag" style="width:' + $(this).css('width') + ';height:' +  $(this).css('height') + ';">&nbsp;</span>')
         })
         
         /* Show axis names on axis-image rollover */

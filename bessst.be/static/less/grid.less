@@ -1,0 +1,33 @@
+// Wow less loops are non-evident
+
+// http://blog.thehippo.de/2012/04/programming/do-a-loop-with-less-css/
+
+.grid (@widgetWidth, @widgetHeight, @n) {
+
+    .widthPx (@index) when (@index > 0) {
+      (~'[data-sizex="@{index}"]') {
+      .width(@index); }
+      .widthPx(@index - 1);
+    }
+    .widthPx (0) {}
+
+    .heightPx (@index) when (@index > 0) {
+      (~'[data-sizey="@{index}"]') { .height(@index); }
+      .heightPx(@index - 1);
+    }
+    .heightPx (0) {}
+
+    .width(@columns) {
+      width: (@widgetWidth * @columns);
+    }
+
+    .height (@columns) {
+      height: (@widgetHeight * @columns);
+    }
+
+
+    .widthPx (@n);
+    .heightPx (@n);
+
+  }
+
