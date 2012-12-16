@@ -18,6 +18,10 @@
 </section>
 <section id="right">
         <dl id="metadata" class="box">
+            <dt style="display: none">{{ object.axis }}</dt>
+            <dd>
+                <img class="metadata-axis" src="{{ STATIC_URL }}axis/{{ object.axis.pictogram }}.png">
+            </dd>
             <dt>Stiltebemidelaars</dt>
             <dd>
                 <ul>{% for p in object.producers.all %}<li>{{ p }}</li>{% endfor %}</ul>
@@ -28,10 +32,6 @@
             </dd>
             <dt>Location</dt>
             <dd>{{ object.location }}</dd>
-            <dt style="display: none">{{ object.axis }}</dt>
-            <dd>
-                <img class="metadata-axis" src="{{ STATIC_URL }}axis/{{ object.axis.pictogram }}.png">
-            </dd>
         </dl>
 </section>
 {% endblock %}
