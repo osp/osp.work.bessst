@@ -12,7 +12,7 @@
         <ul id="project-list"> 
         {% for axis in axis_list %}
           <li class="logo">
-              <img src="{{ STATIC_URL }}axis/{{ axis.pictogram }}.png" title="{{ axis.name }}"/>
+              <img id="{{ axis.name|slugify }}" src="{{ STATIC_URL }}axis/{{ axis.pictogram }}.png" title="{{ axis.name }}"/>
           </li>
           {% for project in axis.project_set.all %}
                 <li class="box {{ project.axis.name|slugify }}" data-sizex="{{ project.size_x }}"><a href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name }}">{{ project }}</a></li>
