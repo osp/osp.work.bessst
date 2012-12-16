@@ -40,19 +40,19 @@
         /* Show axis names on axis-image rollover */
         $("li.logo").hover(function(){
             picto = $(this).children("object");
-            $("#info-zone").text(picto.attr('title')).css('visibility','visible').addClass(picto.attr('class'));
+            $("#info-zone").text(picto.attr('title')).addClass(picto.attr('class'));
             filename = picto.attr("data").slice(0, -4);
             picto.attr("data", filename + "_c.svg");
             $("#background-gradient").css("background-image", "url({{ STATIC_URL }}axis/" + picto.attr('class') + "-gradient.png)");
         }, function(){
-            $("#info-zone").html("&nbsp;").css('visibility','hidden').removeClass();
+            $("#info-zone").html("&nbsp;").removeClass();
             picto.attr("data", filename + ".svg");
             $("#background-gradient").css("background-image", "url({{ STATIC_URL }}axis/all-gradient.png)");
         });
         
         /* Show/hide projects on axis-image click */
-        $("li.logo").click(function(){
-            $('.' + $(this).children("object").attr('id')).toggle('slow')
-        })
+        //$("li.logo").click(function(){
+        //    $('.' + $(this).children("object").attr('id')).toggle('slow')
+        //})
     </script>
 {% endblock %}
