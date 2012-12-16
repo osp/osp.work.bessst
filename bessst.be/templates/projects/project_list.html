@@ -24,12 +24,14 @@
 
     <script>
 
-        $(window).load(function() {
+        var masonic = function() {
             $('#project-list').masonry({
-              itemSelector: 'li',
+              itemSelector: 'li:visible',
               columnWidth: 30
             });
-        });
+        };
+
+        $(window).load(masonic);
 
         /* Show axis names on axis-image rollover */
         $("li.logo").hover(function(){
@@ -37,7 +39,7 @@
             $("#info-zone").text(picto.attr('title')).css('visibility','visible').addClass(picto.attr('class'));
             filename = picto.attr("src").slice(0, -4);
             picto.attr("src", filename + "_c.png");
-            $("#background-gradient").css("background-image", "url({{ STATIC_URL }}axis/" + picto.attr('class') + "-gradient.png)");
+            $("#background-gradient").css("background-image", "url(" + filename + "-gradient.png)");
         }, function(){
             $("#info-zone").html("&nbsp;").css('visibility','hidden').removeClass();
             picto.attr("src", filename + ".png");
@@ -46,7 +48,7 @@
         
         /* Show/hide projects on axis-image click */
         $("li.logo").click(function(){
-            $('.' + $(this).children("img").attr('id')).toggle('slow')
+            $('.' + $(this).children("img").attr('id')).toggle('slow', masonic)
         })
     </script>
 {% endblock %}
