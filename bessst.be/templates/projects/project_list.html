@@ -63,5 +63,16 @@
         $("li.logo").click(function(){
             $('.' + $(this).children("img").attr('id')).toggle('slow', masonic)
         })
+
+        // Toggle boxes when hovering caption box
+        $("footer div#caption-list").hover(function(){
+                $("section").css("visibility", "hidden");
+                $("header").hide();
+                $("#background-gradient").hide();
+            }, function(){
+                $("section").css("visibility", "visible");
+                $("header").show();
+                $("#background-gradient").show();
+        });
     </script>
 {% endblock %}
