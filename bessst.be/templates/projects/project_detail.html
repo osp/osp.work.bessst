@@ -18,6 +18,10 @@
 </section>
 <section id="right">
         <dl id="metadata" class="box">
+            <dt style="display: none">{{ object.axis }}</dt>
+            <dd>
+                <img class="metadata-axis" src="{{ STATIC_URL }}axis/{{ object.axis.pictogram }}.png">
+            </dd>
             <dt>Stiltebemidelaars</dt>
             <dd>
                 <ul>{% for p in object.producers.all %}<li>{{ p }}</li>{% endfor %}</ul>
@@ -28,22 +32,67 @@
             </dd>
             <dt>Location</dt>
             <dd>{{ object.location }}</dd>
-            <dt style="display: none">{{ object.axis }}</dt>
-            <dd>
-                <object class="metadata-axis" type="image/svg+xml" data="{{ STATIC_URL }}axis/{{ object.axis.pictogram }}.svg"></object> 
-            </dd>
         </dl>
 </section>
+{% endblock %}
 
+{% block footer %}
 <footer>
-    <div class="caption">
-        {{ object.image_set.all.0 }}
+    <div class="prev">
+        <a href="#" style="text-decoration: none;"><img src="{{ STATIC_URL }}axis/arrow-left.png"/></a>
+    </div>
+    <div id="caption-list">
+        {% for img in object.image_set.all %}
+            <div class="caption {% if forloop.first %}visible{% endif %}" title={{ img.image.url }}>
+                {{ img }}
+            </div>
+        {% endfor %}
+    </div>
+    <div class="next">
+        <a href="#" style="text-decoration: none;"><img src="{{ STATIC_URL }}axis/arrow-right.png"/></a>
     </div>
 </footer>
 
 <script>
     $(window).load(function(){
+        // applies "Tailing/Queue de lampe" filter
         $(".tail").tailing();
+
+        // Toggle boxes when hovering caption box
+        $("footer div#caption-list").hover(function(){
+                $("section").css("visibility", "hidden");
+                $("header").hide();
+                $("#background-gradient").hide();
+            }, function(){
+                $("section").css("visibility", "visible");
+                $("header").show();
+                $("#background-gradient").show();
+        });
+        // Navigate through images
+        $("footer div.prev").click(function(){
+            current = $("div.caption.visible");
+            current.removeClass("visible")
+            if (current.prev().hasClass("caption")){
+                current.prev().addClass("visible");
+                $(".background-image").attr("src", current.prev().attr("title"));
+            } else {
+                last = $("div#caption-list div.caption:last-child").addClass("visible");
+                last.addClass("visible");
+                $(".background-image").attr("src", last.attr("title"));
+            }
+        });
+        $("footer div.next").click(function(){
+            current = $("div.caption.visible");
+            current.removeClass("visible")
+            if (current.next().hasClass("caption")){
+                current.next().addClass("visible");
+                $(".background-image").attr("src", current.next().attr("title"));
+            } else {
+                first = $("div#caption-list div.caption:first-child")
+                first.addClass("visible");
+                $(".background-image").attr("src", first.attr("title"));
+            }
+        });
     });
 </script>
 {% endblock %}
