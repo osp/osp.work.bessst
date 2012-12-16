@@ -6,9 +6,9 @@
 @color-bessst: #474747;
 @color-door: #00ffaa;
 @color-cloud: #00aaaa;
-@color-feet: #aa5500;
+@color-feet: #ffaa55;
 @color-hammer: #ff5555;
-@color-stairs: #ffff55;
+@color-stairs: #ffffaa;
 @color-window: #5500ff;
 @color-diapason: #aaaaaa;
 
@@ -219,14 +219,34 @@ header {
     }
 }
 footer {
-    font-family:'EB';
     position: fixed;
     bottom: @gutter/2;
     right: @gutter;
-    background-color: white;
-    border: 7px double black;
-    padding: @gutter/4;
-    color: black;
+
+    .prev,
+    .next {
+        float: left;
+        padding: @gutter/2 @gutter/4;
+        font-weight: bold;
+    }
+
+    div#caption-list {
+        font-family:'EB';
+        background-color: white;
+        border: 7px double black;
+        height: 32px;
+        padding: @gutter/4;
+        padding-top: 11px;
+        padding-bottom: 3px;
+        color: black;
+        float: left;
+    }
+    div.caption {
+        display: none;
+    }
+    div.caption.visible {
+        display: block;
+    }
 }
 ul li {
     list-style-type: none;
