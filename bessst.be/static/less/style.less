@@ -131,7 +131,10 @@ h2 {
     text-align: center;
     text-transform : uppercase;
     font-family: @font-family;
-    margin-top: @gutter;
+}
+
+p+h2 {
+    margin-top: 20px;
 }
 
 h3 {
@@ -158,6 +161,14 @@ em {
     font-weight: bold;
     color: @color-bessst;
     text-transform: lowercase;
+}
+
+
+blockquote p {
+    font-family: @font-family-sans;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -256,9 +267,21 @@ footer {
         display: block;
     }
 }
+
+ul {
+    margin-top: 10px;
+}
+
+
 ul li {
     list-style-type: none;
 }
+
+section ul li:before{
+    content:"— ";
+}
+
+
 dt {
     text-transform: uppercase;
     font-weight: bold;
@@ -301,12 +324,20 @@ ul#project-list .box {
     text-align: center;
 }
 
+ul#project-list .box:before {
+    content:"";
+    }
+
 .project-list-title {
     font-family: @font-family;
     font-size: @font-size-mid;
     line-height: 23px;
     text-align : center;
     text-decoration: none;
+}
+
+a.project-list-title:hover{
+    text-decoration: underline;
 }
 
 
