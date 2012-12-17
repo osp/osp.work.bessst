@@ -285,6 +285,7 @@ section ul li:before{
 dt {
     text-transform: uppercase;
     font-weight: bold;
+    margin-top: @gutter/2;
 }
 div#container {
     padding-top: 2*@gutter;
@@ -372,11 +373,28 @@ object.metadata-axis {
 dl#metadata {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: @gutter;
+    padding: @gutter/2;
+    padding-bottom: @gutter;
     width: 45%;
     float: none;
     text-align: center;
+
+    ul {
+        margin-top: 0;
+    }
+
+    ul li {
+        display: inline;
+    }
+    ul li:before {
+        content: ", ";
+    }
+    ul li:first-child:before {
+        content: "";
+    }
 }
+
 
 /*div.more {*/
     /*display: none;*/
