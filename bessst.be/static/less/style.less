@@ -91,20 +91,6 @@ p + p {
     text-indent: @gutter;
 }
 
-/*p.intro {*/
-    /*font-size: @font-size-big;*/
-    /*line-height: 31px;*/
-    /*font-family: @font-family,'Bitstream Charter';*/
-    /*margin: 0px;*/
-/*}*/
-
-/*p.project  {*/
-    /*font-size: 18px;*/
-    /*font-family: @font-family-sans, Sans;*/
-    /*line-height: 21px;*/
-/*}*/
-
-
 /* Forms */
 input[type="submit"]{
     border: 2px solid black;
@@ -122,19 +108,19 @@ h1 {
     text-transform : uppercase;
     text-align: center;
     font-size: @font-size-big;
-    /*font-family: @font-family,'Bitstream Charter';*/
-    /*margin-bottom: 78px;*/
 }
 
 h2 {
-    font-size: @font-size;
+    font-size: @font-size-big;
     text-align: center;
     text-transform : uppercase;
-    font-family: @font-family;
+    font-family: @font-family-sans;
+    font-weight: bold;
+    margin-bottom: @font-size;
 }
 
-p+h2 {
-    margin-top: 20px;
+*+h2 {
+    margin-top: @gutter;
 }
 
 h3 {
@@ -144,12 +130,6 @@ h3 {
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 6px;
-    /*span {*/
-        /*display: block;*/
-        /*font-family: @font-family;*/
-        /*font-size: 40px;*/
-        /*margin-bottom: 8px;*/
-    /*}*/
  }
  
 p+h3 {
@@ -377,54 +357,6 @@ dl#metadata {
     float: none;
     text-align: center;
 }
-
-/*div.more {*/
-    /*display: none;*/
-/*}*/
-/*div.summary:hover div.more {*/
-    /*display: block;*/
-/*}*/
-
-/*div.container {*/
-    /*.clearfix();*/
-    /*margin: @gutter*2 auto;*/
-    /*width: 900px;*/
-/*}*/
-
-/*div.major {*/
-    /*width: 600px;*/
-    /*float: left;*/
-/*}*/
-
-/*div.minor {*/
-    /*width: 250px;*/
-    /*float: left;*/
-    /*margin-left: 20px;*/
-/*}*/
-/*div#header{*/
-    /*margin-bottom: 200px;*/
-    /*}*/
-
-/*div#text {*/
-    /*.box-sizing(border-box);*/
-    /*width: 600px;*/
-    /*float: left;*/
-    /*margin-bottom: @gutter/2;*/
-/*}*/
-
-/*div#newsletter {*/
-    /*width: 250px;*/
-    /*float: left;*/
-/*}*/
-
-/*#meer {*/
-    /*margin-top:9px;*/
-/*}*/
-
-/*#project{*/
-    /*width: 600px;*/
-/*}*/
-
 
 // Positioning boxes
 
