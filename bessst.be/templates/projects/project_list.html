@@ -49,19 +49,23 @@
             picto = $(this).children("img");
             filename = picto.attr("src").slice(0, -4);
             picto.attr("src", filename + "_c.png");
+            $(this).css({'position': 'relative', 'z-index': '100'});
 
             $("#info-zone").text(picto.attr('title')).css('visibility','visible').addClass(picto.attr('class'));
 
             $("." + picto.attr("id")).removeClass("no-border");
+
+            $(this).css({'position': 'relative', 'z-index': '100'});
 
             // background image and caption
             $("#background-gradient").css("background-image", "url(" + filename + "-gradient.png)");
             $(".background-image").attr("src", picto.attr("data-photo"));
             $("footer .caption").text(picto.attr("data-photo-caption")).show();
         }, function(){
-            $("#info-zone").html("&nbsp;").css('visibility','hidden').removeClass();
             picto.attr("src", filename + ".png");
+            $(this).css({'position': 'absolute', 'z-index': '0'});
 
+            $("#info-zone").html("&nbsp;").css('visibility','hidden').removeClass();
             $("." + picto.attr("id")).addClass("no-border");
 
             $("#background-gradient").css("background-image", "url({{ STATIC_URL }}axis/all-gradient.png)");
@@ -78,6 +82,8 @@
                 axis = $("a", $(this)).attr("data-axis");
                 $("." + axis).removeClass("no-border");
 
+                $(this).css({'position': 'relative', 'z-index': '100'});
+
                 picto = $("#" + axis);
 
                 filename = picto.attr("src").slice(0, -4);
@@ -90,6 +96,7 @@
                 $("footer .caption").text(picto.attr("data-photo-caption")).show();
             },function(){
                 $("." + axis).addClass("no-border");
+                $(this).css({'position': 'absolute', 'z-index': '0'});
                 picto.attr("src", filename + ".png");
                 $("#info-zone").html("&nbsp;").css('visibility','hidden').removeClass();
                 $("#background-gradient").css("background-image", "url({{ STATIC_URL }}axis/all-gradient.png)");
