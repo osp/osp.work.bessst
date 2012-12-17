@@ -69,7 +69,6 @@
             $("#info-zone").html("&nbsp;").css('visibility','hidden').removeClass();
             $("." + picto.attr("id")).addClass("no-border");
 
-            $("#background-gradient").css("background-image", "url({{ STATIC_URL }}axis/all-gradient.png)");
         });
         
         /* Show/hide projects on axis-image click */
@@ -100,7 +99,6 @@
                 $(this).css({'position': 'absolute', 'z-index': '0'});
                 picto.attr("src", filename + ".png");
                 $("#info-zone").html("&nbsp;").css('visibility','hidden').removeClass();
-                $("#background-gradient").css("background-image", "url({{ STATIC_URL }}axis/all-gradient.png)");
         });
 
 
