@@ -31,7 +31,7 @@
 
 @font-face {
     font-family: EB;
-    src: url("../type/EBGaramond-Regular.ttf");
+    src: url("../type/EBGaramond_bessst.otf");
 }
 
 @font-face {
@@ -64,6 +64,13 @@
 @font-face {
     font-family: KBold;
     src: url("../type/Karla-Bold.ttf");
+}
+
+* {
+    font-feature-settings: "liga", "kern";
+    -moz-font-feature-settings: "liga";
+    -webkit-font-feature-settings: "liga";
+    -o-feature-settings: "liga";
 }
 
 /* Typography */
@@ -285,6 +292,8 @@ section ul li:before{
 dt {
     text-transform: uppercase;
     font-weight: bold;
+}
+dd + dt {
     margin-top: @gutter/2;
 }
 div#container {
@@ -374,8 +383,7 @@ dl#metadata {
     margin-left: auto;
     margin-right: auto;
     margin-top: @gutter;
-    padding: @gutter/2;
-    padding-bottom: @gutter;
+    padding: @gutter @gutter/2;
     width: 45%;
     float: none;
     text-align: center;
