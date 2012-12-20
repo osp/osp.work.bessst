@@ -118,12 +118,12 @@ h1 {
 }
 
 h2 {
-    font-size: @font-size-big;
+    font-size: @font-size-mid;
     text-align: center;
     text-transform : uppercase;
-    font-family: @font-family-sans;
-    font-weight: bold;
-    margin-bottom: @font-size;
+    font-family: @font-family;
+    margin-bottom: 12px;
+/*    border-bottom:4px double black;*/
 }
 
 *+h2 {
@@ -134,7 +134,7 @@ h3 {
     font-size: @font-size;
     font-family: @font-family-sans;
     text-transform: uppercase;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.04em;
     text-align: center;
     margin-bottom: 6px;
  }
@@ -417,6 +417,11 @@ nav {
             a {
                 text-decoration: none;
             }
+            a:active {
+                border: 2px solid black;
+                padding: 3px 5px 3px 5px;
+                text-decoration: none;
+            }
             line-height: @font-size;
         }
     }
@@ -426,7 +431,7 @@ nav {
     }
     ul#navi {
         li {
-            margin-right: @font-size;
+            margin-right: 21px;
         }
     }
     ul#lan {
@@ -440,6 +445,11 @@ nav {
     a:hover {
         text-decoration: underline;
     }
+    
+
+    
+    
+    
 }
 
 // AXIS
