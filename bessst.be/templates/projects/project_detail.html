@@ -26,10 +26,6 @@
             <dd>
                 <ul>{% for p in object.producers.all %}<li>{{ p }}</li>{% endfor %}</ul>
             </dd>
-            <dt>Partners</dt>
-            <dd>
-                <ul>{% for p in object.partners.all %}<li>{{ p }}</li>{% endfor %}</ul>
-            </dd>
             <dt>Location</dt>
             <dd>{{ object.location }}</dd>
         </dl>
