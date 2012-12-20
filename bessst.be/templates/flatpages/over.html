@@ -33,7 +33,7 @@
 {% endblock header%}
 
 {% block content %}
-<section id="main" class="big box tail">
+<section id="main" class="over big">
     {{ flatpage.content|markdown:"headerid" }}
 </section>
 
@@ -84,6 +84,13 @@
 
 <script>
     $(window).load(function(){
+        // Make seperate boxes for the different elements
+        $("h2").each(function() {
+            // for each header, take the header and all the elements up to the next header
+            // and wrap them in a div
+            $(this).add($(this).nextUntil("h2")).wrapAll($('<div class="box"></div>'))
+        }) 
+
         // applies "Tailing/Queue de lampe" filter
         $(".tail").tailing();
 
