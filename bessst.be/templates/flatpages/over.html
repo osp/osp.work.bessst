@@ -3,6 +3,31 @@
 
 {% block title %}{{ flatpage.title }}{% endblock %}
 
+
+{% block nav %}
+<nav>
+    <ul id="logo">
+        <li><a href="/">Bessst</a></li>
+    </ul>
+    <ul id="navi">
+        <li><a class="selected" href="/over/">Over</a></li>
+        <li><a href="/projects/">Projecten</a></li>
+        <li><a href="#">Inspiratie</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Agenda</a></li>
+    </ul>
+    <ul id="lan">
+        <li><a class="selected" href="#">nl</a></li>
+        <li><a href="#">en</a></li>
+        <li><a href="#">fr</a></li>
+    </ul>
+</nav>
+
+{% endblock %}
+
+
+
+
 {% block header %}
 <h1 class="stairs">{{ flatpage.title }}</h1>
 {% endblock header%}

@@ -417,11 +417,7 @@ nav {
             text-transform: lowercase;
             a {
                 text-decoration: none;
-            }
-            a:active {
-                border: 2px solid black;
                 padding: 3px 5px 3px 5px;
-                text-decoration: none;
             }
             line-height: @font-size;
         }
@@ -444,7 +440,11 @@ nav {
         }
     }
     a:hover {
-        text-decoration: underline;
+        outline: 1px solid gray;
+    }
+
+    .selected {
+        outline: 1px solid gray;
     }
     
 
