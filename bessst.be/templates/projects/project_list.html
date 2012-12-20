@@ -38,12 +38,30 @@
     <script>
         var masonic = function() {
             $('#project-list').masonry({
-              itemSelector: 'li:visible',
+              itemSelector: 'li',
               columnWidth: 30
             });
         };
 
-        $(window).load(masonic);
+        $(window).load(function() {
+            /* Hiding the project boxes with jQuery sets display:none; height:0; width:0;
+             * We will need the elements to have a width because we need them
+             * taken into account in the masonry layout.
+             * So initially we just hide them in the css:
+             *
+             * ul#project-list .box {
+             *     visibility: hidden;
+             * }
+             *
+             * Then we calculate the masonry layout:
+             */
+            masonic();
+            /* We also hide them the jQuery way: */
+            $("ul#project-list .box").hide();
+            /* Now we just have the reset the visibility in the css,
+             * so that the elements will show up when toggled: */
+            $("ul#project-list .box").css('visibility','visible');
+        });
 
         /* Show axis names and colors on axis-image rollover */
         $("li.logo").hover(function(){
