@@ -33,7 +33,7 @@
 {% endblock header%}
 
 {% block content %}
-<section id="main" class="over big">
+<section id="main" class="over big" style="width: 45%; float: left;">
     {{ flatpage.content|markdown:"headerid" }}
 </section>
 
@@ -41,16 +41,16 @@
   <dl id="metadata" class="box">
     <dt>Contact</dt>
     <dd>
-      <ul>
-        <li>Christel Dusoleil</li>
-        <li>projectleider Waerbeke</li>
-        <li>0474 92 01 12</li>
-        <li>christel@bessst.be</li>
-        <li>Els De Greef</li>
-        <li>projectleider VGC</li>
-        <li>0475 56 56 23</li>
-        <li>els.degreef@vgc.be</li>
-      </ul>
+        Christel Dusoleil,
+        projectleider Waerbeke,
+        0474 92 01 12,
+        <a href="mailto:christel@bessst.be">christel@bessst.be</a> <br /><br />
+    </dd>
+    <dd>
+        Els De Greef,
+        projectleider VGC,
+        0475 56 56 23,
+        <a href="mailto:els.degreef@vgc.be">els.degreef@vgc.be</a>
     </dd>
   </dl>
 </section>
@@ -85,11 +85,17 @@
 <script>
     $(window).load(function(){
         // Make seperate boxes for the different elements
-        $("h2").each(function() {
+        $("h2").each(function(i) {
             // for each header, take the header and all the elements up to the next header
-            // and wrap them in a div
-            $(this).add($(this).nextUntil("h2")).wrapAll($('<div class="box"></div>'))
+            // and wrap them in a .box div
+            $(this).css("cursor", "pointer").add($(this).nextUntil("h2")).wrapAll($('<div class="box"></div>'))
+            // for each header, take the next element and all the elements up to the next header
+            // and wrap them in a .collapsed div
+            $(this).next().add($(this).next().nextUntil("h2")).wrapAll($('<div class="collapsed"></div>'))
         }) 
+        $("h2").click(function(){
+            $(this).next().toggle("slow");
+        });
 
         // applies "Tailing/Queue de lampe" filter
         $(".tail").tailing();
