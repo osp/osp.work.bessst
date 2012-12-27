@@ -1,7 +1,7 @@
 bessst.be/bessst/settings.py
 logs
 bessst.be/bessst.wsgi
-
+bessst.be/static/admin
 
 # text-editor / ide files #
 ###########################
