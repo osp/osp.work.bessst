@@ -33,10 +33,13 @@
 {% endblock %}
 
 {% block footer %}
+{% if object.image_set.all %}
 <footer>
+    {% if object.image_set.count > 1 %}
     <div class="prev">
         <a href="#" style="text-decoration: none;"><img src="{{ STATIC_URL }}axis/arrow-left.png"/></a>
     </div>
+    {% endif %}
     <div id="caption-list">
         {% for img in object.image_set.all %}
             <div class="caption {% if forloop.first %}visible{% endif %}" title={{ img.image.url }}>
@@ -44,10 +47,13 @@
             </div>
         {% endfor %}
     </div>
+    {% if object.image_set.count > 1 %}
     <div class="next">
         <a href="#" style="text-decoration: none;"><img src="{{ STATIC_URL }}axis/arrow-right.png"/></a>
     </div>
+    {% endif %}
 </footer>
+{% endif %}
 
 <script>
     $(window).load(function(){
@@ -64,6 +70,7 @@
                 $("header").show();
                 $("#background-gradient").show();
         });
+        {% if object.image_set.count > 1 %}
         // Navigate through images
         $("footer div.prev").click(function(){
             current = $("div.caption.visible");
@@ -89,6 +96,7 @@
                 $(".background-image").attr("src", first.attr("title"));
             }
         });
+        {% endif %}
     });
 </script>
 {% endblock %}
