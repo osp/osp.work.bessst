@@ -19,9 +19,9 @@
     <ul id="navi">
         <li><a href="/over/">Over</a></li>
         <li><a class="selected" href="/projects/">Projecten</a></li>
-        <li><a href="#">Inspiratie</a></li>
+<!--        <li><a href="#">Inspiratie</a></li>
         <li><a href="#">Community</a></li>
-        <li><a href="#">Agenda</a></li>
+        <li><a href="#">Agenda</a></li> -->
     </ul>
     <ul id="lan">
         <li><a class="selected" href="#">nl</a></li>
@@ -48,7 +48,7 @@
 <figure id="background">
     {% block background %}
         <div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/all-gradient.png');"></div> 
-        <img class="background-image" src="{{ STATIC_URL }}images/Waerbeke_vlinder_s.jpg" style="width: 100%;"/>
+        <img class="background-image" src="{{ MEDIA_URL }}images/Waerbeke_vlinder_s.jpg" style="width: 100%;"/>
     {% endblock %}
 </figure>
 {% block footer %}
