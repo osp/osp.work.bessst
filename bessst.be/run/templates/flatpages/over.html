@@ -34,7 +34,7 @@
 
 {% block content %}
 <section id="main" class="over big" style="width: 45%; float: left;">
-    {{ flatpage.content|markdown:"headerid" }}
+    {{ flatpage.content|safe }}
 </section>
 
 <section id="right">
@@ -83,6 +83,19 @@
 </footer>
 
 <script>
+    $(".glossarium").click(function() {
+    
+    var popover = $('<div class="popover" />');
+    popover.html($(this).attr('title'));
+    popover.click(function(){
+        $(this).remove()
+    })
+    
+    popover.insertAfter($(this))
+    popover.css('position','absolute')
+
+    })
+
     $(window).load(function(){
         // Make seperate boxes for the different elements
         $("h2").each(function(i) {
@@ -144,3 +157,4 @@
     <div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/all-gradient.png');"></div> 
     <img class="background-image" src="{{ MEDIA_URL }}images/Plaatsen_Kunstberg_01_s.jpg" style="width: 100%;"/>
 {% endblock %}
+
