@@ -22,6 +22,15 @@
     </section>
 {% endblock content %}
 
+    {% block background %}
+        <div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/all-gradient.png');"></div> 
+
+        <img class="background-image" id="background-all" src="{{ MEDIA_URL }}images/Waerbeke_vlinder_s.jpg"/>
+        {% for axis in axis_list %}
+        <img class="background-image axis-image" id="background-{{ axis.name|slugify }}" src="{{ axis.image_set.all.0.image.url }}" />
+        
+        {% endfor %}
+    {% endblock %}
 
 {% block footer %}
     <footer>
@@ -63,6 +72,8 @@
             $("ul#project-list .box").css('visibility','visible');
         });
 
+        $("img.background-image.axis-image").fadeOut();
+
         /* Show axis names and colors on axis-image rollover */
         $("li.logo").hover(function(){
             picto = $(this).children("img");
@@ -78,7 +89,10 @@
 
             // background image and caption
             $("#background-gradient").css("background-image", "url(" + filename + "-gradient.png)");
-            $(".background-image").attr("src", picto.attr("data-photo"));
+            $('img.background-image').fadeOut();
+            $('img#background-' + picto.attr("id")).fadeIn();
+
+            console.log('img#background-' + picto.attr("id"))
             $("footer .caption").text(picto.attr("data-photo-caption")).show();
         }, function(){
             picto.attr("src", filename + ".png");
