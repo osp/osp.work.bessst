@@ -3,6 +3,7 @@ logs
 bessst.be/bessst.wsgi
 bessst.be/static/admin
 bessst.be/run/collected_static_files
+bessst.be/run/test.db
 
 # text-editor / ide files #
 ###########################
