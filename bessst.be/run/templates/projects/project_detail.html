@@ -28,6 +28,10 @@
             </dd>
             <dt>Location</dt>
             <dd>{{ object.location }}</dd>
+            {% if object.link %}
+            <dt>Hyperlink</dt>
+            <dd><a href="{{ object.link }}" target="_blank">{{ object.link }}</a></dd>
+            {% endif %}
         </dl>
 </section>
 {% endblock %}
