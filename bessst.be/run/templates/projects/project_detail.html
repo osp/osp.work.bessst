@@ -22,11 +22,11 @@
             <dd>
                 <img class="metadata-axis" src="{{ STATIC_URL }}axis/{{ object.axis.pictogram }}.png">
             </dd>
-            <dt>Stiltebemidelaars</dt>
+            <dt>Partners</dt>
             <dd>
                 <ul>{% for p in object.producers.all %}<li>{{ p }}</li>{% endfor %}</ul>
             </dd>
-            <dt>Location</dt>
+            <dt>Locatie</dt>
             <dd>{{ object.location }}</dd>
             {% if object.link %}
             <dt>Hyperlink</dt>
