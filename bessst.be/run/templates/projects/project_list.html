@@ -25,7 +25,7 @@
     {% block background %}
         <div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/all-gradient.png');z-index:-997;"></div> 
 
-        <img class="background-image" id="background-all" src="{{ MEDIA_URL }}images/Waerbeke_vlinder_s.jpg"/>
+        <img class="background-image projects" id="background-all" src="{{ MEDIA_URL }}images/Waerbeke_vlinder_s.jpg"/>
         {% for axis in axis_list %}
         <img class="background-image axis-image" id="background-{{ axis.name|slugify }}" src="{{ axis.image_set.all.0.image.url }}" />
         

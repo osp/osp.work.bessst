@@ -219,7 +219,7 @@ canvas#background {
     z-index: -1000;
 }
 figure#background {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: -1000;
@@ -238,11 +238,17 @@ figure#background {
     }
     img.background-image {
         width: 100%;
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         z-index: -999;
     }
+    
+    // on the home/project page the images don’t scroll along
+    img.background-image.projects {
+        position: fixed;
+    }
+    
 }
 header {
     h1 {
