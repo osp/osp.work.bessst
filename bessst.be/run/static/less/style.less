@@ -23,6 +23,12 @@
 @font-family-sans:'Source';
 @gutter: 30px;
 
+// Always a scrollbar, so no glitches when showing just the background picture
+
+html {
+    overflow-y: scroll;
+}
+
 /* Grid */
 
 .grid(@gutter, @gutter, 12);
