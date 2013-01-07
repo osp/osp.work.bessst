@@ -107,7 +107,7 @@
             $(this).next().add($(this).next().nextUntil("h2")).wrapAll($('<div class="collapsed"></div>'))
         }) 
         $("h2").click(function(){
-            $(this).next().toggle("slow");
+            $(this).next().slideToggle("slow");
         });
 
         // applies "Tailing/Queue de lampe" filter
