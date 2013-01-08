@@ -18,6 +18,7 @@
           <li class="box {{ project.axis.name|slugify }} no-border {% if project.archived %}archive{% endif %}" data-sizex="{{ project.size_x }}"><a class="project-list-title" href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name|slugify }}">{{ project }}</a></li>
           {% endfor %}
         {% endfor %}
+          <li class="box quote" data-sizex="{{ axis_list.0.project_set.all.0.size_x }}"> ‘Don't think or judge, just listen’ Sarah Dessen</li>
         </ul>
     </section>
 {% endblock content %}
@@ -70,6 +71,7 @@
             /* Now we just have the reset the visibility in the css,
              * so that the elements will show up when toggled: */
             $("ul#project-list .box").css('visibility','visible');
+            $("ul#project-list .box.quote").toggle('slow');
         });
 
         $("img.background-image.axis-image").fadeOut();
