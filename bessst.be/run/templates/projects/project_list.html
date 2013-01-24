@@ -15,7 +15,11 @@
                 <img class="{{ axis.pictogram }}" id="{{ axis.name|slugify }}" src="{{ STATIC_URL }}axis/{{ axis.pictogram }}.png" title="{{ axis.name }}" data-photo="{{ axis.image_set.all.0.image.url }}" data-photo-caption="{{ axis.image_set.all.0 }}"/>
           </li>
           {% for project in axis.project_set.all %}
-          <li class="box {{ project.axis.name|slugify }} no-border {% if project.archived %}archive{% endif %}" data-sizex="{{ project.size_x }}"><a class="project-list-title" href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name|slugify }}">{{ project }}</a></li>
+          <li class="box {{ project.axis.name|slugify }} no-border {% if project.archived %}archive{% endif %}" data-sizex="{{ project.size_x }}">
+              <a class="project-list-title" href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name|slugify }}">{{ project }}</a>
+              <br />
+              {{ project.subtitle }}
+          </li>
           {% endfor %}
         {% endfor %}
           <li class="box quote" data-sizex="{{ axis_list.0.project_set.all.0.size_x }}">‘Brussel, stilte en erfgoed’</li>
