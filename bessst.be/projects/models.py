@@ -17,7 +17,7 @@ class Project(models.Model):
     link = models.URLField(_("Link URL"), null=True, blank=True)
     location = models.CharField(max_length=80, verbose_name=_("Location"), null=True)
     axis = models.ForeignKey(Axis, verbose_name=_("Axis"))
-    summary = models.TextField(_("Summary"))
+    summary = models.TextField(_("Summary"), blank=True)
     description = models.TextField(_("Description"))
     image_set = generic.GenericRelation(Image)
 
