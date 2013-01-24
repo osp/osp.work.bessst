@@ -47,13 +47,13 @@
 
 <figure id="background">
     {% block background %}
-    {% if object %}
-        <div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/{{ object.axis.pictogram }}-gradient.png');"></div> 
-        <img class="background-image" src="{{ object.image_set.all.0.image.url }}" style="width: 100%;"/>
-    {% else %}
-        <div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/all-gradient.png');"></div> 
-        <img class="background-image" src="{{ MEDIA_URL }}images/Waerbeke_vlinder_s.jpg" style="width: 100%;"/>
-    {% endif %}
+        {% if object.axis %}
+            <div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/{{ object.axis.pictogram }}-gradient.png');"></div> 
+            <img class="background-image" src="{{ object.image_set.all.0.image.url }}" style="width: 100%;"/>
+        {% else %}
+            <div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/stairs-gradient.png');"></div> 
+            <!--<img class="background-image" src="{{ MEDIA_URL }}images/Waerbeke_vlinder_s.jpg" style="width: 100%;"/>-->
+        {% endif %}
     {% endblock %}
 </figure>
 
