@@ -3,6 +3,7 @@ from django.conf.urls import patterns, include, url
 from django.views.generic import TemplateView, DetailView, ListView, list_detail
 from django.views.generic.simple import redirect_to
 from projects.models import Project
+from flatpages.models import FlatPage
 from axis.models import Axis
 
 from django.contrib import admin
@@ -22,6 +23,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^projects/$', list_detail.object_list, {"queryset":Project.objects.all(), "extra_context": {"axis_list" : Axis.objects.all()}}),
     url(r'^projects/(?P<slug>[\w-]+)/$', DetailView.as_view(model=Project), name='project-detail'),
+    url(r'^(?P<slug>[\w-]+)/$', DetailView.as_view(model=FlatPage), name='flatpage-detail'),
 )
 
 if settings.DEBUG:

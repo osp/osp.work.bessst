@@ -37,27 +37,25 @@
 {% endblock %}
 
 {% block footer %}
-{% if object.image_set.all %}
-<footer>
-    {% if object.image_set.count > 1 %}
-    <div class="prev">
-        <a href="#" style="text-decoration: none;"><img src="{{ STATIC_URL }}axis/arrow-left.png"/></a>
-    </div>
+    {% if object.image_set.all %}
+        {% if object.image_set.count > 1 %}
+        <div class="prev">
+            <a href="#" style="text-decoration: none;"><img src="{{ STATIC_URL }}axis/arrow-left.png"/></a>
+        </div>
+        {% endif %}
+        <div id="caption-list">
+            {% for img in object.image_set.all %}
+                <div class="caption {% if forloop.first %}visible{% endif %}" title={{ img.image.url }}>
+                    {{ img }}
+                </div>
+            {% endfor %}
+        </div>
+        {% if object.image_set.count > 1 %}
+        <div class="next">
+            <a href="#" style="text-decoration: none;"><img src="{{ STATIC_URL }}axis/arrow-right.png"/></a>
+        </div>
+        {% endif %}
     {% endif %}
-    <div id="caption-list">
-        {% for img in object.image_set.all %}
-            <div class="caption {% if forloop.first %}visible{% endif %}" title={{ img.image.url }}>
-                {{ img }}
-            </div>
-        {% endfor %}
-    </div>
-    {% if object.image_set.count > 1 %}
-    <div class="next">
-        <a href="#" style="text-decoration: none;"><img src="{{ STATIC_URL }}axis/arrow-right.png"/></a>
-    </div>
-    {% endif %}
-</footer>
-{% endif %}
 
 <script>
     $(window).load(function(){
@@ -106,7 +104,3 @@
 {% endblock %}
 
 
-{% block background %}
-    <div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/{{ object.axis.pictogram }}-gradient.png');"></div> 
-    <img class="background-image" src="{{ object.image_set.all.0.image.url }}" style="width: 100%;"/>
-{% endblock %}

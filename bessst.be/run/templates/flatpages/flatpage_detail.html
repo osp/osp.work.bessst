@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load markup %}
+
+{% block title %}{{ flatpage.title }}{% endblock %}
+
+{% block header %}
+<h1 class="stairs">{{ flatpage.title }}</h1>
+{% endblock header%}
+
+{% block content %}
+<section id="main" class="big box tail">
+    {{ flatpage.content|markdown }}
+</section>
+
+{% if flatpage.infobox %}
+    <section id="right">
+      <div id="metadata" class="box">
+        {{ flatpage.infobox|markdown }}
+      </div>
+    </section>
+{% endif %}
+{% endblock %}
+
+
+{% block extra_js %}
+<script>
+    //$(".glossarium").click(function() {
+    //    var popover = $('<div class="popover" />');
+    //    popover.html($(this).attr('title'));
+    //    popover.click(function(){
+    //        $(this).remove()
+    //    })
+    //    
+    //    popover.insertAfter($(this))
+    //    popover.css('position','absolute')
+    //})
+
+    $(window).load(function(){
+        // Make seperate boxes for the different elements
+
+        // applies "Tailing/Queue de lampe" filter
+        $(".tail").tailing();
+
+    });
+</script>
+{% endblock %}
+
+
