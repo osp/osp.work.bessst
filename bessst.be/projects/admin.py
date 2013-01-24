@@ -7,6 +7,7 @@ from wymeditor.admin import RichTextAdmin
 class ProjectAdmin(RichTextAdmin):
     prepopulated_fields = {'slug': ('title',)}
     inlines = (ImageInline,)
+    filter_horizontal = ('producers',)
 
 admin.site.register(Project, ProjectAdmin)
 
