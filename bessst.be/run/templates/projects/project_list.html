@@ -23,26 +23,25 @@
     </section>
 {% endblock content %}
 
-    {% block background %}
-        <img class="background-image projects" id="background-all" src="{{ MEDIA_URL }}images/Waerbeke_vlinder_s.jpg"/>
-        {% for axis in axis_list %}
+
+{% block background %}
+    <img class="background-image projects" id="background-all" src="{{ MEDIA_URL }}images/Waerbeke_vlinder_s.jpg"/>
+    {% for axis in axis_list %}
         <img class="background-image axis-image" id="background-{{ axis.name|slugify }}" src="{{ axis.image_set.all.0.image.url }}" />
-        
-        {% endfor %}
-    {% endblock %}
+    {% endfor %}
+{% endblock %}
+
 
 {% block footer %}
-    <footer>
         <div id="caption-list">
                 <div class="caption visible">
                     Waerbeke © Joke Floreal
                 </div>
         </div>
-    </footer>
+{% endblock %}
 
 
-
-
+{% block extra_js %}
     <script>
         var masonic = function() {
             $('#project-list').masonry({
@@ -108,40 +107,5 @@
         })
 
 
-        // Rollover on a project box
-        $("a.project-list-title").parent().hover(function(){
-                axis = $("a", $(this)).attr("data-axis");
-                $("." + axis).removeClass("no-border");
-
-                $(this).css({'position': 'relative', 'z-index': '100'});
-
-                picto = $("#" + axis);
-
-                filename = picto.attr("src").slice(0, -4);
-                picto.attr("src", filename + "_c.png");
-
-                $("#info-zone").text(picto.attr('title')).css('visibility','visible').addClass(picto.attr('class')).removeClass("no-border");
-
-                $("#background-gradient").css("background-image", "url(" + filename + "-gradient.png)");
-                $(".background-image").attr("src", picto.attr("data-photo"));
-                $("footer .caption").text(picto.attr("data-photo-caption")).show();
-            },function(){
-                $("." + axis).addClass("no-border");
-                $(this).css({'position': 'absolute', 'z-index': '0'});
-                picto.attr("src", filename + ".png");
-                $("#info-zone").html("&nbsp;").css('visibility','hidden').removeClass();
-        });
-
-
-        // Toggle boxes when hovering caption box
-        $("footer div#caption-list").hover(function(){
-                $("section").css("visibility", "hidden");
-                $("header").hide();
-                $("#background-gradient").hide();
-            }, function(){
-                $("section").css("visibility", "visible");
-                $("header").show();
-                $("#background-gradient").show();
-        });
     </script>
 {% endblock %}
