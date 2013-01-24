@@ -11,7 +11,7 @@ class Project(models.Model):
     title = models.CharField(max_length=255, verbose_name=_("Title"))
     slug = models.SlugField(_("Slug"), unique=True, help_text=_("Unique identifier. Allows a constant targeting of this project."))
     archived = models.BooleanField(_("Archived"), default=False)
-    producers = models.ManyToManyField(People, verbose_name=_("Stiltebemidelaars"), related_name="producer_set")
+    producers = models.ManyToManyField(People, verbose_name=_("Partners"), related_name="producer_set")
     link = models.URLField(_("Link URL"), null=True, blank=True)
     location = models.CharField(max_length=80, verbose_name=_("Location"), null=True)
     axis = models.ForeignKey(Axis, verbose_name=_("Axis"))
