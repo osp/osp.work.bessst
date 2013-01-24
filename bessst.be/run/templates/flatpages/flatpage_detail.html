@@ -8,7 +8,7 @@
 {% endblock header%}
 
 {% block content %}
-<section id="main" class="big box tail">
+<section id="main" class="over big" style="width: 45%; float: left;">
     {{ flatpage.content|markdown }}
 </section>
 
@@ -37,6 +37,17 @@
 
     $(window).load(function(){
         // Make seperate boxes for the different elements
+        $("h2").each(function(i) {
+            // for each header, take the header and all the elements up to the next header
+            // and wrap them in a .box div
+            $(this).css("cursor", "pointer").add($(this).nextUntil("h2")).wrapAll($('<div class="box"></div>'))
+            // for each header, take the next element and all the elements up to the next header
+            // and wrap them in a .collapsed div
+            $(this).next().add($(this).next().nextUntil("h2")).wrapAll($('<div class="collapsed"></div>'))
+        }) 
+        $("h2").click(function(){
+            $(this).next().slideToggle("slow");
+        });
 
         // applies "Tailing/Queue de lampe" filter
         $(".tail").tailing();
