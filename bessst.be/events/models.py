@@ -4,6 +4,7 @@ from projects.models import Project
 from axis.models import Axis
 
 class Event(models.Model):
+    published = models.BooleanField(_("Published"), default=False)
     title = models.CharField(max_length=255, verbose_name=_("Title"))
     slug = models.SlugField(_("Slug"), unique=True, help_text=_("Unique identifier. Allows a constant targeting of this event."))
     project = models.ForeignKey(Project, verbose_name=_("Related project"))
