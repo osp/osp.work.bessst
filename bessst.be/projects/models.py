@@ -8,9 +8,11 @@ from media_app.models import Image
 from random import randint
 
 class Project(models.Model):
-    title = models.CharField(max_length=255, verbose_name=_("Title"))
-    slug = models.SlugField(_("Slug"), unique=True, help_text=_("Unique identifier. Allows a constant targeting of this project."))
+    published = models.BooleanField(_("Published"), default=False)
     archived = models.BooleanField(_("Archived"), default=False)
+    title = models.CharField(max_length=255, verbose_name=_("Title"))
+    subtitle = models.CharField(max_length=255, verbose_name=_("Subtitle"), blank=True)
+    slug = models.SlugField(_("Slug"), unique=True, help_text=_("Unique identifier. Allows a constant targeting of this project."))
     producers = models.ManyToManyField(People, verbose_name=_("Partners"), related_name="producer_set")
     link = models.URLField(_("Link URL"), null=True, blank=True)
     location = models.CharField(max_length=80, verbose_name=_("Location"), null=True)
