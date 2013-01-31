@@ -10,7 +10,7 @@
     <script src="{{ STATIC_URL }}js/jquery.tailing.js"></script>
     <title>{% block title %}{% endblock %}</title>
 </head>
-<body>
+<body class="{% block slug %}base{% endblock %}">
 {% block nav %}
 <nav>
     <ul id="logo">
