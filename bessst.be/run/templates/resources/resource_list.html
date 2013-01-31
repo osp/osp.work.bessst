@@ -12,7 +12,8 @@
         <ul id="resource-list"> 
           {% for resource in object_list %}
           <li class="box no-border" data-sizex="{{ resource.size_x }}">
-              <a class="resource-title" data-category="{{ resource.category }}" href="{{ resource.link }}" target="_blank">{{ resource }}</a>
+              <a class="resource-title" data-category="{{ resource.category }}" href="{{ resource.link }}" target="_blank">{{ resource.title }}</a>
+                {{resource.summary|safe}}
           </li>
           {% endfor %}
         </ul>
