@@ -19,5 +19,5 @@ class Resource(models.Model):
         return self.title
 
     def size_x(self):
-        return randint(4, 14)
+        return randint(8, 12)
 
