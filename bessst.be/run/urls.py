@@ -25,6 +25,7 @@ urlpatterns = patterns('',
     url(r'^projects/$', list_detail.object_list, {"queryset":Project.objects.all(), "extra_context": {"axis_list" : Axis.objects.all()}}),
     url(r'^projects/(?P<slug>[\w-]+)/$', DetailView.as_view(model=Project), name='project-detail'),
     url(r'^inspiratie/$', list_detail.object_list, {"queryset":Resource.objects.all()}),
+    url(r'^community/$', 'people.views.community', name='community'),
     url(r'^(?P<slug>[\w-]+)/$', DetailView.as_view(model=FlatPage), name='flatpage-detail'),
 )
 
