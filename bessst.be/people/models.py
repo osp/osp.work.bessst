@@ -18,6 +18,18 @@ class People(models.Model):
 
 class Individual(People):
     firstname = models.CharField(max_length=255, verbose_name=_("First Name"), null=True, blank=True)
-    
+    def get_full_name(self):
+        fullname = ""
+        if self.firstname:
+            fullname += self.firstname + u' '
+        if self.prefix:
+            fullname += self.prefix + u' '
+        if self.name:
+            fullname += self.name
+        return fullname
+
+    def __unicode__(self):
+        return self.get_full_name()
+
 class Organization(People):
     contact_person = models.ForeignKey(Individual, verbose_name=_("Contact Person"), related_name="contact_person", null=True, blank=True)
