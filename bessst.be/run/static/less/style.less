@@ -356,8 +356,26 @@ section#right {
 }
 
 .community .box {
-    border-image: url(/static/box.png) 40 40 200 400 stretch;
-    border-width: 4px 4px 20px 60px;
+//    border-image: url(/static/box.png) 40 40 200 400 stretch;
+//    border-width: 4px 4px 20px 60px;
+    border: 2px double black;
+}
+
+.community .box .box {
+    border: none;
+}
+
+form {
+    label {
+      display: inline-block;
+      width: 220px;
+    }
+    span.helptext {
+        display: none;
+    }
+    p + p {
+        text-indent: 0;
+    }
 }
 
 .inspiratie .box{
