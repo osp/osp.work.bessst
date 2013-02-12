@@ -21,3 +21,5 @@ class Resource(models.Model):
     def size_x(self):
         return randint(8, 12)
 
+    class Meta:
+        ordering = ["-id"]
