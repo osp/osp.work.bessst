@@ -19,12 +19,13 @@ class IndividualAdmin(RichTextAdmin):
 
 class OrganizationAdmin(RichTextAdmin):
     prepopulated_fields = {'slug': ('prefix', 'name')}
+    filter_horizontal = ('individuals',)
     fieldsets = (
         (_('General'), {
             'fields': (('name', 'prefix'), 'slug')
         }),
         (_('Coordinates'), {
-            'fields': ('contact_person', ('address', 'city'), 'phone', 'email', 'link')
+            'fields': ('contact_person', 'individuals', ('address', 'city'), 'phone', 'email', 'link')
         }),
         (_('More'), {
             'fields': ('biography',)

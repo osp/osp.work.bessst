@@ -26,7 +26,7 @@
             </dd>
             <dt>Partners</dt>
             <dd>
-                <ul class="inline">{% for p in object.producers.all %}<li>{{ p }}</li>{% endfor %}</ul>
+                <ul class="inline">{% for p in object.producers.all %}<li>{{ p.get_full_name }}</li>{% endfor %}</ul>
             </dd>
             <dt>Locatie</dt>
             <dd>{{ object.location }}</dd>
