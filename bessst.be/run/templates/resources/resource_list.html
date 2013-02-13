@@ -8,10 +8,12 @@
     <section id="main">
         <ul id="resource-list"> 
           {% for resource in object_list %}
-          <li class="box no-border" data-sizex="{{ resource.size_x }}">
+          <li class="box no-border" data-sizex="9">
               <div class="inspiratie-categorien"> {{resource.category}} </div>
-              <a class="resource-title" data-category="{{ resource.category }}" href="{{ resource.link }}" target="_blank">{{ resource.title }}</a>
-                {{resource.summary|safe}}
+              {{resource.summary|safe}}
+              <div class="resource-title"><a data-category="{{ resource.category }}" href="{{ resource.link }}" target="_blank">{{ resource.title }}</a>
+              </div>
+                
           </li>
           {% endfor %}
         </ul>
@@ -24,7 +26,7 @@
         var masonic = function() {
             $('#resource-list').masonry({
               itemSelector: 'li',
-              columnWidth: 30
+              columnWidth: 15
             });
         };
         $(window).load(function() {
