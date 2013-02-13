@@ -22,6 +22,8 @@
 @font-family:'EB';
 @font-family-sans:'Source';
 @gutter: 30px;
+@smallgutter: 15px;
+
 
 // Always a scrollbar, so no glitches when showing just the background picture
 
@@ -61,6 +63,13 @@ html {
     font-weight: bold;
     font-style: italic;
 }
+
+@font-face {
+    font-family: SourceFat;
+    src: url("../type/SourceSansPro-Semibold.ttf");
+    font-weight: bold;
+}
+
 
 @font-face {
     font-family: K;
@@ -388,8 +397,12 @@ form {
     }
 }
 
+// ------------------------------------------------ Inspiratie 
+
 .inspiratie .box{
-    padding:15px;
+    padding:10px;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
 .inspiratie-categorien{
@@ -402,6 +415,30 @@ form {
 
 .inspiratie-up.box{
    background-color: #ffff55;
+}
+
+.inspiratie strong {
+   font-family: 'SourceFat';
+   font-size: 16px;
+}
+
+.inspiratie .box img {
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+.inspiratie .box p {
+    margin-right : 0px;
+    font-family: @font-family;
+    font-size: @font-size;
+    line-height: 21px;
+    text-indent: 0;
+}
+
+.resource-title {
+    margin-top : 5px;
+    font-family: 'Source';
+    font-size: 16px;
 }
 
 ul#project-list .box {
