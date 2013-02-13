@@ -464,6 +464,7 @@ form {
 ul#project-list {
     float: none;
     clear: both;
+    .clearfix();
 }
 div.column {
     width: 20%;
@@ -478,9 +479,11 @@ ul#project-list .box {
     /*visibility: hidden;*/
 
 }
-ul#project-list .box + .box {
+
+// Don’t remember why this was useful..
+/* ul#project-list .box + .box {
     margin-left : -30px;
-}
+} */
 
 
 ul#project-list .box:before {
