@@ -4,11 +4,57 @@
 
 {% block slug %}home{% endblock%}
 
-{% block positions %}
-var positions = [{"top":790,"left":750},{"top":390,"left":-172},{"top":180,"left":850},{"top":150,"left":970},{"top":30,"left":150},{"top":100,"left":500},{"top":706,"left":226.5},{"top":50,"left":226.5},{"top":225,"left":165.5},{"top":91,"left":365.5},{"top":101,"left":61.5},{"top":113,"left":317.5},{"top":91,"left":297.5},{"top":706,"left":226.5},{"top":806,"left":596.5},{"top":533,"left":369.5},{"top":450,"left":109.5},{"top":76,"left":715.5},{"top":21,"left":285.5},{"top":51,"left":26.5}]
-{% endblock %}
-
 {% block content %}
-    {% include "pictos.html" %}
 {% endblock %}
 
+{% block background %}
+    {% for axis in object_list reversed %}
+        <img class="background-image axis-image" id="background-{{ axis.name|slugify }}" src="{{ axis.image_set.all.0.image.url }}" />
+    {% endfor %}
+{% endblock %}
+
+{% block footer %}
+        <div id="caption-list">
+                <div class="caption visible">
+                    {{ object_list.0.image_set.all.0 }}
+                </div>
+        </div>
+{% endblock %}
+
+{% block extra_js %}
+    <script>
+        var photos = {
+        	_i : 1,
+        	axes: [
+					{% for axis in object_list %}
+					    { 'slug' : '{{ axis.name|slugify }}',
+					     'name' : '{{ axis.name }}',
+					     'photo' : '{{ axis.image_set.all.0.image.url }}',
+					     'photoCaption' : '{{ axis.image_set.all.0 }}' },
+					{% endfor %}
+					],
+            get_axis : function() {
+                if (this._i >= this.axes.length) {
+                    this._i = 0;
+                }
+                var axis = this.axes[this._i];
+                this._i += 1;
+                return axis
+            },
+	        slide: function(){
+	            // background image and caption
+	            var axis = this.get_axis();
+	            $('img.background-image').not('img#background-' + axis.slug).fadeOut();
+	            $('img#background-' + axis.slug).fadeIn();
+	
+	            console.log('img#background-' + axis.slug);
+	            $("footer .caption").text(axis.photoCaption).show();
+	        }
+        }
+    
+        $(window).load(function() {
+            window.setInterval(function() { photos.slide(); }, 3000);
+        });
+
+    </script>
+{% endblock %}

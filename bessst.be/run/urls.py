@@ -19,7 +19,7 @@ urlpatterns = patterns('',
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     #(r'^$', TemplateView.as_view(template_name="home.html")),
-    (r'^$', redirect_to, {'url': '/projects/'}),
+    url(r'^$', list_detail.object_list, {"queryset":Axis.objects.all(), 'template_name':'home.html'}, name='home'),
     url(r'^newsletter/', include('newsletter.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^projects/$', list_detail.object_list, {"queryset":Project.objects.all(), "extra_context": {"axis_list" : Axis.objects.all()}}, name='projects'),
