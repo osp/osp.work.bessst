@@ -21,14 +21,13 @@
           </h2>
         {% endfor %}
     </div>
-          <div id="box-oproep" class="box quote" data-sizex="8"><a href="{{ STATIC_URL }}pdf/projectoproep_bessst.pdf">bessst-labeloproep</a> </div>
           <ul id='project-list'>
               {% for project in object_list %}
               <li class="box {{ project.axis.name|slugify }} no-border {% if project.archived %}archive{% endif %}" data-sizex="16">
                   
                   <a class="project-list-title" href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name|slugify }}">
                   <img class="{{ project.axis.pictogram }} small-logo" id="{{ project.axis.name|slugify }}" src="{{ STATIC_URL }}axis/{{ project.axis.pictogram }}.png" title="{{ project.axis.name }}" data-photo="{{ project.axis.image_set.all.0.image.url }}" data-photo-caption="{{ project.axis.image_set.all.0 }}"/>
-                  <img src={{ project.image_set.all.0.image.url }} style='width: 100%;' />
+                  {% if project.image_set.all.0.image.url %}<img src="{{ project.image_set.all.0.image.url }}" style="width: 100%;" />{% endif %}
                       {{ project }}
                   <br />
                   {{ project.subtitle }}
@@ -49,11 +48,12 @@
 
 
 {% block footer %}
-        <div id="caption-list">
-                <div class="caption visible">
-                    Waerbeke © Joke Floreal
-                </div>
-        </div>
+    <div id="box-oproep" class="box quote" data-sizex="8"><a href="{{ STATIC_URL }}pdf/projectoproep_bessst.pdf">bessst-labeloproep</a> </div>
+    <div id="caption-list">
+            <div class="caption visible">
+                Waerbeke © Joke Floreal
+            </div>
+    </div>
 {% endblock %}
 
 
