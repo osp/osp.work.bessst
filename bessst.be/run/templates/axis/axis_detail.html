@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load markup %}
 
 {% block title %}{{ axis }}{% endblock %}
 
@@ -13,6 +14,11 @@
 {% endblock header%}
 
 {% block content %}
+<section id="main" class="big box">
+    <div class="tail">{{ axis.description|markdown }}</div>
+</section>
+
+<section id="right">
     <ul class="project-list"> 
         {% for project in axis.project_set.all %}
         <li class="box {{ project.axis.name|slugify }} no-border {% if project.archived %}archive{% endif %}" data-sizex="8">
@@ -22,5 +28,80 @@
         </li>
         {% endfor %}
     </ul>
+</section>
 
+{% endblock %}
+
+{% block footer %}
+    {% if object.image_set.all %}
+        {% if object.image_set.count > 1 %}
+        <div class="prev">
+            <a href="#" style="text-decoration: none;"><img src="{{ STATIC_URL }}axis/arrow-left.png"/></a>
+        </div>
+        {% endif %}
+        <div id="caption-list">
+            {% for img in object.image_set.all %}
+                <div class="caption {% if forloop.first %}visible{% endif %}" title={{ img.image.url }}>
+                    {{ img }}
+                </div>
+            {% endfor %}
+        </div>
+        {% if object.image_set.count > 1 %}
+        <div class="next">
+            <a href="#" style="text-decoration: none;"><img src="{{ STATIC_URL }}axis/arrow-right.png"/></a>
+        </div>
+        {% endif %}
+    {% endif %}
+
+<script>
+    $(window).load(function(){
+        // applies "Tailing/Queue de lampe" filter
+        $(".tail").tailing();
+
+        // Toggle boxes when hovering caption box
+        $("footer div#caption-list").hover(function(){
+                $("section").css("visibility", "hidden");
+                $("header").hide();
+                $("#background-gradient").hide();
+            }, function(){
+                $("section").css("visibility", "visible");
+                $("header").show();
+                $("#background-gradient").show();
+        });
+        {% if object.image_set.count > 1 %}
+        // Navigate through images
+        $("footer div.prev").click(function(){
+            current = $("div.caption.visible");
+            current.removeClass("visible")
+            if (current.prev().hasClass("caption")){
+                current.prev().addClass("visible");
+                $(".background-image").attr("src", current.prev().attr("title"));
+            } else {
+                last = $("div#caption-list div.caption:last-child").addClass("visible");
+                last.addClass("visible");
+                $(".background-image").attr("src", last.attr("title"));
+            }
+        });
+        $("footer div.next").click(function(){
+            current = $("div.caption.visible");
+            current.removeClass("visible")
+            if (current.next().hasClass("caption")){
+                current.next().addClass("visible");
+                $(".background-image").attr("src", current.next().attr("title"));
+            } else {
+                first = $("div#caption-list div.caption:first-child")
+                first.addClass("visible");
+                $(".background-image").attr("src", first.attr("title"));
+            }
+        });
+        {% endif %}
+    });
+</script>
+{% endblock %}
+
+
+
+{% block background %}
+    <div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/{{ axis.pictogram }}-gradient.png');"></div> 
+    <!--<img class="background-image" src="{{ object.image_set.all.0.image.url }}" style="width: 100%;"/>-->
 {% endblock %}

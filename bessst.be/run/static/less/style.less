@@ -108,9 +108,9 @@ p {
     font-size: @font-size;
     line-height: @line-height;
     margin-right: @gutter;
+    margin-bottom: @gutter;
 }
 p + p {
-    text-indent: @gutter;
 }
 
 /* Forms */
@@ -311,10 +311,6 @@ footer {
     }
 }
 
-ul {
-    margin-top: 10px;
-}
-
 
 ul li {
     list-style-type: none;
@@ -363,6 +359,7 @@ section#right {
     width: 45%;
     float: left;
     z-index: 900;
+    margin-top: @gutter;
 }
 
 .big {
@@ -376,7 +373,8 @@ section#right {
     padding: @gutter;
     border: 2px solid black;
     float: left;
-    margin-left : 30px;
+    margin-left: @gutter;
+    margin-bottom: @gutter;
 }
 
 .over .box {
@@ -476,7 +474,6 @@ ul#project-list .box {
     /*display: none;*/
     border-width: 2px;
     padding: 20px;
-    margin-top:-2px;
     margin-left : 0;
     text-align: center;
     /*visibility: hidden;*/
@@ -546,7 +543,6 @@ ul.inline li:first-child:before {
 #metadata {
     margin-left: auto;
     margin-right: auto;
-    margin-top: @gutter;
     padding: @gutter @gutter/2;
     width: 45%;
     float: none;
