@@ -5,21 +5,10 @@
 {% block slug %}home{% endblock%}
 
 {% block content %}
-<script>
-var axis = [
-{% for axis in object_list %}
-    { 'slug' : '{{ axis.name|slugify }}',
-     'name' : '{{ axis.name }}',
-     'photo' : '{{ axis.image_set.all.0.image.url }}',
-     'photoCaption' : '{{ axis.image_set.all.0 }}' },
-{% endfor %}
-]
- </script>
 {% endblock %}
 
 {% block background %}
-    <img class="background-image projects" id="background-all" src="{{ MEDIA_URL }}images/Waerbeke_vlinder_s.jpg"/>
-    {% for axis in object_list %}
+    {% for axis in object_list reversed %}
         <img class="background-image axis-image" id="background-{{ axis.name|slugify }}" src="{{ axis.image_set.all.0.image.url }}" />
     {% endfor %}
 {% endblock %}
@@ -27,30 +16,45 @@ var axis = [
 {% block footer %}
         <div id="caption-list">
                 <div class="caption visible">
-                    Waerbeke © Joke Floreal
+                    {{ object_list.0.image_set.all.0 }}
                 </div>
         </div>
 {% endblock %}
 
 {% block extra_js %}
     <script>
-       var slide;
+        var photos = {
+        	_i : 1,
+        	axes: [
+					{% for axis in object_list %}
+					    { 'slug' : '{{ axis.name|slugify }}',
+					     'name' : '{{ axis.name }}',
+					     'photo' : '{{ axis.image_set.all.0.image.url }}',
+					     'photoCaption' : '{{ axis.image_set.all.0 }}' },
+					{% endfor %}
+					],
+            get_axis : function() {
+                if (this._i >= this.axes.length) {
+                    this._i = 0;
+                }
+                var axis = this.axes[this._i];
+                this._i += 1;
+                return axis
+            },
+	        slide: function(){
+	            // background image and caption
+	            var axis = this.get_axis();
+	            $('img.background-image').not('img#background-' + axis.slug).fadeOut();
+	            $('img#background-' + axis.slug).fadeIn();
+	
+	            console.log('img#background-' + axis.slug);
+	            $("footer .caption").text(axis.photoCaption).show();
+	        }
+        }
+    
         $(window).load(function() {
             $("a#menu-projects").addClass('selected');
-
-
-        $("img.background-image.axis-image").fadeOut();
-
-        // Show axis names and colors on axis-image rollover 
-        slide = function(axis){
-            // background image and caption
-            $('img.background-image').not('img#background-' + axis.slug).fadeOut();
-            $('img#background-' + axis.slug).fadeIn();
-
-            console.log('img#background-' + axis.slug);
-            $("footer .caption").text(axis.photoCaption).show();
-        };
-
+            window.setInterval(function() { photos.slide(); }, 3000);
         });
 
     </script>
