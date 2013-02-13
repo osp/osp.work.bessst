@@ -5,7 +5,7 @@ from media_app.models import Image
 
 class Axis(models.Model):
     name = models.CharField(max_length=255, verbose_name=_("name"))
-    slug = models.SlugField(_("Slug"), unique=False, help_text=_("Unique identifier. Allows a constant targeting of this axis."))
+    slug = models.SlugField(_("Slug"), unique=True, help_text=_("Unique identifier. Allows a constant targeting of this axis."))
     description = models.TextField(verbose_name=_("Description"))
     pictogram = models.CharField(max_length="20", verbose_name=_("Drawing (filename without extension)"))
     image_set = generic.GenericRelation(Image)
