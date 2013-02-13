@@ -85,6 +85,14 @@
 
 <script>
     $(window).load(function(){
+    	
+    	// show where we are
+	    $("#navi li a").each(function() {
+	        if ( $(this).attr('href') == document.location.pathname ) { 
+	            $(this).addClass("selected");
+	        };
+	    });
+	    
         // Toggle boxes when hovering caption box
         $("footer div#caption-list").hover(function(){
                 $("section").css("visibility", "hidden");
