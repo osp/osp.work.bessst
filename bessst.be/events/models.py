@@ -14,5 +14,9 @@ class Event(models.Model):
     summary = models.TextField(_("Summary"))
     description = models.TextField(_("Description"))
 
+    @models.permalink
+    def get_absolute_url(self):
+        return ('event-detail', (), {'slug': str(self.slug)})
+
     def __unicode__(self):
         return self.title
