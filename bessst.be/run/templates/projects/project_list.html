@@ -12,22 +12,30 @@
 {% block content %}
 
     <section id="main">
-        <ul id="project-list"> 
+    <div id='axis-menu'>
         {% for axis in axis_list %}
-            <li class="logo">
-                <img class="{{ axis.pictogram }}" id="{{ axis.name|slugify }}" src="{{ STATIC_URL }}axis/{{ axis.pictogram }}.png" title="{{ axis.name }}" data-photo="{{ axis.image_set.all.0.image.url }}" data-photo-caption="{{ axis.image_set.all.0 }}"/>
-          </li>
-          {% for project in axis.project_set.all %}
-          <li class="box {{ project.axis.name|slugify }} no-border {% if project.archived %}archive{% endif %}" data-sizex="{{ project.size_x }}">
-              <a class="project-list-title" href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name|slugify }}">{{ project }}</a>
-              <br />
-              {{ project.subtitle }}
-          </li>
-          {% endfor %}
+            <h2 class="logo">
+                <a href='{% url axis-detail axis.slug %}'>
+                    <img class="{{ axis.pictogram }} small-logo" id="{{ axis.name|slugify }}" src="{{ STATIC_URL }}axis/{{ axis.pictogram }}.png" title="{{ axis.name }}" data-photo="{{ axis.image_set.all.0.image.url }}" data-photo-caption="{{ axis.image_set.all.0 }}"/>
+                </a>
+          </h2>
         {% endfor %}
-          <li id="box-quote" class="box quote" data-sizex="{{ axis_list.0.project_set.all.0.size_x }}">‘Brussel, stilte en erfgoed’</li>
-          <li id="box-oproep" class="box quote" data-sizex="{{ axis_list.0.project_set.all.0.size_x }}"><a href="{{ STATIC_URL }}pdf/projectoproep_bessst.pdf">Projectoproep</a> </li>
-        </ul>
+    </div>
+          <div id="box-oproep" class="box quote" data-sizex="8"><a href="{{ STATIC_URL }}pdf/projectoproep_bessst.pdf">bessst-labeloproep</a> </div>
+          <ul id='project-list'>
+              {% for project in object_list %}
+              <li class="box {{ project.axis.name|slugify }} no-border {% if project.archived %}archive{% endif %}" data-sizex="16">
+                  
+                  <a class="project-list-title" href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name|slugify }}">
+                  <img class="{{ project.axis.pictogram }} small-logo" id="{{ project.axis.name|slugify }}" src="{{ STATIC_URL }}axis/{{ project.axis.pictogram }}.png" title="{{ project.axis.name }}" data-photo="{{ project.axis.image_set.all.0.image.url }}" data-photo-caption="{{ project.axis.image_set.all.0 }}"/>
+                  <img src={{ project.image_set.all.0.image.url }} style='width: 100%;' />
+                      {{ project }}
+                  <br />
+                  {{ project.subtitle }}
+                  </a>
+              </li>
+          {% endfor %}
+          </ul>
     </section>
 {% endblock content %}
 
@@ -74,27 +82,31 @@
              */
             masonic();
             /* We also hide them the jQuery way: */
-            $("ul#project-list .box").hide();
+            //$("ul#project-list .box").hide();
             /* Now we just have the reset the visibility in the css,
              * so that the elements will show up when toggled: */
-            $("ul#project-list .box").css('visibility','visible');
-            $("ul#project-list .box.quote").toggle('slow');
+            //$("ul#project-list .box").css('visibility','visible');
+            //$("ul#project-list .box.quote").toggle('slow');
         });
 
         $("img.background-image.axis-image").fadeOut();
 
+        /* ROLLOVER PROJECT BOX */
+        $('ul#project-list li').hover(function(){
+            $(this).removeClass('no-border');
+            }, function(){
+            $(this).addClass('no-border');
+        });
+
         /* Show axis names and colors on axis-image rollover */
-        $("li.logo").hover(function(){
-            picto = $(this).children("img");
+        $(".logo").hover(function(){
+            picto = $( "img", $(this));
             filename = picto.attr("src").slice(0, -4);
             picto.attr("src", filename + "_c.png");
-            $(this).css({'position': 'relative', 'z-index': '100'});
 
             $("#info-zone").text(picto.attr('title')).css('visibility','visible').addClass(picto.attr('class'));
 
             $("." + picto.attr("id")).removeClass("no-border");
-
-            $(this).css({'position': 'relative', 'z-index': '100'});
 
             // background image and caption
             $('img.background-image').not('img#background-' + picto.attr("id")).fadeOut();
@@ -104,7 +116,6 @@
             $("footer .caption").text(picto.attr("data-photo-caption")).show();
         }, function(){
             picto.attr("src", filename + ".png");
-            $(this).css({'position': 'absolute', 'z-index': '0'});
 
             $("#info-zone").html("&nbsp;").css('visibility','hidden').removeClass();
             $("." + picto.attr("id")).addClass("no-border");
@@ -112,9 +123,9 @@
         });
         
         /* Show/hide projects on axis-image click */
-        $("li.logo").click(function(){
-            $('.' + $(this).children("img").attr('id')).toggle('slow', masonic)
-        })
+        //$("li.logo").click(function(){
+        //    $('.' + $(this).children("img").attr('id')).toggle('slow', masonic)
+        //})
 
 
     </script>

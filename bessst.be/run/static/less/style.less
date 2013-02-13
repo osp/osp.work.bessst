@@ -328,7 +328,12 @@ section ul li:before{
 
 #box-oproep{
     font-family:'EB';
-    text-transform: uppercase;
+    background-color: #FF6;
+    font-size: @font-size-mid;
+    text-align: center;
+    position: absolute;
+    left: 260px;
+    top: 83px;
 }
 
 
@@ -397,7 +402,6 @@ form {
     }
 }
 
-// ------------------------------------------------ Inspiratie 
 
 .inspiratie .box{
     padding:10px;
@@ -441,6 +445,20 @@ form {
     font-size: 16px;
 }
 
+#axis-menu {
+    position: fixed;
+    top: 4px;
+    right: 18%;
+    z-index: 1000;
+}
+ul#project-list {
+    float: none;
+    clear: both;
+}
+div.column {
+    width: 20%;
+    float: left;
+}
 ul#project-list .box {
     /*display: none;*/
     border-width: 2px;
@@ -448,7 +466,7 @@ ul#project-list .box {
     margin-top:-2px;
     margin-left : 0;
     text-align: center;
-    visibility: hidden;
+    /*visibility: hidden;*/
 
 }
 ul#project-list .box + .box {
@@ -460,12 +478,13 @@ ul#project-list .box:before {
     content:"";
     }
 
-.project-list-title {
+a.project-list-title {
     font-family: @font-family;
     font-size: @font-size-mid;
     line-height: 23px;
     text-align : center;
     text-decoration: none;
+    display: block;
 }
 
 a.project-list-title:hover{
@@ -492,6 +511,8 @@ a.project-list-title:hover{
 
 ul#project-list li {
     display: inline;
+    width: 30%;
+    margin: @line-height *2; 
 }
 
 object.metadata-axis {
@@ -533,6 +554,11 @@ ul.inline li:first-child:before {
 .logo {
     float: left;
     .clearfix();
+}
+.small-logo {
+    max-width: 70px;
+    max-height: 70px;
+    vertical-align: text-bottom;
 }
 
 .logo object {
@@ -611,6 +637,7 @@ nav {
     border-color: @color-door !important;
     color: black;
 }
+.trage-paden,
 .traag-langzaam-verkeer,
 .feet {
     border-color: @color-feet !important;
