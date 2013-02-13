@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% load markup %}
+
+{% block title %}Event{% endblock %}
+
+{% block slug %}event{% endblock%}
+
+{% block header %}
+<h1 class="{{ object.project.axis.pictogram }}">{{ object.title }} <span class='subtitle'>{{ object.subtitle }}</span></h1>
+{% endblock header%}
+
+{% block content %}
+<section id="main" class="big box">
+    <div class="tail">{{ object.summary|markdown }}</div>
+
+    <div class="columns">
+        {{ object.description|markdown }}
+    </div>
+
+</section>
+<section id="right">
+        <dl id="metadata" class="box">
+            <dt style="display: none">{{ object.axis }}</dt>
+            <dd>
+                <img class="metadata-axis" src="{{ STATIC_URL }}axis/{{ object.axis.pictogram }}.png">
+            </dd>
+            <dt>Date</dt>
+            <dd>
+                {{ event.start_date }}
+                {% if event.end_date != event.start_date %}
+                    → {{ event.end_date }}
+                {% endif %}
+            </dd>
+            <dt>Locatie</dt>
+            <dd>{{ object.location }}</dd>
+        </dl>
+</section>
+{% endblock %}
+
+{% block footer %}
+    {% if object.image_set.all %}
+        {% if object.image_set.count > 1 %}
+        <div class="prev">
+            <a href="#" style="text-decoration: none;"><img src="{{ STATIC_URL }}axis/arrow-left.png"/></a>
+        </div>
+        {% endif %}
+        <div id="caption-list">
+            {% for img in object.image_set.all %}
+                <div class="caption {% if forloop.first %}visible{% endif %}" title={{ img.image.url }}>
+                    {{ img }}
+                </div>
+            {% endfor %}
+        </div>
+        {% if object.image_set.count > 1 %}
+        <div class="next">
+            <a href="#" style="text-decoration: none;"><img src="{{ STATIC_URL }}axis/arrow-right.png"/></a>
+        </div>
+        {% endif %}
+    {% endif %}
+
+<script>
+    $(window).load(function(){
+        // applies "Tailing/Queue de lampe" filter
+        $(".tail").tailing();
+
+        // Toggle boxes when hovering caption box
+        $("footer div#caption-list").hover(function(){
+                $("section").css("visibility", "hidden");
+                $("header").hide();
+                $("#background-gradient").hide();
+            }, function(){
+                $("section").css("visibility", "visible");
+                $("header").show();
+                $("#background-gradient").show();
+        });
+        {% if object.image_set.count > 1 %}
+        // Navigate through images
+        $("footer div.prev").click(function(){
+            current = $("div.caption.visible");
+            current.removeClass("visible")
+            if (current.prev().hasClass("caption")){
+                current.prev().addClass("visible");
+                $(".background-image").attr("src", current.prev().attr("title"));
+            } else {
+                last = $("div#caption-list div.caption:last-child").addClass("visible");
+                last.addClass("visible");
+                $(".background-image").attr("src", last.attr("title"));
+            }
+        });
+        $("footer div.next").click(function(){
+            current = $("div.caption.visible");
+            current.removeClass("visible")
+            if (current.next().hasClass("caption")){
+                current.next().addClass("visible");
+                $(".background-image").attr("src", current.next().attr("title"));
+            } else {
+                first = $("div#caption-list div.caption:first-child")
+                first.addClass("visible");
+                $(".background-image").attr("src", first.attr("title"));
+            }
+        });
+        {% endif %}
+    });
+</script>
+{% endblock %}
+
+
+{% block background %}
+    <div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/{{ event.project.axis.pictogram }}-gradient.png');"></div> 
+    <!--<img class="background-image" src="{{ object.image_set.all.0.image.url }}" style="width: 100%;"/>-->
+{% endblock %}
