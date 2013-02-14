@@ -33,7 +33,7 @@ html {
 
 /* Grid */
 
-.grid(@gutter, @gutter, 12);
+.grid(@gutter, @gutter, 22);
 
 /* Typefaces */
 
@@ -526,7 +526,6 @@ a.project-list-title:hover{
 
 ul#project-list li {
     display: inline;
-    width: 30%;
     margin: @gutter/2; 
 }
 
@@ -587,15 +586,37 @@ div.lettrine {
     width: 150px;
     height: 115px;
     float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 div.lettrine img.small-logo {
     max-width: 50px;
     max-height: 50px;
     padding: 40px;
     position: absolute;
-    top: 17px;
-    left: 37px;
+
 }
+
+.project-title-lettrine {
+    font-size: @font-size-big;
+    text-align: center;
+    line-height: 32px;
+    font-family: @font-family-sans;
+//  text-transform: uppercase;
+    margin-bottom: 6px;
+    text-decoration: none;
+ }
+ 
+.project-title-lettrine a {
+    text-decoration: none;
+ }
+
+ 
+.project-subtitle-lettrine {
+    color: red;
+    text-align: center;
+ }
+ 
 
 .logo object {
    margin: 0px auto;
