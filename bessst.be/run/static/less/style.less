@@ -282,6 +282,12 @@ footer {
     bottom: @gutter/2;
     width: 100%;
 
+    #caption-block {
+        position: absolute;
+        bottom: 0;
+        right: @gutter/2;
+    }
+
     .prev,
     .next {
         float: left;
@@ -290,9 +296,6 @@ footer {
     }
 
     div#caption-list {
-        position: absolute;
-        bottom: 0;
-        right: @gutter/2;
         font-family:'EB';
         background-color: white;
         border: 7px double black;
@@ -311,6 +314,12 @@ footer {
     }
 }
 
+ul ul {
+    margin-left: @gutter;
+}
+ul + ul {
+    margin-top: @line-height;
+}
 
 ul li {
     list-style-type: none;
@@ -532,6 +541,9 @@ ul.inline li:before {
 }
 ul.inline li:first-child:before {
     content: "";
+}
+ul.member-list {
+    font-family: 'EB';
 }
 #metadata {
     margin-left: auto;

@@ -59,3 +59,7 @@
 {% endblock %}
 
 
+{% block background %}
+    <div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/all-gradient.png');"></div> 
+    <img class="background-image" src="{{ flatpage.image_set.all.0.image.url }}" style="width: 100%;"/>
+{% endblock %}
