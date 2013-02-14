@@ -38,10 +38,20 @@ class Individual(People):
         return fullname
 
     def __unicode__(self):
-        return self.get_full_name
+        return self.get_full_name()
 
 class Organization(People):
     contact_person = models.ForeignKey(Individual, verbose_name=_("Contact Person"), related_name="contact_person", null=True, blank=True)
     individuals = models.ManyToManyField(Individual, verbose_name=_("Individuals"), related_name="individual_set", blank=True)
     def __unicode__(self):
         return self.name
+
+
+class Friend(Individual):
+    location_coordinates = models.CharField(max_length=255, verbose_name=_("Coordinates of my Silence Location"))
+    location_explanation = models.TextField(_("Explanation of my Silence Location"))
+    newsletter = models.BooleanField(verbose_name=_("Receive Newsletter"))
+    display = models.BooleanField(verbose_name=_("Display my name"), default=True)
+        
+    def __unicode__(self):
+        return self.get_full_name()
