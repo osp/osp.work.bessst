@@ -33,6 +33,8 @@
             </dd>
             <dt>Locatie</dt>
             <dd>{{ object.location }}</dd>
+            <dt>Part of</dt>
+            <dd><a href='{{ object.project.get_absolute_url }}'>{{ object.project }}</a></dd>
         </dl>
 </section>
 {% endblock %}

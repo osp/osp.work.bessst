@@ -30,9 +30,21 @@
             </dd>
             <dt>Locatie</dt>
             <dd>{{ object.location }}</dd>
+
             {% if object.link %}
-            <dt>Project website</dt>
-            <dd><a href="{{ object.link }}" target="_blank">{{ object.link|slice:'7:' }}</a></dd>
+                <dt>Project website</dt>
+                <dd><a href="{{ object.link }}" target="_blank">{{ object.link|slice:'7:' }}</a></dd>
+            {% endif %}
+
+            {% if object.event_set.all %}
+                <dt>Related events</dt>
+                <dd>
+                    <ul>
+                    {% for e in object.event_set.all %}
+                        <li><a href="{{ e.get_absolute_url }}">{{ e }}</a></li>
+                    {% endfor %}
+                    </ul>
+                </dd>
             {% endif %}
         </dl>
 </section>
