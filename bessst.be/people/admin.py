@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.utils.translation import ugettext_lazy as _
-from .models import Individual, Organization, People
+from .models import Individual, Organization, People, Friend
 from wymeditor.admin import RichTextAdmin
 
 class IndividualAdmin(RichTextAdmin):
@@ -34,4 +34,5 @@ class OrganizationAdmin(RichTextAdmin):
 
 admin.site.register(Individual, IndividualAdmin)
 admin.site.register(Organization, OrganizationAdmin)
+admin.site.register(Friend)
 
