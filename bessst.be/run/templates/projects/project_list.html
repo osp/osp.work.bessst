@@ -48,23 +48,11 @@
 {% endblock content %}
 
 
-{% block background %}
-    <img class="background-image projects" id="background-all" src="{{ MEDIA_URL }}images/Waerbeke_vlinder_s.jpg"/>
-    {% for axis in axis_list %}
-        <img class="background-image axis-image" id="background-{{ axis.name|slugify }}" src="{{ axis.image_set.all.0.image.url }}" />
-    {% endfor %}
-{% endblock %}
+
 
 
 {% block footer %}
-    <div id="box-oproep" class="box quote" data-sizex="8"><a href="{{ STATIC_URL }}pdf/projectoproep_bessst.pdf">bessst-labeloproep</a> </div>
-    <div id="caption-block">
-        <div id="caption-list">
-            <div class="caption visible">
-                Waerbeke © Joke Floreal
-            </div>
-        </div>
-    </div>
+
 {% endblock %}
 
 
@@ -119,12 +107,6 @@
 
             $("." + picto.attr("id")).removeClass("no-border");
 
-            // background image and caption
-            $('img.background-image').not('img#background-' + picto.attr("id")).fadeOut();
-            $('img#background-' + picto.attr("id")).fadeIn();
-
-            console.log('img#background-' + picto.attr("id"))
-            $("footer .caption").text(picto.attr("data-photo-caption")).show();
         }, function(){
             picto.attr("src", filename + ".png");
 

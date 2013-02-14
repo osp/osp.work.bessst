@@ -141,7 +141,11 @@ h2 {
 /*    border-bottom:4px double black;*/
 }
 
-*+h2 {
+/**+h2 {
+    margin-top: @gutter;
+}*/
+
+#axis-menu h2 {
     margin-top: @gutter;
 }
 
@@ -380,7 +384,7 @@ section#right {
     .box-sizing(border-box);
     background-color: white;
     padding: @gutter;
-    border: 2px solid black;
+    border: 1px solid black;
     float: left;
     margin-left: @gutter;
     margin-bottom: @gutter;
@@ -481,7 +485,6 @@ div.column {
 }
 ul#project-list .box {
     /*display: none;*/
-    border-width: 2px;
     padding: 20px;
     margin-left : 0;
     text-align: left;
