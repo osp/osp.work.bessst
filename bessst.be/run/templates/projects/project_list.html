@@ -28,13 +28,15 @@
                   
                   <a class="many-things-link" href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name|slugify }}">
                   
-                    <div> 
-                        <h1>{{ project }}</h1>
-                    </div>
+
                     
                     <div class='lettrine'>
                         {% if project.image_set.all.0.image.url %}<img src="{{ project.image_set.all.0.image.url }}" style="width: 100%;" />{% endif %}
                         <img class="{{ project.axis.pictogram }} small-logo" id="{{ project.axis.name|slugify }}" src="{{ STATIC_URL }}axis/{{ project.axis.pictogram }}.png" title="{{ project.axis.name }}" data-photo="{{ project.axis.image_set.all.0.image.url }}" data-photo-caption="{{ project.axis.image_set.all.0 }}"/>
+                    </div>
+                    
+                    <div> 
+                        <h1>{{ project }}</h1>
                     </div>
                    
                     {{ project.summary|markdown|truncatewords:60 }}
