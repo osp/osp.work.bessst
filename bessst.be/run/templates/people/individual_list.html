@@ -14,11 +14,13 @@
         {% for organization in partners %}
             <li>
                 {{ organization.get_full_name }}
-                <ul class='inline member-list'>
-                {% for member in organization.individuals.all %}
-                    <li>{{ member }}</li>
-                {% endfor %}
-                </ul>
+                {% if organization.individuals.all %}
+                    <ul class='inline member-list'>
+                    {% for member in organization.individuals.all %}
+                        <li>{{ member }}</li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
             </li>
         {% endfor %}
     </ul>
