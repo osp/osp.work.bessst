@@ -32,7 +32,7 @@
             <dd>{{ object.location }}</dd>
             {% if object.link %}
             <dt>Hyperlink</dt>
-            <dd><a href="{{ object.link }}" target="_blank">{{ object.link }}</a></dd>
+            <dd><a href="{{ object.link }}" target="_blank">{{ object.link|slice:'7:' }}</a></dd>
             {% endif %}
         </dl>
 </section>
