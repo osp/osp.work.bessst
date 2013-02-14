@@ -14,11 +14,13 @@
 {% endblock %}
 
 {% block footer %}
+    <div id="caption-block">
         <div id="caption-list">
                 <div class="caption visible">
                     {{ object_list.0.image_set.all.0 }}
                 </div>
         </div>
+    </div>
 {% endblock %}
 
 {% block extra_js %}

@@ -60,25 +60,27 @@
 
 <footer>
 {% block footer %}
-{% if object.image_set.all %}
-    {% if object.image_set.count > 1 %}
-    <div class="prev">
-        <a href="#" style="text-decoration: none;"><img src="{{ STATIC_URL }}axis/arrow-left.png"/></a>
-    </div>
-    {% endif %}
-    <div id="caption-list">
-        {% for img in object.image_set.all %}
-            <div class="caption {% if forloop.first %}visible{% endif %}" title={{ img.image.url }}>
-                {{ img }}
+    <div id='caption-block'>
+        {% if object.image_set.all %}
+            {% if object.image_set.count > 1 %}
+            <div class="prev">
+                <a href="#" style="text-decoration: none;"><img src="{{ STATIC_URL }}axis/arrow-left.png"/></a>
             </div>
-        {% endfor %}
+            {% endif %}
+            <div id="caption-list">
+                {% for img in object.image_set.all %}
+                    <div class="caption {% if forloop.first %}visible{% endif %}" title={{ img.image.url }}>
+                        {{ img }}
+                    </div>
+                {% endfor %}
+            </div>
+            {% if object.image_set.count > 1 %}
+            <div class="next">
+                <a href="#" style="text-decoration: none;"><img src="{{ STATIC_URL }}axis/arrow-right.png"/></a>
+            </div>
+            {% endif %}
+        {% endif %}
     </div>
-    {% if object.image_set.count > 1 %}
-    <div class="next">
-        <a href="#" style="text-decoration: none;"><img src="{{ STATIC_URL }}axis/arrow-right.png"/></a>
-    </div>
-    {% endif %}
-{% endif %}
 {% endblock %}
 </footer>
 

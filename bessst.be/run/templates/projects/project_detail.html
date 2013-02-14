@@ -39,6 +39,7 @@
 {% endblock %}
 
 {% block footer %}
+<div id="caption-block">
     {% if object.image_set.all %}
         {% if object.image_set.count > 1 %}
         <div class="prev">
@@ -58,6 +59,7 @@
         </div>
         {% endif %}
     {% endif %}
+</div>
 
 <script>
     $(window).load(function(){
