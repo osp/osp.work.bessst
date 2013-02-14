@@ -37,7 +37,7 @@
                         <img class="{{ project.axis.pictogram }} small-logo" id="{{ project.axis.name|slugify }}" src="{{ STATIC_URL }}axis/{{ project.axis.pictogram }}.png" title="{{ project.axis.name }}" data-photo="{{ project.axis.image_set.all.0.image.url }}" data-photo-caption="{{ project.axis.image_set.all.0 }}"/>
                     </div>
                    
-                    {{ project.summary|markdown|truncatewords:40 }}
+                    {{ project.summary|markdown|truncatewords:60 }}
                  
                     </a>
                     
