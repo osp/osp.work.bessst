@@ -37,5 +37,5 @@ class Project(models.Model):
         return ('project-detail', (), {'slug': str(self.slug)})
     
     class Meta:
-        ordering = ["id"]
+        ordering = ["-id"]
         

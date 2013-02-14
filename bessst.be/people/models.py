@@ -19,7 +19,6 @@ class People(models.Model):
     class Meta:
         ordering = ['name']
 
-    @property
     def get_full_name(self):
         try:
             return self.individual.get_full_name()

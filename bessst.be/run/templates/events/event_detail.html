@@ -22,7 +22,7 @@
         <dl id="metadata" class="box">
             <dt style="display: none">{{ object.axis }}</dt>
             <dd>
-                <img class="metadata-axis" src="{{ STATIC_URL }}axis/{{ object.axis.pictogram }}.png">
+                <img class="metadata-axis" src="{{ STATIC_URL }}axis/{{ object.project.axis.pictogram }}.png">
             </dd>
             <dt>Date</dt>
             <dd>
@@ -33,6 +33,8 @@
             </dd>
             <dt>Locatie</dt>
             <dd>{{ object.location }}</dd>
+            <dt>Part of</dt>
+            <dd><a href='{{ object.project.get_absolute_url }}'>{{ object.project }}</a></dd>
         </dl>
 </section>
 {% endblock %}
