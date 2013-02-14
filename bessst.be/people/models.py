@@ -22,14 +22,13 @@ class People(models.Model):
     @property
     def get_full_name(self):
         try:
-            return self.individual.get_full_name
+            return self.individual.get_full_name()
         except:
             return self.__unicode__()
 
 class Individual(People):
     firstname = models.CharField(max_length=255, verbose_name=_("First Name"), null=True, blank=True)
 
-    @property
     def get_full_name(self):
         fullname = ""
         if self.firstname: fullname += self.firstname + u' '
