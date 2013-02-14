@@ -38,7 +38,7 @@ class Individual(People):
         return fullname
 
     def __unicode__(self):
-        return self.get_full_name()
+        return self.get_full_name
 
 class Organization(People):
     contact_person = models.ForeignKey(Individual, verbose_name=_("Contact Person"), related_name="contact_person", null=True, blank=True)
@@ -54,4 +54,4 @@ class Friend(Individual):
     display = models.BooleanField(verbose_name=_("Display my name"), default=True)
         
     def __unicode__(self):
-        return self.get_full_name()
+        return self.get_full_name
