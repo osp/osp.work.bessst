@@ -26,11 +26,10 @@
               {% for project in object_list %}
               <li class="box {{ project.axis.name|slugify }} no-border {% if project.archived %}archive{% endif %}" data-sizex="18">
                   
-                  <a  href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name|slugify }}">
+                  <a class="many-things-link" href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name|slugify }}">
                   
                     <div> 
-                        <div class="project-title-lettrine">{{ project }}</div>
-                        <br/>
+                        <h1>{{ project }}</h1>
                         <div class="project-subtitle-lettrine">{{ project.subtitle }}</div>
                         </span>
                     </div>
@@ -40,7 +39,7 @@
                         <img class="{{ project.axis.pictogram }} small-logo" id="{{ project.axis.name|slugify }}" src="{{ STATIC_URL }}axis/{{ project.axis.pictogram }}.png" title="{{ project.axis.name }}" data-photo="{{ project.axis.image_set.all.0.image.url }}" data-photo-caption="{{ project.axis.image_set.all.0 }}"/>
                     </div>
                    
-                    {{ project.summary|markdown }}
+                    {{ project.summary|markdown|truncatewords:40 }}
                  
                     </a>
                     
