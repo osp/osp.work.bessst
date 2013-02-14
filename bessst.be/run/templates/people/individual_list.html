@@ -10,11 +10,24 @@
     
     <h2>Stiltepartners</h2>
     <ul> 
-      {% for individual in object_list %}
-      <li class="box no-border">
-        {{ individual.get_full_name }}
-      </li>
-      {% endfor %}
+        {#{% regroup object_list|dictsort:'individual.individual_set' by individual_set as partner_list %}#}
+        {% for organization in partners %}
+            <li>
+                {{ organization.get_full_name }}
+                <ul class='inline member-list'>
+                {% for member in organization.individuals.all %}
+                    <li>{{ member }}</li>
+                {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+    <ul>
+        {% for individual in object_list %}
+            {% if not individual.individual_set.all %}
+                <li>{{ individual }}
+            {% endif %}
+        {% endfor %}
     </ul>
     
     
@@ -24,15 +37,6 @@
     <input type="submit" value="Submit" />
     </form>
     
-    <h2>Partners</h2>
-    <ul> 
-      {% for partner in partners %}
-      <li class="box no-border">
-        {{ partner.name }}
-      </li>
-      {% endfor %}
-    </ul>
-
 {% endblock %}
 
 
