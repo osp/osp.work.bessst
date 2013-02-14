@@ -45,6 +45,9 @@
           {% endfor %}
           </ul>
     </section>
+    <div id="box-oproep">
+        <a href='#'>Krijg het<br /> bessst-labeloproep</a>
+    </div>
 {% endblock content %}
 
 
@@ -52,11 +55,6 @@
 
 
 {% block footer %}
-    <div id="box-oproep">
-        <div>
-        bessst-labeloproep
-        </div>
-    </div>
 {% endblock %}
 
 
@@ -124,6 +122,8 @@
         //    $('.' + $(this).children("img").attr('id')).toggle('slow', masonic)
         //})
 
+        // RANDOMLY PLACES LABELOPROEP
+        $('#box-oproep').css('left', Math.floor(Math.random()*1000) + 'px').css('top', Math.floor(Math.random()*600) + 'px');
 
     </script>
 {% endblock %}
