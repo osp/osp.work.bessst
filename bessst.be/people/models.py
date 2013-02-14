@@ -16,6 +16,9 @@ class People(models.Model):
     def __unicode__(self):
         return self.name
 
+    class Meta:
+        ordering = ['name']
+
     @property
     def get_full_name(self):
         try:
