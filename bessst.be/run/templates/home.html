@@ -4,6 +4,30 @@
 
 {% block slug %}home{% endblock%}
 
+
+{% block nav %}
+<nav>
+    <ul id="logo">
+        <li><a href="/"><img src="{{ STATIC_URL }}images/logo.png" /></a></li>
+    </ul>
+    <ul id="navi">
+        <li><a id="menu-projects" href="{% url projects %}">Projecten</a></li>
+        <li><a id="menu-agenda" href="{% url agenda %}">Agenda</a></li>
+        <li><a id="menu-community" href="{% url community %}">Community</a></li>        
+        <li><a id="menu-inspiratie" href="{% url inspiration %}">Inspiratie</a></li>
+        <li><a id="menu-over" href="{% url flatpage-detail slug="over" %}">Over</a></li>
+    </ul>
+    <ul id="lan">
+        <li><a class="selected" href="#">nl</a></li>
+        <li><a href="#">en</a></li>
+        <li><a href="#">fr</a></li>
+    </ul>
+</nav>
+
+{% endblock %}
+
+
+
 {% block content %}
 {% endblock %}
 
