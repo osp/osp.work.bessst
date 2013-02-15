@@ -33,7 +33,7 @@
     </ul>
     
     
-    <h2>Opgeven als stiltevriend</h2>
+    <h2>Aanmelden als stiltevriend</h2>
     <div id="map" style="height:180px;"></div>
     <p>Klik om te kaart om je favoriete stilteplek in Brussel op te geven</p>
     <form action="/community/" method="post">{% csrf_token %}
@@ -70,7 +70,7 @@
             $(this).css("cursor", "pointer").add($(this).nextUntil("h2")).wrapAll($('<div class="box"></div>'))
             // for each header, take the next element and all the elements up to the next header
             // and wrap them in a .collapsed div
-            $(this).next().add($(this).next().nextUntil("h2")).wrapAll($('<div class="collapsed"></div>'))
+//            $(this).next().add($(this).next().nextUntil("h2")).wrapAll($('<div class="collapsed"></div>'))
         }) 
         $("h2").click(function(){
             $(this).next().slideToggle("slow");
