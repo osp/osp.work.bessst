@@ -13,7 +13,10 @@
         {#{% regroup object_list|dictsort:'individual.individual_set' by individual_set as partner_list %}#}
         {% for organization in partners %}
             <li>
+                {% if organization.link %}<a href="{{ organization.link }}">{% endif %}
                 {{ organization.get_full_name }}
+                {% if organization.link %}</a>{% endif %}
+
                 {% if organization.individuals.all %}
                     <ul class='inline member-list'>
                     {% for member in organization.individuals.all %}
