@@ -24,16 +24,16 @@
             <dd>
                 <img class="metadata-axis" src="{{ STATIC_URL }}axis/{{ object.project.axis.pictogram }}.png">
             </dd>
-            <dt>Date</dt>
+            <dt>Datum</dt>
             <dd>
                 {{ event.start_date }}
                 {% if event.end_date != event.start_date %}
-                    → {{ event.end_date }}
+                    {{ event.end_date }}
                 {% endif %}
             </dd>
             <dt>Locatie</dt>
             <dd>{{ object.location }}</dd>
-            <dt>Part of</dt>
+            <dt>Onderdeel van</dt>
             <dd><a href='{{ object.project.get_absolute_url }}'>{{ object.project }}</a></dd>
         </dl>
 </section>

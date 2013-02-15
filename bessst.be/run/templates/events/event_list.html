@@ -7,10 +7,10 @@
             <a href='{{ event.get_absolute_url }}'>{{ event }}</a><br />
             {{ event.start_date }}
             {% if event.end_date != event.start_date %}
-                → {{ event.end_date }}
+                {{ event.end_date }}
             {% endif %}
             <!--{{ event.summary|markdown }}-->
-            <p>Part of the project <a href='{{ event.project.get_absolute_url }}'>{{ event.project }}</a></p>
+            <p>Onderdeel van het project <a href='{{ event.project.get_absolute_url }}'>{{ event.project }}</a></p>
         </div>
     {% endfor %}
 {% endblock %}
