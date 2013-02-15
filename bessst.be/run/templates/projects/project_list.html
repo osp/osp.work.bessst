@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load markup %}
+{% load markup thumbnails %}
 
 {% block title %}Projecten{% endblock %}
 
@@ -31,7 +31,7 @@
 
                     
                     <div class='lettrine'>
-                        {% if project.image_set.all.0.image.url %}<img src="{{ project.image_set.all.0.image.url }}" style="width: 100%;" />{% endif %}
+                        {% if project.image_set.all.0.image.url %}<img src="{{ project.image_set.all.0.image|thumbnail:'150x150' }}" />{% endif %}
                         <img class="{{ project.axis.pictogram }} small-logo" id="{{ project.axis.name|slugify }}" src="{{ STATIC_URL }}axis/{{ project.axis.pictogram }}.png" title="{{ project.axis.name }}" data-photo="{{ project.axis.image_set.all.0.image.url }}" data-photo-caption="{{ project.axis.image_set.all.0 }}"/>
                     </div>
                     

@@ -135,6 +135,7 @@ INSTALLED_APPS = (
     'django.contrib.markup',
     'flatpages',
     'wymeditor',
+    'custom_tags',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
