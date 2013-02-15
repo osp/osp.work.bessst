@@ -2,6 +2,8 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from projects.models import Project
 from axis.models import Axis
+from django.contrib.contenttypes import generic
+from media_app.models import Image
 
 class Event(models.Model):
     published = models.BooleanField(_("Published"), default=False)
@@ -13,6 +15,7 @@ class Event(models.Model):
     end_date = models.DateField(_("End date"))
     summary = models.TextField(_("Summary"))
     description = models.TextField(_("Description"))
+    image_set = generic.GenericRelation(Image)
 
     @models.permalink
     def get_absolute_url(self):

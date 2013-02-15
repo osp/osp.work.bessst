@@ -40,6 +40,7 @@
 {% endblock %}
 
 {% block footer %}
+<div id="caption-block">
     {% if object.image_set.all %}
         {% if object.image_set.count > 1 %}
         <div class="prev">
@@ -59,55 +60,19 @@
         </div>
         {% endif %}
     {% endif %}
+</div>
 
 <script>
     $(window).load(function(){
         // applies "Tailing/Queue de lampe" filter
         $(".tail").tailing();
-
-        // Toggle boxes when hovering caption box
-        $("footer div#caption-list").hover(function(){
-                $("section").css("visibility", "hidden");
-                $("header").hide();
-                $("#background-gradient").hide();
-            }, function(){
-                $("section").css("visibility", "visible");
-                $("header").show();
-                $("#background-gradient").show();
-        });
-        {% if object.image_set.count > 1 %}
-        // Navigate through images
-        $("footer div.prev").click(function(){
-            current = $("div.caption.visible");
-            current.removeClass("visible")
-            if (current.prev().hasClass("caption")){
-                current.prev().addClass("visible");
-                $(".background-image").attr("src", current.prev().attr("title"));
-            } else {
-                last = $("div#caption-list div.caption:last-child").addClass("visible");
-                last.addClass("visible");
-                $(".background-image").attr("src", last.attr("title"));
-            }
-        });
-        $("footer div.next").click(function(){
-            current = $("div.caption.visible");
-            current.removeClass("visible")
-            if (current.next().hasClass("caption")){
-                current.next().addClass("visible");
-                $(".background-image").attr("src", current.next().attr("title"));
-            } else {
-                first = $("div#caption-list div.caption:first-child")
-                first.addClass("visible");
-                $(".background-image").attr("src", first.attr("title"));
-            }
-        });
-        {% endif %}
+        
     });
 </script>
 {% endblock %}
 
 
 {% block background %}
-    <div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/{{ event.project.axis.pictogram }}-gradient.png');"></div> 
-    <!--<img class="background-image" src="{{ object.image_set.all.0.image.url }}" style="width: 100%;"/>-->
+    {% if object.project %}<div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/{{ event.project.axis.pictogram }}-gradient.png');"></div>{% endif %} 
+    <img class="background-image" src="{{ object.image_set.all.0.image.url }}" style="width: 100%;"/>
 {% endblock %}
