@@ -2,6 +2,7 @@
 {% load markup %}
 
 {% block content %}
+<section id='agenda'>
     {% for event in object_list %}
         <div class='box'>
             <a href='{{ event.get_absolute_url }}'>{{ event }}</a><br />
@@ -10,7 +11,8 @@
                 {{ event.end_date }}
             {% endif %}
             <!--{{ event.summary|markdown }}-->
-            <p>Onderdeel van het project <a href='{{ event.project.get_absolute_url }}'>{{ event.project }}</a></p>
+            <p>Onderdeel van <a href='{{ event.project.get_absolute_url }}'>{{ event.project }}</a></p>
         </div>
     {% endfor %}
+</section>
 {% endblock %}
