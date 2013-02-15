@@ -70,8 +70,8 @@
 	        slide: function(){
 	            // background image and caption
 	            var axis = this.get_axis();
-	            $('img.background-image').not('img#background-' + axis.slug).fadeOut();
-	            $('img#background-' + axis.slug).fadeIn();
+	            $('img.background-image').not('img#background-' + axis.slug).fadeOut('1200');
+	            $('img#background-' + axis.slug).fadeIn('1200');
 	
 	            console.log('img#background-' + axis.slug);
 	            $("footer .caption").text(axis.photoCaption).show();
@@ -79,7 +79,7 @@
         }
     
         $(window).load(function() {
-            window.setInterval(function() { photos.slide(); }, 3000);
+            window.setInterval(function() { photos.slide(); }, 5000);
         });
 
     </script>
