@@ -14,6 +14,6 @@ def deploy():
 def getdb():
     local('/usr/bin/scp osp@bessst.be:apps/osp.work.bessst/bessst.be/run/test.db run/test.db')
 
-def getassets():
+def getimages():
     local('/usr/bin/scp osp@bessst.be:apps/osp.work.bessst/bessst.be/run/assets/images/*.* run/assets/images/')
 
