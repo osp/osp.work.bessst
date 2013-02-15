@@ -8,7 +8,7 @@
         <table cellspacing="15">
             <tr>
                 {% for event in date.list %}
-                <td>
+                <td class='no-border {{ event.project.axis.pictogram }}'>
 
             <a href='{{ event.get_absolute_url }}'>
                 {{ event.start_date }}
@@ -18,7 +18,10 @@
                 <br />
                 {{ event }}
                 <!--{{ event.summary|markdown }}-->
-                <p>Onderdeel van <a href='{{ event.project.get_absolute_url }}'>{{ event.project }}</a></p>
+                <p>
+                    Onderdeel van {{ event.project }}
+                    <img class='smaller-logo' src='{{ STATIC_URL }}axis/{{ event.project.axis.pictogram }}-smaller.png' alt='axis {{ event.project.axis }}' />
+                </p>
             </a>
 
                 </td>
@@ -27,4 +30,21 @@
         </table>
     {% endfor %}
 </section>
+{% endblock %}
+
+
+
+{% block extra_js %}
+<script>
+
+    $(window).load(function() {
+
+        /* ROLLOVER PROJECT BOX */
+        $('#agenda td').hover(function(){
+            $(this).removeClass('no-border');
+            }, function(){
+            $(this).addClass('no-border');
+        });
+    });
+</script>
 {% endblock %}

@@ -593,6 +593,11 @@ img.small-logo {
     max-height: 70px;
     vertical-align: text-bottom;
 }
+img.smaller-logo {
+    max-width: 30px;
+    max-height: 30px;
+    vertical-align: text-bottom;
+}
 
 div.lettrine {
     width: 150px;
@@ -641,18 +646,21 @@ a.many-things-link {
  }
  
 section#agenda {
+    a {
+        text-decoration: none;
+    }
    p {
        margin-right: 0;
    }
    table {
         width: 100%;
         text-align: center;
+        table-layout: fixed;
 
         td {
             border: 1px solid black;
             background-color: white;
             padding: @gutter/2;
-            margin: @gutter;
         }
    }
 }
