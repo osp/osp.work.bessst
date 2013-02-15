@@ -34,6 +34,8 @@
     
     
     <h2>Opgeven als stiltevriend</h2>
+    <div id="map" style="height:180px;"></div>
+    <p>Klik om te kaart om je favoriete stilteplek in Brussel op te geven</p>
     <form action="/community/" method="post">{% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="Submit" />
@@ -78,6 +80,36 @@
         $(".tail").tailing();
 
     });
+</script>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+ <!--[if lte IE 8]>
+     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+ <![endif]-->
+ <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+<script>
+// create a map in the "map" div, set the view to a given place and zoom
+var map = L.map('map').setView([50.84694973844825, 4.354920387268066], 14);
+
+// add an OpenStreetMap tile layer
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> deelnemers'
+}).addTo(map);
+
+var onMapClick = function(e) {
+    if ( !$("#id_location_latitude").val() | !$("#id_location_longitude").val() ) {
+        $("#id_location_latitude").val(e.latlng.lat);
+        $("#id_location_longitude").val(e.latlng.lng);
+        console.log(e.latlng.toString());
+        L.marker(e.latlng).addTo(map)
+        .bindPopup('Dit is mijn stilteplek')
+        .openPopup();
+    }
+}
+
+map.on('click', onMapClick);
+
+// add a marker in the given location, attach some popup content to it and open the popup
+
 </script>
 {% endblock %}
 

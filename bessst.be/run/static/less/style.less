@@ -121,6 +121,17 @@ input[type="submit"]{
     font-family: @font-family-sans;
 }
 
+label[for="id_location_latitude"], label[for="id_location_longitude"], #id_location_latitude, #id_location_longitude { 
+    display: none;
+}
+
+ul.errorlist li:before
+{ 
+content:"Klik op de kaart om een stiltelocatie op te geven: ";
+}
+
+
+
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
     font-weight:normal;
