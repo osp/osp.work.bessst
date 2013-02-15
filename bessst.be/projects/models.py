@@ -19,6 +19,8 @@ class Project(models.Model):
     axis = models.ForeignKey(Axis, verbose_name=_("Axis"))
     summary = models.TextField(_("Summary"), blank=True)
     description = models.TextField(_("Description"))
+    start_date = models.DateField(_("Start date"), blank=True)
+    end_date = models.DateField(_("End date"), blank=True)
     image_set = generic.GenericRelation(Image)
 
 #    @property

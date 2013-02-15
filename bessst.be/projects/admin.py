@@ -15,7 +15,7 @@ class ProjectAdmin(RichTextAdmin):
             'fields': (('published', 'archived'),'title', 'subtitle', 'slug')
         }),
         (_('Infos'), {
-            'fields': ('axis', 'link', 'location', 'producers', 'summary', 'description')
+            'fields': ('axis', 'link', ('start_date','end_date'), 'location', 'producers', 'summary', 'description')
         })
     )
 
