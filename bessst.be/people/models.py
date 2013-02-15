@@ -46,7 +46,8 @@ class Organization(People):
 
 
 class Friend(Individual):
-    location_coordinates = models.CharField(max_length=255, verbose_name=_("Coordinates of my Silence Location"))
+    location_latitude = models.FloatField(verbose_name=_("Latitude of my Silence Location"))
+    location_longitude = models.FloatField(verbose_name=_("Longitude of my Silence Location"))
     location_explanation = models.TextField(_("Explanation of my Silence Location"))
     newsletter = models.BooleanField(verbose_name=_("Receive Newsletter"))
     display = models.BooleanField(verbose_name=_("Display my name"), default=True)
