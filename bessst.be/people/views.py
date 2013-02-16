@@ -8,7 +8,7 @@ from people.models import Individual, Friend, Organization
 class IndividualForm(ModelForm):
     class Meta:
         model = Friend
-        fields = ('firstname', 'prefix', 'name', 'email', 'link', 'location_latitude', 'location_longitude', 'location_explanation', 'newsletter', 'display')
+        fields = ('location_explanation', 'firstname', 'prefix', 'name', 'email', 'link', 'location_latitude', 'location_longitude', 'newsletter', 'display')
 
 def community(request):
     tpl_params = {}

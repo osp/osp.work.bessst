@@ -114,6 +114,23 @@ p + p {
 }
 
 /* Forms */
+
+form {
+    label {
+      display: inline-block;
+      width: 220px;
+    }
+    span.helptext {
+        display: none;
+    }
+    p + p {
+        text-indent: 0;
+    }
+    p {
+        margin-bottom: @gutter / 2;
+    }
+}
+
 input[type="submit"]{
     border: 2px solid black;
     /*margin-top: 6px;*/
@@ -125,12 +142,9 @@ label[for="id_location_latitude"], label[for="id_location_longitude"], #id_locat
     display: none;
 }
 
-ul.errorlist li:before
-{ 
-content:"Klik op de kaart om een stiltelocatie op te geven: ";
+.errorlist {
+    color: red;
 }
-
-
 
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
@@ -423,20 +437,6 @@ section#right {
 .community .box .box {
     border: none;
 }
-
-form {
-    label {
-      display: inline-block;
-      width: 220px;
-    }
-    span.helptext {
-        display: none;
-    }
-    p + p {
-        text-indent: 0;
-    }
-}
-
 
 .inspiratie .box{
     padding:10px;

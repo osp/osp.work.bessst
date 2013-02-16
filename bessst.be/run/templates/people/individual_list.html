@@ -38,7 +38,7 @@
     
     <h2>Aanmelden als stiltevriend</h2>
     <div id="map" style="height:180px;width:585px;"></div>
-    <p>Klik om te kaart om je favoriete stilteplek in Brussel op te geven</p>
+    <p class="explanation">Klik om te kaart om je favoriete stilteplek in Brussel op te geven.</p>
     <form action="/community/" method="post">{% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="Submit" />
@@ -95,20 +95,36 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> deelnemers'
 }).addTo(map);
 
-var onMapClick = function(e) {
-    if ( !$("#id_location_latitude").val() | !$("#id_location_longitude").val() ) {
-        $("#id_location_latitude").val(e.latlng.lat);
-        $("#id_location_longitude").val(e.latlng.lng);
-        console.log(e.latlng.toString());
-        L.marker(e.latlng).addTo(map)
+var marker;
+var set = false;
+
+var setLatLng = function(latlng) {
+        $("#id_location_latitude").val(latlng.lat);
+        $("#id_location_longitude").val(latlng.lng);
+        console.log(latlng.toString());
+}
+
+var makeMarker = function(e) {
+    if ( !set ) {
+        setLatLng(e.latlng);
+        set = true;
+        marker = L.marker(e.latlng, { draggable : true }).addTo(map)
         .bindPopup('Dit is mijn stilteplek')
-        .openPopup();
+        .openPopup()
+        .on('dragend', function(e) { 
+             setLatLng(e.target.getLatLng());
+        });
     }
 }
 
-map.on('click', onMapClick);
+map.on('click', makeMarker);
 
-// add a marker in the given location, attach some popup content to it and open the popup
+if ($("p:has('#id_location_latitude')").prev().hasClass("errorlist")) {
+    /* This means the form is giving errors about missing the latitude,
+    which means nothing was selected on the map. We need to display errors next to the map. */
+    $("p:has('#id_location_latitude','#id_location_longitude')").prev().hide();
+    $("p.explanation").prepend('<span class="errorlist">Om u aan te melden als stiltevriend, vragen wij u een stilteplek aan te geven. </span>')
+}
 
 </script>
 {% endblock %}
