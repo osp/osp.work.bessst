@@ -7,7 +7,12 @@
 
 
 {% block content %}
-<div class="box">
+<div class="box" data-sizex="35">
+    <h2>Stiltevrienden</h2>
+    <div id="map2" style="height:600px;width:990px;"></div>
+</div>
+
+<div class="box" data-sizex="12">
     <h2>Stiltepartners</h2>
     <ul> 
         {#{% regroup object_list|dictsort:'individual.individual_set' by individual_set as partner_list %}#}
@@ -36,14 +41,18 @@
     </ul>
 </div>
     
-<div class="box">
+<div class="box" data-sizex="22">
     <h2>Aanmelden als stiltevriend</h2>
     <div id="map" style="height:180px;width:585px;"></div>
     <p class="explanation">Klik om te kaart om je favoriete stilteplek in Brussel op te geven.</p>
+    {% if not submitted%}
     <form action="{% url community %}" method="post">{% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="Submit" />
     </form>
+    {% else %}
+    <p>Bedankt voor uw aanmelding als stiltevriend.</p>
+    {% endif %}
 </div>
 {% endblock %}
 
@@ -55,6 +64,22 @@
  <![endif]-->
  <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
 <script>
+var friendMap = L.map('map2').setView([50.84694973844825, 4.354920387268066], 14);
+
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> deelnemers'
+}).addTo(friendMap);
+
+var friends = {{ friends_json|safe }}
+
+for (var i=0; i < friends.length; i++) {
+    var friend = friends[i]
+    console.log(friend)
+    var friendMarker = L.marker([friend.lat, friend.lng], { draggable : true }).addTo(friendMap)
+        .bindPopup('<h3>' + friend.name + '</h3><p>' + friend.explanation + '</p>')
+        .openPopup()
+}
+
 // create a map in the "map" div, set the view to a given place and zoom
 var map = L.map('map').setView([50.84694973844825, 4.354920387268066], 14);
 
