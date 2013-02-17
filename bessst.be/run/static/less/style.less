@@ -12,17 +12,19 @@
 @color-window: #5500ff;
 @color-diapason: #aaaaaa;
 
-@font-size: 18px;
-@line-height: 22px;
-@font-size-small:15px;
-@line-height-small:19px;
-/*@font-size-smallplus:18px;*/
-@font-size-mid:21px;
-@font-size-big:35px;
 @font-family:'EB';
 @font-family-sans:'Source';
+
+@font-size:18px;
+@font-size-small:15px;
+@font-size-mid:21px;
+@font-size-big:35px;
+
+@line-height: 22px;
+@line-height-small:19px;
+
 @gutter: 30px;
-@smallgutter: 15px;
+@smallgutter: 18px;
 
 
 // Always a scrollbar, so no glitches when showing just the background picture
@@ -66,7 +68,7 @@ html {
 }
 
 @font-face {
-    font-family: SourceFat;
+    font-family: Source;
     src: url("../type/SourceSansPro-Semibold.ttf");
     font-weight: 400;
 }
@@ -110,7 +112,7 @@ p {
     font-size: @font-size;
     line-height: @line-height;
     margin-right: @gutter;
-    margin-bottom: @gutter;
+    margin-bottom: @smallgutter;
 }
 p + p {
 }
@@ -363,7 +365,7 @@ section ul li:before{
 
 #box-quote{
     font-family:@font-family-sans;
-    font-size: 18px;
+    font-size: @font-size;
 }
 
 #box-oproep{
@@ -447,8 +449,9 @@ section#right {
 
 .inspiratie-categorien{
     font-family: 'Source';
-    font-size: 13px;
-    letter-spacing: 0.04em;
+    font-size: @font-size-small;
+    font-weight: 300;
+    letter-spacing: 0.02em;
     text-align: center;
     text-transform: uppercase;
 }
@@ -458,16 +461,15 @@ section#right {
 }
 
 .inspiratie strong {
-   font-family: 'SourceFat';
+   font-weight: 300;
    font-size: 16px;
 }
 
 .inspiratie em {
    font-family: 'Source';
-   color : black;
    font-size: 16px;
    font-weight: 200;
-   font-style: normal;
+   font-style: italic;
 }
 .inspiratie .box img {
     width: 100%;
@@ -476,8 +478,8 @@ section#right {
 
 .inspiratie .box p {
     margin-right : 0px;
-    font-family: @font-family;
-    font-size: @font-size;
+    font-family: 'Source';
+    font-size: @font-size-small;
     line-height: 21px;
     text-indent: 0;
     margin-bottom: 5px;
@@ -485,8 +487,8 @@ section#right {
 
 .resource-title {
 //    margin-top : 5px;
-    font-family: 'Source';
-    font-size: 16px;
+    font-family: 'EB';
+    font-size: @font-size;
 }
 
 #axis-menu {
@@ -634,9 +636,9 @@ div.lettrine img.small-logo {
 }
 
 body.projecten .box h1 {
-    font-size: 21px;
+    font-size: @font-size-mid;
     text-align: left;
-    line-height: 18px;
+    line-height: 21px;
     margin-bottom: 6px;
     letter-spacing: 0.02em;
     text-decoration: none;
