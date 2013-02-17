@@ -1,36 +1,51 @@
 {% extends 'base.html' %}
-{% load markup %}
+{% load markup utils %}
 
 {% block content %}
 <section id='agenda'>
     {% regroup object_list by start_date as event_list %}
-    {% for date in event_list %}
-        <table cellspacing="15">
-            <tr>
-                {% for event in date.list %}
-                <td class='no-border {{ event.project.axis.pictogram }}'>
+    {% assign prev_date event_list.0.list.0.start_date %}
 
-            <a href='{{ event.get_absolute_url }}'>
-                {{ event.start_date }}
-                {% if event.end_date != event.start_date %}
-                    → {{ event.end_date }}
-                {% endif %}
-                <br />
-                {{ event }}
-                <!--{{ event.summary|markdown }}-->
-                <p>
-                    Onderdeel van {{ event.project }}
-                    <img class='smaller-logo' src='{{ STATIC_URL }}axis/{{ event.project.axis.pictogram }}-smaller.png' alt='axis {{ event.project.axis }}' />
-                </p>
-            </a>
+    {% for date in event_list %}
+        {% for event in date.list %}
+
+            {% if event.start_date|date_to_space:prev_date > 0 %}
+                <table cellspacing="15">
+                    <tr>
+                        <td><div class='vide' style='height: {{ event.start_date|date_to_space:prev_date }}0px'>&nbsp;</div></td>
+                    </tr>
+                </table>
+                <table cellspacing="15">
+                    <tr>
+            {% elif forloop.first %}
+                <table cellspacing="15">
+                    <tr>
+            {% endif %}
+
+                <td class='no-border {{ event.project.axis.pictogram }}'>
+                    <a href='{{ event.get_absolute_url }}'>
+                        {{ event.start_date }}
+                        {% if event.end_date != event.start_date %}
+                            → {{ event.end_date }}
+                        {% endif %}
+                        <br />
+                        {{ event }}
+                        <!--{{ event.summary|markdown }}-->
+                        <p>
+                            Onderdeel van {{ event.project }}
+                            <img class='smaller-logo' src='{{ STATIC_URL }}axis/{{ event.project.axis.pictogram }}-smaller.png' alt='axis {{ event.project.axis }}' />
+                        </p>
+                    </a>
 
                 </td>
+
+{% assign prev_date event.start_date %}
                 {% endfor %}
             </tr>
         </table>
     {% endfor %}
     <table>
-        <tr><td>Vandaag: {{ now }}
+        <tr><td>Vandaag: {% now 'j F Y' %}
     </table>
 </section>
 {% endblock %}
