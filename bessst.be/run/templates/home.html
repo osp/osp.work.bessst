@@ -29,6 +29,7 @@
 
 
 {% block content %}
+    <div id="axis-home" title="{{ axis.name }}">Axis</div>
 {% endblock %}
 
 {% block background %}
@@ -38,13 +39,6 @@
 {% endblock %}
 
 {% block footer %}
-    <div id="caption-block">
-        <div id="caption-list">
-                <div class="caption visible">
-                    {{ object_list.0.image_set.all.0 }}
-                </div>
-        </div>
-    </div>
 {% endblock %}
 
 {% block extra_js %}
@@ -75,6 +69,10 @@
 	
 	            //console.log('img#background-' + axis.slug);
 	            $("footer .caption").text(axis.photoCaption).show();
+
+	            $("#axis-home").text(axis.name).show();
+                left = $(document).width()/2 - $("#axis-home").width()/2 ;
+	            $("#axis-home").css('left', left + 'px');
 	        }
         }
     
