@@ -33,7 +33,7 @@
 
 {% block background %}
     {% for axis in object_list reversed %}
-        <img class="background-image axis-image" id="background-{{ axis.name|slugify }}" src="{{ axis.image_set.all.0.image.url }}" />
+    <img {% if not forloop.first %}style='display: none;'{% endif %} class="background-image axis-image" id="background-{{ axis.name|slugify }}" src="{{ axis.image_set.all.0.image.url }}" />
     {% endfor %}
 {% endblock %}
 
@@ -70,10 +70,10 @@
 	        slide: function(){
 	            // background image and caption
 	            var axis = this.get_axis();
-	            $('img.background-image').not('img#background-' + axis.slug).fadeOut('1200');
-	            $('img#background-' + axis.slug).fadeIn('1200');
+	            $('img.background-image').not('img#background-' + axis.slug).fadeOut('slow');
+	            $('img#background-' + axis.slug).fadeIn('slow');
 	
-	            console.log('img#background-' + axis.slug);
+	            //console.log('img#background-' + axis.slug);
 	            $("footer .caption").text(axis.photoCaption).show();
 	        }
         }
