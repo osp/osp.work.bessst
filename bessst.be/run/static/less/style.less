@@ -12,7 +12,7 @@
 @color-window: #5500ff;
 @color-diapason: #aaaaaa;
 
-@font-family:'EB';
+@font-family:'Crimson';
 @font-family-sans:'Source';
 
 @font-size:17px;
@@ -40,8 +40,20 @@ html {
 /* Typefaces */
 
 @font-face {
-    font-family: EB;
-    src: url("../type/SortsMillGoudy-Regular.ttf");
+    font-family: Crimson;
+    src: url("../type/CrimsonText-Roman.ttf");
+}
+
+@font-face {
+    font-family: Crimson;
+    src: url("../type/CrimsonText-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Crimson;
+    src: url("../type/CrimsonText-Italic.ttf");
+    font-style: italic;
 }
 
 @font-face {
@@ -137,13 +149,16 @@ form {
 
 input[type="submit"]{
     border: 2px solid black;
-    /*margin-top: 6px;*/
     background: white;
     font-family: @font-family-sans;
 }
 
 label[for="id_location_latitude"], label[for="id_location_longitude"], #id_location_latitude, #id_location_longitude { 
     display: none;
+}
+
+.explanation {
+    margin-top: 5px;
 }
 
 .errorlist {
@@ -330,7 +345,7 @@ footer {
     }
 
     div#caption-list {
-        font-family:'EB';
+        font-family:'Crimson';
         background-color: white;
         border: 7px double black;
         height: 32px;
@@ -369,7 +384,7 @@ section ul li:before{
 }
 
 #box-oproep{
-    font-family:'EB';
+    font-family:'Crimson';
     font-size: @font-size-mid;
     text-align: center;
     position: fixed;
@@ -435,7 +450,7 @@ section#right {
 .community .box {
 //    border-image: url(/static/box.png) 40 40 200 400 stretch;
 //    border-width: 4px 4px 20px 60px;
-    border: 2px double black;
+    border: 1px solid black;
 }
 
 .community .box .box {
@@ -497,7 +512,7 @@ section#right {
 
 .resource-title {
 //    margin-top : 5px;
-    font-family: 'EB';
+    font-family: 'Crimson';
     font-size: @font-size;
 }
 
@@ -579,7 +594,7 @@ ul.inline li:first-child:before {
     content: "";
 }
 ul.member-list {
-    font-family: 'EB';
+    font-family: 'Crimson';
 }
 ul.member-list:before {
     content: '(';
@@ -668,6 +683,12 @@ a.many-things-link {
  }
  
 section#agenda {
+    padding: @gutter/2;
+
+    h1 {
+        font-size: @font-size-mid;
+    }
+
     a {
         text-decoration: none;
     }
@@ -684,6 +705,9 @@ section#agenda {
             background-color: white;
             padding: @gutter/2;
         }
+   }
+   table + table {
+        margin-top: -15px;
    }
    .vide {
         border: 1px solid black;

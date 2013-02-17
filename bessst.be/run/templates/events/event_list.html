@@ -3,11 +3,13 @@
 
 {% block content %}
 <section id='agenda'>
-    {% regroup object_list by start_date as event_list %}
+    {% regroup object_list|dictsort:'start_date' by start_date as event_list %}
     {% assign prev_date event_list.0.list.0.start_date %}
 
     {% for date in event_list %}
         {% for event in date.list %}
+
+            {% if event.start_date|timeuntil > 0 %}
 
             {% if event.start_date|date_to_space:prev_date > 0 %}
                 <table cellspacing="15">
@@ -24,29 +26,26 @@
 
                 <td class='no-border {{ event.project.axis.pictogram }}'>
                     <a href='{{ event.get_absolute_url }}'>
+                        <span class='date'>
                         {{ event.start_date }}
                         {% if event.end_date != event.start_date %}
                             → {{ event.end_date }}
                         {% endif %}
-                        <br />
-                        {{ event }}
-                        <!--{{ event.summary|markdown }}-->
-                        <p>
+                        <h1>{{ event }}</h1>
+                        <span class='related-project'>
                             Onderdeel van {{ event.project }}
                             <img class='smaller-logo' src='{{ STATIC_URL }}axis/{{ event.project.axis.pictogram }}-smaller.png' alt='axis {{ event.project.axis }}' />
-                        </p>
+                        </span>
                     </a>
 
                 </td>
 
-{% assign prev_date event.start_date %}
+                {% assign prev_date event.start_date %}
+                {% endif %}
                 {% endfor %}
             </tr>
         </table>
     {% endfor %}
-    <table>
-        <tr><td>Vandaag: {% now 'j F Y' %}
-    </table>
 </section>
 {% endblock %}
 
