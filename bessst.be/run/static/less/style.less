@@ -683,6 +683,12 @@ a.many-things-link {
  }
  
 section#agenda {
+    padding: @gutter/2;
+
+    h1 {
+        font-size: @font-size-mid;
+    }
+
     a {
         text-decoration: none;
     }
@@ -699,6 +705,9 @@ section#agenda {
             background-color: white;
             padding: @gutter/2;
         }
+   }
+   table + table {
+        margin-top: -15px;
    }
    .vide {
         border: 1px solid black;
