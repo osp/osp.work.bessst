@@ -28,15 +28,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.67485132"
-     inkscape:cx="-2988.2483"
-     inkscape:cy="-4740.3831"
+     inkscape:cx="-2757.0863"
+     inkscape:cy="-4667.7745"
      inkscape:document-units="px"
      inkscape:current-layer="layer5"
      showgrid="false"
      borderlayer="true"
      inkscape:showpageshadow="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="744"
+     inkscape:window-width="1680"
+     inkscape:window-height="994"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -1941,7 +1941,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -2202,55 +2202,48 @@
          id="rect7124"
          style="opacity:0.98999999;fill:#ff5555;fill-opacity:0.01960784;stroke:none" />
     </g>
-    <g
-       id="g7393"
-       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/hammer-gradient.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"
-       transform="matrix(1,0,0,0.66666667,0,1735.9691)">
-      <rect
-         y="5117.9072"
-         x="-3289.3997"
-         height="90"
-         width="10"
-         id="rect7361"
-         style="opacity:0.98999999;fill:#ff5555;fill-opacity:1;stroke:none" />
-      <rect
-         style="opacity:0.98999999;fill:#ff5555;fill-opacity:0.80392157;stroke:none"
-         id="rect7363"
-         width="10"
-         height="90"
-         x="-3289.3997"
-         y="5027.9072" />
-      <rect
-         y="4937.9072"
-         x="-3289.3997"
-         height="90"
-         width="10"
-         id="rect7365"
-         style="opacity:0.98999999;fill:#ff5555;fill-opacity:0.60784314;stroke:none" />
-      <rect
-         style="opacity:0.98999999;fill:#ff5555;fill-opacity:0.41176471;stroke:none"
-         id="rect7367"
-         width="10"
-         height="90"
-         x="-3289.3997"
-         y="4847.9072" />
-      <rect
-         y="4757.9072"
-         x="-3289.3997"
-         height="90"
-         width="9.9999971"
-         id="rect7369"
-         style="opacity:0.98999999;fill:#ff5555;fill-opacity:0.21568627;stroke:none" />
-      <rect
-         style="opacity:0.98999999;fill:#ff5555;fill-opacity:0.01960784;stroke:none"
-         id="rect7371"
-         width="10"
-         height="90"
-         x="-3289.3997"
-         y="4667.9072" />
-    </g>
+    <rect
+       style="opacity:0.98999999;fill:#ff5555;fill-opacity:1;stroke:none"
+       id="rect7361"
+       width="10"
+       height="60"
+       x="-3289.3997"
+       y="5147.9072" />
+    <rect
+       y="5087.9072"
+       x="-3289.3997"
+       height="60"
+       width="10"
+       id="rect7363"
+       style="opacity:0.98999999;fill:#ff5555;fill-opacity:0.80392157;stroke:none" />
+    <rect
+       style="opacity:0.98999999;fill:#ff5555;fill-opacity:0.60784314;stroke:none"
+       id="rect7365"
+       width="10"
+       height="60"
+       x="-3289.3997"
+       y="5027.9072" />
+    <rect
+       y="4967.9072"
+       x="-3289.3997"
+       height="60"
+       width="10"
+       id="rect7367"
+       style="opacity:0.98999999;fill:#ff5555;fill-opacity:0.41176471;stroke:none" />
+    <rect
+       style="opacity:0.98999999;fill:#ff5555;fill-opacity:0.21568627;stroke:none"
+       id="rect7369"
+       width="9.9999971"
+       height="60"
+       x="-3289.3997"
+       y="4907.9072" />
+    <rect
+       y="4847.9072"
+       x="-3289.3997"
+       height="60"
+       width="10"
+       id="rect7371"
+       style="opacity:0.98999999;fill:#ff5555;fill-opacity:0.01960784;stroke:none" />
     <rect
        y="5147.9072"
        x="-3229.3997"
@@ -2311,346 +2304,306 @@
        inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/window-gradient.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
-    <g
-       id="g12367"
-       transform="matrix(1,0,0,0.66666667,0,1735.9691)"
+    <rect
+       style="opacity:0.98999999;fill:#ffaa55;fill-opacity:1;stroke:none"
+       id="rect7444"
+       width="10"
+       height="60"
+       x="-3169.3997"
+       y="5147.9072"
        inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <rect
-         inkscape:export-ydpi="72"
-         inkscape:export-xdpi="72"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         y="5117.9072"
-         x="-3169.3997"
-         height="90"
-         width="10"
-         id="rect7444"
-         style="opacity:0.98999999;fill:#ffaa55;fill-opacity:1;stroke:none" />
-      <rect
-         inkscape:export-ydpi="72"
-         inkscape:export-xdpi="72"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         style="opacity:0.98999999;fill:#ffaa55;fill-opacity:0.80392157;stroke:none"
-         id="rect7446"
-         width="10"
-         height="90"
-         x="-3169.3997"
-         y="5027.9072" />
-      <rect
-         inkscape:export-ydpi="72"
-         inkscape:export-xdpi="72"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         y="4937.9072"
-         x="-3169.3997"
-         height="90"
-         width="10"
-         id="rect7448"
-         style="opacity:0.98999999;fill:#ffaa55;fill-opacity:0.60784314;stroke:none" />
-      <rect
-         inkscape:export-ydpi="72"
-         inkscape:export-xdpi="72"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         style="opacity:0.98999999;fill:#ffaa55;fill-opacity:0.41176471;stroke:none"
-         id="rect7450"
-         width="10"
-         height="90"
-         x="-3169.3997"
-         y="4847.9072" />
-      <rect
-         inkscape:export-ydpi="72"
-         inkscape:export-xdpi="72"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         y="4757.9072"
-         x="-3169.3997"
-         height="90"
-         width="9.9999971"
-         id="rect7452"
-         style="opacity:0.98999999;fill:#ffaa55;fill-opacity:0.21568627;stroke:none" />
-      <rect
-         inkscape:export-ydpi="72"
-         inkscape:export-xdpi="72"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         style="opacity:0.98999999;fill:#ffaa55;fill-opacity:0.01960784;stroke:none"
-         id="rect7454"
-         width="10"
-         height="90"
-         x="-3169.3997"
-         y="4667.9072" />
-    </g>
-    <g
-       id="g7468"
-       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/door-gradient.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"
-       transform="matrix(1,0,0,0.66666667,0,1735.9691)">
-      <rect
-         style="opacity:0.98999999;fill:#00ffaa;fill-opacity:1;stroke:none"
-         id="rect7456"
-         width="10"
-         height="90"
-         x="-3109.3997"
-         y="5117.9072"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         inkscape:export-xdpi="72"
-         inkscape:export-ydpi="72" />
-      <rect
-         y="5027.9072"
-         x="-3109.3997"
-         height="90"
-         width="10"
-         id="rect7458"
-         style="opacity:0.98999999;fill:#00ffaa;fill-opacity:0.80392157;stroke:none"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         inkscape:export-xdpi="72"
-         inkscape:export-ydpi="72" />
-      <rect
-         style="opacity:0.98999999;fill:#00ffaa;fill-opacity:0.60784314;stroke:none"
-         id="rect7460"
-         width="10"
-         height="90"
-         x="-3109.3997"
-         y="4937.9072"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         inkscape:export-xdpi="72"
-         inkscape:export-ydpi="72" />
-      <rect
-         y="4847.9072"
-         x="-3109.3997"
-         height="90"
-         width="10"
-         id="rect7462"
-         style="opacity:0.98999999;fill:#00ffaa;fill-opacity:0.41176471;stroke:none"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         inkscape:export-xdpi="72"
-         inkscape:export-ydpi="72" />
-      <rect
-         style="opacity:0.98999999;fill:#00ffaa;fill-opacity:0.21568627;stroke:none"
-         id="rect7464"
-         width="9.9999971"
-         height="90"
-         x="-3109.3997"
-         y="4757.9072"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         inkscape:export-xdpi="72"
-         inkscape:export-ydpi="72" />
-      <rect
-         y="4667.9072"
-         x="-3109.3997"
-         height="90"
-         width="10"
-         id="rect7466"
-         style="opacity:0.98999999;fill:#00ffaa;fill-opacity:0.01960784;stroke:none"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         inkscape:export-xdpi="72"
-         inkscape:export-ydpi="72" />
-    </g>
-    <g
-       id="g7496"
-       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/cloud-gradient.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"
-       transform="matrix(1,0,0,0.66666667,0,1735.9691)">
-      <rect
-         inkscape:export-ydpi="72"
-         inkscape:export-xdpi="72"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         y="5117.9072"
-         x="-3049.3997"
-         height="90"
-         width="10"
-         id="rect7478"
-         style="opacity:0.98999999;fill:#00aaaa;fill-opacity:1;stroke:none" />
-      <rect
-         inkscape:export-ydpi="72"
-         inkscape:export-xdpi="72"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         style="opacity:0.98999999;fill:#00aaaa;fill-opacity:0.80392157;stroke:none"
-         id="rect7480"
-         width="10"
-         height="90"
-         x="-3049.3997"
-         y="5027.9072" />
-      <rect
-         inkscape:export-ydpi="72"
-         inkscape:export-xdpi="72"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         y="4937.9072"
-         x="-3049.3997"
-         height="90"
-         width="10"
-         id="rect7482"
-         style="opacity:0.98999999;fill:#00aaaa;fill-opacity:0.60784314;stroke:none" />
-      <rect
-         inkscape:export-ydpi="72"
-         inkscape:export-xdpi="72"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         style="opacity:0.98999999;fill:#00aaaa;fill-opacity:0.41176471;stroke:none"
-         id="rect7484"
-         width="10"
-         height="90"
-         x="-3049.3997"
-         y="4847.9072" />
-      <rect
-         inkscape:export-ydpi="72"
-         inkscape:export-xdpi="72"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         y="4757.9072"
-         x="-3049.3997"
-         height="90"
-         width="9.9999971"
-         id="rect7486"
-         style="opacity:0.98999999;fill:#00aaaa;fill-opacity:0.21568627;stroke:none" />
-      <rect
-         inkscape:export-ydpi="72"
-         inkscape:export-xdpi="72"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         style="opacity:0.98999999;fill:#00aaaa;fill-opacity:0.01960784;stroke:none"
-         id="rect7488"
-         width="10"
-         height="90"
-         x="-3049.3997"
-         y="4667.9072" />
-    </g>
-    <g
-       id="g12389"
-       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/diapason-gradient.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <g
-         transform="matrix(1,0,0,0.66666667,0,1735.9691)"
-         inkscape:export-ydpi="72"
-         inkscape:export-xdpi="72"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/diapason-gradient.png"
-         id="g7557">
-        <rect
-           inkscape:export-ydpi="72"
-           inkscape:export-xdpi="72"
-           inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-           y="5117.9072"
-           x="-3009.3997"
-           height="90"
-           width="10"
-           id="rect7525"
-           style="opacity:0.98999999;fill:#aaaaaa;fill-opacity:1;stroke:none" />
-        <rect
-           inkscape:export-ydpi="72"
-           inkscape:export-xdpi="72"
-           inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-           style="opacity:0.98999999;fill:#aaaaaa;fill-opacity:0.80392157;stroke:none"
-           id="rect7527"
-           width="10"
-           height="90"
-           x="-3009.3997"
-           y="5027.9072" />
-        <rect
-           inkscape:export-ydpi="72"
-           inkscape:export-xdpi="72"
-           inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-           y="4937.9072"
-           x="-3009.3997"
-           height="90"
-           width="10"
-           id="rect7529"
-           style="opacity:0.98999999;fill:#aaaaaa;fill-opacity:0.60784314;stroke:none" />
-        <rect
-           inkscape:export-ydpi="72"
-           inkscape:export-xdpi="72"
-           inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-           style="opacity:0.98999999;fill:#aaaaaa;fill-opacity:0.41176471;stroke:none"
-           id="rect7531"
-           width="10"
-           height="90"
-           x="-3009.3997"
-           y="4847.9072" />
-        <rect
-           inkscape:export-ydpi="72"
-           inkscape:export-xdpi="72"
-           inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-           y="4757.9072"
-           x="-3009.3997"
-           height="90"
-           width="9.9999971"
-           id="rect7533"
-           style="opacity:0.98999999;fill:#aaaaaa;fill-opacity:0.21568627;stroke:none" />
-        <rect
-           inkscape:export-ydpi="72"
-           inkscape:export-xdpi="72"
-           inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-           style="opacity:0.98999999;fill:#aaaaaa;fill-opacity:0.01960784;stroke:none"
-           id="rect7535"
-           width="10"
-           height="90"
-           x="-3009.3997"
-           y="4667.9072" />
-      </g>
-    </g>
-    <g
-       id="g12381"
-       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/stairs-gradient.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <rect
-         inkscape:export-ydpi="72"
-         inkscape:export-xdpi="72"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         y="5147.9072"
-         x="-2969.3997"
-         height="60"
-         width="10"
-         id="rect7539"
-         style="opacity:0.98999999000000005;fill:#ffffaa;fill-opacity:1;stroke:none" />
-      <rect
-         inkscape:export-ydpi="72"
-         inkscape:export-xdpi="72"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         style="opacity:0.98999999000000005;fill:#ffffaa;fill-opacity:0.80392158;stroke:none"
-         id="rect7541"
-         width="10"
-         height="60"
-         x="-2969.3997"
-         y="5087.9072" />
-      <rect
-         inkscape:export-ydpi="72"
-         inkscape:export-xdpi="72"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         y="5027.9072"
-         x="-2969.3997"
-         height="60"
-         width="10"
-         id="rect7543"
-         style="opacity:0.98999999000000005;fill:#ffffaa;fill-opacity:0.60784316;stroke:none" />
-      <rect
-         inkscape:export-ydpi="72"
-         inkscape:export-xdpi="72"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         style="opacity:0.98999999000000005;fill:#ffffaa;fill-opacity:0.41176471;stroke:none"
-         id="rect7545"
-         width="10"
-         height="60"
-         x="-2969.3997"
-         y="4967.9072" />
-      <rect
-         inkscape:export-ydpi="72"
-         inkscape:export-xdpi="72"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         y="4907.9072"
-         x="-2969.3997"
-         height="60"
-         width="9.9999971"
-         id="rect7547"
-         style="opacity:0.98999999000000005;fill:#ffffaa;fill-opacity:0.21568628;stroke:none" />
-      <rect
-         inkscape:export-ydpi="72"
-         inkscape:export-xdpi="72"
-         inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
-         style="opacity:0.98999999000000005;fill:#ffffaa;fill-opacity:0.01960784;stroke:none"
-         id="rect7549"
-         width="10"
-         height="60"
-         x="-2969.3997"
-         y="4847.9072" />
-    </g>
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
+    <rect
+       y="5087.9072"
+       x="-3169.3997"
+       height="60"
+       width="10"
+       id="rect7446"
+       style="opacity:0.98999999;fill:#ffaa55;fill-opacity:0.80392157;stroke:none"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
+    <rect
+       style="opacity:0.98999999;fill:#ffaa55;fill-opacity:0.60784314;stroke:none"
+       id="rect7448"
+       width="10"
+       height="60"
+       x="-3169.3997"
+       y="5027.9072"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
+    <rect
+       y="4967.9072"
+       x="-3169.3997"
+       height="60"
+       width="10"
+       id="rect7450"
+       style="opacity:0.98999999;fill:#ffaa55;fill-opacity:0.41176471;stroke:none"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
+    <rect
+       style="opacity:0.98999999;fill:#ffaa55;fill-opacity:0.21568627;stroke:none"
+       id="rect7452"
+       width="9.9999971"
+       height="60"
+       x="-3169.3997"
+       y="4907.9072"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
+    <rect
+       y="4847.9072"
+       x="-3169.3997"
+       height="60"
+       width="10"
+       id="rect7454"
+       style="opacity:0.98999999;fill:#ffaa55;fill-opacity:0.01960784;stroke:none"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
+    <rect
+       inkscape:export-ydpi="72"
+       inkscape:export-xdpi="72"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       y="5147.9072"
+       x="-3109.3997"
+       height="60"
+       width="10"
+       id="rect7456"
+       style="opacity:0.98999999;fill:#00ffaa;fill-opacity:1;stroke:none" />
+    <rect
+       inkscape:export-ydpi="72"
+       inkscape:export-xdpi="72"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       style="opacity:0.98999999;fill:#00ffaa;fill-opacity:0.80392157;stroke:none"
+       id="rect7458"
+       width="10"
+       height="60"
+       x="-3109.3997"
+       y="5087.9072" />
+    <rect
+       inkscape:export-ydpi="72"
+       inkscape:export-xdpi="72"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       y="5027.9072"
+       x="-3109.3997"
+       height="60"
+       width="10"
+       id="rect7460"
+       style="opacity:0.98999999;fill:#00ffaa;fill-opacity:0.60784314;stroke:none" />
+    <rect
+       inkscape:export-ydpi="72"
+       inkscape:export-xdpi="72"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       style="opacity:0.98999999;fill:#00ffaa;fill-opacity:0.41176471;stroke:none"
+       id="rect7462"
+       width="10"
+       height="60"
+       x="-3109.3997"
+       y="4967.9072" />
+    <rect
+       inkscape:export-ydpi="72"
+       inkscape:export-xdpi="72"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       y="4907.9072"
+       x="-3109.3997"
+       height="60"
+       width="9.9999971"
+       id="rect7464"
+       style="opacity:0.98999999;fill:#00ffaa;fill-opacity:0.21568627;stroke:none" />
+    <rect
+       inkscape:export-ydpi="72"
+       inkscape:export-xdpi="72"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       style="opacity:0.98999999;fill:#00ffaa;fill-opacity:0.01960784;stroke:none"
+       id="rect7466"
+       width="10"
+       height="60"
+       x="-3109.3997"
+       y="4847.9072" />
+    <rect
+       style="opacity:0.98999999;fill:#00aaaa;fill-opacity:1;stroke:none"
+       id="rect7478"
+       width="10"
+       height="60"
+       x="-3049.3997"
+       y="5147.9072"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
+    <rect
+       y="5087.9072"
+       x="-3049.3997"
+       height="60"
+       width="10"
+       id="rect7480"
+       style="opacity:0.98999999;fill:#00aaaa;fill-opacity:0.80392157;stroke:none"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
+    <rect
+       style="opacity:0.98999999;fill:#00aaaa;fill-opacity:0.60784314;stroke:none"
+       id="rect7482"
+       width="10"
+       height="60"
+       x="-3049.3997"
+       y="5027.9072"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
+    <rect
+       y="4967.9072"
+       x="-3049.3997"
+       height="60"
+       width="10"
+       id="rect7484"
+       style="opacity:0.98999999;fill:#00aaaa;fill-opacity:0.41176471;stroke:none"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
+    <rect
+       style="opacity:0.98999999;fill:#00aaaa;fill-opacity:0.21568627;stroke:none"
+       id="rect7486"
+       width="9.9999971"
+       height="60"
+       x="-3049.3997"
+       y="4907.9072"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
+    <rect
+       y="4847.9072"
+       x="-3049.3997"
+       height="60"
+       width="10"
+       id="rect7488"
+       style="opacity:0.98999999;fill:#00aaaa;fill-opacity:0.01960784;stroke:none"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
+    <rect
+       inkscape:export-ydpi="72"
+       inkscape:export-xdpi="72"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       y="5147.9072"
+       x="-3009.3997"
+       height="60"
+       width="10"
+       id="rect7525"
+       style="opacity:0.98999999;fill:#aaaaaa;fill-opacity:1;stroke:none" />
+    <rect
+       inkscape:export-ydpi="72"
+       inkscape:export-xdpi="72"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       style="opacity:0.98999999;fill:#aaaaaa;fill-opacity:0.80392157;stroke:none"
+       id="rect7527"
+       width="10"
+       height="60"
+       x="-3009.3997"
+       y="5087.9072" />
+    <rect
+       inkscape:export-ydpi="72"
+       inkscape:export-xdpi="72"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       y="5027.9072"
+       x="-3009.3997"
+       height="60"
+       width="10"
+       id="rect7529"
+       style="opacity:0.98999999;fill:#aaaaaa;fill-opacity:0.60784314;stroke:none" />
+    <rect
+       inkscape:export-ydpi="72"
+       inkscape:export-xdpi="72"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       style="opacity:0.98999999;fill:#aaaaaa;fill-opacity:0.41176471;stroke:none"
+       id="rect7531"
+       width="10"
+       height="60"
+       x="-3009.3997"
+       y="4967.9072" />
+    <rect
+       inkscape:export-ydpi="72"
+       inkscape:export-xdpi="72"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       y="4907.9072"
+       x="-3009.3997"
+       height="60"
+       width="9.9999971"
+       id="rect7533"
+       style="opacity:0.98999999;fill:#aaaaaa;fill-opacity:0.21568627;stroke:none" />
+    <rect
+       inkscape:export-ydpi="72"
+       inkscape:export-xdpi="72"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       style="opacity:0.98999999;fill:#aaaaaa;fill-opacity:0.01960784;stroke:none"
+       id="rect7535"
+       width="10"
+       height="60"
+       x="-3009.3997"
+       y="4847.9072" />
+    <rect
+       style="opacity:0.98999999;fill:#ffffaa;fill-opacity:1;stroke:none"
+       id="rect7539"
+       width="10"
+       height="60"
+       x="-2969.3997"
+       y="5147.9072"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
+    <rect
+       y="5087.9072"
+       x="-2969.3997"
+       height="60"
+       width="10"
+       id="rect7541"
+       style="opacity:0.98999999;fill:#ffffaa;fill-opacity:0.80392157;stroke:none"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
+    <rect
+       style="opacity:0.98999999;fill:#ffffaa;fill-opacity:0.60784314;stroke:none"
+       id="rect7543"
+       width="10"
+       height="60"
+       x="-2969.3997"
+       y="5027.9072"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
+    <rect
+       y="4967.9072"
+       x="-2969.3997"
+       height="60"
+       width="10"
+       id="rect7545"
+       style="opacity:0.98999999;fill:#ffffaa;fill-opacity:0.41176471;stroke:none"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
+    <rect
+       style="opacity:0.98999999;fill:#ffffaa;fill-opacity:0.21568627;stroke:none"
+       id="rect7547"
+       width="9.9999971"
+       height="60"
+       x="-2969.3997"
+       y="4907.9072"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
+    <rect
+       y="4847.9072"
+       x="-2969.3997"
+       height="60"
+       width="10"
+       id="rect7549"
+       style="opacity:0.98999999;fill:#ffffaa;fill-opacity:0.01960784;stroke:none"
+       inkscape:export-filename="/home/ludi/wrk/osp.work.bessst/bessst.be/static/axis/feet-gradient.png"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
     <g
        transform="matrix(0.94236094,0,0,0.94236094,434.1243,-2030.5774)"
        id="g15289-7"

@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from django.contrib.contenttypes import generic
-from media_app.models import Image
+from media_app.models import Image, Document
 
 class FlatPage(models.Model):
     title = models.CharField(max_length=255, verbose_name=_("Title"))
@@ -9,6 +9,7 @@ class FlatPage(models.Model):
     content = models.TextField(_("Content"))
     infobox = models.TextField(_("Info Box"), help_text=_("Content which appears in the small box on the right side of the website."), blank=True)
     image_set = generic.GenericRelation(Image)
+    documents = generic.GenericRelation(Document)
 
     def __unicode__(self):
         return self.title
