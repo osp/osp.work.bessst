@@ -35,5 +35,4 @@ from time import strftime
 @register.filter
 def date_to_space(value, prev_date):
     delta = prev_date - value
-    print type(delta.days)
-    return delta.days
+    return -delta.days
