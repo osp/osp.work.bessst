@@ -12,9 +12,9 @@
             {% if event.start_date|timeuntil > 0 %}
 
             {% if event.start_date|date_to_space:prev_date > 0 %}
-                <table cellspacing="15">
+                <table class='vide' cellspacing="15">
                     <tr>
-                        <td><div class='vide' style='height: {{ event.start_date|date_to_space:prev_date }}0px'>&nbsp;</div></td>
+                        <td><div style='height: {{ event.start_date|date_to_space:prev_date }}0px'>&nbsp;</div></td>
                     </tr>
                 </table>
                 <table cellspacing="15">
