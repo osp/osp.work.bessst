@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load markup utils %}
+{% load markup utils thumbnails %}
 
 {% block content %}
 <section id='agenda'>
@@ -31,13 +31,19 @@
                         {% if event.end_date != event.start_date %}
                             → {{ event.end_date }}
                         {% endif %}
+                        </span>
+
+                        {% if event.image_set.all.0.image.url %}
+                            <img src="{{ event.image_set.all.0.image|thumbnail:'70x70' }}" />
+                        {% endif %}
+
                         <h1>{{ event }}</h1>
+
                         <span class='related-project'>
                             Onderdeel van {{ event.project }}
                             <img class='smaller-logo' src='{{ STATIC_URL }}axis/{{ event.project.axis.pictogram }}-smaller.png' alt='axis {{ event.project.axis }}' />
                         </span>
                     </a>
-
                 </td>
 
                 {% assign prev_date event.start_date %}
