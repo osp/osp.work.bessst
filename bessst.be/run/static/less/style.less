@@ -45,29 +45,30 @@ html {
 @font-face {
     font-family: Source;
     src: url("../type/SourceSansPro-Light.ttf");
+    font-weight: 200;
 }
 @font-face {
     font-family: Source;
     src: url("../type/SourceSansPro-LightItalic.ttf");
-    font-weight: normal;
+    font-weight: 200;
     font-style: italic;
 }
 @font-face {
     font-family: Source;
     src: url("../type/SourceSansPro-Regular.ttf");
-    font-weight: bold;
+    font-weight: 300;
 }
 @font-face {
     font-family: Source;
     src: url("../type/SourceSansPro-Italic.ttf");
-    font-weight: bold;
+    font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: SourceFat;
     src: url("../type/SourceSansPro-Semibold.ttf");
-    font-weight: bold;
+    font-weight: 400;
 }
 
 
@@ -93,6 +94,7 @@ html {
 body {
     line-height: 21px;
     font-family: @font-family-sans, Sans;
+    font-weight: 200;
 }
 
 a, a.visited, a:hover{ 
@@ -148,7 +150,7 @@ label[for="id_location_latitude"], label[for="id_location_longitude"], #id_locat
 
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
-    font-weight:normal;
+    font-weight:200;
 }
 
 h1 {
@@ -189,7 +191,7 @@ p+h3 {
 
 em {
     font-family: @font-family-sans;
-    font-weight: bold;
+    font-weight: 300;
     color: @color-bessst;
     text-transform: lowercase;
 }
@@ -322,7 +324,7 @@ footer {
     .next {
         float: left;
         padding: @gutter/2 @gutter/4;
-        font-weight: bold;
+        font-weight: 300;
     }
 
     div#caption-list {
@@ -386,7 +388,7 @@ section ul li:before{
 
 dt {
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 300;
 }
 dd + dt {
     margin-top: @gutter/2;
@@ -464,7 +466,7 @@ section#right {
    font-family: 'Source';
    color : black;
    font-size: 16px;
-   font-weight: normal;
+   font-weight: 200;
    font-style: normal;
 }
 .inspiratie .box img {
@@ -735,11 +737,11 @@ nav {
         }
     }
     a:hover {
-        outline: 1px solid gray;
+        outline: 1px solid black;
     }
 
     .selected {
-        outline: 1px solid gray;
+        outline: 1px solid black;
     }
 }
 #tooltip {
