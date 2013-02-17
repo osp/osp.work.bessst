@@ -28,11 +28,14 @@
                   
                   <a class="many-things-link" href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name|slugify }}">
                   
-
-                    
                     <div class='lettrine'>
-                        {% if project.image_set.all.0.image.url %}<img src="{{ project.image_set.all.0.image|thumbnail:'150x150' }}" />{% endif %}
-                        <img class="{{ project.axis.pictogram }} small-logo" id="{{ project.axis.name|slugify }}" src="{{ STATIC_URL }}axis/{{ project.axis.pictogram }}.png" title="{{ project.axis.name }}" data-photo="{{ project.axis.image_set.all.0.image.url }}" data-photo-caption="{{ project.axis.image_set.all.0 }}"/>
+                        {% if project.image_set.all.0.image.url %}
+                            <img src="{{ project.image_set.all.0.image|thumbnail:'150x150' }}" />
+                        {% else %}
+                            <div class='empty-lettrine'>&nbsp;</div>
+                        {% endif %}
+
+                        <img class="{{ project.axis.pictogram }} small-logo" id="{{ project.axis.name|slugify }}" src="{{ STATIC_URL }}axis/{{ project.axis.pictogram }}-smaller.png" title="{{ project.axis.name }}" data-photo="{{ project.axis.image_set.all.0.image.url }}" data-photo-caption="{{ project.axis.image_set.all.0 }}"/>
                     </div>
                     
                     <div> 
@@ -71,34 +74,22 @@
 
         $(window).load(function() {
             $("a#menu-projects").addClass('selected');
-
-            /* Hiding the project boxes with jQuery sets display:none; height:0; width:0;
-             * We will need the elements to have a width because we need them
-             * taken into account in the masonry layout.
-             * So initially we just hide them in the css:
-             *
-             * ul#project-list .box {
-             *     visibility: hidden;
-             * }
-             *
-             * Then we calculate the masonry layout:
-             */
             masonic();
-            /* We also hide them the jQuery way: */
-            //$("ul#project-list .box").hide();
-            /* Now we just have the reset the visibility in the css,
-             * so that the elements will show up when toggled: */
-            //$("ul#project-list .box").css('visibility','visible');
-            //$("ul#project-list .box.quote").toggle('slow');
+        // CENTER AXIS ICON IN LETTRINE SPACE
+            $('.lettrine .small-logo').each(function(){
+                this_top = 15 + $(this).parent().height()/2 - $(this).height()/2;
+                this_left = 15 + $(this).parent().width()/2 - $(this).width()/2;
+                $(this).css({'top': this_top + 'px', 'left': this_left + 'px'});
+            });
         });
-
-        $("img.background-image.axis-image").fadeOut();
 
         /* ROLLOVER PROJECT BOX */
         $('ul#project-list li').hover(function(){
             $(this).removeClass('no-border');
+            $('.lettrine .small-logo' ,$(this)).hide()
             }, function(){
             $(this).addClass('no-border');
+            $('.lettrine .small-logo' ,$(this)).show()
         });
 
         /* Show axis names and colors on axis-image rollover */
@@ -118,6 +109,7 @@
             $("." + picto.attr("id")).addClass("no-border");
 
         });
+
         
         /* Show/hide projects on axis-image click */
         //$("li.logo").click(function(){

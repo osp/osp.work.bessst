@@ -661,6 +661,10 @@ div.lettrine {
     margin-right: 20px;
     margin-bottom: 5px;
 }
+div.empty-lettrine {
+    width: 100px;
+    height: 100px;
+}
 
 
 div.lettrine img {
@@ -669,7 +673,6 @@ div.lettrine img {
 
 div.lettrine img.small-logo {
     weight: 40px;
-    padding: 40px;
     position: absolute;
     left: 10px;
     top: 15px;
@@ -712,6 +715,15 @@ section#agenda {
    p {
        margin-right: 0;
    }
+   .date {
+        display: block;
+        text-transform: uppercase;
+        margin-bottom: @line-height;
+   }
+   .related-project {
+        font-family: 'Crimson';
+        font-size: @font-size;
+   }
    table {
         width: 100%;
         text-align: center;
@@ -721,13 +733,20 @@ section#agenda {
             border: 1px solid black;
             background-color: white;
             padding: @gutter/2;
+            vertical-align: top;
         }
    }
    table + table {
         margin-top: -15px;
    }
-   .vide {
-        border: 1px solid black;
+   table.vide {
+        td {
+            background: none;
+        }
+
+        div {
+            border: 1px solid black;
+        }
    }
 }
 
