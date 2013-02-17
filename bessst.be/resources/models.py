@@ -1,5 +1,7 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
+from django.contrib.contenttypes import generic
+from media_app.models import Image, Document
 from random import randint
 
 class ResourceCategory(models.Model):
@@ -13,6 +15,8 @@ class Resource(models.Model):
     category = models.ForeignKey(ResourceCategory, verbose_name=_("Category"))
     summary = models.TextField(_("Summary"), blank=True)
     link = models.URLField(_("Link URL"))
+    image_set = generic.GenericRelation(Image)
+    documents = generic.GenericRelation(Document)
     #preview = models.ImageField(upload_to="")
 
     def __unicode__(self):

@@ -13,3 +13,13 @@ class Image(models.Model):
     def __unicode__(self):
         return self.description
 
+class Document(models.Model):
+    description = models.CharField(max_length=255, verbose_name=_("Caption"))
+    document = models.FileField(upload_to="documents", max_length=100, verbose_name=_("Document File"))
+    content_type = models.ForeignKey(ContentType)
+    object_id = models.PositiveIntegerField()
+    content_object = generic.GenericForeignKey()
+
+    def __unicode__(self):
+        return self.description
+
