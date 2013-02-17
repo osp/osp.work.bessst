@@ -7,7 +7,7 @@
 
 
 {% block content %}
-    
+<div class="box">
     <h2>Stiltepartners</h2>
     <ul> 
         {#{% regroup object_list|dictsort:'individual.individual_set' by individual_set as partner_list %}#}
@@ -34,53 +34,21 @@
             {% endif %}
         {% endfor %}
     </ul>
+</div>
     
-    
+<div class="box">
     <h2>Aanmelden als stiltevriend</h2>
     <div id="map" style="height:180px;width:585px;"></div>
     <p class="explanation">Klik om te kaart om je favoriete stilteplek in Brussel op te geven.</p>
-    <form action="/community/" method="post">{% csrf_token %}
+    <form action="{% url community %}" method="post">{% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="Submit" />
     </form>
-    
+</div>
 {% endblock %}
 
 
 {% block extra_js %}
-<script>
-    //$(".glossarium").click(function() {
-    //    var popover = $('<div class="popover" />');
-    //    popover.html($(this).attr('title'));
-    //    popover.click(function(){
-    //        $(this).remove()
-    //    })
-    //    
-    //    popover.insertAfter($(this))
-    //    popover.css('position','absolute')
-    //})
-
-    $(window).load(function(){
-        {% if object.slug == "over" %}
-            $("a#menu-over").addClass('selected');
-        {% elif object.slug == "community" %}
-            $("a#menu-community").addClass('selected');
-        {% endif %}
-        // Make seperate boxes for the different elements
-        $("h2").each(function(i) {
-            // for each header, take the header and all the elements up to the next header
-            // and wrap them in a .box div
-            $(this).css("cursor", "pointer").add($(this).nextUntil("h2")).wrapAll($('<div class="box"></div>'))
-            // for each header, take the next element and all the elements up to the next header
-            // and wrap them in a .collapsed div
-//            $(this).next().add($(this).next().nextUntil("h2")).wrapAll($('<div class="collapsed"></div>'))
-        }) 
-        $("h2").click(function(){
-            $(this).next().slideToggle("slow");
-        });
-
-    });
-</script>
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
  <!--[if lte IE 8]>
      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
