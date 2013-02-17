@@ -33,6 +33,7 @@ urlpatterns = patterns('',
     
     url(r'^inspiration/$', list_detail.object_list, {"queryset":Resource.objects.filter(published=True)}, name='inspiration'),
     url(r'^community/$', 'people.views.community', name='community'),
+    url(r'^label-form/$', 'people.views.label_form', name='label_form'),
     
     url(r'^(?P<slug>[\w-]+)/$', DetailView.as_view(model=FlatPage), name='flatpage-detail'),
 )
