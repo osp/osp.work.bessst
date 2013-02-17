@@ -8,7 +8,7 @@ class ProjectAdmin(RichTextAdmin):
     prepopulated_fields = {'slug': ('title', 'subtitle')}
     inlines = (ImageInline,)
     filter_horizontal = ('producers',)
-    list_display = ('__unicode__', 'subtitle', 'axis', 'location', 'link')
+    list_display = ('__unicode__', 'subtitle', 'axis', 'start_date', 'end_date', 'location', 'link')
     list_filter = ('axis', 'location')
     fieldsets = (
         (_('General'), {
