@@ -8,7 +8,7 @@
     <section id="main">
         <ul id="resource-list"> 
           {% for resource in object_list %}
-          <li class="box no-border" data-sizex="9">
+          <li class="box no-border inspiratie-{{ resource.category|slugify }}" data-sizex="9">
               <div class="inspiratie-categorien"> {{resource.category}} </div>
               {{resource.summary|safe}}
               <div class="resource-title"><a data-category="{{ resource.category }}" href="{{ resource.link }}" target="_blank">{{ resource.title }}</a>
