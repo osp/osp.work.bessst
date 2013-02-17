@@ -31,7 +31,7 @@ urlpatterns = patterns('',
     url(r'^agenda/$', list_detail.object_list, {"queryset":Event.objects.filter(published=True)[:9],}, name='agenda'),
     url(r'^agenda/(?P<slug>[\w-]+)/$', DetailView.as_view(model=Event), name='event-detail'),
     
-    url(r'^inspiration/$', list_detail.object_list, {"queryset":Resource.objects.all()}, name='inspiration'),
+    url(r'^inspiration/$', list_detail.object_list, {"queryset":Resource.objects.filter(published=True)}, name='inspiration'),
     url(r'^community/$', 'people.views.community', name='community'),
     
     url(r'^(?P<slug>[\w-]+)/$', DetailView.as_view(model=FlatPage), name='flatpage-detail'),
