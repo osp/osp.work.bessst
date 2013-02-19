@@ -133,8 +133,9 @@ p + p {
 
 form {
     label {
-      display: inline-block;
-      width: 220px;
+        display: inline-block;
+        width: 220px;
+        vertical-align:top;
     }
     span.helptext {
         display: none;
@@ -148,13 +149,28 @@ form {
 }
 
 input[type="submit"]{
-    border: 2px solid black;
+    border: 1px solid black;
+    padding : 5px;
     background: white;
     font-family: @font-family-sans;
+    color : black;
 }
+
+input[type="text"]{
+    border: 1px solid black;
+    font-family: @font-family-sans;
+    width : 100 %;
+}
+
+input[type="checkbox"]{
+    border: 1px solid black;
+}
+
+
 
 label[for="id_location_latitude"], label[for="id_location_longitude"], #id_location_latitude, #id_location_longitude { 
     display: none;
+    align: top;
 }
 
 .explanation {
@@ -164,6 +180,16 @@ label[for="id_location_latitude"], label[for="id_location_longitude"], #id_locat
 .errorlist {
     color: red;
 }
+
+textarea{
+   border : 1px solid black;
+   display: inline-block;
+   font-family: @font-family-sans;
+   font-weight : 200;
+   color : black;
+   width: 100 %;
+}
+
 
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
@@ -324,6 +350,10 @@ figure#background {
     left: 45%;
     top: 47%;
     cursor:pointer;
+}
+
+#axis-home a{
+    text-decoration: none;
 }
 
 
@@ -614,12 +644,7 @@ ul.inline li:first-child:before {
 ul.member-list {
     font-family: 'Crimson';
 }
-ul.member-list:before {
-    content: '(';
-}
-ul.member-list:after {
-    content: ')';
-}
+
 #metadata {
     margin-left: auto;
     margin-right: auto;
@@ -700,6 +725,7 @@ a.many-things-link {
     margin-bottom: 3px;
  }
  
+ 
 section#agenda {
     padding: @gutter/2;
 
@@ -725,11 +751,15 @@ section#agenda {
         }
    }
    table + table {
-        margin-top: -15px;
+        margin-top: 0px;
    }
    .vide {
         border: 1px solid black;
    }
+}
+
+.date {
+    font-family: @font-family;
 }
 
 .logo object {
