@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="period.ssup" format="1">
+  <advance width="121"/>
+  <outline>
+    <contour>
+      <point x="26" y="470"/>
+      <point x="48" y="491"/>
+      <point x="76" y="491"/>
+      <point x="97" y="470"/>
+      <point x="97" y="440"/>
+      <point x="76" y="418"/>
+      <point x="48" y="418"/>
+      <point x="26" y="440"/>
+    </contour>
+  </outline>
+</glyph>

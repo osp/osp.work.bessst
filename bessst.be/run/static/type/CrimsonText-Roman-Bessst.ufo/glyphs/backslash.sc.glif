@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="backslash.sc" format="1">
+  <advance width="276"/>
+  <outline>
+    <contour>
+      <point x="257" y="-5" type="qcurve" smooth="yes"/>
+      <point x="257" y="-21"/>
+      <point x="241" y="-26" type="qcurve"/>
+      <point x="225" y="-25" type="line"/>
+      <point x="12" y="513" type="line"/>
+      <point x="16" y="517"/>
+      <point x="26" y="517" type="qcurve" smooth="yes"/>
+      <point x="52" y="517"/>
+      <point x="59" y="503" type="qcurve"/>
+      <point x="255" y="9" type="line" smooth="yes"/>
+      <point x="257" y="3"/>
+    </contour>
+  </outline>
+</glyph>

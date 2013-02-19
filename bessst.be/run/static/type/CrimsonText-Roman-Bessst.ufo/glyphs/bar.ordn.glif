@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="bar.ordn" format="1">
+  <advance width="117"/>
+  <outline>
+    <contour>
+      <point x="74" y="191" type="line" smooth="yes"/>
+      <point x="74" y="188"/>
+      <point x="47" y="179"/>
+      <point x="41" y="179" type="qcurve" smooth="yes"/>
+      <point x="30" y="179"/>
+      <point x="30" y="185" type="qcurve" smooth="yes"/>
+      <point x="30" y="756" type="line"/>
+      <point x="29" y="761"/>
+      <point x="33" y="762" type="qcurve" smooth="yes"/>
+      <point x="49" y="766"/>
+      <point x="63" y="766" type="qcurve" smooth="yes"/>
+      <point x="71" y="766"/>
+      <point x="74" y="762" type="qcurve"/>
+    </contour>
+  </outline>
+</glyph>

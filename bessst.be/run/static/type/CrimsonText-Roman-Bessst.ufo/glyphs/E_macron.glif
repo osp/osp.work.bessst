@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Emacron" format="1">
+  <advance width="571"/>
+  <unicode hex="0112"/>
+  <outline>
+    <component base="E" xOffset="27"/>
+    <component base="uni0304.cap" xOffset="104" yOffset="194"/>
+  </outline>
+</glyph>

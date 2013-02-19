@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="daggerdbl.sinf" format="1">
+  <advance width="234"/>
+  <outline>
+    <component base="daggerdbl.ssup" yOffset="-550"/>
+  </outline>
+</glyph>

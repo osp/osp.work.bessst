@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0307.cap" format="1">
+  <advance width="262"/>
+  <unicode hex="F899"/>
+  <outline>
+    <contour>
+      <point x="94" y="782"/>
+      <point x="123" y="811"/>
+      <point x="165" y="811"/>
+      <point x="194" y="782"/>
+      <point x="194" y="740"/>
+      <point x="165" y="711"/>
+      <point x="123" y="711"/>
+      <point x="94" y="740"/>
+    </contour>
+  </outline>
+</glyph>

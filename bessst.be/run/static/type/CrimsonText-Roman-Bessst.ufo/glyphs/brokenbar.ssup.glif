@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="brokenbar.ssup" format="1">
+  <advance width="91"/>
+  <outline>
+    <contour>
+      <point x="26" y="670" type="line"/>
+      <point x="26" y="897" type="line"/>
+      <point x="25" y="901"/>
+      <point x="29" y="902" type="qcurve" smooth="yes"/>
+      <point x="44" y="906"/>
+      <point x="60" y="906" type="qcurve" smooth="yes"/>
+      <point x="64" y="906"/>
+      <point x="64" y="903" type="qcurve" smooth="yes"/>
+      <point x="65" y="674" type="line"/>
+      <point x="56" y="668"/>
+      <point x="33" y="665" type="qcurve" smooth="yes"/>
+      <point x="25" y="664"/>
+      <point x="26" y="669" type="qcurve"/>
+    </contour>
+    <contour>
+      <point x="26" y="355" type="qcurve" smooth="yes"/>
+      <point x="26" y="582" type="line"/>
+      <point x="25" y="586"/>
+      <point x="29" y="587" type="qcurve" smooth="yes"/>
+      <point x="44" y="591"/>
+      <point x="60" y="591" type="qcurve" smooth="yes"/>
+      <point x="64" y="591"/>
+      <point x="64" y="588" type="qcurve" smooth="yes"/>
+      <point x="65" y="361" type="line"/>
+      <point x="64" y="360" type="line" smooth="yes"/>
+      <point x="62" y="358"/>
+      <point x="58" y="356"/>
+      <point x="44" y="352"/>
+      <point x="33" y="351" type="qcurve" smooth="yes"/>
+      <point x="32" y="351"/>
+      <point x="30" y="350" type="qcurve" smooth="yes"/>
+      <point x="29" y="349" type="line"/>
+      <point x="26" y="349"/>
+    </contour>
+  </outline>
+</glyph>

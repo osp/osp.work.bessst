@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="O.ssup" format="1">
+  <advance width="441"/>
+  <outline>
+    <contour>
+      <point x="210" y="813" type="qcurve" smooth="yes"/>
+      <point x="151" y="813"/>
+      <point x="87" y="714"/>
+      <point x="87" y="645" type="qcurve" smooth="yes"/>
+      <point x="87" y="566"/>
+      <point x="163" y="451"/>
+      <point x="230" y="451" type="qcurve" smooth="yes"/>
+      <point x="289" y="451"/>
+      <point x="355" y="551"/>
+      <point x="355" y="620" type="qcurve" smooth="yes"/>
+      <point x="355" y="698"/>
+      <point x="278" y="813"/>
+    </contour>
+    <contour>
+      <point x="22" y="720"/>
+      <point x="138" y="842"/>
+      <point x="302" y="842"/>
+      <point x="419" y="720"/>
+      <point x="419" y="544"/>
+      <point x="301" y="420"/>
+      <point x="139" y="420"/>
+      <point x="22" y="544"/>
+    </contour>
+  </outline>
+</glyph>

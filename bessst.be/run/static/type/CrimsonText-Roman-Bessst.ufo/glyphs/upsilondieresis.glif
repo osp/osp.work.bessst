@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="upsilondieresis" format="1">
+  <advance width="439"/>
+  <unicode hex="03CB"/>
+  <outline>
+    <component base="dieresis" xOffset="-2" yOffset="30"/>
+    <component base="upsilon" xOffset="-7"/>
+  </outline>
+</glyph>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="exclam.sinf" format="1">
+  <advance width="141"/>
+  <outline>
+    <component base="exclam.ssup" yOffset="-550"/>
+  </outline>
+</glyph>

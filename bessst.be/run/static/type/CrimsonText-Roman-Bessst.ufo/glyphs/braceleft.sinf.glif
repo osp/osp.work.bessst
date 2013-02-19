@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="braceleft.sinf" format="1">
+  <advance width="168"/>
+  <outline>
+    <component base="braceleft.ssup" yOffset="-550"/>
+  </outline>
+</glyph>

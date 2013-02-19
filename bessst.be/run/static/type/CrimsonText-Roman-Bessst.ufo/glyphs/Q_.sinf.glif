@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Q.sinf" format="1">
+  <advance width="495"/>
+  <outline>
+    <component base="Q.ssup" yOffset="-550"/>
+  </outline>
+</glyph>

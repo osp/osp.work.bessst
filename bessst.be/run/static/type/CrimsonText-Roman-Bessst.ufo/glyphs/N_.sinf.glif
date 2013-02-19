@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="N.sinf" format="1">
+  <advance width="463"/>
+  <outline>
+    <component base="N.ssup" yOffset="-550"/>
+  </outline>
+</glyph>

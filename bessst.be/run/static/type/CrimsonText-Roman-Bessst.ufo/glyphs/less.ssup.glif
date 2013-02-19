@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="less.ssup" format="1">
+  <advance width="297"/>
+  <outline>
+    <contour>
+      <point x="276" y="449" type="qcurve" smooth="yes"/>
+      <point x="276" y="444"/>
+      <point x="270" y="417"/>
+      <point x="264" y="417"/>
+      <point x="263" y="418" type="qcurve" smooth="yes"/>
+      <point x="33" y="538" type="line"/>
+      <point x="21" y="543"/>
+      <point x="21" y="562" type="qcurve" smooth="yes"/>
+      <point x="21" y="571"/>
+      <point x="33" y="577" type="qcurve" smooth="yes"/>
+      <point x="260" y="694" type="line" smooth="yes"/>
+      <point x="262" y="696"/>
+      <point x="263" y="696" type="qcurve" smooth="yes"/>
+      <point x="267" y="696"/>
+      <point x="273" y="665" type="qcurve"/>
+      <point x="271" y="660" type="line"/>
+      <point x="70" y="557" type="line"/>
+      <point x="275" y="452" type="line" smooth="yes"/>
+      <point x="276" y="452"/>
+    </contour>
+  </outline>
+</glyph>
