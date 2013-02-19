@@ -36,3 +36,16 @@ from time import strftime
 def date_to_space(value, prev_date):
     delta = prev_date - value
     return -delta.days*2
+
+
+@register.filter
+def get_trans(objet, propert, lang):
+    # {% get_trans description %}
+    if lang == 'nl':
+        return objet.__getattribute__(propert)
+    try:
+        return objet.__getattribute__("%s_en" % propert)
+    except:
+        pass
+
+register.tag('get_trans', get_trans)
