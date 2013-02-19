@@ -24,7 +24,7 @@ urlpatterns = patterns('',
     url(r'^newsletter/', include('newsletter.urls')),
     url(r'^admin/', include(admin.site.urls)),
 
-    url(r'^projects/$', list_detail.object_list, {"queryset":Project.objects.filter(published=True)[:9], "extra_context": {"axis_list" : Axis.objects.all()}}, name='projects'),
+    url(r'^projects/$', list_detail.object_list, {"queryset":Project.objects.filter(published=True), "extra_context": {"axis_list" : Axis.objects.all()}}, name='projects'),
     url(r'^projects/(?P<slug>[\w-]+)/$', DetailView.as_view(model=Project), name='project-detail'),
     url(r'^axis/(?P<slug>[\w-]+)/$', DetailView.as_view(model=Axis), name='axis-detail'),
     
