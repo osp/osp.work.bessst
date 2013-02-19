@@ -65,6 +65,7 @@
 
 {% block extra_js %}
     <script>
+        var slug = '{{ slug }}';
 
         var switchTo = function(axis) {
             console.log($('.box .' + axis).length)
@@ -84,6 +85,10 @@
         }
 
         $(window).load(function() {
+            if (slug) {
+                $('ul#project-list .in-grid').not('.' + slug).removeClass("in-grid").fadeOut(0);
+            }
+            
             $("#axis-menu a").click(function(e) {
                 e.preventDefault();
                 var axis = $(this).attr('href').match(/\/axis\/([\w\-]+)\//)[1]

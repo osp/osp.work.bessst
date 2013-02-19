@@ -25,9 +25,10 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     (r'^i18n/', include('django.conf.urls.i18n')),
 
-    url(r'^projects/$', list_detail.object_list, {"queryset":Project.objects.filter(published=True), "extra_context": {"axis_list" : Axis.objects.all()}}, name='projects'),
+    url(r'^projects/$', 'projects.views.projects', name='projects'),
     url(r'^projects/(?P<slug>[\w-]+)/$', DetailView.as_view(model=Project), name='project-detail'),
-    url(r'^axis/(?P<slug>[\w-]+)/$', DetailView.as_view(model=Axis), name='axis-detail'),
+    url(r'^axis/(?P<slug>[\w-]+)/$', 'projects.views.projects', name='axis-detail'),
+
     
     url(r'^agenda/$', list_detail.object_list, {"queryset":Event.objects.filter(published=True)[:9],}, name='agenda'),
     url(r'^agenda/(?P<slug>[\w-]+)/$', DetailView.as_view(model=Event), name='event-detail'),
