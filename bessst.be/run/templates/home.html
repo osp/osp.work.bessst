@@ -29,7 +29,7 @@
 
 
 {% block content %}
-<div id="axis-home" title="{{ axis.name }}">{{ object_list.0.name }}</div>
+<div id="axis-home" title="{{ object_list.0.name }}"><a href="{% url axis-detail slug=object_list.0.slug %}">{{ object_list.0.name }}</a></div>
 {% endblock %}
 
 {% block background %}
@@ -50,7 +50,8 @@
 					    { 'slug' : '{{ axis.name|slugify }}',
 					     'name' : '{{ axis.name }}',
 					     'photo' : '{{ axis.image_set.all.0.image.url }}',
-					     'photoCaption' : '{{ axis.image_set.all.0 }}' },
+					     'photoCaption' : '{{ axis.image_set.all.0 }}',
+					     'url' : '{% url axis-detail slug=axis.slug' },
 					{% endfor %}
 					],
             get_axis : function() {
@@ -70,7 +71,7 @@
 	            //console.log('img#background-' + axis.slug);
 	            $("footer .caption").text(axis.photoCaption).show();
 
-	            $("#axis-home").text(axis.name).show();
+	            $("#axis-home").html('<a href="' + axis.url + '">' + axis.name + '</a>').show();
                 left = $(document).width()/2 - $("#axis-home").width()/2 ;
 	            $("#axis-home").css('left', left + 'px');
 	        }
