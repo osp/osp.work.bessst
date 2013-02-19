@@ -23,6 +23,7 @@ urlpatterns = patterns('',
     url(r'^$', list_detail.object_list, {"queryset":Axis.objects.all(), 'template_name':'home.html'}, name='home'),
     url(r'^newsletter/', include('newsletter.urls')),
     url(r'^admin/', include(admin.site.urls)),
+    (r'^i18n/', include('django.conf.urls.i18n')),
 
     url(r'^projects/$', list_detail.object_list, {"queryset":Project.objects.filter(published=True)[:9], "extra_context": {"axis_list" : Axis.objects.all()}}, name='projects'),
     url(r'^projects/(?P<slug>[\w-]+)/$', DetailView.as_view(model=Project), name='project-detail'),

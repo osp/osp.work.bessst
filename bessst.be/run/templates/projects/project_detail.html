@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load markup %}
+{% load markup i18n utils %}
 
 {% block title %}Projecten{% endblock %}
 
@@ -10,11 +10,26 @@
 {% endblock header%}
 
 {% block content %}
+
 <section id="main" class="big box">
-    <div class="tail">{{ object.summary|markdown }}</div>
+    <div class="tail">
+        {% if LANGUAGE_CODE == "nl" %}
+            {{ object.summary|markdown }}
+        {% elif LANGUAGE_CODE == "en" %}
+            {{ object.summary_en|markdown }}
+        {% elif LANGUAGE_CODE == "fr" %}
+            {{ object.summary_fr|markdown }}
+        {% endif %}
+    </div>
 
     <div class="columns">
-        {{ object.description|markdown }}
+        {% if LANGUAGE_CODE == "nl" %}
+            {{ object.description|markdown }}
+        {% elif LANGUAGE_CODE == "en" %}
+            {{ object.description_en|markdown }}
+        {% elif LANGUAGE_CODE == "fr" %}
+            {{ object.description_fr|markdown }}
+        {% endif %}
     </div>
 
 </section>

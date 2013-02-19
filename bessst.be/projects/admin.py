@@ -12,10 +12,16 @@ class ProjectAdmin(RichTextAdmin):
     list_filter = ('archived', 'axis', 'location', 'start_date', 'published')
     fieldsets = (
         (_('General'), {
-            'fields': (('published', 'archived'),'title', 'subtitle', 'slug')
+            'fields': (('published', 'archived'),('title', 'title_en', 'title_fr'), ('subtitle', 'subtitle_en', 'subtitle_fr'), 'slug')
         }),
         (_('Infos'), {
-            'fields': ('axis', 'link', ('start_date','end_date'), 'location', 'producers', 'summary', 'description')
+            'fields': ('axis', 'link', ('start_date','end_date'), ('location', 'location_en', 'location_fr'), 'producers')
+        }),
+        (_('Summary'), {
+            'fields': ('summary', 'summary_en', 'summary_fr')
+        }),
+        (_('Description'), {
+            'fields': ('description', 'description_en', 'description_fr')
         })
     )
 

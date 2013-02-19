@@ -32,7 +32,13 @@ TIME_ZONE = 'Europe/Brussels'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'nl-NL'
+LANGUAGE_CODE = 'nl'
+gettext = lambda s: s
+LANGUAGES = (
+    ('nl', gettext('Dutch')),
+    ('en', gettext('English')),
+    ('fr', gettext('French'))
+)
 
 SITE_ID = 1
 
@@ -98,6 +104,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+   'django.middleware.locale.LocaleMiddleware',
+   'django.middleware.common.CommonMiddleware',
     #'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
