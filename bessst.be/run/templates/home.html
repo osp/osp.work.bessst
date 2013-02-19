@@ -51,7 +51,7 @@
 					     'name' : '{{ axis.name }}',
 					     'photo' : '{{ axis.image_set.all.0.image.url }}',
 					     'photoCaption' : '{{ axis.image_set.all.0 }}',
-					     'url' : '{% url axis-detail slug=axis.slug' },
+					     'url' : '{% url axis-detail slug=axis.slug %}' },
 					{% endfor %}
 					],
             get_axis : function() {
