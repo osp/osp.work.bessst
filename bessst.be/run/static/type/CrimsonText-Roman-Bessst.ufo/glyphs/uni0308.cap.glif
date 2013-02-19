@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0308.cap" format="1">
+  <advance width="337"/>
+  <unicode hex="F89F"/>
+  <outline>
+    <contour>
+      <point x="209" y="783"/>
+      <point x="238" y="812"/>
+      <point x="280" y="812"/>
+      <point x="309" y="783"/>
+      <point x="309" y="741"/>
+      <point x="280" y="712"/>
+      <point x="238" y="712"/>
+      <point x="209" y="741"/>
+    </contour>
+    <contour>
+      <point x="28" y="783"/>
+      <point x="57" y="812"/>
+      <point x="99" y="812"/>
+      <point x="128" y="783"/>
+      <point x="128" y="741"/>
+      <point x="99" y="712"/>
+      <point x="57" y="712"/>
+      <point x="28" y="741"/>
+    </contour>
+  </outline>
+</glyph>

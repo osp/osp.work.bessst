@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="o.ordn" format="1">
+  <advance width="359"/>
+  <outline>
+    <contour>
+      <point x="186" y="282" type="qcurve" smooth="yes"/>
+      <point x="223" y="282"/>
+      <point x="270" y="346"/>
+      <point x="270" y="392" type="qcurve" smooth="yes"/>
+      <point x="270" y="445"/>
+      <point x="211" y="520"/>
+      <point x="171" y="520" type="qcurve" smooth="yes"/>
+      <point x="134" y="520"/>
+      <point x="88" y="457"/>
+      <point x="88" y="411" type="qcurve" smooth="yes"/>
+      <point x="88" y="358"/>
+      <point x="147" y="282"/>
+    </contour>
+    <contour>
+      <point x="179" y="548" type="qcurve" smooth="yes"/>
+      <point x="243" y="548"/>
+      <point x="335" y="461"/>
+      <point x="335" y="402" type="qcurve" smooth="yes"/>
+      <point x="335" y="342"/>
+      <point x="243" y="253"/>
+      <point x="180" y="253" type="qcurve" smooth="yes"/>
+      <point x="116" y="253"/>
+      <point x="23" y="342"/>
+      <point x="23" y="402" type="qcurve" smooth="yes"/>
+      <point x="23" y="463"/>
+      <point x="114" y="548"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ordmasculine.sc" format="1">
+  <advance width="263"/>
+  <outline>
+    <contour>
+      <point x="121" y="415" type="qcurve" smooth="yes"/>
+      <point x="92" y="415"/>
+      <point x="52" y="359"/>
+      <point x="52" y="325" type="qcurve" smooth="yes"/>
+      <point x="52" y="284"/>
+      <point x="97" y="220"/>
+      <point x="132" y="220" type="qcurve" smooth="yes"/>
+      <point x="162" y="220"/>
+      <point x="202" y="276"/>
+      <point x="202" y="311" type="qcurve" smooth="yes"/>
+      <point x="202" y="352"/>
+      <point x="157" y="415"/>
+    </contour>
+    <contour>
+      <point x="8" y="366"/>
+      <point x="78" y="436"/>
+      <point x="176" y="436"/>
+      <point x="246" y="366"/>
+      <point x="246" y="268"/>
+      <point x="176" y="198"/>
+      <point x="78" y="198"/>
+      <point x="8" y="268"/>
+    </contour>
+  </outline>
+</glyph>

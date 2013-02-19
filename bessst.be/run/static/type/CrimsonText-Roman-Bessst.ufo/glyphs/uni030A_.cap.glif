@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni030A.cap" format="1">
+  <advance width="424"/>
+  <unicode hex="F893"/>
+  <outline>
+    <contour>
+      <point x="129" y="569"/>
+      <point x="162" y="536"/>
+      <point x="185" y="536" type="qcurve" smooth="yes"/>
+      <point x="207" y="536"/>
+      <point x="239" y="569"/>
+      <point x="239" y="615"/>
+      <point x="208" y="647"/>
+      <point x="162" y="647"/>
+      <point x="129" y="615"/>
+    </contour>
+    <contour>
+      <point x="96" y="629"/>
+      <point x="149" y="681"/>
+      <point x="221" y="681"/>
+      <point x="272" y="629"/>
+      <point x="272" y="555"/>
+      <point x="221" y="502"/>
+      <point x="149" y="502"/>
+      <point x="96" y="555"/>
+    </contour>
+  </outline>
+</glyph>

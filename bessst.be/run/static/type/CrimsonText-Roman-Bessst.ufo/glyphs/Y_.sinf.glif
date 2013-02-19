@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Y.sinf" format="1">
+  <advance width="424"/>
+  <outline>
+    <component base="Y.ssup" yOffset="-550"/>
+  </outline>
+</glyph>

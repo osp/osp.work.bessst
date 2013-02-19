@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="bar" format="1">
+  <advance width="264"/>
+  <unicode hex="007C"/>
+  <outline>
+    <contour>
+      <point x="164" y="-106" type="line" smooth="yes"/>
+      <point x="164" y="-111"/>
+      <point x="111" y="-123"/>
+      <point x="105" y="-123" type="qcurve" smooth="yes"/>
+      <point x="100" y="-123"/>
+      <point x="100" y="-115" type="qcurve" smooth="yes"/>
+      <point x="100" y="757" type="line"/>
+      <point x="99" y="763"/>
+      <point x="105" y="765" type="qcurve" smooth="yes"/>
+      <point x="129" y="772"/>
+      <point x="155" y="772" type="qcurve" smooth="yes"/>
+      <point x="159" y="772"/>
+      <point x="163" y="769"/>
+      <point x="163" y="768" type="qcurve" smooth="yes"/>
+      <point x="163" y="766" type="line"/>
+    </contour>
+  </outline>
+</glyph>

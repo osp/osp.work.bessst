@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="question.sinf" format="1">
+  <advance width="203"/>
+  <outline>
+    <component base="question.ssup" yOffset="-550"/>
+  </outline>
+</glyph>

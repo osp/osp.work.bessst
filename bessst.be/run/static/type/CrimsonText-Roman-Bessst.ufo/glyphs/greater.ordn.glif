@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="greater.ordn" format="1">
+  <advance width="339"/>
+  <outline>
+    <contour>
+      <point x="29" y="510" type="qcurve" smooth="yes"/>
+      <point x="29" y="519"/>
+      <point x="38" y="542"/>
+      <point x="40" y="542" type="qcurve" smooth="yes"/>
+      <point x="43" y="542"/>
+      <point x="44" y="541" type="qcurve" smooth="yes"/>
+      <point x="303" y="418" type="line" smooth="yes"/>
+      <point x="315" y="413"/>
+      <point x="315" y="402" type="qcurve" smooth="yes"/>
+      <point x="315" y="382"/>
+      <point x="303" y="376" type="qcurve" smooth="yes"/>
+      <point x="40" y="251" type="line" smooth="yes"/>
+      <point x="39" y="250"/>
+      <point x="37" y="250" type="qcurve" smooth="yes"/>
+      <point x="34" y="250"/>
+      <point x="25" y="278"/>
+      <point x="25" y="283" type="qcurve"/>
+      <point x="27" y="287" type="line"/>
+      <point x="259" y="397" type="line"/>
+      <point x="31" y="505" type="line" smooth="yes"/>
+      <point x="29" y="505"/>
+    </contour>
+  </outline>
+</glyph>

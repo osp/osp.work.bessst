@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="two.sinf" format="1">
+  <advance width="289"/>
+  <outline>
+    <component base="two.ssup" yOffset="-550"/>
+  </outline>
+</glyph>

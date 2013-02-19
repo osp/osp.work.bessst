@@ -24,7 +24,7 @@
     </div>
           <ul id='project-list'>
               {% for project in object_list %}
-              <li class="box {{ project.axis.name|slugify }} no-border {% if project.archived %}archive{% endif %}" data-sizex="18">
+              <li class="box {{ project.axis.name|slugify }} no-border in-grid {% if project.archived %}archive{% endif %}" data-sizex="18">
                   
                   <a class="many-things-link" href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name|slugify }}">
                   
@@ -65,22 +65,50 @@
 
 {% block extra_js %}
     <script>
-        var masonic = function() {
-            $('#project-list').masonry({
-              itemSelector: 'li',
-              columnWidth: 30
+
+        var switchTo = function(axis) {
+            console.log($('.box .' + axis).length)
+            var finished = { hiding: false, showing: false }
+            $('ul#project-list .in-grid').not('.' + axis).removeClass("in-grid masonry-brick").fadeOut('fast', function() {
+                finished.hiding = true;
+                if (finished.showing) {
+                    $('#project-list').masonry('reload');
+                }
             });
-        };
+            $('ul#project-list .' + axis).addClass("in-grid").fadeIn('fast', function() {
+                finished.showing = true;
+                if (finished.hiding) {
+                    $('#project-list').masonry('reload');
+                }
+            });
+        }
 
         $(window).load(function() {
-            $("a#menu-projects").addClass('selected');
-            masonic();
+            $("#axis-menu a").click(function(e) {
+                e.preventDefault();
+                var axis = $(this).attr('href').match(/\/axis\/([\w\-]+)\//)[1]
+                switchTo(axis);
+            })
+            
+            $('#project-list').masonry({
+                itemSelector: 'li.in-grid',
+                columnWidth: 30,
+                isAnimated: true,
+                  animationOptions: {
+                    duration: 750,
+                    easing: 'swing',
+                    queue: false
+                  }
+                
+            });
+            
         // CENTER AXIS ICON IN LETTRINE SPACE
             $('.lettrine .small-logo').each(function(){
                 this_top = 15 + $(this).parent().height()/2 - $(this).height()/2;
                 this_left = 15 + $(this).parent().width()/2 - $(this).width()/2;
                 $(this).css({'top': this_top + 'px', 'left': this_left + 'px'});
             });
+        
         });
 
         /* ROLLOVER PROJECT BOX */
@@ -109,12 +137,5 @@
             $("." + picto.attr("id")).addClass("no-border");
 
         });
-
-        
-        /* Show/hide projects on axis-image click */
-        //$("li.logo").click(function(){
-        //    $('.' + $(this).children("img").attr('id')).toggle('slow', masonic)
-        //})
-
     </script>
 {% endblock %}
