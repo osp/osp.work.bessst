@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="O.subs" format="1">
+  <advance width="502"/>
+  <outline>
+    <component base="O.ordn" yOffset="-260"/>
+  </outline>
+</glyph>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni1FCB" format="1">
+  <advance width="808"/>
+  <unicode hex="1FCB"/>
+  <outline>
+    <component base="Eta" xOffset="102"/>
+    <component base="tonos" xOffset="-41" yOffset="-29"/>
+  </outline>
+</glyph>

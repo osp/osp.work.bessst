@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="K.subs" format="1">
+  <advance width="487"/>
+  <outline>
+    <component base="K.ordn" yOffset="-260"/>
+  </outline>
+</glyph>

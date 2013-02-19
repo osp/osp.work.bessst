@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hookabovecomb.cap" format="1">
+  <advance width="166"/>
+  <unicode hex="F89C"/>
+  <outline>
+    <contour>
+      <point x="245" y="595" type="qcurve" smooth="yes"/>
+      <point x="231" y="595"/>
+      <point x="195" y="559"/>
+      <point x="184" y="559" type="qcurve" smooth="yes"/>
+      <point x="167" y="559"/>
+      <point x="167" y="588" type="qcurve"/>
+      <point x="177" y="602"/>
+      <point x="232" y="631"/>
+      <point x="263" y="631" type="qcurve" smooth="yes"/>
+      <point x="291" y="631"/>
+      <point x="327" y="604"/>
+      <point x="327" y="579" type="qcurve" smooth="yes"/>
+      <point x="327" y="572"/>
+      <point x="321" y="558"/>
+      <point x="315" y="549"/>
+      <point x="300" y="536"/>
+      <point x="295" y="531"/>
+      <point x="285" y="524" type="qcurve" smooth="yes"/>
+      <point x="275" y="517" type="line" smooth="yes"/>
+      <point x="273" y="515"/>
+      <point x="263" y="510"/>
+      <point x="260" y="507"/>
+      <point x="256" y="501"/>
+      <point x="256" y="498" type="qcurve" smooth="yes"/>
+      <point x="256" y="492"/>
+      <point x="261" y="484" type="qcurve"/>
+      <point x="261" y="478"/>
+      <point x="245" y="478" type="qcurve" smooth="yes"/>
+      <point x="233" y="478"/>
+      <point x="214" y="494"/>
+      <point x="214" y="506" type="qcurve" smooth="yes"/>
+      <point x="214" y="511"/>
+      <point x="224" y="521"/>
+      <point x="252" y="540"/>
+      <point x="254" y="542" type="qcurve" smooth="yes"/>
+      <point x="274" y="557"/>
+      <point x="274" y="574" type="qcurve" smooth="yes"/>
+      <point x="274" y="595"/>
+    </contour>
+  </outline>
+</glyph>

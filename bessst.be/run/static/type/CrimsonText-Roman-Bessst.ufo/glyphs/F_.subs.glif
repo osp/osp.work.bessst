@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="F.subs" format="1">
+  <advance width="417"/>
+  <outline>
+    <component base="F.ordn" yOffset="-260"/>
+  </outline>
+</glyph>

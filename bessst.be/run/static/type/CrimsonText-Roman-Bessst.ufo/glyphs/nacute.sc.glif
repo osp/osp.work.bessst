@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="nacute.sc" format="1">
+  <advance width="578"/>
+  <outline>
+    <component base="acutecomb" xOffset="232" yOffset="-8"/>
+    <component base="n.sc"/>
+  </outline>
+</glyph>

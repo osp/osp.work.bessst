@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="plus.subs" format="1">
+  <advance width="384"/>
+  <outline>
+    <component base="plus.ordn" yOffset="-260"/>
+  </outline>
+</glyph>

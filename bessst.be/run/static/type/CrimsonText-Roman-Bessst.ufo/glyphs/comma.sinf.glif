@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="comma.sinf" format="1">
+  <advance width="139"/>
+  <outline>
+    <component base="comma.ssup" yOffset="-550"/>
+  </outline>
+</glyph>

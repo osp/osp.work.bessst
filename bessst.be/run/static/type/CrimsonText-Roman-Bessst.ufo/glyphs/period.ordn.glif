@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="period.ordn" format="1">
+  <advance width="138"/>
+  <outline>
+    <contour>
+      <point x="29" y="306"/>
+      <point x="53" y="327"/>
+      <point x="87" y="327"/>
+      <point x="110" y="306"/>
+      <point x="110" y="274"/>
+      <point x="86" y="251"/>
+      <point x="70" y="251" type="qcurve" smooth="yes"/>
+      <point x="53" y="251"/>
+      <point x="29" y="274"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="bar.ssup" format="1">
+  <advance width="102"/>
+  <outline>
+    <contour>
+      <point x="65" y="361" type="line" smooth="yes"/>
+      <point x="65" y="358"/>
+      <point x="40" y="349"/>
+      <point x="36" y="349" type="qcurve" smooth="yes"/>
+      <point x="26" y="349"/>
+      <point x="26" y="355" type="qcurve" smooth="yes"/>
+      <point x="26" y="899" type="line"/>
+      <point x="25" y="904"/>
+      <point x="29" y="905" type="qcurve" smooth="yes"/>
+      <point x="40" y="908"/>
+      <point x="55" y="908" type="qcurve" smooth="yes"/>
+      <point x="63" y="908"/>
+      <point x="65" y="905" type="qcurve"/>
+    </contour>
+  </outline>
+</glyph>
