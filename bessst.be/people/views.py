@@ -46,7 +46,18 @@ class OrganizationForm(ModelForm):
 
 def community(request):
     tpl_params = {}
-    tpl_params['object_list'] = Individual.objects.all()
+    
+    tpl_params['object_list'] = []
+    
+    # Because friends are a subclass of individuals,
+    # We have to weed them out here:
+    individuals = Individual.objects.all()
+    for i in individuals:
+        try:
+            f = i.friend
+        except Individual.DoesNotExist:
+            tpl_params['object_list'].append(i)
+
     tpl_params['partners'] = Organization.objects.all()
     
     friends = Friend.objects.all()
