@@ -85,4 +85,28 @@
 </div>
 {% endblock %}
 
-
+{% block extra_js %}
+    <script>
+    $(document).ready(function(){
+        img_h = $("img.background-image").height();
+        txt_h = $("section#main").height();
+        console.log(img_h)
+        console.log(txt_h)
+console.log($(document).scrollTop());
+        console.log($(window).height())
+        //if($(document).scrollTop() == img_h) {
+            // the image is higher than the text
+            $(document).scroll(function(){
+                console.log("scroll");
+                if ($(document).scrollTop() + $(window).height() > txt_h ){
+                    $("section#main").css({'position': 'fixed', 'bottom': '1em'});
+                } else {
+                    $("section#main").css({'position': 'static'});
+                }
+            });
+        //} else {
+            // the text is higher than the image
+        //}
+    });
+    </script>
+{% endblock %}
