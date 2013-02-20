@@ -38,14 +38,27 @@ def date_to_space(value, prev_date):
     return -delta.days*2
 
 
-@register.filter
-def get_trans(objet, propert, lang):
-    # {% get_trans description %}
-    if lang == 'nl':
-        return objet.__getattribute__(propert)
-    try:
-        return objet.__getattribute__("%s_en" % propert)
-    except:
-        pass
+class GetTransNode(template.Node):
+    def __init__(self, objet, property, lang):
+        self.objet = template.Variable(objet)
+        self.property = property
+        self.lang = template.Variable(lang)
+    def render(self, context):
+        objet = self.objet.resolve(context)
+        lang = self.lang.resolve(context)
+        if lang == "nl":
+            prop = "%s" % self.property
+            return objet.__getattribute__(prop)
+        else:
+            prop = "%s_%s" % (self.property, lang)
+            return objet.__getattribute__(prop)
 
-register.tag('get_trans', get_trans)
+def do_get_trans(parser, token):
+    # {% get_trans description %}
+    try:
+        tag_name, objet, prop, lang = token.split_contents()
+    except ValueError:
+        raise template.TemplateSyntaxError("%r tag requires exactly two arguments" % token.contents.split()[0])
+    return GetTransNode(objet, prop, lang)
+
+register.tag('get_trans', do_get_trans)
