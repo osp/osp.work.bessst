@@ -21,6 +21,11 @@ class Event(models.Model):
     description = models.TextField(_("Description (NL)"), blank=True)
     description_fr = models.TextField(_("Description (FR)"), blank=True)
     description_en = models.TextField(_("Description (EN)"), blank=True)
+
+    location = models.CharField(max_length=80, verbose_name=_("Location (NL)"), null=True)
+    location_en = models.CharField(max_length=80, verbose_name=_("Location (EN)"), null=True)
+    location_fr = models.CharField(max_length=80, verbose_name=_("Location (FR)"), null=True)
+
     image_set = generic.GenericRelation(Image)
 
     @models.permalink

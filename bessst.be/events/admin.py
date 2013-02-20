@@ -14,7 +14,7 @@ class EventAdmin(RichTextAdmin):
             'fields': ('published', ('title', 'title_en', 'title_fr'), 'slug')
         }),
         (_('Infos'), {
-            'fields': ('project', ('start_date', 'end_date'))
+            'fields': ('project', ('start_date', 'end_date'), ('location', 'location_en', 'location_fr'))
         }),
         (_('Summary'), {
             'fields': ('summary', 'summary_en', 'summary_fr')
