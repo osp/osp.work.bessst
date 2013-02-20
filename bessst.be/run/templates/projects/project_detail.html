@@ -44,7 +44,7 @@
                 <ul class="inline">
                 {% for p in object.producers.all %}
                     <li>{% if p.link %}
-                        <a href="{{ p.link }}">{{ p.get_full_name }}</a>
+                        <a href="{{ p.link }}" target="_blank">{{ p.get_full_name }}</a>
                     {% else %}
                         {{ p.get_full_name }}
                     {% endif %}

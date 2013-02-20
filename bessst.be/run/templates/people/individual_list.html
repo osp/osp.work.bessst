@@ -18,7 +18,7 @@
         {#{% regroup object_list|dictsort:'individual.individual_set' by individual_set as partner_list %}#}
         {% for organization in partners %}
             <li>
-                {% if organization.link %}<a href="{{ organization.link }}">{% endif %}
+                {% if organization.link %}<a href="{{ organization.link }}" target="_blank">{% endif %}
                 {{ organization.get_full_name }}
                 {% if organization.link %}</a>{% endif %}
 
