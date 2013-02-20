@@ -9,7 +9,7 @@
     <script src="{{ STATIC_URL }}/js/jquery.masonry.min.js"></script>
     <script src="{{ STATIC_URL }}js/jquery-ui-1.8.23.custom.min.js"></script>
     <script src="{{ STATIC_URL }}js/jquery.tailing.js"></script>
-    <title>BESSST - Brussel, Stilte en Erfgoed - {% block title %}{% endblock %}</title>
+    <title>{% trans "BESSST - Brussels, Heritage and Silence" %} - {% block title %}{% endblock %}</title>
 </head>
 <body class="{% block slug %}base{% endblock %}">
 {% block nav %}
@@ -18,11 +18,11 @@
         <li><a href="/"><img src="{{ STATIC_URL }}images/logo-plain.png" /></a></li>
     </ul>
     <ul id="navi">
-        <li><a id="menu-projects" href="{% url projects %}">Projecten</a></li>
-        <li><a id="menu-agenda" href="{% url agenda %}">Agenda</a></li>
-        <li><a id="menu-community" href="{% url community %}">Community</a></li>        
-        <li><a id="menu-inspiratie" href="{% url inspiration %}">Inspiratie</a></li>
-        <li><a id="menu-over" href="{% url flatpage-detail slug="over" %}">Over</a></li>
+        <li><a id="menu-projects" href="{% url projects %}">{% trans "Projects" %}</a></li>
+        <li><a id="menu-agenda" href="{% url agenda %}">{% trans "Calendar" %}</a></li>
+        <li><a id="menu-community" href="{% url community %}">{% trans "Community" %}</a></li>        
+        <li><a id="menu-inspiratie" href="{% url inspiration %}">{% trans "Inspiration" %}</a></li>
+        <li><a id="menu-over" href="{% url flatpage-detail slug="over" %}">{% trans "About" %}</a></li>
     </ul>
         <!--<li><a class="selected" href="#">nl</a></li>-->
         <!--<li><a href="#">en</a></li>-->

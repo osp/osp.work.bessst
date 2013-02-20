@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-20 10:25+0100\n"
-"PO-Revision-Date: 2013-02-20 11:10+0100\n"
+"POT-Creation-Date: 2013-02-20 13:33+0100\n"
+"PO-Revision-Date: 2013-02-20 13:34+0100\n"
 "Last-Translator: Eric Schrijver <eric@ericschrijver.nl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -290,15 +290,39 @@ msgstr "Beschrijving (FR)"
 msgid "Category"
 msgstr "Categorie"
 
-#: run/settings.py:38
+#: run/settings.py:40
 msgid "Dutch"
 msgstr "Nederlands"
 
-#: run/settings.py:39
+#: run/settings.py:41
 msgid "English"
 msgstr "Engels"
 
-#: run/settings.py:40
+#: run/settings.py:42
 msgid "French"
 msgstr "Frans"
+
+#: run/templates/base.html:12
+msgid "BESSST - Brussels, Heritage and Silence"
+msgstr "BESSST - Brussel, Erfgoed en Stilte"
+
+#: run/templates/base.html:21
+msgid "Projects"
+msgstr "Projecten"
+
+#: run/templates/base.html:22
+msgid "Calendar"
+msgstr "Agenda"
+
+#: run/templates/base.html:23
+msgid "Community"
+msgstr "Praktijkgemeenschap"
+
+#: run/templates/base.html:24
+msgid "Inspiration"
+msgstr "Inspiratie"
+
+#: run/templates/base.html:25
+msgid "About"
+msgstr "Over"
 
