@@ -12,8 +12,8 @@ class IndividualAdmin(RichTextAdmin):
         (_('Coordinates'), {
             'fields': (('address', 'city'), 'phone', 'email', 'link')
         }),
-        (_('More'), {
-            'fields': ('biography',)
+        (_('Biography'), {
+            'fields': ('biography', 'biography_en', 'biography_fr')
         })
     )
 
@@ -27,8 +27,8 @@ class OrganizationAdmin(RichTextAdmin):
         (_('Coordinates'), {
             'fields': ('contact_person', 'individuals', ('address', 'city'), 'phone', 'email', 'link')
         }),
-        (_('More'), {
-            'fields': ('biography',)
+        (_('Biography'), {
+            'fields': ('biography', 'biography_en', 'biography_fr')
         })
     )
 
