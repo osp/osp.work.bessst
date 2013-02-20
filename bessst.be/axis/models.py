@@ -4,9 +4,13 @@ from django.contrib.contenttypes import generic
 from media_app.models import Image
 
 class Axis(models.Model):
-    name = models.CharField(max_length=255, verbose_name=_("name"))
+    name = models.CharField(max_length=255, verbose_name=_("Name (NL)"))
+    name_en = models.CharField(max_length=255, verbose_name=_("Name (EN)"))
+    name_fr = models.CharField(max_length=255, verbose_name=_("Name (FR)"))
     slug = models.SlugField(_("Slug"), unique=True, help_text=_("Unique identifier. Allows a constant targeting of this axis."))
-    description = models.TextField(verbose_name=_("Description"))
+    description = models.TextField(verbose_name=_("Description (NL)"))
+    description_en = models.TextField(verbose_name=_("Description (FR)"))
+    description_fr = models.TextField(verbose_name=_("Description (EN)"))
     pictogram = models.CharField(max_length="20", verbose_name=_("Drawing (filename without extension)"))
     image_set = generic.GenericRelation(Image)
     
