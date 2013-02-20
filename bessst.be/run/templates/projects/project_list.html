@@ -42,7 +42,7 @@
                         <h1>{{ project }}</h1>
                     </div>
                    
-                    {{ project.summary|markdown|truncatewords:60 }}
+                    {{ project.summary|safe|truncatewords_html:60 }}
                  
                     </a>
                     
