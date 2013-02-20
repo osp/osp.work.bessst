@@ -50,8 +50,16 @@ class GetTransNode(template.Node):
             prop = "%s" % self.property
             return objet.__getattribute__(prop)
         else:
-            prop = "%s_%s" % (self.property, lang)
-            return objet.__getattribute__(prop)
+            try:
+                prop = "%s_%s" % (self.property, lang)
+                if objet.__getattribute__(prop) == "" or objet.__getattribute__(prop) is None:
+                    prop = "%s" % self.property
+                    return objet.__getattribute__(prop)
+                else:
+                    return objet.__getattribute__(prop)
+            except AttributeError:
+                prop = "%s" % self.property
+                return objet.__getattribute__(prop)
 
 def do_get_trans(parser, token):
     # {% get_trans description %}
