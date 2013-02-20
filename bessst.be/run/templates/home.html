@@ -1,27 +1,34 @@
 {% extends "base.html" %}
+{% load i18n %}
 
-{% block title %}bessst.be — home{% endblock %}
+<title>{% trans "BESSST - Brussels, Heritage and Silence" %} - {% block title %}{% endblock %}</title>
 
 {% block slug %}home{% endblock%}
 
 
 {% block nav %}
+
 <nav>
     <ul id="logo">
         <li><a href="/"><img src="{{ STATIC_URL }}images/logo.png" /></a></li>
     </ul>
     <ul id="navi">
-        <li><a id="menu-projects" href="{% url projects %}">Projecten</a></li>
-        <li><a id="menu-agenda" href="{% url agenda %}">Agenda</a></li>
-        <li><a id="menu-community" href="{% url community %}">Community</a></li>        
-        <li><a id="menu-inspiratie" href="{% url inspiration %}">Inspiratie</a></li>
-        <li><a id="menu-over" href="{% url flatpage-detail slug="over" %}">Over</a></li>
+        <li><a id="menu-projects" href="{% url projects %}">{% trans "Projects" %}</a></li>
+        <li><a id="menu-agenda" href="{% url agenda %}">{% trans "Calendar" %}</a></li>
+        <li><a id="menu-community" href="{% url community %}">{% trans "Community" %}</a></li>        
+        <li><a id="menu-inspiratie" href="{% url inspiration %}">{% trans "Inspiration" %}</a></li>
+        <li><a id="menu-over" href="{% url flatpage-detail slug="over" %}">{% trans "About" %}</a></li>
     </ul>
-    <ul id="lan">
-        <li><a class="selected" href="#">nl</a></li>
-        <li><a href="#">en</a></li>
-        <li><a href="#">fr</a></li>
-    </ul>
+    <form action="/i18n/setlang/" method="post">
+        {% csrf_token %}
+        <input name="next" type="hidden" value="{{ redirect_to }}" />
+        {% get_language_info_list for LANGUAGES as languages %}
+        <ul id="lan">
+        {% for language in languages %}
+            <li class='{% if LANGUAGE_CODE == language.code %}selected{% endif %}'><button name="language" value="{{ language.code }}">{{ language.code }}</button></li>
+        {% endfor %}
+        </ul>
+    </form>
 </nav>
 
 {% endblock %}

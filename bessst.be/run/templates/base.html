@@ -24,19 +24,16 @@
         <li><a id="menu-inspiratie" href="{% url inspiration %}">{% trans "Inspiration" %}</a></li>
         <li><a id="menu-over" href="{% url flatpage-detail slug="over" %}">{% trans "About" %}</a></li>
     </ul>
-        <!--<li><a class="selected" href="#">nl</a></li>-->
-        <!--<li><a href="#">en</a></li>-->
-        <!--<li><a href="#">fr</a></li>-->
-<form action="/i18n/setlang/" method="post">
-{% csrf_token %}
-<input name="next" type="hidden" value="{{ redirect_to }}" />
-{% get_language_info_list for LANGUAGES as languages %}
-<ul id="lan">
-{% for language in languages %}
-    <li class='{% if LANGUAGE_CODE == language.code %}selected{% endif %}'><button name="language" value="{{ language.code }}">{{ language.code }}</button></li>
-{% endfor %}
-</ul>
-</form>
+    <form action="/i18n/setlang/" method="post">
+        {% csrf_token %}
+        <input name="next" type="hidden" value="{{ redirect_to }}" />
+        {% get_language_info_list for LANGUAGES as languages %}
+        <ul id="lan">
+        {% for language in languages %}
+            <li class='{% if LANGUAGE_CODE == language.code %}selected{% endif %}'><button name="language" value="{{ language.code }}">{{ language.code }}</button></li>
+        {% endfor %}
+        </ul>
+    </form>
 </nav>
 
 {% endblock %}
