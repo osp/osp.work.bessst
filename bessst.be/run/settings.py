@@ -4,6 +4,8 @@ import os
 
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 
+PROJECT_ROOT = PROJECT_PATH.replace('run','').rstrip(os.sep)
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -38,6 +40,9 @@ LANGUAGES = (
     ('nl', gettext('Dutch')),
     ('en', gettext('English')),
     ('fr', gettext('French'))
+)
+LOCALE_PATHS = (
+    os.path.join(PROJECT_ROOT, 'locale'),
 )
 
 SITE_ID = 1
