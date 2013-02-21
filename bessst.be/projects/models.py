@@ -24,8 +24,8 @@ class Project(models.Model):
     link = models.URLField(_("Link URL"), null=True, blank=True)
 
     location = models.CharField(max_length=80, verbose_name=_("Location (NL)"), null=True)
-    location_en = models.CharField(max_length=80, verbose_name=_("Location (EN)"), null=True)
-    location_fr = models.CharField(max_length=80, verbose_name=_("Location (FR)"), null=True)
+    location_en = models.CharField(max_length=80, verbose_name=_("Location (EN)"), blank=True, null=True)
+    location_fr = models.CharField(max_length=80, verbose_name=_("Location (FR)"), blank=True, null=True)
 
     axis = models.ForeignKey(Axis, verbose_name=_("Axis"))
 
