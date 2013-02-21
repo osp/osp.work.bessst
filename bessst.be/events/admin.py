@@ -11,10 +11,16 @@ class EventAdmin(RichTextAdmin):
     prepopulated_fields = {'slug': ('title',)}
     fieldsets = (
         (_('General'), {
-            'fields': ('published','title', 'slug')
+            'fields': ('published', ('title', 'title_en', 'title_fr'), 'slug')
         }),
         (_('Infos'), {
-            'fields': ('project', ('start_date', 'end_date'), 'summary', 'description')
+            'fields': ('project', ('start_date', 'end_date'), ('location', 'location_en', 'location_fr'))
+        }),
+        (_('Summary'), {
+            'fields': ('summary', 'summary_en', 'summary_fr')
+        }),
+        (_('Description'), {
+            'fields': ('description', 'description_en', 'description_fr')
         })
     )
 

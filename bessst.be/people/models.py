@@ -12,7 +12,9 @@ class People(models.Model):
     phone = models.CharField(max_length=20, verbose_name=_("Phone number"), null=True, blank=True)
     email = models.EmailField(max_length=100, verbose_name=_("Email"), null=True, blank=True)
     link = models.URLField(_("Link URL"), null=True, blank=True)
-    biography = models.TextField(_("Short biography"), blank=True)
+    biography = models.TextField(_("Short biography (NL)"), blank=True)
+    biography_en = models.TextField(_("Short biography (EN)"), blank=True)
+    biography_fr = models.TextField(_("Short biography (FR)"), blank=True)
 
     def __unicode__(self):
         return self.name

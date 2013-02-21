@@ -1,40 +1,42 @@
 {% extends "base.html" %}
-{% load markup %}
+{% load markup i18n utils %}
 
-{% block title %}Event{% endblock %}
+{% block title %}{% trans Event %}{% endblock %}
 
 {% block slug %}event{% endblock%}
 
 {% block header %}
-<h1 class="{{ object.project.axis.pictogram }}">{{ object.title }} <span class='subtitle'>{{ object.subtitle }}</span></h1>
+<h1 class="{{ object.project.axis.pictogram }}">{% get_trans object title LANGUAGE_CODE %}</h1>
 {% endblock header%}
 
 {% block content %}
 <section id="main" class="big box">
-    <div class="tail">{{ object.summary|markdown }}</div>
+    <div class="tail">{% get_trans object summary LANGUAGE_CODE %}</div>
 
     <div class="columns">
-        {{ object.description|markdown }}
+        {% get_trans object description LANGUAGE_CODE %}
     </div>
 
 </section>
 <section id="right">
         <dl id="metadata" class="box">
-            <dt style="display: none">{{ object.axis }}</dt>
+            <dt style="display: none">{% get_trans object.project axis LANGUAGE_CODE %}</dt>
             <dd>
                 <img class="metadata-axis" src="{{ STATIC_URL }}axis/{{ object.project.axis.pictogram }}.png">
             </dd>
-            <dt>Datum</dt>
+            <dt>{% trans "Datum" %}</dt>
             <dd>
                 {{ event.start_date }}
                 {% if event.end_date != event.start_date %}
                     {{ event.end_date }}
                 {% endif %}
             </dd>
-            <dt>Locatie</dt>
-            <dd>{{ object.location }}</dd>
-            <dt>Onderdeel van</dt>
-            <dd><a href='{{ object.project.get_absolute_url }}'>{{ object.project }}</a></dd>
+            {% if object.location %}
+                <dt>{% trans "Locatie" %}</dt>
+                <dd>{% get_trans object location LANGUAGE_CODE %}</dd>
+            {% endif %}
+            <dt>{% trans "Onderdeel van" %}</dt>
+            <dd><a href='{{ object.project.get_absolute_url }}'>{% get_trans object.project title LANGUAGE_CODE %}</a></dd>
         </dl>
 </section>
 {% endblock %}

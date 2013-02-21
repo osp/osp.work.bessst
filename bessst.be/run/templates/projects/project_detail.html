@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% load markup i18n utils %}
 
-{% block title %}Projecten{% endblock %}
+{% block title %}{% trans "Project" %}{% endblock %}
 
 {% block slug %}project{% endblock%}
 
 {% block header %}
-<h1 class="{{ object.axis.pictogram }}">{{ object.title }} <span class='subtitle'>{{ object.subtitle }}</span></h1>
+<h1 class="{{ object.axis.pictogram }}">{% get_trans object title LANGUAGE_CODE %} <span class='subtitle'>{% get_trans object subtitle LANGUAGE_CODE %}</span></h1>
 {% endblock header%}
 
 {% block content %}
@@ -22,11 +22,11 @@
 </section>
 <section id="right">
         <dl id="metadata" class="box">
-            <dt style="display: none">{{ object.axis }}</dt>
+            <dt style="display: none">{% get_trans object axis LANGUAGE_CODE  %}</dt>
             <dd>
                 <img class="metadata-axis" src="{{ STATIC_URL }}axis/{{ object.axis.pictogram }}.png">
             </dd>
-            <dt>Partners</dt>
+            <dt>{% trans "Partners" %}</dt>
             <dd>
                 <ul class="inline">
                 {% for p in object.producers.all %}
@@ -39,20 +39,22 @@
                 {% endfor %}
                 </ul>
             </dd>
-            <dt>Locatie</dt>
-            <dd>{{ object.location }}</dd>
+            {% if object.location %}
+                <dt>{% trans "Locatie" %}</dt>
+                <dd>{% get_trans object location LANGUAGE_CODE %}</dd>
+            {% endif %}
 
             {% if object.link %}
-                <dt>Project website</dt>
+                <dt>{% trans "Project website" %}</dt>
                 <dd><a href="{{ object.link }}" target="_blank">{{ object.link|slice:'7:'|truncatechars:'30' }}</a></dd>
             {% endif %}
 
             {% if object.event_set.all %}
-                <dt>Related events</dt>
+                <dt>{% trans "Related events" %}</dt>
                 <dd>
                     <ul>
                     {% for e in object.event_set.all %}
-                        <li><a href="{{ e.get_absolute_url }}">{{ e }}</a></li>
+                        <li><a href="{{ e.get_absolute_url }}">{% get_trans e title LANGUAGE_CODE %}</a></li>
                     {% endfor %}
                     </ul>
                 </dd>
@@ -86,13 +88,14 @@
 {% endblock %}
 
 {% block extra_js %}
+{% comment %}
     <script>
     $(document).ready(function(){
         img_h = $("img.background-image").height();
         txt_h = $("section#main").height();
         console.log(img_h)
         console.log(txt_h)
-console.log($(document).scrollTop());
+        console.log($(document).scrollTop());
         console.log($(window).height())
         //if($(document).scrollTop() == img_h) {
             // the image is higher than the text
@@ -109,4 +112,5 @@ console.log($(document).scrollTop());
         //}
     });
     </script>
+    {% endcomment %}
 {% endblock %}

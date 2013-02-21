@@ -1,6 +1,7 @@
 {% extends "base.html" %}
+{% load i18n utils %}
 
-{% block title %}Inspiratie{% endblock %}
+{% block title %}{% trans "Inspiratie" %}{% endblock %}
 
 {% block slug %}inspiratie{% endblock%}
 
@@ -9,9 +10,9 @@
         <ul id="resource-list"> 
           {% for resource in object_list %}
           <li class="box no-border inspiratie-{{ resource.category|slugify }}" data-sizex="9">
-              <div class="inspiratie-categorien"> {{resource.category}} </div>
-              {{resource.summary|safe}}
-              <div class="resource-title"><a data-category="{{ resource.category }}" href="{{ resource.link }}" target="_blank">{{ resource.title }}</a>
+              <div class="inspiratie-categorien"> {% get_trans resource category LANGUAGE_CODE %} </div>
+              {% get_trans resource summary LANGUAGE_CODE %}
+              <div class="resource-title"><a data-category="{{ resource.category }}" href="{{ resource.link }}" target="_blank">{% get_trans resource title LANGUAGE_CODE %}</a>
               </div>
                 
           </li>

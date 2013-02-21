@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n %}
+{% load i18n utils %}
 
 <title>{% trans "BESSST - Brussels, Heritage and Silence" %} - {% block title %}{% endblock %}</title>
 
@@ -36,7 +36,7 @@
 
 
 {% block content %}
-<div id="axis-home" title="{{ object_list.0.name }}"><a href="{% url axis-detail slug=object_list.0.slug %}">{{ object_list.0.name }}</a></div>
+<div id="axis-home" title="{{ object_list.0.name }}"><a href="{% url axis-detail slug=object_list.0.slug %}">{% get_trans object_list.0 name LANGUAGE_CODE %}</a></div>
 {% endblock %}
 
 {% block background %}
@@ -55,7 +55,7 @@
         	axes: [
 					{% for axis in object_list %}
 					    { 'slug' : '{{ axis.name|slugify }}',
-					     'name' : '{{ axis.name }}',
+					     'name' : '{% get_trans axis name LANGUAGE_CODE %}',
 					     'photo' : '{{ axis.image_set.all.0.image.url }}',
 					     'photoCaption' : '{{ axis.image_set.all.0 }}',
 					     'url' : '{% url axis-detail slug=axis.slug %}' },

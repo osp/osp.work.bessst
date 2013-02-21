@@ -1,7 +1,7 @@
 {% extends "base.html" %}
-{% load markup thumbnails %}
+{% load markup thumbnails i18n utils %}
 
-{% block title %}Projecten{% endblock %}
+{% block title %}{% trans "Projecten" %}{% endblock %}
 
 {% block slug %}projecten{% endblock%}
 
@@ -39,10 +39,10 @@
                     </div>
                     
                     <div> 
-                        <h1>{{ project }}</h1>
+                        <h1>{% get_trans project title LANGUAGE_CODE %}</h1>
                     </div>
                    
-                    {{ project.summary|safe|truncatewords_html:60 }}
+                    {% filter truncatewords_html:60 %}{% get_trans project summary LANGUAGE_CODE %}{% endfilter %}
                  
                     </a>
                     
@@ -51,7 +51,7 @@
           </ul>
     </section>
     <div id="box-oproep">
-        <a href='{% url label_form %}'>Krijg het<br /> bessst-label</a>
+        <a href='{% url label_form %}'>{% trans "Krijg het<br /> bessst-label" %}</a>
     </div>
 {% endblock content %}
 
