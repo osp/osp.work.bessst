@@ -81,7 +81,10 @@ for (var i=0; i < friends.length; i++) {
     }
     var friendMarker = L.marker([friend.lat, friend.lng], { draggable : true }).addTo(friendMap)
         .bindPopup(friendHTML)
-        .openPopup()
+        .on('mouseover', function(evt) {
+            evt.target.openPopup();
+            });
+        //.openPopup()
 }
 
 // create a map in the "map" div, set the view to a given place and zoom
