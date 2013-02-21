@@ -138,6 +138,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     #'django.contrib.flatpages',
     'django.contrib.admin',
+    'orderable',
     'newsletter',
     'south',
     'axis',

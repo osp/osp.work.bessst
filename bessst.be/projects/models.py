@@ -1,5 +1,8 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
+
+from orderable.models import Orderable
+
 from axis.models import Axis
 from people.models import People
 from django.contrib.contenttypes import generic
@@ -7,7 +10,7 @@ from media_app.models import Image
 
 from random import randint
 
-class Project(models.Model):
+class Project(Orderable):
     published = models.BooleanField(_("Published"), default=False)
     archived = models.BooleanField(_("Archived"), default=False)
 
@@ -55,7 +58,4 @@ class Project(models.Model):
     @models.permalink
     def get_absolute_url(self):
         return ('project-detail', (), {'slug': str(self.slug)})
-    
-    class Meta:
-        ordering = ["-id"]
-        
+
