@@ -88,13 +88,14 @@
 {% endblock %}
 
 {% block extra_js %}
+{% comment %}
     <script>
     $(document).ready(function(){
         img_h = $("img.background-image").height();
         txt_h = $("section#main").height();
         console.log(img_h)
         console.log(txt_h)
-console.log($(document).scrollTop());
+        console.log($(document).scrollTop());
         console.log($(window).height())
         //if($(document).scrollTop() == img_h) {
             // the image is higher than the text
@@ -111,4 +112,5 @@ console.log($(document).scrollTop());
         //}
     });
     </script>
+    {% endcomment %}
 {% endblock %}
