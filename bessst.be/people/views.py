@@ -11,7 +11,7 @@ from django.utils.translation import ugettext_lazy as _
 
 from people.models import Individual, Friend, Organization
 from projects.models import Project
-
+from flatpages.models import FlatPage
 
 class IndividualForm(ModelForm):
     class Meta:
@@ -59,10 +59,16 @@ def community(request):
             tpl_params['object_list'].append(i)
 
     tpl_params['partners'] = Organization.objects.all()
+    tpl_params['text'] = FlatPage.objects.get(slug='community')
     
     friends = Friend.objects.all()
-    friends_hash = [{ 'name' : f.get_full_name(), 'explanation' : f.location_explanation, 'lat' : f.location_latitude, 'lng' : f.
-location_longitude} for f in friends]
+    friends_hash = []
+    for f in friends:
+        hash = { 'name' : False, 'explanation' : f.location_explanation, 'lat' : f.location_latitude, 'lng' : f.location_longitude }
+        if f.display:
+            hash['name'] = f.get_full_name()
+        friends_hash.append(hash)
+
     tpl_params['friends_json'] = json.dumps(friends_hash, indent=2, ensure_ascii=False)
     
     tpl_params['submitted'] = False

@@ -75,8 +75,12 @@ var friends = {{ friends_json|safe }}
 for (var i=0; i < friends.length; i++) {
     var friend = friends[i]
     console.log(friend)
+    friendHTML = '<p>' + friend.explanation + '</p>';
+    if (friend.name) {
+        friendHTML = '<h3>' + friend.name + '</h3>' + friendHTML;
+    }
     var friendMarker = L.marker([friend.lat, friend.lng], { draggable : true }).addTo(friendMap)
-        .bindPopup('<h3>' + friend.name + '</h3><p>' + friend.explanation + '</p>')
+        .bindPopup(friendHTML)
         .openPopup()
 }
 
