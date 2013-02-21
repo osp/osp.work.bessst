@@ -38,8 +38,8 @@ LANGUAGE_CODE = 'nl'
 gettext = lambda s: s
 LANGUAGES = (
     ('nl', gettext('Dutch')),
-    ('en', gettext('English')),
-    ('fr', gettext('French'))
+#    ('en', gettext('English')),
+#    ('fr', gettext('French'))
 )
 LOCALE_PATHS = (
     os.path.join(PROJECT_ROOT, 'locale'),
