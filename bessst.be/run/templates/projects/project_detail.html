@@ -19,6 +19,11 @@
     <div class="columns">
         {% get_trans object description LANGUAGE_CODE %}
     </div>
+    
+    {% if object.slug == "bessst-route" %}
+    <iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.be/maps/ms?msid=216671772446348664973.0004d3e2615d74e9c0674&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=50.809189,4.401398&amp;spn=0.053477,0.169086&amp;output=embed"></iframe>
+    {% endif %}
+
 </section>
 <section id="right">
         <dl id="metadata" class="box">

@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from django.template.defaultfilters import slugify
+from django.db import IntegrityError
 
 class People(models.Model):
     name = models.CharField(max_length=255, verbose_name=_("Name"))
@@ -31,7 +32,13 @@ class People(models.Model):
     def save(self, *args, **kwargs):
         if self.slug == "":
             self.slug = slugify(self.get_full_name())
-        super(People, self).save(*args, **kwargs)
+        while True:
+            try:
+                super(People, self).save(*args, **kwargs)
+                break
+            except IntegrityError:
+                self.slug += '-extra'
+                
 
 class Individual(People):
     firstname = models.CharField(max_length=255, verbose_name=_("First Name"), null=True, blank=True)
