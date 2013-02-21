@@ -86,8 +86,13 @@ for (var i=0; i < friends.length; i++) {
         .bindPopup(friendHTML)
         .on('mouseover', function(evt) {
             evt.target.openPopup();
-            });
-        //.openPopup()
+            })
+        .on('mouseout', function(evt){
+            evt.target.closePopup();
+        })
+        // this is a hack, making sure the view of the map moves to includes all the marks
+       .openPopup()
+       .closePopup();
 }
 
 // create a map in the "map" div, set the view to a given place and zoom
