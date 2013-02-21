@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load markup utils thumbnails %}
+{% load markup utils thumbnails i18n %}
 
 {% block content %}
 <section id='agenda'>
@@ -37,10 +37,10 @@
                             <img src="{{ event.image_set.all.0.image|thumbnail:'70x70' }}" />
                         {% endif %}
 
-                        <h1>{{ event }}</h1>
+                        <h1>{% get_trans event title LANGUAGE_CODE %}</h1>
 
                         <span class='related-project'>
-                            Onderdeel van {{ event.project }}
+                            {% trans "Onderdeel van"%} {% get_trans event.project title LANGUAGE_CODE %}
                             <img class='smaller-logo' src='{{ STATIC_URL }}axis/{{ event.project.axis.pictogram }}-smaller.png' alt='axis {{ event.project.axis }}' />
                         </span>
                     </a>
