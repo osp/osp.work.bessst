@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-20 13:33+0100\n"
-"PO-Revision-Date: 2013-02-20 13:34+0100\n"
+"PO-Revision-Date: 2013-02-24 23:16+0100\n"
 "Last-Translator: Eric Schrijver <eric@ericschrijver.nl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -200,15 +200,15 @@ msgstr "Vermeld mijn naam op de kaart"
 
 #: people/views.py:25
 msgid "Description of the Project"
-msgstr "Beschrijving van het project. Wat? Wanneer? Waar? Voor wie? Belangrijk: relatie met leefkwaliteit en/of het stilte- en rustthema/erfgoedaspect."
+msgstr " korte omschrijving van het project (wat, wanneer, waar)"
 
 #: people/views.py:26
 msgid "Existing Partners"
-msgstr "Bestaande Partners. Namen (& profiel), indien gekend; gewenst profiel, indien gezocht."
+msgstr "partners"
 
 #: people/views.py:27
 msgid "Through which channels can you already communicate?"
-msgstr "Eigen communicatiekanalen & -mogelijkheden"
+msgstr "communicatiekanalen"
 
 #: projects/models.py:12
 msgid "Archived"
