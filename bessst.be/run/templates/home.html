@@ -41,7 +41,7 @@
 
 {% block background %}
     {% for axis in object_list reversed %}
-    <img {% if not forloop.first %}style='display: none;'{% endif %} class="background-image axis-image" id="background-{{ axis.slug }}" src="{{ axis.image_set.all.0.image.url }}" />
+    <img {% if not forloop.last %}style='display: none;'{% endif %} class="background-image axis-image" id="background-{{ axis.slug }}" src="{{ axis.image_set.all.0.image.url }}" />
     {% endfor %}
 {% endblock %}
 
