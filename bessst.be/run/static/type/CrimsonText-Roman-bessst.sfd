@@ -1,7 +1,7 @@
 SplineFontDB: 3.0
-FontName: CrimsonText-Roman-Bessst
-FullName: Crimson Text Bessst
-FamilyName: Crimson Text Bessst
+FontName: CrimsonText-Roman-bessst
+FullName: Crimson Text bessst
+FamilyName: Crimson Text bessst
 Weight: Book
 Copyright: Copyright (c) 2010, Sebastian Kosch (sebastian@aldusleaf.org),\nwith Reserved Font Name "Crimson Text".\nThis Font Software is licensed under the SIL Open Font License, Version 1.1.\nThis license is available with a FAQ at: http://scripts.sil.org/OFL
 Version: 0.13
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1361273051
-ModificationTime: 1361273051
+ModificationTime: 1361788933
 PfmFamily: 0
 TTFWeight: 400
 TTFWidth: 5
@@ -57,6 +57,7 @@ Lookup: 4 0 1 "ligaStandardLigatureslookup32"  {"ligaStandardLigatureslookup32 s
 Lookup: 4 0 1 "'liga' Standard Ligatures lookup 1"  {"'liga' Standard Ligatures lookup 1 subtable"  } ['liga' ('DFLT' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 0"  {"'kern' Horizontal Kerning in Latin lookup 0 subtable"  } ['kern' ('latn' <'dflt' > ) ]
 Lookup: 258 0 0 "kernHorizontalKerninginLatinloo"  {"kernHorizontalKerninginLatinloo subtable"  } ['kern' ('latn' <'dflt' > ) ]
+MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033 "" "" "" "" "" "Version 0.13" "" "" "" "" "" "" "" "" "http://scripts.sil.org/OFL" 
 Encoding: UnicodeBmp
@@ -66,6 +67,8 @@ DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
 WinInfo: 33 33 14
+BeginPrivate: 0
+EndPrivate
 BeginChars: 66109 1797
 
 StartChar: .notdef
@@ -1082,7 +1085,7 @@ SplineSet
  374 553 l 1,28,-1
  133 553 l 2,0,1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: eight
@@ -4916,7 +4919,7 @@ SplineSet
  100 517 100 517 150.5 576 c 128,-1,65
  201 635 201 635 282 635 c 0,10,11
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: currency
@@ -5087,7 +5090,7 @@ SplineSet
  43 -123 43 -123 42 -123 c 0,38,39
  37 -123 37 -123 37 -115 c 2,20,-1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: section
@@ -5966,7 +5969,7 @@ SplineSet
  281 118 281 118 259.5 100 c 128,-1,58
  238 82 238 82 230 73 c 1,29,30
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: onequarter
@@ -7158,7 +7161,7 @@ SplineSet
  54 351 54 351 117 393.5 c 128,-1,85
  180 436 180 436 245 436 c 0,21,22
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: ccedilla
@@ -10964,7 +10967,7 @@ SplineSet
  54 351 54 351 117 393.5 c 128,-1,100
  180 436 180 436 245 436 c 0,36,37
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: Aringacute
@@ -15843,7 +15846,7 @@ SplineSet
  18 -297 18 -297 8 -277 c 1,32,33
  41 -142 41 -142 53 6 c 0,0,1
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: uni03DE
@@ -17332,7 +17335,7 @@ SplineSet
  466 159 466 159 467 163 c 2,101,-1
  622 541 l 1,0,-1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: uni03FB
@@ -33168,7 +33171,7 @@ SplineSet
  102 118 102 118 80.5 100 c 128,-1,28
  59 82 59 82 51 73 c 1,0,1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: uni203E
@@ -40918,7 +40921,7 @@ SplineSet
  141 221 141 221 117.5 196.5 c 128,-1,54
  94 172 94 172 90 168 c 1,27,-1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: guillemotright.sc
@@ -40966,7 +40969,7 @@ SplineSet
  312 157 312 157 307 155 c 1,48,49
  196 83 196 83 167 50 c 1,23,24
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: registered.sc
@@ -44846,7 +44849,7 @@ SplineSet
  33 490 33 490 69.5 517.5 c 128,-1,81
  106 545 106 545 157 545 c 0,27,28
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: h.ordn
@@ -50418,7 +50421,7 @@ SplineSet
  29 645 29 645 61.5 671.5 c 128,-1,89
  94 698 94 698 138 698 c 0,31,32
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: h.ssup
@@ -51003,7 +51006,7 @@ SplineSet
  185 458 185 458 200 470.5 c 128,-1,59
  215 483 215 483 215 497 c 2,45,-1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: r.ssup
@@ -55023,7 +55026,7 @@ SplineSet
  341.646 368.751 341.646 368.751 317.93 381.021 c 0,346,347
  293.004 394.551 293.004 394.551 259.439 394.551 c 0,323,324
 EndSplineSet
-Validated: 524321
+Validated: 33
 Ligature2: "'liga' Standard Ligatures lookup 1 subtable" b e s s s t
 Ligature2: "ligaStandardLigatureslookup32 subtable" b e s s s t
 EndChar
