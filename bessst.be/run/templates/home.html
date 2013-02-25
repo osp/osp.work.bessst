@@ -41,7 +41,7 @@
 
 {% block background %}
     {% for axis in object_list reversed %}
-    <img {% if not forloop.first %}style='display: none;'{% endif %} class="background-image axis-image" id="background-{{ axis.name|slugify }}" src="{{ axis.image_set.all.0.image.url }}" />
+    <img {% if not forloop.first %}style='display: none;'{% endif %} class="background-image axis-image" id="background-{{ axis.slug }}" src="{{ axis.image_set.all.0.image.url }}" />
     {% endfor %}
 {% endblock %}
 
@@ -54,7 +54,7 @@
         	_i : 1,
         	axes: [
 					{% for axis in object_list %}
-					    { 'slug' : '{{ axis.name|slugify }}',
+					    { 'slug' : '{{ axis.slug }}',
 					     'name' : '{% get_trans axis name LANGUAGE_CODE %}',
 					     'photo' : '{{ axis.image_set.all.0.image.url }}',
 					     'photoCaption' : '{{ axis.image_set.all.0 }}',

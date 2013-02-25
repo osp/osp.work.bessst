@@ -17,16 +17,16 @@
         {% for axis in axis_list %}
             <h2 class="logo">
                 <a href='{% url axis-detail axis.slug %}'>
-                    <img class="{{ axis.pictogram }} small-logo" id="{{ axis.name|slugify }}" src="{{ STATIC_URL }}axis/{{ axis.pictogram }}.png" title="{{ axis.name }}" data-photo="{{ axis.image_set.all.0.image.url }}" data-photo-caption="{{ axis.image_set.all.0 }}"/>
+                    <img class="{{ axis.pictogram }} small-logo" id="{{ axis.slug }}" src="{{ STATIC_URL }}axis/{{ axis.pictogram }}.png" title="{{ axis.name }}" data-photo="{{ axis.image_set.all.0.image.url }}" data-photo-caption="{{ axis.image_set.all.0 }}"/>
                 </a>
           </h2>
         {% endfor %}
     </div>
           <ul id='project-list'>
               {% for project in object_list %}
-              <li class="box {{ project.axis.name|slugify }} no-border in-grid {% if project.archived %}archive{% endif %}" data-sizex="18">
+              <li class="box {{ project.axis.slug }} no-border in-grid {% if project.archived %}archive{% endif %}" data-sizex="18">
                   
-                  <a class="many-things-link" href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name|slugify }}">
+                  <a class="many-things-link" href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.slug }}">
                   
                     <div class='lettrine'>
                         {% if project.image_set.all.0.image.url %}
@@ -35,7 +35,7 @@
                             <div class='empty-lettrine'>&nbsp;</div>
                         {% endif %}
 
-                        <img class="{{ project.axis.pictogram }} small-logo" id="{{ project.axis.name|slugify }}" src="{{ STATIC_URL }}axis/{{ project.axis.pictogram }}-smaller.png" title="{{ project.axis.name }}" data-photo="{{ project.axis.image_set.all.0.image.url }}" data-photo-caption="{{ project.axis.image_set.all.0 }}"/>
+                        <img class="{{ project.axis.pictogram }} small-logo" id="{{ project.axis.slug }}" src="{{ STATIC_URL }}axis/{{ project.axis.pictogram }}-smaller.png" title="{{ project.axis.name }}" data-photo="{{ project.axis.image_set.all.0.image.url }}" data-photo-caption="{{ project.axis.image_set.all.0 }}"/>
                     </div>
                     
                     <div> 

@@ -8,7 +8,7 @@
 
 {% block header %}
     <h1 class="{{ axis.pictogram }}">
-        <img class="small-logo {{ axis.pictogram }}" id="{{ axis.name|slugify }}" src="{{ STATIC_URL }}axis/{{ axis.pictogram }}.png" title="{{ axis.name }}" data-photo="{{ axis.image_set.all.0.image.url }}" data-photo-caption="{{ axis.image_set.all.0 }}"/>
+        <img class="small-logo {{ axis.pictogram }}" id="{{ axis.slug }}" src="{{ STATIC_URL }}axis/{{ axis.pictogram }}.png" title="{{ axis.name }}" data-photo="{{ axis.image_set.all.0.image.url }}" data-photo-caption="{{ axis.image_set.all.0 }}"/>
         {{ axis }}
     </h1>
 {% endblock header%}
@@ -21,8 +21,8 @@
 <section id="right">
     <ul class="project-list"> 
         {% for project in axis.project_set.all %}
-        <li class="box {{ project.axis.name|slugify }} no-border {% if project.archived %}archive{% endif %}" data-sizex="8">
-            <a class="project-list-title" href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.name|slugify }}">{{ project }}</a>
+        <li class="box {{ project.axis.slug }} no-border {% if project.archived %}archive{% endif %}" data-sizex="8">
+            <a class="project-list-title" href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.slug }}">{{ project }}</a>
             <br />
             {{ project.subtitle }}
         </li>
