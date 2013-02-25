@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n utils %}
+{% load i18n utils thumbnails %}
 
 <title>{% trans "BESSST - Brussels, Heritage and Silence" %} - {% block title %}{% endblock %}</title>
 
@@ -41,7 +41,7 @@
 
 {% block background %}
     {% for axis in object_list reversed %}
-    <img {% if not forloop.last %}style='display: none;'{% endif %} class="background-image axis-image" id="background-{{ axis.slug }}" src="{{ axis.image_set.all.0.image.url }}" />
+    <img {% if not forloop.last %}style='display: none;'{% endif %} class="background-image axis-image" id="background-{{ axis.slug }}" src="{{ axis.image_set.all.0.image|thumbnail:'1200w' }}" />
     {% endfor %}
 {% endblock %}
 

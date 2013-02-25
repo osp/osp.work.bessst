@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load markup i18n utils %}
+{% load markup i18n utils thumbnails %}
 
 {% block title %}{% trans Event %}{% endblock %}
 
@@ -68,5 +68,5 @@
 
 {% block background %}
     {% if object.project %}<div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/{{ event.project.axis.pictogram }}-gradient.png');"></div>{% endif %} 
-    <img class="background-image" src="{{ object.image_set.all.0.image.url }}" style="width: 100%;"/>
+    <img class="background-image" src="{{ object.image_set.all.0.image|thumbnail:'1200w' }}" style="width: 100%;"/>
 {% endblock %}
