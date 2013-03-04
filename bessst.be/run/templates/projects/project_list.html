@@ -70,7 +70,6 @@
         
         var switchTo = function(ctx) {
             var axis = ctx.params.axis;
-            console.log($('.box .' + axis).length)
             var finished = { hiding: false, showing: false }
             $('ul#project-list .in-grid').not('.' + axis).removeClass("in-grid masonry-brick").fadeOut('fast', function() {
                 finished.hiding = true;
@@ -89,8 +88,8 @@
         $(window).load(function() {
             if ( window.history && window.history.replaceState ) {
             	/* if the Browser supports the HTML5 History API we use client side 
-            	 routing for smooth transition inbetween the different axis categories! */
-		        page('/axis/:axis/', switchTo);
+            	 routing for smooth transition inbetween the different axis categories! */	
+		        page('/:langs/axis/:axis/', switchTo);
 		        page.start();
 			}
 			
