@@ -34,7 +34,7 @@ urlpatterns += i18n_patterns('',
     url(r'^axis/(?P<slug>[\w-]+)/$', 'projects.views.projects', name='axis-detail'),
 
     
-    url(r'^agenda/$', list_detail.object_list, {"queryset":Event.objects.filter(published=True)[:9],}, name='agenda'),
+    url(r'^agenda/$', list_detail.object_list, {"queryset":Event.objects.filter(published=True),}, name='agenda'),
     url(r'^agenda/(?P<slug>[\w-]+)/$', DetailView.as_view(model=Event), name='event-detail'),
     
     url(r'^inspiration/$', list_detail.object_list, {"queryset":Resource.objects.filter(published=True)}, name='inspiration'),
