@@ -87,20 +87,17 @@
         }
 
         $(window).load(function() {
-            
-        page('/axis/:axis/', switchTo);
-        page.start();
-                    
+            if ( window.history && window.history.replaceState ) {
+            	/* if the Browser supports the HTML5 History API we use client side 
+            	 routing for smooth transition inbetween the different axis categories! */
+		        page('/axis/:axis/', switchTo);
+		        page.start();
+			}
+			
             if (slug) {
                 $('ul#project-list .in-grid').not('.' + slug).removeClass("in-grid").fadeOut(0);
             }
-            
-           /* $("#axis-menu a").click(function(e) {
-                e.preventDefault();
-                var axis = $(this).attr('href').match(/\/axis\/([\w\-]+)\//)[1]
-                switchTo(axis);
-            })*/
-            
+                        
             $('#project-list').masonry({
                 itemSelector: 'li.in-grid',
                 columnWidth: 30,
