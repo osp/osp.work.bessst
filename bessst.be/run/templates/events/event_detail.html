@@ -67,6 +67,13 @@
 
 
 {% block background %}
-    {% if object.project %}<div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/{{ event.project.axis.pictogram }}-gradient.png');"></div>{% endif %} 
+    {% if object.image_set.all.0.image %}
     <img class="background-image" src="{{ object.image_set.all.0.image|thumbnail:'1200w' }}" style="width: 100%;"/>
+    {% else %}
+	    {% if object.project %}
+	    <div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/{{ event.project.axis.pictogram }}-gradient.png');"></div>
+    	{% else %}
+    	<div id="background-gradient" style="background-image: url('{{ STATIC_URL }}axis/all-gradient.png');"></div>
+    	{% endif %}
+    {% endif %}
 {% endblock %}
