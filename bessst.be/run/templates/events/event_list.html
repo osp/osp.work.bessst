@@ -26,23 +26,22 @@
 
                 <td class='no-border {{ event.project.axis.pictogram }}'>
                     <a href='{{ event.get_absolute_url }}'>
-                        <div class='date'>
+                        <h3>
                         {{ event.start_date }}
                         {% if event.end_date != event.start_date %}
                             → {{ event.end_date }}
                         {% endif %}
-                        </div>
+                        </h3>
 
                         {% if event.image_set.all.0.image.url %}
                             <img src="{{ event.image_set.all.0.image|thumbnail:'70x70' }}" />
                         {% endif %}
 
-                        <h1>{% get_trans event title LANGUAGE_CODE %}</h1>
-
-                        <span class='related-project'>
+                        <div class="events">{% get_trans event title LANGUAGE_CODE %}</div>
+                        <div class='related-project'>
                             {% trans "Onderdeel van"%} {% get_trans event.project title LANGUAGE_CODE %}
-                            <img class='smaller-logo' src='{{ STATIC_URL }}axis/{{ event.project.axis.pictogram }}-smaller.png' alt='axis {{ event.project.axis }}' />
-                        </span>
+                            <div><img class='smaller-logo' src='{{ STATIC_URL }}axis/{{ event.project.axis.pictogram }}-smaller.png' alt='axis {{ event.project.axis }}' /></div>
+                        </div>
                     </a>
                 </td>
 
