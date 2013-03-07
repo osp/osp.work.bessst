@@ -23,6 +23,8 @@
         <li><a id="menu-community" href="{% url community %}">{% trans "Community" %}</a></li>        
         <li><a id="menu-inspiratie" href="{% url inspiration %}">{% trans "Inspiration" %}</a></li>
         <li><a id="menu-over" href="{% url flatpage-detail slug="over" %}">{% trans "About" %}</a></li>
+        <li><a id="menu-inspiratie" href="{% url atlas %}">{% trans "Atlas" %}</a></li>
+
     </ul>
     <form action="/i18n/setlang/" method="post">
         {% csrf_token %}

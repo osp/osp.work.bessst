@@ -60,27 +60,6 @@ def community(request):
 
     tpl_params['partners'] = Organization.objects.all()
     tpl_params['text'] = FlatPage.objects.get(slug='community')
-    
-    friends = Friend.objects.all()
-    friends_hash = []
-    for f in friends:
-        hash = { 'name' : False, 'explanation' : f.location_explanation, 'lat' : f.location_latitude, 'lng' : f.location_longitude }
-        if f.display:
-            hash['name'] = f.get_full_name()
-        friends_hash.append(hash)
-
-    tpl_params['friends_json'] = json.dumps(friends_hash, indent=2, ensure_ascii=False)
-    
-    tpl_params['submitted'] = False
-    
-    if request.method == 'POST': # If the form has been submitted...
-        form = IndividualForm(request.POST) # A form bound to the POST data
-        if form.is_valid():
-            form.save()
-            tpl_params['submitted'] = True
-    else:
-        form = IndividualForm()
-    tpl_params['form'] = form
     return render_to_response("people/individual_list.html", tpl_params, context_instance = RequestContext(request))
 
 def label_form(request):
@@ -96,4 +75,29 @@ def label_form(request):
         form = OrganizationForm()
     tpl_params['form'] = form
     return render_to_response("people/label_form.html", tpl_params, context_instance = RequestContext(request))
+
+def atlas(request):
+    tpl_params = {}
+    
+    friends = Friend.objects.all()
+    
+    # Prepare a JSON hash with which we draw all the friends on the map
+    # client-side
+    friends_hash = []
+    for f in friends:
+        hash = { 'name' : False, 'explanation' : f.location_explanation, 'lat' : f.location_latitude, 'lng' : f.location_longitude }
+        if f.display:
+            hash['name'] = f.get_full_name()
+        friends_hash.append(hash)
+
+    tpl_params['friends_json'] = json.dumps(friends_hash, indent=2, ensure_ascii=False)
+    if request.method == 'POST': # If the form has been submitted...
+        form = IndividualForm(request.POST) # A form bound to the POST data
+        if form.is_valid():
+            form.save()
+            tpl_params['submitted'] = True
+    else:
+        form = IndividualForm()
+    tpl_params['form'] = form
+    return render_to_response("people/atlas.html", tpl_params, context_instance = RequestContext(request))
 

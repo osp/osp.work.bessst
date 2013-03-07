@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% load markup i18n utils %}
+
+{% block title %}Community{% endblock %}
+
+{% block slug %}community{% endblock %}
+
+
+{% block content %}
+<section id='main'>
+<div class="box" data-sizex="35">
+    <h2>Bessst atlass</h2>
+    <div id="map2" style="height:600px;width:990px;"></div>
+</div>
+</div>
+    
+<div class="box" data-sizex="22">
+    <h2 id="silence-friend">Aanmelden als stiltevriend</h2>
+    <p class="explanation">Klik om te kaart om je favoriete stilteplek in Brussel op te geven.</p>
+    {% if not submitted%}
+    <form action="{% url atlas %}" method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit" />
+    </form>
+    {% else %}
+    <p>Bedankt voor uw aanmelding als stiltevriend.</p>
+    {% endif %}
+</div>
+
+</Section>
+{% endblock %}
+
+{% block extra_js %}
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+ <!--[if lte IE 8]>
+     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+ <![endif]-->
+ <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+<script>
+var friendMap = L.map('map2').setView([50.84694973844825, 4.354920387268066], 14);
+
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> deelnemers'
+}).addTo(friendMap);
+
+var friends = {{ friends_json|safe }}
+
+for (var i=0; i < friends.length; i++) {
+    var friend = friends[i]
+    console.log(friend)
+    friendHTML = '<p>' + friend.explanation + '</p>';
+    if (friend.name) {
+        friendHTML = '<h3>' + friend.name + '</h3>' + friendHTML;
+    }
+    var friendMarker = L.marker([friend.lat, friend.lng], { draggable : true }).addTo(friendMap)
+        .bindPopup(friendHTML)
+        .on('mouseover', function(evt) {
+            evt.target.openPopup();
+            })
+        .on('mouseout', function(evt){
+            evt.target.closePopup();
+        })
+        // this is a hack, making sure the view of the map moves to includes all the marks
+       .openPopup()
+       .closePopup();
+}
+
+// create a map in the "map" div, set the view to a given place and zoom
+var map = friendMap;// L.map('map').setView([50.84694973844825, 4.354920387268066], 14);
+
+// add an OpenStreetMap tile layer
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> deelnemers'
+}).addTo(map);
+
+var marker;
+var set = false;
+
+var setLatLng = function(latlng) {
+        $("#id_location_latitude").val(latlng.lat);
+        $("#id_location_longitude").val(latlng.lng);
+        console.log(latlng.toString());
+}
+
+var makeMarker = function(e) {
+    if ( !set ) {
+        setLatLng(e.latlng);
+        set = true;
+        marker = L.marker(e.latlng, { draggable : true }).addTo(map)
+        .bindPopup('Dit is mijn stilteplek')
+        .openPopup()
+        .on('dragend', function(e) { 
+             setLatLng(e.target.getLatLng());
+        });
+    }
+}
+
+map.on('click', makeMarker);
+
+if ($("p:has('#id_location_latitude')").prev().hasClass("errorlist")) {
+    /* This means the form is giving errors about missing the latitude,
+    which means nothing was selected on the map. We need to display errors next to the map. */
+    $("p:has('#id_location_latitude','#id_location_longitude')").prev().hide();
+    $("p.explanation").prepend('<span class="errorlist">Om u aan te melden als stiltevriend, vragen wij u een stilteplek aan te geven. </span>')
+}
+
+</script>
+{% endblock %}
+
+
