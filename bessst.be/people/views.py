@@ -97,7 +97,21 @@ def atlas(request):
             form.save()
             tpl_params['submitted'] = True
     else:
-        form = IndividualForm()
+        form = IndividualForm(label_suffix='')
     tpl_params['form'] = form
     return render_to_response("people/atlas.html", tpl_params, context_instance = RequestContext(request))
+
+def label_form(request):
+    tpl_params = {}
+    tpl_params['submitted'] = False
+
+    if request.method == 'POST': # If the form has been submitted...
+        form = OrganizationForm(request.POST) # A form bound to the POST data
+        if form.is_valid():
+            form.save()
+            tpl_params['submitted'] = True
+    else:
+        form = OrganizationForm(label_suffix='')
+    tpl_params['form'] = form
+    return render_to_response("people/label_form.html", tpl_params, context_instance = RequestContext(request))
 
