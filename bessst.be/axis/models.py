@@ -1,9 +1,12 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from django.contrib.contenttypes import generic
+
+from orderable.models import Orderable
+
 from media_app.models import Image
 
-class Axis(models.Model):
+class Axis(Orderable):
     name = models.CharField(max_length=255, verbose_name=_("Name (NL)"))
     name_en = models.CharField(max_length=255, verbose_name=_("Name (EN)"))
     name_fr = models.CharField(max_length=255, verbose_name=_("Name (FR)"))
