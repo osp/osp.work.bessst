@@ -79,7 +79,7 @@ def community(request):
             form.save()
             tpl_params['submitted'] = True
     else:
-        form = IndividualForm()
+        form = IndividualForm(label_suffix='')
     tpl_params['form'] = form
     return render_to_response("people/individual_list.html", tpl_params, context_instance = RequestContext(request))
 
@@ -93,7 +93,7 @@ def label_form(request):
             form.save()
             tpl_params['submitted'] = True
     else:
-        form = OrganizationForm()
+        form = OrganizationForm(label_suffix='')
     tpl_params['form'] = form
     return render_to_response("people/label_form.html", tpl_params, context_instance = RequestContext(request))
 

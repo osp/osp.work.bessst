@@ -47,7 +47,7 @@
     {% if not submitted%}
     <form action="{% url community %}" method="post">{% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="Submit" />
+    <p><input type="submit" value="Submit" /></p>
     </form>
     {% else %}
     <p>Bedankt voor uw aanmelding als stiltevriend.</p>
