@@ -36,8 +36,17 @@
 
 
 {% block content %}
-<div id="axis-home" title="{{ object_list.0.name }}"><a href="{% url axis-detail slug=object_list.0.slug %}">{% get_trans object_list.0 name LANGUAGE_CODE %}</a></div>
+
+
+<div id="axis-home" title="{{ object_list.0.name }}">
+        <a href="{% url axis-detail slug=object_list.0.slug %}">
+        <img class= "{{ object_list.0.pictogram }} smaller-logo" id="{{ object_list.0.slug }}" src="/static/axis/{{ object_list.0.pictogram }}-smaller.png" title="{{ object_list.0.name }}" />
+        {% get_trans object_list.0 name LANGUAGE_CODE %}
+        </a>
+</div>
+
 {% endblock %}
+
 
 {% block background %}
     {% for axis in object_list reversed %}
@@ -58,6 +67,7 @@
 					     'name' : '{% get_trans axis name LANGUAGE_CODE %}',
 					     'photo' : '{{ axis.image_set.all.0.image.url }}',
 					     'photoCaption' : '{{ axis.image_set.all.0 }}',
+					     'pictogram' : '{{axis.pictogram}}',
 					     'url' : '{% url axis-detail slug=axis.slug %}' },
 					{% endfor %}
 					],
@@ -78,7 +88,7 @@
 	            //console.log('img#background-' + axis.slug);
 	            $("footer .caption").text(axis.photoCaption).show();
 
-	            $("#axis-home").html('<a href="' + axis.url + '">' + axis.name + '</a>').show();
+	            $("#axis-home").html('<a href="' + axis.url + '"> <img class="'+axis.pictogram +' smaller-logo" id="'+axis.slug +'" src="/static/axis/'+axis.pictogram+'-smaller.png" title="'+axis.name+'" />' + axis.name + '</a>').show();
                 left = $(document).width()/2 - $("#axis-home").width()/2 ;
 	            $("#axis-home").css('left', left + 'px');
 	        }
