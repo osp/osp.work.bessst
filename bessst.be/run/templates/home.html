@@ -95,6 +95,10 @@
         }
     
         $(window).load(function() {
+            // Center first axis
+            left = $(document).width()/2 - $("#axis-home").width()/2 ;
+            $("#axis-home").css('left', left + 'px');
+
             window.setInterval(function() { photos.slide(); }, 5000);
         });
 

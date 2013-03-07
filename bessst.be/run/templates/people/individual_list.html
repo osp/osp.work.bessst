@@ -7,6 +7,7 @@
 
 
 {% block content %}
+<section id='main'>
 <div class="box" data-sizex="35">
     <h2>Stiltevrienden</h2>
     <div id="map2" style="height:600px;width:990px;"></div>
@@ -24,9 +25,7 @@
 
                 {% if organization.individuals.all %}
                     <ul class='inline member-list'>
-                    {% for member in organization.individuals.all %}
-                        <li>{{ member }}</li>
-                    {% endfor %}
+                    {% for member in organization.individuals.all %}<li>{{ member }}</li>{% endfor %}
                     </ul>
                 {% endif %}
             </li>
@@ -48,7 +47,7 @@
     {% if not submitted%}
     <form action="{% url community %}" method="post">{% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="Submit" />
+    <p><input type="submit" value="Submit" /></p>
     </form>
     {% else %}
     <p>Bedankt voor uw aanmelding als stiltevriend.</p>
@@ -58,6 +57,8 @@
 <div class="box" data-sizex="22">
     {% get_trans text content LANGUAGE_CODE %}
 </div>
+
+</Section>
 {% endblock %}
 
 {% block extra_js %}

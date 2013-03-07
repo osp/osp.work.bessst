@@ -140,6 +140,7 @@ form {
         display: inline-block;
         width: 220px;
         vertical-align:top;
+        text-transform: lowercase;
     }
     span.helptext {
         display: none;
@@ -150,26 +151,38 @@ form {
     p {
         margin-bottom: @gutter / 2;
     }
-}
 
-input[type="submit"]{
-    border: 1px solid black;
-    padding : 5px;
-    background: white;
-    font-family: @font-family-sans;
-    color : black;
-}
+    input[type="submit"]{
+        border: 1px solid black;
+        padding : 5px;
+        background: white;
+        font-family: @font-family-sans;
+        color : black;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        outline: 1px solid black;
+    }
 
-input[type="text"]{
-    border: 1px solid black;
-    font-family: @font-family-sans;
-    width : 100 %;
-}
+    input[type="text"]{
+        border: 1px solid black;
+        font-family: @font-family-sans;
+        width : 35%;
+        background-color: white;
+        font-size: 15px;
+        font-weight: 200;
+    }
 
-input[type="checkbox"]{
-    border: 1px solid black;
-}
+    input[type="checkbox"]{
+        border: 1px solid black;
+    }
 
+    textarea {
+        font-size: 15px;
+        background-color: white;
+        width: 100%;
+    }
+}
 
 
 label[for="id_location_latitude"], label[for="id_location_longitude"], #id_location_latitude, #id_location_longitude { 
@@ -881,7 +894,7 @@ nav {
     border-color: @color-door !important;
     color: black;
 }
-.trage-paden,
+.trage-wegen,
 .traag-langzaam-verkeer,
 .feet {
     border-color: @color-feet !important;
