@@ -8,15 +8,17 @@
 {% endblock %}
 
 {% block content %}
-<div class="box">
-<h2>Aanvraag Bessst Label</h2>
-{% if not submitted %}
-    <form action="{% url label_form %}" method="post">{% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Submit" />
-    </form>
-{% else %}
-<p>Bedankt voor uw bessst-label aanvraag.</p>
-{% endif %}
-</div>
+<section id='main'>
+    <div class="box">
+        <h2>Aanvraag Bessst Label</h2>
+        {% if not submitted %}
+            <form action="{% url label_form %}" method="post">{% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Submit" />
+            </form>
+        {% else %}
+            <p>Bedankt voor uw bessst-label aanvraag.</p>
+        {% endif %}
+    </div>
+</section>
 {% endblock %}
