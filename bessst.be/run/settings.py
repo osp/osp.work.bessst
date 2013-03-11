@@ -1,12 +1,18 @@
 import os
+import socket
+import django.conf.global_settings as DEFAULT_SETTINGS
 
 # Django settings for bessst project.
 
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
-
 PROJECT_ROOT = PROJECT_PATH.replace('run','').rstrip(os.sep)
 
+HOST_NAME = socket.gethostname()
+
 DEBUG = True
+if HOST_NAME == 'bessst.be':
+    DEBUG = False
+
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -117,6 +123,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
+TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + (
+    "run.context_processors.compress_enabled",
+)
+
 ROOT_URLCONF = 'run.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
@@ -129,6 +139,16 @@ TEMPLATE_DIRS = (
     os.path.join(PROJECT_PATH, 'templates')
 )
 
+COMPRESS_ENABLED = not DEBUG
+
+if COMPRESS_ENABLED:
+    COMPRESS_PRECOMPILERS = (
+        ('text/less', 'lessc {infile} {outfile}'),
+    )
+
+INTERNAL_IPS = ('127.0.0.1',)
+COMPRESS_ROOT = MEDIA_ROOT
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -138,18 +158,23 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     #'django.contrib.flatpages',
     'django.contrib.admin',
+    'django.contrib.markup',
+    
+    # 3rd party
     'orderable',
-    'newsletter',
     'south',
+    'compressor',
+    'wymeditor',
+
+    # bessst.be
+    'newsletter',
     'axis',
     'events',
     'people',
     'projects',
     'resources',
     'media_app',
-    'django.contrib.markup',
     'flatpages',
-    'wymeditor',
     'custom_tags',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
