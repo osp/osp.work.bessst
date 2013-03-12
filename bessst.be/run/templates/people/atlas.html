@@ -10,13 +10,13 @@
 <section id='main'>
 <div class="box" data-sizex="35">
     <h2>Bessst atlass</h2>
-    <div id="map2" style="height:600px;width:990px;"></div>
+    <div id="map" style="height:600px;width:990px;"></div>
 </div>
 </div>
     
 <div class="box" data-sizex="22">
     <h2 id="silence-friend">Aanmelden als stiltevriend</h2>
-    <p class="explanation">Klik om te kaart om je favoriete stilteplek in Brussel op te geven.</p>
+    <p class="explanation"><img id="place-dragger" src="http://cdn.leafletjs.com/leaflet-0.5/images/marker-icon.png"/>Klik om te kaart om je favoriete stilteplek in Brussel op te geven.</p>
     {% if not submitted%}
     <form action="{% url atlas %}" method="post">{% csrf_token %}
     {{ form.as_p }}
@@ -31,18 +31,25 @@
 {% endblock %}
 
 {% block extra_js %}
+<script src="{{STATIC_URL}}js/jquery-ui-1.8.23.custom.min.js"></script>
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
  <!--[if lte IE 8]>
      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
  <![endif]-->
  <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
 <script>
-var friendMap = L.map('map2').setView([50.84694973844825, 4.354920387268066], 14);
 
+/* Map interactions*/
+
+// create a map in the "map" div, set the view to a given place and zoom
+var map = L.map('map').setView([50.84694973844825, 4.354920387268066], 14);
+
+// add an OpenStreetMap tile layer
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> deelnemers'
-}).addTo(friendMap);
+}).addTo(map);
 
+/* Plot all the friends on the map */
 var friends = {{ friends_json|safe }}
 
 for (var i=0; i < friends.length; i++) {
@@ -52,7 +59,7 @@ for (var i=0; i < friends.length; i++) {
     if (friend.name) {
         friendHTML = '<h3>' + friend.name + '</h3>' + friendHTML;
     }
-    var friendMarker = L.marker([friend.lat, friend.lng], { draggable : true }).addTo(friendMap)
+    var friendMarker = L.marker([friend.lat, friend.lng]).addTo(map) //These markers don’t move
         .bindPopup(friendHTML)
         .on('mouseover', function(evt) {
             evt.target.openPopup();
@@ -65,16 +72,7 @@ for (var i=0; i < friends.length; i++) {
        .closePopup();
 }
 
-// create a map in the "map" div, set the view to a given place and zoom
-var map = friendMap;// L.map('map').setView([50.84694973844825, 4.354920387268066], 14);
-
-// add an OpenStreetMap tile layer
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> deelnemers'
-}).addTo(map);
-
 var marker;
-var set = false;
 
 var setLatLng = function(latlng) {
         $("#id_location_latitude").val(latlng.lat);
@@ -82,20 +80,39 @@ var setLatLng = function(latlng) {
         console.log(latlng.toString());
 }
 
-var makeMarker = function(e) {
-    if ( !set ) {
-        setLatLng(e.latlng);
-        set = true;
-        marker = L.marker(e.latlng, { draggable : true }).addTo(map)
-        .bindPopup('Dit is mijn stilteplek')
-        .openPopup()
-        .on('dragend', function(e) { 
-             setLatLng(e.target.getLatLng());
-        });
-    }
-}
+/* We have a pre-existing icon, that when dragged into the map, becomes a marker on that map */
 
-map.on('click', makeMarker);
+$("#place-dragger").draggable( {
+    stop: function(ev,ui) {
+            console.log("stopped!");
+            c = map.mouseEventToContainerPoint( ev );
+            if (c.x < 0 || c.y < 0 || c.x > $(map._container).width() || c.y > $(map._container).height()) {
+                console.log("outside!")
+            } else {
+                var latlng = map.mouseEventToLatLng( ev );
+                
+                /* Calling setLatLng will fill in the hidden form fields that are submitted to the server */
+                setLatLng(latlng);
+                
+                /* create the marker */
+                marker = L.marker(latlng, { draggable : true }).addTo(map)
+                .bindPopup('Dit is mijn stilteplek')
+                .openPopup()
+                .on('dragend', function(e) { 
+                     setLatLng(e.target.getLatLng());
+                })
+                .on('mouseover', function(evt) {
+                    evt.target.openPopup();
+                })
+                .on('mouseout', function(evt){
+                    evt.target.closePopup();
+                });
+                $(this).remove(); // remove the original element
+            }
+        },
+});
+
+/* Form error checking */
 
 if ($("p:has('#id_location_latitude')").prev().hasClass("errorlist")) {
     /* This means the form is giving errors about missing the latitude,
