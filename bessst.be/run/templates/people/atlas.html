@@ -9,21 +9,21 @@
 {% block content %}
 <section id='main'>
 <div class="box" data-sizex="35">
-    <h2>Bessst atlass</h2>
+    <h2>{% trans "Bessst atlas" %}</h2>
     <div id="map" style="height:600px;width:990px;"></div>
 </div>
 </div>
     
 <div class="box" data-sizex="22">
-    <h2 id="silence-friend">Aanmelden als stiltevriend</h2>
-    <p class="explanation"><img id="place-dragger" src="http://cdn.leafletjs.com/leaflet-0.5/images/marker-icon.png"/>Klik om te kaart om je favoriete stilteplek in Brussel op te geven.</p>
+    <h2 id="silence-friend">{% trans "Apply as a silence friend" %}</h2>
+    <p class="explanation"><img id="place-dragger" src="http://cdn.leafletjs.com/leaflet-0.5/images/marker-icon.png"/>{% trans "Drag pin on to the map to share your favourite silence location in Brussels" %}</p>
     {% if not submitted%}
     <form action="{% url atlas %}" method="post">{% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="Submit" />
     </form>
     {% else %}
-    <p>Bedankt voor uw aanmelding als stiltevriend.</p>
+    <p>{% trans "Thanks for your application as a silence friend." %}</p>
     {% endif %}
 </div>
 
