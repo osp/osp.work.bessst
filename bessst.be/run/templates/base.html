@@ -35,7 +35,7 @@
     </ul>
     <form action="/i18n/setlang/" method="post">
         {% csrf_token %}
-        <input name="next" type="hidden" value="{{ redirect_to }}" />
+        <input name="next" type="hidden" value="/" />
         {% get_language_info_list for LANGUAGES as languages %}
         <ul id="lan">
         {% for language in languages %}
