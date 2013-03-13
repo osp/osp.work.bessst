@@ -14,7 +14,7 @@
 </div>
 </div>
     
-<div class="box" data-sizex="22">
+<div class="box" data-sizex="16">
     <h2 id="silence-friend">{% trans "Apply as a silence friend" %}</h2>
     <p class="explanation"><img id="place-dragger" src="http://cdn.leafletjs.com/leaflet-0.5/images/marker-icon.png"/>{% trans "Drag pin on to the map to share your favourite silence location in Brussels" %}</p>
     {% if not submitted%}
@@ -100,12 +100,7 @@ $("#place-dragger").draggable( {
                 .openPopup()
                 .on('dragend', function(e) { 
                      setLatLng(e.target.getLatLng());
-                })
-                .on('mouseover', function(evt) {
-                    evt.target.openPopup();
-                })
-                .on('mouseout', function(evt){
-                    evt.target.closePopup();
+                     e.target.openPopup();
                 });
                 $(this).remove(); // remove the original element
             }

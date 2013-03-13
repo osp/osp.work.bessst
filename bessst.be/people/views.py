@@ -79,7 +79,7 @@ def label_form(request):
 def atlas(request):
     tpl_params = {}
     
-    friends = Friend.objects.all()
+    friends = Friend.objects.all().order_by('-location_latitude')
     
     # Prepare a JSON hash with which we draw all the friends on the map
     # client-side
