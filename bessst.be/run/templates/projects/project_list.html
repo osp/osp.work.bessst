@@ -64,39 +64,53 @@
 
 
 {% block extra_js %}
-    <script src="{{ STATIC_URL }}js/index.js"></script>
+    <script src="{{ STATIC_URL }}js/index.js"></script>    
     <script>
+        /* If this is a project category page, the variable slug will be set.
+         * If it is the general project page, it will be unset */
         var slug = '{{ slug }}';
         
+        /* This function is called by the router to switch between different project categories */
         var switchTo = function(ctx) {
             var axis = ctx.params.axis;
+            // we are only finished if both hiding the old is done and showing the new is done
             var finished = { hiding: false, showing: false }
+            // hide the old
             $('ul#project-list .in-grid').not('.' + axis).removeClass("in-grid masonry-brick").fadeOut('fast', function() {
                 finished.hiding = true;
                 if (finished.showing) {
                     $('#project-list').masonry('reload');
                 }
             });
+            // show the new
             $('ul#project-list .' + axis).addClass("in-grid").fadeIn('fast', function() {
                 finished.showing = true;
                 if (finished.hiding) {
                     $('#project-list').masonry('reload');
                 }
             });
+            // (we don’t know which one finishes first, so we check in both cases. When both are done we trigger the masonry)
         }
-
+        
         $(window).load(function() {
+
+            /* if the Browser supports the HTML5 History API we use client side 
+             routing for smooth transition inbetween the different axis categories! */
             if ( window.history && window.history.replaceState ) {
-            	/* if the Browser supports the HTML5 History API we use client side 
-            	 routing for smooth transition inbetween the different axis categories! */	
-		        page('/:langs/axis/:axis/', switchTo);
-		        page.start();
-			}
-			
-            if (slug) {
-                $('ul#project-list .in-grid').not('.' + slug).removeClass("in-grid").fadeOut(0);
+                page('/:langs/axis/:axis/', switchTo);
+                page.start();
             }
-                        
+            
+            if (slug) {
+                // hide projects not in this category
+                $('ul#project-list .in-grid').not('.' + slug).removeClass("in-grid").hide();
+            } else {
+                // hide the later elements 
+                $('ul#project-list .in-grid').slice(9).removeClass("in-grid").hide();
+                var expanded = false;
+            }
+            
+            // do the masonry and establish its settings
             $('#project-list').masonry({
                 itemSelector: 'li.in-grid',
                 columnWidth: 30,
@@ -109,6 +123,26 @@
                 
             });
             
+            /* For the general project  page, if we get almost to the bottom,
+             we show also the remaining items */
+            if (!slug) {
+               $(window).bind('scroll',
+                   function(e){
+                        // console.log($(this).scrollTop())
+                        if ( $(this).scrollTop() + $(window).height() > $(document).height() - 200 ) {
+                            console.log("within 200px!");
+                            if (!expanded) {
+                                console.log("expand!");
+                                expanded = true;
+                                $('ul#project-list li').slice(9).addClass("in-grid").fadeIn('fast', function() {
+                                    $('#project-list').masonry('reload');
+                                });
+                            }
+                        }
+                    }
+               );
+            }
+            
         // CENTER AXIS ICON IN LETTRINE SPACE
             $('.lettrine .small-logo').each(function(){
                 this_top = 20 + $(this).parent().height()/2 - $(this).height()/2;
@@ -117,7 +151,7 @@
             });
         
         });
-
+        
         /* ROLLOVER PROJECT BOX */
         $('ul#project-list li').hover(function(){
             $(this).removeClass('no-border');
@@ -126,23 +160,23 @@
             $(this).addClass('no-border');
             $('.lettrine .small-logo' ,$(this)).show()
         });
-
+        
         /* Show axis names and colors on axis-image rollover */
         $(".logo").hover(function(){
             picto = $( "img", $(this));
             filename = picto.attr("src").slice(0, -4);
             picto.attr("src", filename + "_c.png");
-
+            
             $("#tooltip").text(picto.attr('title')).css('visibility','visible').addClass(picto.attr('class'));
-
+            
             $("." + picto.attr("id")).removeClass("no-border");
-
+        
         }, function(){
             picto.attr("src", filename + ".png");
-
+            
             $("#tooltip").html("&nbsp;").css('visibility','hidden').removeClass();
             $("." + picto.attr("id")).addClass("no-border");
-
+        
         });
     </script>
 {% endblock %}
