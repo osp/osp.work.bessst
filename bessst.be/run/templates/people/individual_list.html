@@ -8,8 +8,9 @@
 
 {% block content %}
 <section id='main'>
-<div class="box" data-sizex="12">
+<div class="big box">
     <h2>Stiltepartners</h2>
+    <div class="columns">
     <ul> 
         {#{% regroup object_list|dictsort:'individual.individual_set' by individual_set as partner_list %}#}
         {% for organization in partners %}
@@ -27,6 +28,7 @@
         {% endfor %}
     </ul>
     <ul>
+    </div>
         {% for individual in object_list %}
             {% if not individual.individual_set.all %}
                 <li>{{ individual }}
@@ -35,7 +37,7 @@
     </ul>
 </div>
 
-<div class="box" data-sizex="22">
+<div class="box" data-sizex="15">
     {% get_trans text content LANGUAGE_CODE %}
 </div>
 

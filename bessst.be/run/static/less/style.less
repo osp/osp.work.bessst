@@ -456,9 +456,11 @@ section ul li:before{
     text-align: center;
     position: fixed;
     left: 525px;
+//  margin-left: auto;
+//  margin-right: auto;
+    width : 50px;
     top: 47%;
     z-index: 990;
-
     border: 1px solid black;
     border-radius: 60px;
     background-color: #FF6;
@@ -522,6 +524,15 @@ section#right {
 
 .community .box .box {
     border: none;
+}
+
+#map{
+    height:600px;
+    width:990px;
+}
+
+.box#map{
+    margin-left:5px;
 }
 
 .inspiratie .box{
@@ -643,6 +654,7 @@ a.project-list-title:hover{
         font-family: @font-family-sans;
         font-size: @font-size-small;
         line-height: @line-height-small;
+        display: inline-block; 
     }
 }
 
@@ -673,8 +685,7 @@ ul.member-list {
 }
 
 #metadata {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 30px;
     padding: @gutter @gutter/2;
     width: 45%;
     float: none;
