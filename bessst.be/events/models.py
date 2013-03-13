@@ -23,8 +23,8 @@ class Event(models.Model):
     description_en = models.TextField(_("Description (EN)"), blank=True)
 
     location = models.CharField(max_length=80, verbose_name=_("Location (NL)"), null=True)
-    location_en = models.CharField(max_length=80, verbose_name=_("Location (EN)"), null=True)
-    location_fr = models.CharField(max_length=80, verbose_name=_("Location (FR)"), null=True)
+    location_en = models.CharField(max_length=80, verbose_name=_("Location (EN)"), blank=True, null=True)
+    location_fr = models.CharField(max_length=80, verbose_name=_("Location (FR)"), blank=True, null=True)
 
     image_set = generic.GenericRelation(Image)
 
