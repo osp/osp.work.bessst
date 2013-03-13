@@ -3,395 +3,449 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: bessst_fr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-12 16:39+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2013-03-13 13:10+0100\n"
+"Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: BELGIUM\n"
+"X-Poedit-SourceCharset: utf-8\n"
 
-#: axis/models.py:10 resources/models.py:8
+#: axis/models.py:10
+#: resources/models.py:8
 msgid "Name (NL)"
-msgstr ""
+msgstr "Nom (NL)"
 
-#: axis/models.py:11 resources/models.py:9
+#: axis/models.py:11
+#: resources/models.py:9
 msgid "Name (EN)"
-msgstr ""
+msgstr "Nom(EN)"
 
-#: axis/models.py:12 resources/models.py:10
+#: axis/models.py:12
+#: resources/models.py:10
 msgid "Name (FR)"
-msgstr ""
+msgstr "Nom (FR)"
 
-#: axis/models.py:13 events/models.py:13 flatpages/models.py:10
-#: people/models.py:9 projects/models.py:25
+#: axis/models.py:13
+#: events/models.py:13
+#: flatpages/models.py:10
+#: people/models.py:9
+#: projects/models.py:25
 msgid "Slug"
-msgstr ""
+msgstr "Permalien"
 
 #: axis/models.py:13
 msgid "Unique identifier. Allows a constant targeting of this axis."
-msgstr ""
+msgstr "Identifiant unique. Permet un ciblage constant de cet axe."
 
-#: axis/models.py:14 events/models.py:21 projects/models.py:39
+#: axis/models.py:14
+#: events/models.py:21
+#: projects/models.py:39
 msgid "Description (NL)"
-msgstr ""
+msgstr "Description (NL)"
 
-#: axis/models.py:15 events/models.py:22 projects/models.py:41
+#: axis/models.py:15
+#: events/models.py:22
+#: projects/models.py:41
 msgid "Description (FR)"
-msgstr ""
+msgstr "Description (FR)"
 
-#: axis/models.py:16 events/models.py:23 projects/models.py:40
+#: axis/models.py:16
+#: events/models.py:23
+#: projects/models.py:40
 msgid "Description (EN)"
-msgstr ""
+msgstr "Description (EN)"
 
 #: axis/models.py:17
 msgid "Drawing (filename without extension)"
-msgstr ""
+msgstr "Dessin (nom de fichier sans extension)"
 
-#: events/admin.py:13 people/admin.py:9 people/admin.py:24
-#: projects/admin.py:19 resources/admin.py:12
+#: events/admin.py:13
+#: people/admin.py:9
+#: people/admin.py:24
+#: projects/admin.py:19
+#: resources/admin.py:12
 msgid "General"
-msgstr ""
+msgstr "Général"
 
-#: events/admin.py:16 projects/admin.py:22
+#: events/admin.py:16
+#: projects/admin.py:22
 msgid "Infos"
-msgstr ""
+msgstr "Infos"
 
-#: events/admin.py:19 projects/admin.py:25 resources/admin.py:15
+#: events/admin.py:19
+#: projects/admin.py:25
+#: resources/admin.py:15
 msgid "Summary"
-msgstr ""
+msgstr "Résumé"
 
-#: events/admin.py:22 projects/admin.py:28
+#: events/admin.py:22
+#: projects/admin.py:28
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
-#: events/models.py:9 projects/models.py:14 resources/models.py:15
+#: events/models.py:9
+#: projects/models.py:14
+#: resources/models.py:15
 msgid "Published"
-msgstr ""
+msgstr "Publié"
 
-#: events/models.py:10 flatpages/models.py:7 projects/models.py:17
+#: events/models.py:10
+#: flatpages/models.py:7
+#: projects/models.py:17
 #: resources/models.py:16
 msgid "Title (NL)"
-msgstr ""
+msgstr "Titre (NL)"
 
-#: events/models.py:11 flatpages/models.py:9 projects/models.py:19
+#: events/models.py:11
+#: flatpages/models.py:9
+#: projects/models.py:19
 #: resources/models.py:18
 msgid "Title (FR)"
-msgstr ""
+msgstr "Titre (FR)"
 
-#: events/models.py:12 flatpages/models.py:8 projects/models.py:18
+#: events/models.py:12
+#: flatpages/models.py:8
+#: projects/models.py:18
 #: resources/models.py:17
 msgid "Title (EN)"
-msgstr ""
+msgstr "Titre (EN)"
 
-#: events/models.py:13 people/models.py:9
+#: events/models.py:13
+#: people/models.py:9
 msgid "Unique identifier. Allows a constant targeting of this event."
-msgstr ""
+msgstr "Identifiant unique. Permet un ciblage constant de cet événement."
 
 #: events/models.py:14
 msgid "Related project"
-msgstr ""
+msgstr "Projet lié"
 
-#: events/models.py:16 projects/models.py:43
+#: events/models.py:16
+#: projects/models.py:43
 msgid "Start date"
-msgstr ""
+msgstr "Date de début"
 
-#: events/models.py:17 projects/models.py:44
+#: events/models.py:17
+#: projects/models.py:44
 msgid "End date"
-msgstr ""
+msgstr "Date de fin"
 
-#: events/models.py:18 projects/models.py:35 resources/models.py:20
+#: events/models.py:18
+#: projects/models.py:35
+#: resources/models.py:20
 msgid "Summary (NL)"
-msgstr ""
+msgstr "Résumé (NL)"
 
-#: events/models.py:19 projects/models.py:37 resources/models.py:22
+#: events/models.py:19
+#: projects/models.py:37
+#: resources/models.py:22
 msgid "Summary (FR)"
-msgstr ""
+msgstr "Résumé (FR)"
 
-#: events/models.py:20 projects/models.py:36 resources/models.py:21
+#: events/models.py:20
+#: projects/models.py:36
+#: resources/models.py:21
 msgid "Summary (EN)"
-msgstr ""
+msgstr "Résumé (EN)"
 
-#: events/models.py:25 projects/models.py:29
+#: events/models.py:25
+#: projects/models.py:29
 msgid "Location (NL)"
-msgstr ""
+msgstr "Emplacement (NL)"
 
-#: events/models.py:26 projects/models.py:30
+#: events/models.py:26
+#: projects/models.py:30
 msgid "Location (EN)"
-msgstr ""
+msgstr "Emplacement (EN)"
 
-#: events/models.py:27 projects/models.py:31
+#: events/models.py:27
+#: projects/models.py:31
 msgid "Location (FR)"
-msgstr ""
+msgstr "Emplacement (FR)"
 
 #: flatpages/models.py:10
 msgid "Unique identifier. Allows a constant targeting of this page."
-msgstr ""
+msgstr "Identifiant unique. Permet un ciblage constant de la page."
 
 #: flatpages/models.py:11
 msgid "Content (NL)"
-msgstr ""
+msgstr "Contenu (NL)"
 
 #: flatpages/models.py:12
 msgid "Content (EN)"
-msgstr ""
+msgstr "Contenu (EN)"
 
 #: flatpages/models.py:13
 msgid "Content (FR)"
-msgstr ""
+msgstr "Contenu (FR)"
 
 #: flatpages/models.py:14
 msgid "Info Box (NL)"
-msgstr ""
+msgstr "Boîte info (NL)"
 
-#: flatpages/models.py:14 flatpages/models.py:15 flatpages/models.py:16
-msgid ""
-"Content which appears in the small box on the right side of the website."
-msgstr ""
+#: flatpages/models.py:14
+#: flatpages/models.py:15
+#: flatpages/models.py:16
+msgid "Content which appears in the small box on the right side of the website."
+msgstr "Contenu qui apparaît dans la petite boîte sur le côté droit du site."
 
 #: flatpages/models.py:15
 msgid "Info Box (EN)"
-msgstr ""
+msgstr "Boîte info (EN)"
 
 #: flatpages/models.py:16
 msgid "Info Box (FR)"
-msgstr ""
+msgstr "Boîte info (FR)"
 
-#: media_app/models.py:7 media_app/models.py:17
+#: media_app/models.py:7
+#: media_app/models.py:17
 msgid "Caption"
-msgstr ""
+msgstr "Légende"
 
 #: media_app/models.py:8
 msgid "Image file"
-msgstr ""
+msgstr "Fichier image"
 
 #: media_app/models.py:18
 msgid "Document File"
-msgstr ""
+msgstr "Fichier du document"
 
-#: people/admin.py:12 people/admin.py:27
+#: people/admin.py:12
+#: people/admin.py:27
 msgid "Coordinates"
-msgstr ""
+msgstr "Coordonnées"
 
-#: people/admin.py:15 people/admin.py:30
+#: people/admin.py:15
+#: people/admin.py:30
 msgid "Biography"
-msgstr ""
+msgstr "Biographie"
 
 #: people/models.py:7
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #: people/models.py:8
 msgid "Prefix"
-msgstr ""
+msgstr "Préfixe"
 
 #: people/models.py:11
 msgid "Address"
-msgstr ""
+msgstr "Adresse"
 
 #: people/models.py:12
 msgid "Postal code + City"
-msgstr ""
+msgstr "Code postal + ville"
 
 #: people/models.py:13
 msgid "Phone number"
-msgstr ""
+msgstr "Numéro de téléphone"
 
 #: people/models.py:14
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
-#: people/models.py:15 projects/models.py:27 resources/models.py:23
+#: people/models.py:15
+#: projects/models.py:27
+#: resources/models.py:23
 msgid "Link URL"
-msgstr ""
+msgstr "Lien "
 
 #: people/models.py:16
 msgid "Short biography (NL)"
-msgstr ""
+msgstr "Courte biographie (NL)"
 
 #: people/models.py:17
 msgid "Short biography (EN)"
-msgstr ""
+msgstr "Courte biographie (EN)"
 
 #: people/models.py:18
 msgid "Short biography (FR)"
-msgstr ""
+msgstr "Courte biographie (FR)"
 
 #: people/models.py:44
 msgid "First Name"
-msgstr ""
+msgstr "Prénom"
 
 #: people/models.py:57
 msgid "Contact Person"
-msgstr ""
+msgstr "Personne de contact"
 
 #: people/models.py:58
 msgid "Individuals"
-msgstr ""
+msgstr "Personnes "
 
 #: people/models.py:64
 msgid "Latitude of my Silence Location"
-msgstr ""
+msgstr "Latitude de mon point de silence"
 
 #: people/models.py:65
 msgid "Longitude of my Silence Location"
-msgstr ""
+msgstr "Longitude de mon point de silence"
 
 #: people/models.py:66
 msgid "Explanation of my Silence Location"
-msgstr ""
+msgstr "Quelques mots sur mon choix"
 
 #: people/models.py:67
 msgid "Receive Newsletter"
-msgstr ""
+msgstr "Recevoir la newsletter"
 
 #: people/models.py:68
 msgid "Display my name"
-msgstr ""
+msgstr "Afficher mon nom"
 
 #: people/views.py:25
 msgid "Description of the Project"
-msgstr ""
+msgstr "Description du projet"
 
 #: people/views.py:26
 msgid "Existing Partners"
-msgstr ""
+msgstr "Partenaires existants"
 
 #: people/views.py:27
 msgid "Through which channels can you already communicate?"
-msgstr ""
+msgstr "Par quels canaux communiquez vouz ?"
 
 #: projects/models.py:15
 msgid "Archived"
-msgstr ""
+msgstr "Archivé"
 
 #: projects/models.py:21
 msgid "Subtitle (NL)"
-msgstr ""
+msgstr "Sous-titres (NL)"
 
 #: projects/models.py:22
 msgid "Subtitle (EN)"
-msgstr ""
+msgstr "Sous-titres (EN)"
 
 #: projects/models.py:23
 msgid "Subtitle (FR)"
-msgstr ""
+msgstr "Sous-titres (FR)"
 
 #: projects/models.py:25
 msgid "Unique identifier. Allows a constant targeting of this project."
-msgstr ""
+msgstr "Identifiant unique. Permet un ciblage constant du projet."
 
-#: projects/models.py:26 run/templates/projects/project_detail.html:34
+#: projects/models.py:26
+#: run/templates/projects/project_detail.html:34
 msgid "Partners"
-msgstr ""
+msgstr "Partenaires"
 
 #: projects/models.py:33
 msgid "Axis"
-msgstr ""
+msgstr "Axe"
 
 #: resources/models.py:19
 msgid "Category"
-msgstr ""
+msgstr "Catégorie"
 
 #: run/settings.py:46
 msgid "Dutch"
-msgstr ""
+msgstr "Néerlandais"
 
 #: run/settings.py:47
 msgid "English"
-msgstr ""
+msgstr "Anglais"
 
 #: run/settings.py:48
 msgid "French"
-msgstr ""
+msgstr "Français"
 
-#: run/templates/base.html:19 run/templates/home.html:4
+#: run/templates/base.html:19
+#: run/templates/home.html:4
 msgid "BESSST - Brussels, Heritage and Silence"
-msgstr ""
+msgstr "BESSST - Bruxelles, le patrimoine et le silence"
 
-#: run/templates/base.html:28 run/templates/home.html:16
+#: run/templates/base.html:28
+#: run/templates/home.html:16
 msgid "Projects"
-msgstr ""
+msgstr "Projets"
 
-#: run/templates/base.html:29 run/templates/home.html:17
+#: run/templates/base.html:29
+#: run/templates/home.html:17
 msgid "Calendar"
-msgstr ""
+msgstr "Calendrier"
 
-#: run/templates/base.html:30 run/templates/home.html:18
+#: run/templates/base.html:30
+#: run/templates/home.html:18
 msgid "Community"
-msgstr ""
+msgstr "Communauté"
 
-#: run/templates/base.html:31 run/templates/home.html:19
+#: run/templates/base.html:31
+#: run/templates/home.html:19
 msgid "Inspiration"
-msgstr ""
+msgstr "Inspiration"
 
-#: run/templates/base.html:32 run/templates/home.html:20
+#: run/templates/base.html:32
+#: run/templates/home.html:20
 msgid "About"
-msgstr ""
+msgstr "À propos"
 
 #: run/templates/base.html:33
 msgid "Atlas"
-msgstr ""
+msgstr "Atlas"
 
 #: run/templates/events/event_detail.html:27
 msgid "Datum"
-msgstr ""
+msgstr "Date"
 
 #: run/templates/events/event_detail.html:35
 #: run/templates/projects/project_detail.html:48
 msgid "Locatie"
-msgstr ""
+msgstr "Emplacement"
 
 #: run/templates/events/event_detail.html:38
 #: run/templates/events/event_list.html:42
 msgid "Onderdeel van"
-msgstr ""
+msgstr "Une partie de"
 
 #: run/templates/people/atlas.html:12
 msgid "Bessst atlas"
-msgstr ""
+msgstr "L'atlas bessst"
 
 #: run/templates/people/atlas.html:18
 msgid "Apply as a silence friend"
-msgstr ""
+msgstr "Devenez un ami du silence"
 
 #: run/templates/people/atlas.html:19
-msgid ""
-"Drag pin on to the map to share your favourite silence location in Brussels"
-msgstr ""
+msgid "Drag pin on to the map to share your favourite silence location in Brussels"
+msgstr "Faites glisser l'épingle sur la carte pour partager votre emplacement de silence préféré à Bruxelles"
 
 #: run/templates/people/atlas.html:26
 msgid "Thanks for your application as a silence friend."
-msgstr ""
+msgstr "Merci de votre demande comme ami du silence"
 
 #: run/templates/people/individual_list.html:44
 #: run/templates/projects/project_list.html:54
 msgid "vraag het<br /> bessst-label aan"
-msgstr ""
+msgstr "Demander<br/> le label bessst "
 
 #: run/templates/projects/project_detail.html:4
 msgid "Project"
-msgstr ""
+msgstr "Projet"
 
 #: run/templates/projects/project_detail.html:53
 msgid "Project website"
-msgstr ""
+msgstr "Projet du site"
 
 #: run/templates/projects/project_detail.html:58
 msgid "Related events"
-msgstr ""
+msgstr "Événements liés"
 
 #: run/templates/projects/project_list.html:4
 msgid "Projecten"
-msgstr ""
+msgstr "Projets"
 
 #: run/templates/resources/resource_list.html:4
 msgid "Inspiratie"
-msgstr ""
+msgstr "Références"
+
