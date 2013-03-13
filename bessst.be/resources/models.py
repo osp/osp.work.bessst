@@ -6,8 +6,8 @@ from random import randint
 
 class ResourceCategory(models.Model):
     name = models.CharField(max_length=255, verbose_name=_("Name (NL)"))
-    name_en = models.CharField(max_length=255, verbose_name=_("Name (EN)"))
-    name_fr = models.CharField(max_length=255, verbose_name=_("Name (FR)"))
+    name_en = models.CharField(max_length=255, verbose_name=_("Name (EN)"), blank=True)
+    name_fr = models.CharField(max_length=255, verbose_name=_("Name (FR)"), blank=True)
     def __unicode__(self):
         return self.name
 
