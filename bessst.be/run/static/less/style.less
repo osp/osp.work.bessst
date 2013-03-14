@@ -242,7 +242,7 @@ h3 {
     font-size: @font-size;
     font-family: @font-family-sans;
     text-transform: uppercase;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.06em;
     text-align: center;
     margin-bottom: 6px;
  }
@@ -421,6 +421,7 @@ footer {
         padding-bottom: 3px;
         color: black;
         float: left;
+        margin-right: 20px;
     }
     div.caption {
         display: none;
@@ -544,9 +545,9 @@ section#right {
     font-family: 'Source';
     font-size: @font-size-small;
     font-weight: 200;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
     text-align: center;
-    text-transform: uppercase;
+    text-transform : uppercase;
 }
 
 .inspiratie-wereldwijd-web.box{
@@ -593,10 +594,23 @@ section#right {
 }
 
 .resource-title {
-//    margin-top : 5px;
     font-family: 'Crimson';
-    font-size: @font-size;
+    text-align : center;
+    font-size: @font-size-mid;
+    font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 5px;
+    
+    a{
+        text-decoration : none;
+    }
+    
+    a:hover{
+        text-decoration : underline;
+    }
 }
+
+
 
 #axis-menu {
     position: fixed;
