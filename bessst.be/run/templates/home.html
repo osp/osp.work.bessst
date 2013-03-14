@@ -9,7 +9,7 @@
 <section>
 <div id="axis-list">
     {% for axis in object_list %}
-    <div class='axis-home {% if forloop.first %}visible{% endif %}' title="{{ axis.name }}">
+    <div class='axis-home' title="{{ axis.name }}">
         <a href="{% url axis-detail slug=axis.slug %}">
         <img class= "{{ axis.pictogram }} smaller-logo" id="{{ axis.slug }}" src="/static/axis/{{ axis.pictogram }}-smaller.png" title="{{ axis.name }}" />
         {% get_trans axis name LANGUAGE_CODE %}
@@ -23,7 +23,7 @@
 
 {% block background %}
     {% for axis in object_list %}
-    <img class="background-image home-axis-image {% if forloop.first %}visible{% endif %}" id="background-{{ axis.slug }}" src="{{ axis.image_set.all.0.image|thumbnail:'1200w' }}" />
+    <img class="background-image home-axis-image" id="background-{{ axis.slug }}" src="{{ axis.image_set.all.0.image|thumbnail:'1200w' }}" />
     {% endfor %}
 {% endblock %}
 
@@ -31,7 +31,7 @@
 <div id="caption-block">
     <div id="home-caption-list">
         {% for axis in object_list %}
-            <div class="caption {% if forloop.first %}visible{% endif %}" title={{ axis.image_set.all.0.image.url }}>
+            <div class="caption" title={{ axis.image_set.all.0.image.url }}>
                 {{ axis.image_set.all.0.description }}
             </div>
         {% endfor %}
@@ -87,7 +87,7 @@
                     $("header").show();
                     $("#background-gradient").show();
             });
-            window.setTimeout(function(){ photos.slide();}, 1000);
+            photos.slide()
             window.setInterval(function() { photos.slide(); }, 5000);
         });
 
