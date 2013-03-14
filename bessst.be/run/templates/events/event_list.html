@@ -2,6 +2,8 @@
 {% load markup utils thumbnails i18n %}
 
 {% block content %}
+{% if not archive %}<a href="{% url agenda-archive %}">← {% trans "Events Archive" %}</a>
+{% else %}<a href="{% url agenda %}">{% trans "Current Events" %} →</a>{% endif %}
 <section id='agenda'>
     {% regroup object_list|dictsort:'start_date' by start_date as event_list %}
     {% assign prev_date event_list.0.list.0.start_date %}

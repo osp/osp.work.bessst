@@ -1,3 +1,5 @@
+from datetime import date
+
 from django.conf import settings
 from django.conf.urls import patterns, include, url
 from django.views.generic import TemplateView, DetailView, ListView, list_detail
@@ -32,9 +34,9 @@ urlpatterns += i18n_patterns('',
     url(r'^projects/$', 'projects.views.projects', name='projects'),
     url(r'^projects/(?P<slug>[\w-]+)/$', DetailView.as_view(model=Project), name='project-detail'),
     url(r'^axis/(?P<slug>[\w-]+)/$', 'projects.views.projects', name='axis-detail'),
-
     
-    url(r'^agenda/$', list_detail.object_list, {"queryset":Event.objects.filter(published=True),}, name='agenda'),
+    url(r'^agenda/$', list_detail.object_list, {"queryset":Event.objects.filter(published=True, end_date__gt=date.today()),}, name='agenda'),
+    url(r'^agenda/archive/$', list_detail.object_list, {"queryset":Event.objects.filter(published=True, start_date__lt=date.today()), 'extra_context': {'archive': True}}, name='agenda-archive'),
     url(r'^agenda/(?P<slug>[\w-]+)/$', DetailView.as_view(model=Event), name='event-detail'),
     
     url(r'^inspiration/$', list_detail.object_list, {"queryset":Resource.objects.filter(published=True)}, name='inspiration'),
