@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load markup i18n utils thumbnails %}
 
-{% block title %}{% trans "Project" %}{% endblock %}
+{% block title %}{% get_trans object title LANGUAGE_CODE %}{% endblock %}
 
 {% block slug %}project{% endblock%}
 

@@ -10,8 +10,8 @@ PROJECT_ROOT = PROJECT_PATH.replace('run','').rstrip(os.sep)
 HOST_NAME = socket.gethostname()
 
 DEBUG = True
-if HOST_NAME == 'bessst.be':
-    DEBUG = False
+#if HOST_NAME == 'bessst.be':
+#    DEBUG = False
 
 TEMPLATE_DEBUG = DEBUG
 
@@ -63,6 +63,9 @@ USE_L10N = True
 
 # If you set this to False, Django will not use timezone-aware datetimes.
 USE_TZ = True
+
+# We use this for the thing that displays the e-mail addresses
+LOGIN_URL = '/admin/'
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
