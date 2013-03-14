@@ -33,9 +33,9 @@
             //console.log("remaining_surface = " + remaining_surface)
             //console.log("keep_surface = " + keep_surface)
 
-            wraps = "<div style='clear: left; float: left; width: 0px; height: " + keep_lines * lineheight + "px'></div> <div style='clear: right; float: right; width: 0px; height: " + keep_lines * lineheight + "px'></div>";
+            wraps = "<div class='tail-space' style='clear: left; float: left; width: 0px; height: " + keep_lines * lineheight + "px'></div> <div style='clear: right; float: right; width: 0px; height: " + keep_lines * lineheight + "px'></div>";
             for (i=step; i<width/2; i+=step) {
-                wraps += "<div style='clear: left; float: left; width:"+ i +"px; height: " + lineheight + "px'></div> <div style='clear: right; float: right; width:"+ i +"px; height: " + lineheight + "px'></div>";
+                wraps += "<div class='tail-space' style='clear: left; float: left; width:"+ i +"px; height: " + lineheight + "px'></div> <div style='clear: right; float: right; width:"+ i +"px; height: " + lineheight + "px'></div>";
             }
                 $(this).prepend(wraps);
                 //console.log("new number of lines = " + $(this).height()/lineheight)
