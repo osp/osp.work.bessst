@@ -356,9 +356,15 @@ figure#background {
         position: fixed;
     }
     
+    .home-axis-image {
+        display: none;
+    }
+    .home-axis-image.visible {
+        display: block;
+    }
 }
 
-#axis-home {        
+.axis-home {        
     font-family:'Source';
     font-size: @font-size-big;
     background-color: white;
@@ -369,9 +375,13 @@ figure#background {
     left: 45%;
     top: 47%;
     cursor:pointer;
+    display: none;
+}
+.axis-home:first-child {        
+    display: block;
 }
 
-#axis-home a{
+.axis-home a{
     text-decoration: none;
 }
 
@@ -428,6 +438,18 @@ footer {
     }
     div.caption.visible {
         display: block;
+    }
+    div#home-caption-list .caption {
+        font-family:'Crimson';
+        background-color: white;
+        border: 7px double black;
+        height: 32px;
+        padding: @gutter/4;
+        padding-top: 11px;
+        padding-bottom: 3px;
+        color: black;
+        float: left;
+        margin-right: 20px;
     }
 }
 

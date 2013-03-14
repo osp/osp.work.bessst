@@ -6,75 +6,77 @@
 {% block slug %}home{% endblock%}
 
 {% block content %}
-<div id="axis-home" title="{{ object_list.0.name }}">
-        <a href="{% url axis-detail slug=object_list.0.slug %}">
-        <img class= "{{ object_list.0.pictogram }} smaller-logo" id="{{ object_list.0.slug }}" src="/static/axis/{{ object_list.0.pictogram }}-smaller.png" title="{{ object_list.0.name }}" />
-        {% get_trans object_list.0 name LANGUAGE_CODE %}
+<div id="axis-list">
+    {% for axis in object_list %}
+    <div class='axis-home {% if forloop.first %}visible{% endif %}' title="{{ axis.name }}">
+        <a href="{% url axis-detail slug=axis.slug %}">
+        <img class= "{{ axis.pictogram }} smaller-logo" id="{{ axis.slug }}" src="/static/axis/{{ axis.pictogram }}-smaller.png" title="{{ axis.name }}" />
+        {% get_trans axis name LANGUAGE_CODE %}
         </a>
+    </div>
+    {% endfor %}
 </div>
-
 {% endblock %}
 
 
 {% block background %}
-    {% for axis in object_list reversed %}
-    <img {% if not forloop.last %}style='display: none;'{% endif %} class="background-image axis-image" id="background-{{ axis.slug }}" src="{{ axis.image_set.all.0.image|thumbnail:'1200w' }}" />
+    {% for axis in object_list %}
+    <img class="background-image home-axis-image {% if forloop.first %}visible{% endif %}" id="background-{{ axis.slug }}" src="{{ axis.image_set.all.0.image|thumbnail:'1200w' }}" />
     {% endfor %}
 {% endblock %}
 
 {% block footer %}
 <div id="caption-block">
-        <div id="caption-list">
-            {{ object_list.0.image_set.all.0.description }}
-        </div>
+    <div id="home-caption-list">
+        {% for axis in object_list %}
+            <div class="caption {% if forloop.first %}visible{% endif %}" title={{ axis.image_set.all.0.image.url }}>
+                {{ axis.image_set.all.0.description }}
+            </div>
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}
 
 {% block extra_js %}
     <script>
         var photos = {
-        	_i : 1,
-        	axes: [
-					{% for axis in object_list %}
-					    { 'slug' : '{{ axis.slug }}',
-					     'name' : '{% get_trans axis name LANGUAGE_CODE %}',
-					     'photo' : '{{ axis.image_set.all.0.image.url }}',
-					     'photoCaption' : '{{ axis.image_set.all.0 }}',
-					     'pictogram' : '{{axis.pictogram}}',
-					     'url' : '{% url axis-detail slug=axis.slug %}' },
-					{% endfor %}
-					],
-            get_axis : function() {
-                if (this._i >= this.axes.length) {
-                    this._i = 0;
-                }
-                var axis = this.axes[this._i];
-                this._i += 1;
-                return axis
-            },
 	        slide: function(){
-	            // background image and caption
+                current_axis = $("div.axis-home:visible");
+                current_caption = $("div.caption:visible");
+                current_img = $("img.home-axis-image:visible");
+                console.log($(current_img).attr('id'))
+                $(current_img).fadeOut(5000);
+                $(current_axis).fadeOut(3000);
+                $(current_caption).fadeOut(3000);
 
-	            var axis = this.get_axis();
-                function fade (){
-                    $('img.background-image').not('img#background-' + axis.slug).fadeOut(5000);
-                    $('#axis-home').fadeOut(5000);
-                    $('img#background-' + axis.slug).fadeIn(5000);
+                if (current_axis.next().hasClass("axis-home")){
+                    next_axis = current_axis.next();
+                } else {
+                    next_axis = $("div#axis-list div.axis-home:first-child")
                 }
-                fade();
-	            $("#axis-home").html('<a href="' + axis.url + '"> <img class="'+axis.pictogram +' smaller-logo" id="'+axis.slug +'" src="/static/axis/'+axis.pictogram+'-smaller.png" title="'+axis.name+'" />' + axis.name + '</a>').show();
-                left = $(document).width()/2 - $("#axis-home").width()/2 ;
-                $("#axis-home").css('left', left + 'px').css('display', 'block');
-	            window.setTimeout(function(){ fade() }, 2000);
-
-
-
-	            $("footer #caption-list").html(axis.photoCaption).show();
+                if (current_caption.next().hasClass("caption")){
+                    next_caption = current_caption.next();
+                } else {
+                    next_caption = $("div#home-caption-list div.caption:first-child")
+                }
+                if (current_img.next().hasClass("home-axis-image")){
+                    next_img = current_img.next();
+                } else {
+                    next_img = $("figure#background img.home-axis-image:first-child")
+                }
+                $(next_img).delay(2000).fadeIn(5000);
+                $(next_axis).delay(4000).fadeIn(3000);
+                $(next_caption).delay(4000).fadeIn(3000);
 	        }
         }
+
         $(window).load(function() {
-            photos.slide();
-            window.setInterval(function() { photos.slide(); }, 7000);
+            $('.axis-home').each(function(){
+                left = $(document).width()/2 - $(this).width()/2 ;
+                $(this).css('left', left + 'px');
+            });
+            window.setTimeout(function(){ photos.slide();}, 1000);
+            window.setInterval(function() { photos.slide(); }, 8000);
         });
 
     </script>
