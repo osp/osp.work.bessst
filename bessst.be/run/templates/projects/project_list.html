@@ -162,12 +162,14 @@
         });
         
         /* Show axis names and colors on axis-image rollover */
-        $(".logo").hover(function(){
+        $(".logo").hover(function(e){
             picto = $( "img", $(this));
             filename = picto.attr("src").slice(0, -4);
             picto.attr("src", filename + "_c.png");
             
             $("#tooltip").text(picto.attr('title')).css('visibility','visible').addClass(picto.attr('class'));
+            $("#tooltip").css('left', e.pageX);
+            $("#tooltip").css('top', e.pageY);
             
             $("." + picto.attr("id")).removeClass("no-border");
         
