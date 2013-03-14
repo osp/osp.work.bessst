@@ -6,7 +6,7 @@ from wymeditor.admin import RichTextAdmin
 
 class FlatPageAdmin(RichTextAdmin):
     prepopulated_fields = {'slug': ('title',)}
-    inlines = (ImageInline, DocumentInline)
+    inlines = (DocumentInline,)
 
 admin.site.register(FlatPage, FlatPageAdmin)
 
