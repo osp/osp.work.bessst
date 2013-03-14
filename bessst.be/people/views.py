@@ -8,6 +8,7 @@ from django.forms import ModelForm
 from django.forms.models import inlineformset_factory
 from django.template.defaultfilters import slugify
 from django.utils.translation import ugettext_lazy as _
+from django.contrib.auth.decorators import login_required
 
 from people.models import Individual, Friend, Organization
 from projects.models import Project
@@ -61,6 +62,11 @@ def community(request):
     tpl_params['partners'] = Organization.objects.all()
     tpl_params['text'] = FlatPage.objects.get(slug='community')
     return render_to_response("people/individual_list.html", tpl_params, context_instance = RequestContext(request))
+
+@login_required
+def e_mail_list(request):
+    tpl_params = {}
+    return render_to_response("people/e_mail_list.html", { 'object_list' : Friend.objects.filter(newsletter=True) }, context_instance = RequestContext(request) )
 
 def label_form(request):
     tpl_params = {}

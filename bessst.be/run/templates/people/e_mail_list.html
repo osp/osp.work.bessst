@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load markup i18n utils thumbnails %}
+
+{% block title %}Lijst met e-mails{% endblock %}
+
+{% block slug %}e_mail_list{% endblock%}
+
+{% block content %}
+<pre style="margin-top: 100px;">
+{% for friend in object_list%}{{friend.get_full_name}} &lt;{{friend.email}}&gt;, {% endfor%}
+</pre>
+{% endblock %}
