@@ -54,7 +54,7 @@ var friends = {{ friends_json|safe }}
 
 for (var i=0; i < friends.length; i++) {
     var friend = friends[i]
-    console.log(friend)
+    //console.log(friend)
     friendHTML = '<p>' + friend.explanation + '</p>';
     if (friend.name) {
         friendHTML = '<h3>' + friend.name + '</h3>' + friendHTML;
@@ -77,17 +77,17 @@ var marker;
 var setLatLng = function(latlng) {
         $("#id_location_latitude").val(latlng.lat);
         $("#id_location_longitude").val(latlng.lng);
-        console.log(latlng.toString());
+        //console.log(latlng.toString());
 }
 
 /* We have a pre-existing icon, that when dragged into the map, becomes a marker on that map */
 
 $("#place-dragger").draggable( {
     stop: function(ev,ui) {
-            console.log("stopped!");
+            //console.log("stopped!");
             c = map.mouseEventToContainerPoint( ev );
             if (c.x < 0 || c.y < 0 || c.x > $(map._container).width() || c.y > $(map._container).height()) {
-                console.log("outside!")
+                //console.log("outside!")
             } else {
                 var latlng = map.mouseEventToLatLng( ev );
                 

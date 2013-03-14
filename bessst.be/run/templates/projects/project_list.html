@@ -130,9 +130,9 @@
                    function(e){
                         // console.log($(this).scrollTop())
                         if ( $(this).scrollTop() + $(window).height() > $(document).height() - 200 ) {
-                            console.log("within 200px!");
+                            //console.log("within 200px!");
                             if (!expanded) {
-                                console.log("expand!");
+                                //console.log("expand!");
                                 expanded = true;
                                 $('ul#project-list li').slice(9).addClass("in-grid").fadeIn('fast', function() {
                                     $('#project-list').masonry('reload');
