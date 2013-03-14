@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% load markup utils thumbnails i18n %}
 
+{% block title %}{% trans "Agenda" %}{% endblock %}
+
+{% block slug %}agenda{% endblock%}
+
 {% block content %}
 {% if not archive %}<a href="{% url agenda-archive %}">← {% trans "Events Archive" %}</a>
 {% else %}<a href="{% url agenda %}">{% trans "Current Events" %} →</a>{% endif %}

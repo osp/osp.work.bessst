@@ -1,7 +1,12 @@
 {% extends "base.html" %}
 {% load markup i18n utils thumbnails %}
 
-{% block title %}{% trans Event %}{% endblock %}
+{% block title %}{% get_trans object title LANGUAGE_CODE %},
+{{ event.start_date }}
+{% if event.end_date != event.start_date %}
+    {{ event.end_date }}
+{% endif %}
+{% endblock %}
 
 {% block slug %}event{% endblock%}
 
