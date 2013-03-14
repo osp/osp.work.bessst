@@ -137,6 +137,13 @@
                                 $('ul#project-list li').slice(9).addClass("in-grid").fadeIn('fast', function() {
                                     $('#project-list').masonry('reload');
                                 });
+        // CENTER AXIS ICON IN LETTRINE SPACE
+            $('.lettrine .small-logo').each(function(){
+                this_top = 20 + $(this).parent().height()/2 - $(this).height()/2;
+                this_left = 20 + $(this).parent().width()/2 - $(this).width()/2;
+                $(this).css({'top': this_top + 'px', 'left': this_left + 'px'});
+            });
+        
                             }
                         }
                     }
