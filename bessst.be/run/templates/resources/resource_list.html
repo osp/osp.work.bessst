@@ -10,11 +10,11 @@
         <ul id="resource-list"> 
           {% for resource in object_list %}
           <li class="box no-border inspiratie-{{ resource.category|slugify }}" data-sizex="9">       
+              <div class="inspiratie-categorien"> {% get_trans resource.category name LANGUAGE_CODE %} </div>
               
               <div class="resource-title"><a data-category="{{ resource.category }}" href="{{ resource.link }}" target="_blank">{% get_trans resource title LANGUAGE_CODE %}</a>
               </div>
               {% get_trans resource summary LANGUAGE_CODE %} 
-              <div class="inspiratie-categorien"> {% get_trans resource.category name LANGUAGE_CODE %} </div>
               
                 
           </li>
