@@ -6,6 +6,7 @@
 {% block slug %}home{% endblock%}
 
 {% block content %}
+<section>
 <div id="axis-list">
     {% for axis in object_list %}
     <div class='axis-home {% if forloop.first %}visible{% endif %}' title="{{ axis.name }}">
@@ -16,6 +17,7 @@
     </div>
     {% endfor %}
 </div>
+</section>
 {% endblock %}
 
 
@@ -74,6 +76,16 @@
             $('.axis-home').each(function(){
                 left = $(document).width()/2 - $(this).width()/2 ;
                 $(this).css('left', left + 'px');
+            });
+            // Toggle boxes when hovering caption box
+            $("footer div#home-caption-list").hover(function(){
+                    $("section").css("visibility", "hidden");
+                    $("header").hide();
+                    $("#background-gradient").hide();
+                }, function(){
+                    $("section").css("visibility", "visible");
+                    $("header").show();
+                    $("#background-gradient").show();
             });
             window.setTimeout(function(){ photos.slide();}, 1000);
             window.setInterval(function() { photos.slide(); }, 5000);
