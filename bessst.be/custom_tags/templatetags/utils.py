@@ -35,7 +35,10 @@ from time import strftime
 @register.filter
 def date_to_space(value, prev_date):
     delta = prev_date - value
-    return -delta.days*1.5
+    print prev_date
+    print value
+    print delta
+    return int(delta.days)*-5
 
 
 class GetTransNode(template.Node):

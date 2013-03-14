@@ -23,6 +23,11 @@
 {% endblock %}
 
 {% block footer %}
+<div id="caption-block">
+        <div id="caption-list">
+            {{ object_list.0.image_set.all.0.description }}
+        </div>
+</div>
 {% endblock %}
 
 {% block extra_js %}
@@ -49,25 +54,27 @@
             },
 	        slide: function(){
 	            // background image and caption
-	            var axis = this.get_axis();
-	            $('img.background-image').not('img#background-' + axis.slug).fadeOut('slow');
-	            $('img#background-' + axis.slug).fadeIn('slow');
-	
-	            //console.log('img#background-' + axis.slug);
-	            $("footer .caption").text(axis.photoCaption).show();
 
+	            var axis = this.get_axis();
+                function fade (){
+                    $('img.background-image').not('img#background-' + axis.slug).fadeOut(5000);
+                    $('#axis-home').fadeOut(5000);
+                    $('img#background-' + axis.slug).fadeIn(5000);
+                }
+                fade();
 	            $("#axis-home").html('<a href="' + axis.url + '"> <img class="'+axis.pictogram +' smaller-logo" id="'+axis.slug +'" src="/static/axis/'+axis.pictogram+'-smaller.png" title="'+axis.name+'" />' + axis.name + '</a>').show();
                 left = $(document).width()/2 - $("#axis-home").width()/2 ;
-	            $("#axis-home").css('left', left + 'px');
+                $("#axis-home").css('left', left + 'px').css('display', 'block');
+	            window.setTimeout(function(){ fade() }, 2000);
+
+
+
+	            $("footer #caption-list").html(axis.photoCaption).show();
 	        }
         }
-    
         $(window).load(function() {
-            // Center first axis
-            left = $(document).width()/2 - $("#axis-home").width()/2 ;
-            $("#axis-home").css('left', left + 'px');
-
-            window.setInterval(function() { photos.slide(); }, 5000);
+            photos.slide();
+            window.setInterval(function() { photos.slide(); }, 7000);
         });
 
     </script>

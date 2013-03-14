@@ -9,26 +9,22 @@
 {% if not archive %}<a href="{% url agenda-archive %}">← {% trans "Events Archive" %}</a>
 {% else %}<a href="{% url agenda %}">{% trans "Current Events" %} →</a>{% endif %}
 <section id='agenda'>
-    {% regroup object_list|dictsort:'start_date' by start_date as event_list %}
-    {% assign prev_date event_list.0.list.0.start_date %}
-
-    {% for date in event_list %}
-        {% for event in date.list %}
-
-            {% if event.start_date|timeuntil > 0 %}
-
-            {% if event.start_date|date_to_space:prev_date > 0 %}
-                <table class='vide' cellspacing="15">
-                    <tr>
-                        <td><div style='height: {{ event.start_date|date_to_space:prev_date }}0px'>&nbsp;</div></td>
-                    </tr>
-                </table>
-                <table cellspacing="15">
-                    <tr>
-            {% elif forloop.first %}
-                <table cellspacing="15">
-                    <tr>
+    {% assign prev_date object_list.0.start_date %}
+    {% for event in object_list reversed %}
+        {% ifchanged event.start_date %}
+            {% if not forloop.first %}
+            </tr>
+        </table>
+        <table class='vide' cellspacing="15">
+            <tr>
+                <td><div style='height: {{ delta }}px'>&nbsp;</div></td>
+            </tr>
+        </table>
             {% endif %}
+        {% assign delta event.start_date|date_to_space:prev_date %}
+        <table cellspacing="15">
+            <tr>
+        {% endifchanged%}
 
                 <td class='no-border {{ event.project.axis.pictogram }}'>
                     <a href='{{ event.get_absolute_url }}'>
@@ -38,10 +34,9 @@
                             → {{ event.end_date }}
                         {% endif %}
                         </h3>
-
-                        {% if event.image_set.all.0.image.url %}
-                            <img src="{{ event.image_set.all.0.image|thumbnail:'70x70' }}" />
-                        {% endif %}
+                            {% if event.image_set.all.0.image.url %}
+                                <img src="{{ event.image_set.all.0.image|thumbnail:'70x70' }}" />
+                            {% endif %}
 
                         <div class="events">{% get_trans event title LANGUAGE_CODE %}</div>
                         <div class='related-project'>
@@ -50,12 +45,7 @@
                         </div>
                     </a>
                 </td>
-
-                {% assign prev_date event.start_date %}
-                {% endif %}
-                {% endfor %}
-            </tr>
-        </table>
+        {% assign prev_date event.start_date %}
     {% endfor %}
 </section>
 {% endblock %}
