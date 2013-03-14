@@ -45,9 +45,9 @@
                 current_caption = $("div.caption:visible");
                 current_img = $("img.home-axis-image:visible");
                 console.log($(current_img).attr('id'))
-                $(current_img).fadeOut(5000);
-                $(current_axis).fadeOut(3000);
-                $(current_caption).fadeOut(3000);
+                $(current_img).fadeOut(2000);
+                $(current_axis).slideUp(500);
+                $(current_caption).slideUp(500);
 
                 if (current_axis.next().hasClass("axis-home")){
                     next_axis = current_axis.next();
@@ -64,9 +64,9 @@
                 } else {
                     next_img = $("figure#background img.home-axis-image:first-child")
                 }
-                $(next_img).delay(2000).fadeIn(5000);
-                $(next_axis).delay(4000).fadeIn(3000);
-                $(next_caption).delay(4000).fadeIn(3000);
+                $(next_img).delay(500).fadeIn(2000);
+                $(next_axis).delay(2000).slideDown(500);
+                $(next_caption).delay(2000).slideDown(500);
 	        }
         }
 
@@ -76,7 +76,7 @@
                 $(this).css('left', left + 'px');
             });
             window.setTimeout(function(){ photos.slide();}, 1000);
-            window.setInterval(function() { photos.slide(); }, 8000);
+            window.setInterval(function() { photos.slide(); }, 5000);
         });
 
     </script>
