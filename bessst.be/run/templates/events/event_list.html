@@ -6,8 +6,8 @@
 {% block slug %}agenda{% endblock%}
 
 {% block content %}
-{% if not archive %}<div class="pastandfutur-link"><a href="{% url agenda-archive %}"><img src="../static/axis/arrow-left.png"/>{% trans "Events Archive" %}</a></div>
-{% else %}<div class="pastandfutur-link"> <a href="{% url agenda %}">{% trans "Current Events" %} →</a> </div>{% endif %}
+{% if not archive %}<div class="pastandfutur-link"><img class="pastandfutur-img" src="{{ STATIC_URL }}axis/arrow-left.png" /><span class="pastandfutur-txt"><a href="{% url agenda-archive %}">{% trans "Events Archive" %}</a></span></div>
+{% else %}<div class="pastandfutur-link"><span class="pastandfutur-txt"> <a href="{% url agenda %}">{% trans "Current Events" %}</a></span><img class="pastandfutur-img" src="{{ STATIC_URL }}axis/arrow-right.png" /> </div>{% endif %}
 <section id='agenda'>
     {% assign prev_date object_list.0.start_date %}
     {% for event in object_list reversed %}
