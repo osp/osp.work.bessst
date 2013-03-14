@@ -6,8 +6,8 @@
 {% block slug %}agenda{% endblock%}
 
 {% block content %}
-{% if not archive %}<a href="{% url agenda-archive %}">← {% trans "Events Archive" %}</a>
-{% else %}<a href="{% url agenda %}">{% trans "Current Events" %} →</a>{% endif %}
+{% if not archive %}<div class="pastandfutur-link"><a href="{% url agenda-archive %}"><img src="../static/axis/arrow-left.png"/>{% trans "Events Archive" %}</a></div>
+{% else %}<div class="pastandfutur-link"> <a href="{% url agenda %}">{% trans "Current Events" %} →</a> </div>{% endif %}
 <section id='agenda'>
     {% regroup object_list|dictsort:'start_date' by start_date as event_list %}
     {% assign prev_date event_list.0.list.0.start_date %}
