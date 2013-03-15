@@ -114,14 +114,14 @@
             }, function(){
             $('img', $(this)).attr('src', '{{ STATIC_URL }}images/logo-plain.png');
         });
-    	
-    	// show where we are
-	    $("#navi li a").each(function() {
-	        if ( $(this).attr('href') == document.location.pathname ) { 
-	            $(this).addClass("selected");
-	        };
-	    });
-	    
+        
+        // show where we are
+        $("#navi li a").each(function() {
+            if ( $(this).attr('href') == document.location.pathname ) { 
+                $(this).addClass("selected");
+            };
+        });
+    
         // Toggle boxes when hovering caption box
         $("footer div#caption-list").hover(function(){
                 $("section").css("visibility", "hidden");
@@ -163,7 +163,9 @@
 
     });
     $(window).resize(function(){
-        $('.tail-space').delete();
+        if ($('.tail-space').length > 0) {
+            $('.tail-space').delete();
+        }
         $(".tail").tailing();
     });
     

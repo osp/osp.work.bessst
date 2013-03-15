@@ -14,7 +14,7 @@
 
     <section id="main">
     <div id='axis-menu'>
-        {% for axis in axis_list %}
+        {% for axis in axis_list_minus_one %}
             <h2 class="logo">
                 <a href='{% url axis-detail axis.slug %}'>
                     <img class="{{ axis.pictogram }} small-logo" id="{{ axis.slug }}" src="{{ STATIC_URL }}axis/{{ axis.pictogram }}.png" title="{{ axis.name }}" data-photo="{{ axis.image_set.all.0.image.url }}" data-photo-caption="{{ axis.image_set.all.0 }}"/>
@@ -23,8 +23,16 @@
         {% endfor %}
     </div>
           <ul id='project-list'>
-              {% for project in object_list %}
-              <li class="box {{ project.axis.slug }} no-border in-grid {% if project.archived %}archive{% endif %}" data-sizex="18">
+          {% if axis %}
+              <li class="box axis {{ axis.slug }} in-grid" data-sizex="18">
+                  <h1>{{ axis }}</h1>
+                  <div class="">
+                      {{ axis.description|safe }}
+                  </div>
+              </li>
+          {% endif %}
+          {% for project in object_list %}
+              <li class="box {{ project.axis.slug }} no-border {% if not slug or slug == project.axis.slug %}in-grid{% endif %} {% if project.archived %}archive{% endif %}" data-sizex="18">
                   
                   <a class="many-things-link" href="{{ project.get_absolute_url }}" data-axis="{{ project.axis.slug }}">
                   
@@ -46,6 +54,14 @@
                  
                     </a>
                     
+              </li>
+          {% endfor %}
+          {% for axis in axis_list %}
+              <li class="box axis {{ axis.slug }}" data-sizex="18">
+                  <h1>{{ axis }}</h1>
+                  <div class="">
+                      {{ axis.description|safe }}
+                  </div>
               </li>
           {% endfor %}
           </ul>
@@ -137,13 +153,13 @@
                                 $('ul#project-list li').slice(9).addClass("in-grid").fadeIn('fast', function() {
                                     $('#project-list').masonry('reload');
                                 });
-        // CENTER AXIS ICON IN LETTRINE SPACE
-            $('.lettrine .small-logo').each(function(){
-                this_top = 20 + $(this).parent().height()/2 - $(this).height()/2;
-                this_left = 20 + $(this).parent().width()/2 - $(this).width()/2;
-                $(this).css({'top': this_top + 'px', 'left': this_left + 'px'});
-            });
-        
+                            // CENTER AXIS ICON IN LETTRINE SPACE
+                                $('.lettrine .small-logo').each(function(){
+                                    this_top = 20 + $(this).parent().height()/2 - $(this).height()/2;
+                                    this_left = 20 + $(this).parent().width()/2 - $(this).width()/2;
+                                    $(this).css({'top': this_top + 'px', 'left': this_left + 'px'});
+                                });
+                                
                             }
                         }
                     }
@@ -159,8 +175,8 @@
         
         });
         
-        /* ROLLOVER PROJECT BOX */
-        $('ul#project-list li').hover(function(){
+        /* ROLLOVER PROJECT BOX (not for axis box) */
+        $('ul#project-list li:not(.axis)').hover(function(){
             $(this).removeClass('no-border');
             $('.lettrine .small-logo' ,$(this)).hide()
             }, function(){
@@ -168,7 +184,9 @@
             $('.lettrine .small-logo' ,$(this)).show()
         });
         
-        /* Show axis names and colors on axis-image rollover */
+        /* Show axis names and colours on axis-image rollover
+         * (except for the boxes that contain axis info, they always keep their colour)
+         */
         $(".logo").hover(function(e){
             picto = $( "img", $(this));
             filename = picto.attr("src").slice(0, -4);
@@ -184,7 +202,7 @@
             picto.attr("src", filename + ".png");
             
             $("#tooltip").html("&nbsp;").css('visibility','hidden').removeClass();
-            $("." + picto.attr("id")).addClass("no-border");
+            $("." + picto.attr("id") + ':not(.axis)').addClass("no-border");
         
         });
     </script>
