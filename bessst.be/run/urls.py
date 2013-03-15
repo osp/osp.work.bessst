@@ -26,7 +26,9 @@ urlpatterns = patterns('',
     url(r'^newsletter/', include('newsletter.urls')),
     url(r'^admin/', include(admin.site.urls)),
     (r'^i18n/', include('django.conf.urls.i18n')),
+)
 
+urlpatterns += i18n_patterns('',
     url(r'^$', list_detail.object_list, {"queryset":Axis.objects.all(), 'template_name':'home.html'}, name='home'),
     url(r'^projects/$', 'projects.views.projects', name='projects'),
     url(r'^projects/(?P<slug>[\w-]+)/$', DetailView.as_view(model=Project), name='project-detail'),
@@ -46,6 +48,7 @@ urlpatterns = patterns('',
     url(r'^(?P<slug>[\w-]+)/$', DetailView.as_view(model=FlatPage), name='flatpage-detail'),
 )
 
+# Serve asset files in DEBUG:
 if settings.DEBUG:
     urlpatterns += patterns('',
         url(r'^assets/(?P<path>.*)$', 'django.views.static.serve', {
