@@ -12,5 +12,4 @@ def projects(request, slug=False):
     if slug:
         tpl_params['slug'] = slug
         tpl_params['axis'] = Axis.objects.get(slug=slug)
-        tpl_params['axis_list_minus_one'] = Axis.objects.exclude(id=tpl_params['axis'].id)
     return render_to_response("projects/project_list.html", tpl_params, context_instance = RequestContext(request))

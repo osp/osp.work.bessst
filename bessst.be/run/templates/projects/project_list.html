@@ -23,14 +23,6 @@
         {% endfor %}
     </div>
           <ul id='project-list'>
-          {% if axis %}
-              <li class="box axis {{ axis.slug }} in-grid" data-sizex="18">
-                  <h1>{{ axis }}</h1>
-                  <div class="">
-                      {{ axis.description|safe }}
-                  </div>
-              </li>
-          {% endif %}
           {% for project in object_list %}
               <li class="box {{ project.axis.slug }} no-border {% if not slug or slug == project.axis.slug %}in-grid{% endif %} {% if project.archived %}archive{% endif %}" data-sizex="18">
                   
@@ -56,7 +48,7 @@
                     
               </li>
           {% endfor %}
-          {% for axis in axis_list_minus_one %}
+          {% for axis in axis_list %}
               <li class="box axis {{ axis.slug }}" data-sizex="18">
                   <h1>{{ axis }}</h1>
                   <div class="">
