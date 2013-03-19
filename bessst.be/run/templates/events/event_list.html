@@ -7,22 +7,20 @@
 
 {% block content %}
 {% if not archive %}
-<div class="pastandfutur-link">
-    <div>
-        <img class="pastandfutur-2" src="{{ STATIC_URL }}axis/arrow-left.png" />
-    </div>
-    <div class="pastandfutur-1">
-        <a href="{% url agenda-archive %}">{% trans "Events Archive" %}</a>
-    </div>
+<div class="pastandfutur-box">
+<a href="{% url agenda-archive %}">
+        <img class="pastandfutur-img" src="{{ STATIC_URL }}axis/arrow-left.png" />
+
+
+        <span class="pastandfutur-txt" href="{% url agenda-archive %}">{% trans "Events Archive" %}</span>
+        </a>
 </div>
 {% else %}
-<div class="pastandfutur-link">
-    <div class="pastandfutur-2">
-        <a href="{% url agenda %}">{% trans "Current Events" %}</a>
-    </div>
-    <div>
-        <img class="pastandfutur-1" src="{{ STATIC_URL }}axis/arrow-right.png" />
-    </div>
+<div class="pastandfutur-box">
+<a href="{% url agenda %}">
+        <span class="pastandfutur-txt">{% trans "Current Events" %}</span>
+        <img class="pastandfutur-img" src="{{ STATIC_URL }}axis/arrow-right.png" />
+        </a>
 </div>
 {% endif %}
 <section id='agenda'>

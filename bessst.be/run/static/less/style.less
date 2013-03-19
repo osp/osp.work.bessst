@@ -814,6 +814,7 @@ a.many-things-link {
  
 section#agenda {
     padding: 0px 30px 15px 30px;
+    clear: both;
 
     h1 {
         font-size: @font-size-mid;
@@ -857,43 +858,32 @@ section#agenda {
     font-weight : 300;
 }
 
-.pastandfutur-link {
-    position : relative;
+.pastandfutur-box {
     margin-left:auto;
     margin-right: auto;
     width : 200px;
+    padding-top : @gutter;
 }
 
-.pastandfutur-1 {
+.pastandfutur-txt {
    font-weight : 300;
    text-transform : uppercase;
    letter-spacing : 0.04em;
-   padding-bottom : 15px;
    text-align : center;
-   margin-top : -30px;
-   a {
-        text-decoration: none;
-    }
-    a:hover{
-        text-decoration : underline;
-    }
+   float:left;
+
 }
 
-.pastandfutur-2 {
-   margin : 20px 10px 0px 10px;
-   font-weight : 300;
-   text-transform : uppercase;
-   letter-spacing : 0.04em;
-   padding-bottom : 15px;
-   text-align : center;
-   a {
-        text-decoration: none;
-    }
-    a:hover{
-        text-decoration : underline;
-    }
+.pastandfutur-box a:hover  span{
+    text-decoration : underline;
 }
 
+.pastandfutur-img{
+    top: -5px;
+    position: relative;
+    float: left;
+    margin: 0 @gutter/2;
+}
 
 
 .logo object {
