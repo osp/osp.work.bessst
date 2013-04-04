@@ -82,7 +82,7 @@ def label_form(request):
     tpl_params['form'] = form
     return render_to_response("people/label_form.html", tpl_params, context_instance = RequestContext(request))
 
-def atlas(request):
+def atlas(request, id=None):
     tpl_params = {}
     
     friends = Friend.objects.all().order_by('-location_latitude')

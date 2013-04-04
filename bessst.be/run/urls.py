@@ -41,6 +41,7 @@ urlpatterns += i18n_patterns('',
     url(r'^inspiration/$', list_detail.object_list, {"queryset":Resource.objects.filter(published=True)}, name='inspiration'),
     url(r'^community/$', 'people.views.community', name='community'),
     url(r'^atlas/$', 'people.views.atlas', name='atlas'),
+    url(r'^atlas/(?P<id>[0-9]+)/$', 'people.views.atlas', name='atlas'),
     url(r'^e-mail/$', 'people.views.e_mail_list', name='e_mail_list'),
     
     url(r'^label-form/$', 'people.views.label_form', name='label_form'),
