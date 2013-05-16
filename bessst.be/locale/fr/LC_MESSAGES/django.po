@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bessst_fr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-12 16:39+0100\n"
-"PO-Revision-Date: 2013-03-13 13:10+0100\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2013-05-16 13:18+0200\n"
+"PO-Revision-Date: 2013-05-16 14:33+0100\n"
+"Last-Translator: Eric Schrijver <eric@ericschrijver.nl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -303,15 +303,15 @@ msgstr "Recevoir la newsletter"
 msgid "Display my name"
 msgstr "Afficher mon nom"
 
-#: people/views.py:25
+#: people/views.py:26
 msgid "Description of the Project"
 msgstr "Description du projet"
 
-#: people/views.py:26
+#: people/views.py:27
 msgid "Existing Partners"
 msgstr "Partenaires existants"
 
-#: people/views.py:27
+#: people/views.py:28
 msgid "Through which channels can you already communicate?"
 msgstr "Par quels canaux communiquez vouz ?"
 
@@ -360,53 +360,61 @@ msgstr "Anglais"
 msgid "French"
 msgstr "Français"
 
-#: run/templates/base.html:19
+#: run/templates/base.html:21
 #: run/templates/home.html:4
 msgid "BESSST - Brussels, Heritage and Silence"
 msgstr "BESSST - Bruxelles, le patrimoine et le silence"
 
-#: run/templates/base.html:28
-#: run/templates/home.html:16
+#: run/templates/base.html:30
 msgid "Projects"
 msgstr "Projets"
 
-#: run/templates/base.html:29
-#: run/templates/home.html:17
+#: run/templates/base.html:31
 msgid "Calendar"
 msgstr "Calendrier"
 
-#: run/templates/base.html:30
-#: run/templates/home.html:18
+#: run/templates/base.html:32
+#: run/templates/people/individual_list.html:4
 msgid "Community"
 msgstr "Communauté"
 
-#: run/templates/base.html:31
-#: run/templates/home.html:19
+#: run/templates/base.html:33
 msgid "Inspiration"
 msgstr "Inspiration"
 
-#: run/templates/base.html:32
-#: run/templates/home.html:20
+#: run/templates/base.html:34
 msgid "About"
 msgstr "À propos"
 
-#: run/templates/base.html:33
+#: run/templates/base.html:35
 msgid "Atlas"
 msgstr "Atlas"
 
-#: run/templates/events/event_detail.html:27
+#: run/templates/events/event_detail.html:32
 msgid "Datum"
 msgstr "Date"
 
-#: run/templates/events/event_detail.html:35
+#: run/templates/events/event_detail.html:40
 #: run/templates/projects/project_detail.html:48
 msgid "Locatie"
 msgstr "Emplacement"
 
-#: run/templates/events/event_detail.html:38
-#: run/templates/events/event_list.html:42
+#: run/templates/events/event_detail.html:43
+#: run/templates/events/event_list.html:58
 msgid "Onderdeel van"
 msgstr "Une partie de"
+
+#: run/templates/events/event_list.html:4
+msgid "Agenda"
+msgstr "Calendrier"
+
+#: run/templates/events/event_list.html:15
+msgid "Events Archive"
+msgstr "Évènements archivés"
+
+#: run/templates/events/event_list.html:21
+msgid "Current Events"
+msgstr "Évènements actifs"
 
 #: run/templates/people/atlas.html:12
 msgid "Bessst atlas"
@@ -424,14 +432,18 @@ msgstr "Faites glisser l'épingle sur la carte pour partager votre emplacement d
 msgid "Thanks for your application as a silence friend."
 msgstr "Merci de votre demande comme ami du silence"
 
-#: run/templates/people/individual_list.html:44
-#: run/templates/projects/project_list.html:54
+#: run/templates/people/individual_list.html:46
+#: run/templates/projects/project_list.html:62
 msgid "vraag het<br /> bessst-label aan"
 msgstr "Demander<br/> le label bessst "
 
-#: run/templates/projects/project_detail.html:4
-msgid "Project"
-msgstr "Projet"
+#: run/templates/people/label_form.html:13
+msgid "Demand bessst label"
+msgstr "Demander le label bessst "
+
+#: run/templates/people/label_form.html:20
+msgid "Thank you for your bessst label demand"
+msgstr "Merci pour votre demande d’un label bessst"
 
 #: run/templates/projects/project_detail.html:53
 msgid "Project website"
@@ -449,3 +461,5 @@ msgstr "Projets"
 msgid "Inspiratie"
 msgstr "Références"
 
+#~ msgid "Project"
+#~ msgstr "Projet"
