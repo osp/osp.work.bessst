@@ -17,7 +17,7 @@
         {% for axis in axis_list %}
             <h2 class="logo">
                 <a href='{% url axis-detail axis.slug %}'>
-                    <img class="{{ axis.pictogram }} small-logo" id="{{ axis.slug }}" src="{{ STATIC_URL }}axis/{{ axis.pictogram }}.png" title="{{ axis.name }}" data-photo="{{ axis.image_set.all.0.image.url }}" data-photo-caption="{{ axis.image_set.all.0 }}"/>
+                    <img class="{{ axis.pictogram }} small-logo" id="{{ axis.slug }}" src="{{ STATIC_URL }}axis/{{ axis.pictogram }}.png" title="{% get_trans axis name LANGUAGE_CODE %}" data-photo="{{ axis.image_set.all.0.image.url }}" data-photo-caption="{{ axis.image_set.all.0 }}"/>
                 </a>
           </h2>
         {% endfor %}
