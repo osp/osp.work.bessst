@@ -1,23 +1,23 @@
 {% extends "base.html" %}
-{% load markup thumbnails %}
+{% load i18n utils markup thumbnails %}
 
-{% block title %}{{ flatpage.title }}{% endblock %}
+{% block title %}{% get_trans flatpage title LANGUAGE_CODE %}{% endblock %}
 
 {% block slug %}{{ flatpage.slug }}{% endblock %}
 
 {% block header %}
-<h1 class="stairs">{{ flatpage.title }}</h1>
+<h1 class="stairs">{% get_trans flatpage title LANGUAGE_CODE %}</h1>
 {% endblock header%}
 
 {% block content %}
 <section id="main" class="over big" style="width: 45%; float: left;">
-    {{ flatpage.content|markdown }}
+    {% get_trans flatpage content LANGUAGE_CODE %}
 </section>
 
 {% if flatpage.infobox %}
     <section id="right">
       <div id="metadata" class="box">
-        {{ flatpage.infobox|markdown }}
+        {% get_trans flatpage infobox LANGUAGE_CODE %}
       </div>
     </section>
 {% endif %}
