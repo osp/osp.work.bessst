@@ -1,5 +1,9 @@
 import os
-import Image
+try:
+    import Image
+except ImportError:
+    from PIL import Image
+
 from django.template import Library
 
 register = Library()
